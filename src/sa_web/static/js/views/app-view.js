@@ -333,8 +333,6 @@ var Shareabouts = Shareabouts || {};
         this.showPanel(this.placeFormView.render().$el);
         this.showNewPin();
         this.setBodyClass('content-visible', 'place-form-visible');
-
-        this.conditionallyReverseGeocode();
       }
     },
     setBodyClass: function(/* newBodyClasses */) {
@@ -514,9 +512,7 @@ var Shareabouts = Shareabouts || {};
       }
     },
     viewPage: function(slug) {
-      var pageConfig = _.find(this.options.pagesConfig, function(pageConfig) {
-            return pageConfig.slug ===  slug;
-          }),
+      var pageConfig = S.Util.findPageConfig(this.options.pagesConfig, {slug: slug}),
           pageTemplateName = 'pages/' + (pageConfig.name || pageConfig.slug),
           pageHtml = Handlebars.templates[pageTemplateName]({config: this.options.config});
 
