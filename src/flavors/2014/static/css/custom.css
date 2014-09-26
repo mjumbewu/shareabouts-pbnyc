@@ -29,7 +29,7 @@
 #site-tagline {
   display: none;
   float: left;
-  max-width: 10em;
+  max-width: 8.75em;
   position: relative;
   top: 0.25em;
 }
@@ -258,6 +258,36 @@ ul.recent-points {
   background-image: url(images/markers/balloons-gold.png); 
 }
 
+
+/* =Geocoding
+-------------------------------------------------------------- */
+
+#geocode-address-bar {
+  background-color: #eee;
+  border-right: 1px solid #ddd;
+  margin-top: 0;
+}
+input.geocode-address-field {
+  border-width: 0;
+  background-color: #fff;
+  color: #555;
+}
+#geocode-address-bar .error {
+  line-height: 1.75;
+  background-color: #F26161;
+  box-shadow: 2px 2px 0 #F26161, 2px -2px 0 #F26161, -2px 2px 0 #F26161, -2px -2px 0 #F26161;
+}
+#geocode-address-bar .error + form {
+  box-shadow: 2px 2px 0 #F26161, 2px -2px 0 #F26161, -2px 2px 0 #F26161, -2px -2px 0 #F26161;
+}
+#geocode-address-bar .error.is-hidden + form {
+  box-shadow: none;
+}
+.geocode-spinner {
+  background-color: #fff;
+}
+
+
 /* =Media Queries
 -------------------------------------------------------------- */
 
@@ -268,12 +298,22 @@ ul.recent-points {
 }
 
 @media only screen and (min-width: 60em) {
+  #site-title {
+    margin-right: 0;
+  }
   #site-title a:link,
   #site-title a:visited {
     font-size: 1.375em;
   }
   #site-tagline {
-    top: 0.125em;
+    top: 0.25em;
+    font-size: 0.875em;
+  }
+  .access {
+    font-size: 0.75em;
+  }
+  .access li {
+    margin: 0;
   }
   .access a:visited, 
   .access a:active, 
@@ -283,5 +323,35 @@ ul.recent-points {
   .access a:hover {
     background-color: #000;
     color: #fff;
+  }
+  .list-toggle-nav {
+    font-size: 0.75em;
+    float: left;
+    margin-left: 0;
+  }
+  a.list-toggle-btn:visited, 
+  a.list-toggle-btn:active, 
+  a.list-toggle-btn:link {
+    background-color: #fff;
+    color: #000;
+    border: 0;
+    border-radius: 0;
+  }
+  a.list-toggle-btn:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+
+@media only screen and (min-width: 74em) {
+  #site-tagline {
+    top: 0.125em;
+    font-size: 1em;
+  }
+  .access {
+    font-size: 1em;
+  }
+  .list-toggle-nav {
+    font-size: 1em;
   }
 }
