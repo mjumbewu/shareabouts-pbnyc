@@ -18,9 +18,9 @@ map:
   geocode_field_label: _(Enter an address...)
   options:
     center:
-      lat: 40.6858
-      lng: -73.9448
-    zoom: 10
+      lat: 40.7332
+      lng: -73.8888
+    zoom: 11
     minZoom: 10
     maxZoom: 18
   layers:
@@ -824,6 +824,9 @@ survey:
     - prompt: _(Your Name)
       type: text
       name: submitter_name
+      attrs:
+        - key: required
+          value: true
 
 support:
   submission_type: support
