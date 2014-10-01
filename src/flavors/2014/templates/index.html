@@ -95,4 +95,26 @@ Shareabouts.PlaceFormView.prototype.setLocation = function(locationData) {
   $approxAddress.html('<br/><span class="address-label">Approximate location:</span> ' + Handlebars.templates['location-string'](locationData));
 }
 </script>
+
+<!-- zoom to marker on click -->
+<script>
+  (function(NS, $) {
+    
+    var originalOnMarkerClick = Shareabouts.LayerView.prototype.onMarkerClick;
+    NS.LayerView.prototype.onMarkerClick = function(evt) {
+      var self = this;
+      originalOnMarkerClick.apply(this, arguments);
+      if (this.map.getZoom() < this.map.getMaxZoom()-1) {
+        _.delay(function() {
+          self.map.setView(evt.latlng, self.map.getMaxZoom()-1, {
+            animate: true
+          });
+
+          self.map.invalidateSize({ animate:false, pan:false });
+        }, 200);
+      }
+    }
+
+  }(Shareabouts, jQuery));
+</script>
 {% endblock %}
