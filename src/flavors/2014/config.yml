@@ -850,3 +850,7 @@ pages:
   - title: Go to your District
     slug: district
     name: district
+
+notifications:
+  on_new_place: true
+  submitter_email_field: private-email
