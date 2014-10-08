@@ -37,473 +37,462 @@ place_types:
     rules:
       - condition: '"{{location_type}}" === "culture" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [11, 11]
+          iconAnchor: [6, 6]
+      - condition: '"{{location_type}}" === "culture" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
+      - condition: '"{{location_type}}" === "culture" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
           iconSize: [20, 20]
           iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "culture" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14'
-        icon:
-          iconUrl: /static/css/images/markers/communitycenter-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-      - condition: '"{{location_type}}" === "culture" && "{{winner}}" === "winner" && {{layer.focused}} === true'
-        icon:
-          iconUrl: /static/css/images/markers/communitycenter-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
 
       - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false && {{map.zoom}} >= 14'
+          iconUrl: /static/css/images/markers/new/dot-aa3c1e.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
+      - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
         icon:
-          iconUrl: /static/css/images/markers/communitycenter.png
-          shadowUrl: /static/css/images/markers/shadow-square-pale.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/facilities-small.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false && {{map.zoom}} >= 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/facilities-small.png
+          iconSize: [50, 60]
+          iconAnchor: [25, 60]
       - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === true'
         icon:
-          iconUrl: /static/css/images/markers/communitycenter.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/facilities.png
+          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
   
   education:
     label: _(Schools & Education)
     rules:
       - condition: '"{{location_type}}" === "education" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [11, 11]
+          iconAnchor: [6, 6]
+      - condition: '"{{location_type}}" === "education" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
+      - condition: '"{{location_type}}" === "education" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
           iconSize: [20, 20]
           iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "education" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14'
-        icon:
-          iconUrl: /static/css/images/markers/books-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-      - condition: '"{{location_type}}" === "education" && "{{winner}}" === "winner" && {{layer.focused}} === true'
-        icon:
-          iconUrl: /static/css/images/markers/books-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
 
       - condition: '"{{location_type}}" === "education" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "education" && {{layer.focused}} === false && {{map.zoom}} >= 14'  
+          iconUrl: /static/css/images/markers/new/dot-7fccd9.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
+      - condition: '"{{location_type}}" === "education" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'  
         icon:
-          iconUrl: /static/css/images/markers/books.png
-          shadowUrl: /static/css/images/markers/shadow-square-pale.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/education-small.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "education" && {{layer.focused}} === false && {{map.zoom}} >= 16'  
+        icon:
+          iconUrl: /static/css/images/markers/new/education-small.png
+          iconSize: [50, 60]
+          iconAnchor: [25, 60]
       - condition: '"{{location_type}}" === "education" && {{layer.focused}} === true'  
         icon:
-          iconUrl: /static/css/images/markers/books.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/education.png
+          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
 
   environment:
     label: _(Environment)
     rules:
       - condition: '"{{location_type}}" === "environment" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [11, 11]
+          iconAnchor: [6, 6]
+      - condition: '"{{location_type}}" === "environment" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
+      - condition: '"{{location_type}}" === "environment" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
           iconSize: [20, 20]
           iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "environment" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14'
-        icon:
-          iconUrl: /static/css/images/markers/tree-gold.png
-          shadowUrl: /static/css/images/markers/shadow-round-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-      - condition: '"{{location_type}}" === "environment" && "{{winner}}" === "winner" && {{layer.focused}} === true'
-        icon:
-          iconUrl: /static/css/images/markers/tree-gold.png
-          shadowUrl: /static/css/images/markers/shadow-round-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
 
       - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === false && {{map.zoom}} >= 14'  
+          iconUrl: /static/css/images/markers/new/dot-55a504.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
+      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'  
         icon:
-          iconUrl: /static/css/images/markers/tree.png
-          shadowUrl: /static/css/images/markers/shadow-round-pale.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/tree-small.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === false && {{map.zoom}} >= 16'  
+        icon:
+          iconUrl: /static/css/images/markers/new/tree-small.png
+          iconSize: [50, 60]
+          iconAnchor: [25, 60]
       - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === true'  
         icon:
-          iconUrl: /static/css/images/markers/tree.png
-          shadowUrl: /static/css/images/markers/shadow-round-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/tree.png
+          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
 
   housing:
     label: _(Housing)
     rules:
       - condition: '"{{location_type}}" === "housing" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [11, 11]
+          iconAnchor: [6, 6]
+      - condition: '"{{location_type}}" === "housing" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
+      - condition: '"{{location_type}}" === "housing" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
           iconSize: [20, 20]
           iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "housing" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14'
-        icon:
-          iconUrl: /static/css/images/markers/building-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-      - condition: '"{{location_type}}" === "housing" && "{{winner}}" === "winner" && {{layer.focused}} === true'
-        icon:
-          iconUrl: /static/css/images/markers/building-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
 
       - condition: '"{{location_type}}" === "housing" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} === false && {{map.zoom}} >= 14'
+          iconUrl: /static/css/images/markers/new/dot-f50a8e.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
+      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'  
         icon:
-          iconUrl: /static/css/images/markers/building.png
-          shadowUrl: /static/css/images/markers/shadow-square-pale.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/housing-small.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} === false && {{map.zoom}} >= 16'  
+        icon:
+          iconUrl: /static/css/images/markers/new/housing-small.png
+          iconSize: [50, 60]
+          iconAnchor: [25, 60]
       - condition: '"{{location_type}}" === "housing" && {{layer.focused}} === true'
         icon:
-          iconUrl: /static/css/images/markers/building.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/housing.png
+          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
   
   parks:
     label: _(Parks & Recreation)
     rules:
       - condition: '"{{location_type}}" === "parks" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [11, 11]
+          iconAnchor: [6, 6]
+      - condition: '"{{location_type}}" === "parks" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
+      - condition: '"{{location_type}}" === "parks" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
           iconSize: [20, 20]
           iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "parks" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14'
-        icon:
-          iconUrl: /static/css/images/markers/swings-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-      - condition: '"{{location_type}}" === "parks" && "{{winner}}" === "winner" && {{layer.focused}} === true'  
-        icon:
-          iconUrl: /static/css/images/markers/swings-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
 
       - condition: '"{{location_type}}" === "parks" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "parks" && {{layer.focused}} === false && {{map.zoom}} >= 14'  
+          iconUrl: /static/css/images/markers/new/dot-fa5b13.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
+      - condition: '"{{location_type}}" === "parks" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'  
         icon:
-          iconUrl: /static/css/images/markers/swings.png
-          shadowUrl: /static/css/images/markers/shadow-square-pale.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/playground-small.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "parks" && {{layer.focused}} === false && {{map.zoom}} >= 16'  
+        icon:
+          iconUrl: /static/css/images/markers/new/playground-small.png
+          iconSize: [50, 60]
+          iconAnchor: [25, 60]
       - condition: '"{{location_type}}" === "parks" && {{layer.focused}} === true'  
         icon:
-          iconUrl: /static/css/images/markers/swings.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/playground.png
+          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
 
   health:
     label: _(Public Health)
     rules:
       - condition: '"{{location_type}}" === "health" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [11, 11]
+          iconAnchor: [6, 6]
+      - condition: '"{{location_type}}" === "health" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
+      - condition: '"{{location_type}}" === "health" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
           iconSize: [20, 20]
           iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "health" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14'
-        icon:
-          iconUrl: /static/css/images/markers/cross-gold.png
-          shadowUrl: /static/css/images/markers/shadow-round-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-      - condition: '"{{location_type}}" === "health" && "{{winner}}" === "winner" && {{layer.focused}} === true'    
-        icon:
-          iconUrl: /static/css/images/markers/cross-gold.png
-          shadowUrl: /static/css/images/markers/shadow-round-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
   
       - condition: '"{{location_type}}" === "health" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "health" && {{layer.focused}} === false && {{map.zoom}} >= 14'
+          iconUrl: /static/css/images/markers/new/dot-ff78be.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
+      - condition: '"{{location_type}}" === "health" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'  
         icon:
-          iconUrl: /static/css/images/markers/cross.png
-          shadowUrl: /static/css/images/markers/shadow-round-pale.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/health-small.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "health" && {{layer.focused}} === false && {{map.zoom}} >= 16'  
+        icon:
+          iconUrl: /static/css/images/markers/new/health-small.png
+          iconSize: [50, 60]
+          iconAnchor: [25, 60]
       - condition: '"{{location_type}}" === "health" && {{layer.focused}} === true'
         icon:
-          iconUrl: /static/css/images/markers/cross.png
-          shadowUrl: /static/css/images/markers/shadow-round-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/health.png
+          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
 
   safety:
     label: _(Public Safety)
     rules:
       - condition: '"{{location_type}}" === "safety" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [11, 11]
+          iconAnchor: [6, 6]
+      - condition: '"{{location_type}}" === "safety" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
+      - condition: '"{{location_type}}" === "safety" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
           iconSize: [20, 20]
           iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "safety" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14'
-        icon:
-          iconUrl: /static/css/images/markers/badge-gold.png
-          shadowUrl: /static/css/images/markers/shadow-round-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-      - condition: '"{{location_type}}" === "safety" && "{{winner}}" === "winner" && {{layer.focused}} === true'  
-        icon:
-          iconUrl: /static/css/images/markers/badge-gold.png
-          shadowUrl: /static/css/images/markers/shadow-round-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
  
       - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === false && {{map.zoom}} >= 14'
+          iconUrl: /static/css/images/markers/new/dot-fc9229.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
+      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'  
         icon:
-          iconUrl: /static/css/images/markers/badge.png
-          shadowUrl: /static/css/images/markers/shadow-round-pale.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/safety-small.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === false && {{map.zoom}} >= 16'  
+        icon:
+          iconUrl: /static/css/images/markers/new/safety-small.png
+          iconSize: [50, 60]
+          iconAnchor: [25, 60]
       - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === true'
         icon:
-          iconUrl: /static/css/images/markers/badge.png
-          shadowUrl: /static/css/images/markers/shadow-round-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/safety.png
+          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
 
   seniors:
     label: _(Seniors)
     rules:
       - condition: '"{{location_type}}" === "seniors" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [11, 11]
+          iconAnchor: [6, 6]
+      - condition: '"{{location_type}}" === "seniors" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
+      - condition: '"{{location_type}}" === "seniors" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
           iconSize: [20, 20]
           iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "seniors" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14'
-        icon:
-          iconUrl: /static/css/images/markers/seniors-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]  
-      - condition: '"{{location_type}}" === "seniors" && "{{winner}}" === "winner" && {{layer.focused}} === true'  
-        icon:
-          iconUrl: /static/css/images/markers/seniors-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]  
 
       - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} === false && {{map.zoom}} >= 14'  
+          iconUrl: /static/css/images/markers/new/dot-c4ed52.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
+      - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'  
         icon:
-          iconUrl: /static/css/images/markers/seniors.png
-          shadowUrl: /static/css/images/markers/shadow-square-pale.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]  
+          iconUrl: /static/css/images/markers/new/seniors-small.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} === false && {{map.zoom}} >= 16'  
+        icon:
+          iconUrl: /static/css/images/markers/new/seniors-small.png
+          iconSize: [50, 60]
+          iconAnchor: [25, 60]
       - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} === true'  
         icon:
-          iconUrl: /static/css/images/markers/seniors.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]  
+          iconUrl: /static/css/images/markers/new/seniors.png
+          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
 
   streets:
     label: _(Streets & Sidewalks)
     rules:
       - condition: '"{{location_type}}" === "streets" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [11, 11]
+          iconAnchor: [6, 6]
+      - condition: '"{{location_type}}" === "streets" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
+      - condition: '"{{location_type}}" === "streets" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
           iconSize: [20, 20]
           iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "streets" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14'
-        icon:
-          iconUrl: /static/css/images/markers/cone-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]     
-      - condition: '"{{location_type}}" === "streets" && "{{winner}}" === "winner" && {{layer.focused}} === true'
-        icon:
-          iconUrl: /static/css/images/markers/cone-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]     
  
       - condition: '"{{location_type}}" === "streets" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "streets" && {{layer.focused}} === false && {{map.zoom}} >= 14'  
+          iconUrl: /static/css/images/markers/new/dot-a0b4c6.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
+      - condition: '"{{location_type}}" === "streets" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'  
         icon:
-          iconUrl: /static/css/images/markers/cone.png
-          shadowUrl: /static/css/images/markers/shadow-square-pale.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]     
+          iconUrl: /static/css/images/markers/new/street-sidewalk-small.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "streets" && {{layer.focused}} === false && {{map.zoom}} >= 16'  
+        icon:
+          iconUrl: /static/css/images/markers/new/street-sidewalk-small.png
+          iconSize: [50, 60]
+          iconAnchor: [25, 60]
       - condition: '"{{location_type}}" === "streets" && {{layer.focused}} === true'  
         icon:
-          iconUrl: /static/css/images/markers/cone.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]     
+          iconUrl: /static/css/images/markers/new/street-sidewalk.png
+          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
 
   transit:
     label: _(Transit)
     rules:
       - condition: '"{{location_type}}" === "transit" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [11, 11]
+          iconAnchor: [6, 6]
+      - condition: '"{{location_type}}" === "transit" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
+      - condition: '"{{location_type}}" === "transit" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
           iconSize: [20, 20]
           iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "transit" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14'
-        icon:
-          iconUrl: /static/css/images/markers/bus-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-      - condition: '"{{location_type}}" === "transit" && "{{winner}}" === "winner" && {{layer.focused}} === true'  
-        icon:
-          iconUrl: /static/css/images/markers/bus-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
 
       - condition: '"{{location_type}}" === "transit" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} === false && {{map.zoom}} >= 14'
+          iconUrl: /static/css/images/markers/new/dot-b75ab8.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
+      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'  
         icon:
-          iconUrl: /static/css/images/markers/bus.png
-          shadowUrl: /static/css/images/markers/shadow-square-pale.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/transit-small.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} === false && {{map.zoom}} >= 16'  
+        icon:
+          iconUrl: /static/css/images/markers/new/transit-small.png
+          iconSize: [50, 60]
+          iconAnchor: [25, 60]
       - condition: '"{{location_type}}" === "transit" && {{layer.focused}} === true'
         icon:
-          iconUrl: /static/css/images/markers/bus.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/transit.png
+          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
 
   youth:
     label: _(Youth)
     rules:
       - condition: '"{{location_type}}" === "youth" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [11, 11]
+          iconAnchor: [6, 6]
+      - condition: '"{{location_type}}" === "youth" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
+      - condition: '"{{location_type}}" === "youth" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
           iconSize: [20, 20]
           iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "youth" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14'
-        icon:
-          iconUrl: /static/css/images/markers/balloons-gold.png
-          shadowUrl: /static/css/images/markers/shadow-round-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-      - condition: '"{{location_type}}" === "youth" && "{{winner}}" === "winner" && {{layer.focused}} === true'  
-        icon:
-          iconUrl: /static/css/images/markers/balloons-gold.png
-          shadowUrl: /static/css/images/markers/shadow-round-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
 
       - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === false && {{map.zoom}} >= 14'  
+          iconUrl: /static/css/images/markers/new/dot-ffd614.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
+      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'  
         icon:
-          iconUrl: /static/css/images/markers/balloons.png
-          shadowUrl: /static/css/images/markers/shadow-round-pale.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/youth-small.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === false && {{map.zoom}} >= 16'  
+        icon:
+          iconUrl: /static/css/images/markers/new/youth-small.png
+          iconSize: [50, 60]
+          iconAnchor: [25, 60]
       - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === true'  
         icon:
-          iconUrl: /static/css/images/markers/balloons.png
-          shadowUrl: /static/css/images/markers/shadow-round-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/youth.png
+          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
 
 # Icons for new additions
   culture-shortlisted:

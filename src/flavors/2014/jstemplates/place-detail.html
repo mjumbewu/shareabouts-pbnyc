@@ -16,7 +16,7 @@
     <!-- if it's an old project, we don't want to show who submitted it -->
     {{#if year }}
 
-      <p class="approved-location-type {{ location_type }}"><span class="approved-location-shadow"></span><span class="approved-location-icon"></span> A {{ place_type_label location_type }} project in District {{ District }} funded by {{#is District '19' }}City Council{{^}}{{ council_member }}{{/is }} in <strong>{{ year }}</strong>.</p>
+      <p class="approved-location-type {{ location_type }}"><span class="approved-location-icon"></span> A {{ place_type_label location_type }} project in District {{ District }} funded by {{#is District '19' }}City Council{{^}}{{ council_member }}{{/is }} in <strong>{{ year }}</strong>.</p>
 
       <h1>{{ name }}</h1>
 

@@ -125,8 +125,11 @@ ul.recent-points {
 .legend img {
   float: left;
   position: relative;
+  margin-right: 8px;
+  margin-top: 1px;
   z-index: 2;
-  margin-top: -8px;
+  width: 20px;
+  height: 20px;
 }
 .legend img + img {
   margin-right: -21px;
@@ -192,7 +195,7 @@ ul.recent-points {
 .approved-location-type {
   background-color: #ffee80;
   float: left;
-  padding: 0.5em 1em 0.5em 36px;
+  padding: 0.5em 1em 0.5em 56px;
   position: relative;
   font-size: 0.85em;
   line-height: 1.5;
@@ -202,8 +205,8 @@ ul.recent-points {
 }
 .approved-location-icon {
   float: left;
-  width: 31px;
-  height: 32px;
+  width: 50px;
+  height: 60px;
   position: absolute;
   top: -6px;
   left: 2px;
@@ -212,50 +215,38 @@ ul.recent-points {
   background-position: 0 0;
   background-repeat: no-repeat;
 }
-.approved-location-shadow {
-  content: '';
-  float: left;
-  width: 31px;
-  height: 32px;
-  background: transparent url(images/markers/shadow-square.png) 0 0 no-repeat scroll;
-  position: absolute;
-  top: -6px;
-  left: 2px;
-  z-index: 1;
-  opacity: 0.25;
-}
 .culture .approved-location-icon {
-  background-image: url(images/markers/communitycenter-gold.png); 
+  background-image: url(images/markers/new/facilities-small.png); 
 }
 .education .approved-location-icon {
-  background-image: url(images/markers/books-gold.png); 
+  background-image: url(images/markers/new/education-small.png); 
 }
 .environment .approved-location-icon {
-  background-image: url(images/markers/tree-gold.png); 
+  background-image: url(images/markers/new/tree-small.png); 
 }
 .housing .approved-location-icon {
-  background-image: url(images/markers/building-gold.png); 
+  background-image: url(images/markers/new/housing-small.png); 
 }
 .parks .approved-location-icon {
-  background-image: url(images/markers/swings-gold.png); 
+  background-image: url(images/markers/new/playground-small.png); 
 }
 .health .approved-location-icon {
-  background-image: url(images/markers/cross-gold.png); 
+  background-image: url(images/markers/new/health-small.png); 
 }
 .safety .approved-location-icon {
-  background-image: url(images/markers/badge-gold.png); 
+  background-image: url(images/markers/new/safety-small.png); 
 }
 .seniors .approved-location-icon {
-  background-image: url(images/markers/seniors-gold.png); 
+  background-image: url(images/markers/new/seniors-small.png); 
 }
 .streets .approved-location-icon {
-  background-image: url(images/markers/cone-gold.png); 
+  background-image: url(images/markers/new/street-sidewalk-small.png); 
 }
 .transit .approved-location-icon {
-  background-image: url(images/markers/bus-gold.png); 
+  background-image: url(images/markers/new/transit-small.png); 
 }
 .youth .approved-location-icon {
-  background-image: url(images/markers/balloons-gold.png); 
+  background-image: url(images/markers/new/youth-small.png); 
 }
 
 
