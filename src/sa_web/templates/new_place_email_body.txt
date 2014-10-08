@@ -4,4 +4,4 @@ Your idea is to: {{ place.properties.name}}
 
 You can see people's comments on your idea at http://{{ request.get_host }}/places/{{ place.id }}. 
 
-For more information on the Participatory Budgeting process, go to ...
+For more information on the Participatory Budgeting process, go to www.council.nyc.gov/PB.
