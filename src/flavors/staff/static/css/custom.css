@@ -1,0 +1,367 @@
+
+/* =The Site Header
+-------------------------------------------------------------- */
+
+#site-header {
+  color: #000;
+  background-color: #fff;
+}
+#site-title {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-shadow: none;
+}
+#site-title a:link,
+#site-title a:visited {
+  display: block;
+  position: relative;
+  color: #000;
+  font-size: 1em;
+}
+#site-title a:hover {
+  color: #000;
+}
+#site-logo {
+  float: left;
+  height: 2.75em;
+  margin-right: 0.5em;
+}
+#site-tagline {
+  display: none;
+  float: left;
+  max-width: 8.75em;
+  position: relative;
+  top: 0.25em;
+}
+
+
+/* hiding comment fields at end of submissions */
+
+div #reply {
+  display: none;
+}
+
+a.reply-link.btn.btn-small {
+  display: none;
+}
+
+/* hide sign in */
+.or-sign-in {
+  display: none;
+}
+
+#sign-in-btn {
+  display: none;
+}
+
+/* =Navigation Menu
+-------------------------------------------------------------- */
+
+#nav-btn {
+  background-color: #eee;
+  color: #999;
+  text-shadow: none;
+}
+.access a:visited, 
+.access a:active, 
+.access a:link {
+  color: #000;
+  background-color: #eee;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+.access a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+a.list-toggle-btn:visited, 
+a.list-toggle-btn:active, 
+a.list-toggle-btn:link {
+  background-color: #000;
+  color: #eee;
+  text-shadow: none;
+  box-shadow: none;
+}
+a.list-toggle-btn:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+
+/* =The Big Button to Add A New Point
+-------------------------------------------------------------- */
+
+a.add-place {
+  background-color: #000;
+  color: #eee;
+  text-shadow: none;
+}
+a.add-place:hover {
+  color: #fff;
+}
+
+
+/* =The Ticker
+-------------------------------------------------------------- */
+
+#ticker {
+  background-color: #fff;
+}
+ul.recent-points {
+  color: #000;
+}
+.recent-points li {
+  border-bottom: 1px solid #ddd;
+}
+.recent-points li:hover {
+  background: #eee;
+}
+.recent-points a {
+  color: #000;
+}
+.recent-points li:hover a,
+.recent-points a:hover {
+  color: #000;
+}
+
+
+/* =Legend & Guidelines Chart
+-------------------------------------------------------------- */
+
+.legend {
+  background-color: #eee;
+  padding: 15px 10px;
+  border-bottom: 1px solid #ddd;
+  list-style: none;
+  margin: 0;
+  font-weight: bold;
+}
+.legend li {
+  padding: 8px 0 2px 0 !important;
+}
+.legend img {
+  float: left;
+  position: relative;
+  margin-right: 8px;
+  margin-top: 1px;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+}
+.legend img + img {
+  margin-right: -21px;
+  right: 31px;
+  z-index: 1;
+  opacity: 0.25;
+}
+.color-info {
+  font-size: 0.85em;
+  background: #ddd;
+  color: #666;
+  margin: 0 0 -6px !important;
+  padding: 6px 4px 8px 0 !important;
+}
+.color-info img {
+  margin-top: -12px;
+}
+
+.guidelines-header {
+  clear: both;
+  padding-top: 0.75em;
+  border-top: 1px solid #ddd;
+}
+.guidelines-header img {
+  float: right;
+  position: relative;
+  z-index: 2;
+}
+.guidelines-header img + img {
+  margin-right: -31px;
+  z-index: 1;
+  opacity: 0.25;
+}
+.eligibility-header {
+  text-transform: uppercase;
+  color: #777;
+}
+.eligible {
+  float: left;
+  width: 48%;
+}
+.non-eligible {
+  float: right;
+  width: 48%;
+}
+.muted {
+  font-size: 0.85em;
+  font-weight: normal;
+}
+
+/* =Place Details
+-------------------------------------------------------------- */
+
+.place-items {
+  padding-bottom: 1.5em;
+}
+.place-items p {
+  margin-bottom: 0.5em !important;
+}
+.description {
+  font-size: 1.5em;
+}
+.approved-location-type {
+  background-color: #ffee80;
+  float: left;
+  padding: 0.5em 1em 0.5em 56px;
+  position: relative;
+  font-size: 0.85em;
+  line-height: 1.5;
+}
+.approved-location-type + h1 {
+  clear: left;
+}
+.approved-location-icon {
+  float: left;
+  width: 50px;
+  height: 60px;
+  position: absolute;
+  top: -6px;
+  left: 2px;
+  z-index: 2;
+  background-color: transparent;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.culture .approved-location-icon {
+  background-image: url(images/markers/new/facilities-small.png); 
+}
+.education .approved-location-icon {
+  background-image: url(images/markers/new/education-small.png); 
+}
+.environment .approved-location-icon {
+  background-image: url(images/markers/new/tree-small.png); 
+}
+.housing .approved-location-icon {
+  background-image: url(images/markers/new/housing-small.png); 
+}
+.parks .approved-location-icon {
+  background-image: url(images/markers/new/playground-small.png); 
+}
+.health .approved-location-icon {
+  background-image: url(images/markers/new/health-small.png); 
+}
+.safety .approved-location-icon {
+  background-image: url(images/markers/new/safety-small.png); 
+}
+.seniors .approved-location-icon {
+  background-image: url(images/markers/new/seniors-small.png); 
+}
+.streets .approved-location-icon {
+  background-image: url(images/markers/new/street-sidewalk-small.png); 
+}
+.transit .approved-location-icon {
+  background-image: url(images/markers/new/transit-small.png); 
+}
+.youth .approved-location-icon {
+  background-image: url(images/markers/new/youth-small.png); 
+}
+
+
+/* =Geocoding
+-------------------------------------------------------------- */
+
+#geocode-address-bar {
+  background-color: #eee;
+  border-right: 1px solid #ddd;
+  margin-top: 0;
+}
+input.geocode-address-field {
+  border-width: 0;
+  background-color: #fff;
+  color: #555;
+}
+#geocode-address-bar .error {
+  line-height: 1.75;
+  background-color: #F26161;
+  box-shadow: 2px 2px 0 #F26161, 2px -2px 0 #F26161, -2px 2px 0 #F26161, -2px -2px 0 #F26161;
+}
+#geocode-address-bar .error + form {
+  box-shadow: 2px 2px 0 #F26161, 2px -2px 0 #F26161, -2px 2px 0 #F26161, -2px -2px 0 #F26161;
+}
+#geocode-address-bar .error.is-hidden + form {
+  box-shadow: none;
+}
+.geocode-spinner {
+  background-color: #fff;
+}
+
+
+/* =Media Queries
+-------------------------------------------------------------- */
+
+@media only screen and (min-width: 22em) {
+  #site-tagline {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  #site-title {
+    margin-right: 0;
+  }
+  #site-title a:link,
+  #site-title a:visited {
+    font-size: 1.375em;
+  }
+  #site-tagline {
+    top: 0.25em;
+    font-size: 0.875em;
+  }
+  .access {
+    font-size: 0.75em;
+  }
+  .access li {
+    margin: 0;
+  }
+  .access a:visited, 
+  .access a:active, 
+  .access a:link {
+    background-color: #fff;
+  }
+  .access a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  .list-toggle-nav {
+    font-size: 0.75em;
+    float: left;
+    margin-left: 0;
+  }
+  a.list-toggle-btn:visited, 
+  a.list-toggle-btn:active, 
+  a.list-toggle-btn:link {
+    background-color: #fff;
+    color: #000;
+    border: 0;
+    border-radius: 0;
+  }
+  a.list-toggle-btn:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+
+@media only screen and (min-width: 74em) {
+  #site-tagline {
+    top: 0.125em;
+    font-size: 1em;
+  }
+  .access {
+    font-size: 1em;
+  }
+  .list-toggle-nav {
+    font-size: 1em;
+  }
+}

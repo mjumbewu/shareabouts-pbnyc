@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block site-title %}
+<a href="http://pbnyc.org/"><img id="site-logo" src="{{ config.static_url }}css/images/logo.png"><span id="site-tagline">{{ config.app.tagline }}</span></a>
+{% endblock %}
+
+
+{% block meta %}
+  {% if place %}
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ place.properties.name }}">
+    <meta name="twitter:description" content="{{ place.properties.description }}">
+    {% with attachment=place.properties.attachments|first %}
+    <meta name="twitter:image:src" content="{{ attachment.file }}">
+    {% endwith %}
+    {% comment %} TODO: Fill this in when we know if the username is from twitter
+      <meta name="twitter:creator" content="place.submitter.username">
+    {% endcomment %}
+
+    <!-- Facebook -->
+    <meta property="og:site_name" content="{{ config.app.title }}" />
+    <meta property="og:title" content="{{ place.properties.name }}" />
+    <meta property="og:description" content="{{ place.properties.description }}" />
+    {% with attachment=place.properties.attachments|first %}
+    <meta name="og:image" content="{{ attachment.file }}">
+    {% endwith %}
+  {% else %}
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ config.app.title }}">
+    <meta name="twitter:description" content="{{ config.app.meta_description }}">
+
+    <!-- Facebook -->
+    <meta property="og:site_name" content="{{ config.app.title }}" />
+    <meta property="og:title" content="{{ config.app.title }}" />
+    <meta property="og:description" content="{{ config.app.meta_description }}" />
+  {% endif%}
+{% endblock %}
+
+<!--
+  This will place content at the top of the side bar
+ -->
+{% block sidebar %}
+
+<ul class="legend">
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-aa3c1e.png"> Culture and Community Facilities</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-7fccd9.png"> Schools and Education</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-55a504.png"> Environment</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-f50a8e.png"> Housing</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-fa5b13.png"> Parks and Recreation</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-ff78be.png"> Public Health</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-fc9229.png"> Public Safety</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-c4ed52.png"> Seniors</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-a0b4c6.png"> Streets and Sidewalks</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-b75ab8.png"> Transit</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-ffd614.png"> Youth</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-white.png"> Previously funded</li>
+</ul>
+{% endblock %}
+
+<!--
+  This will place content in the colophon below the map
+ -->
+{% block colophon %}
+<p id="powered-by">{% blocktrans %}Powered by{% endblocktrans %} <a href="http://shareabouts.org/" class="shareabouts-logo" target="_blank">Shareabouts</a>, <span class="nobreak">a project of <a href="http://openplans.org/" class="openplans-logo" target="_blank">OpenPlans</a>.</span></p>
+{% endblock %}
+
+<!--
+  Analytics, custom JS, and such go here
+ -->
+{% block includes %}
+<script>
+var mapQuest_geocode = Shareabouts.Util.MapQuest.geocode;
+Shareabouts.Util.MapQuest.geocode = function(location, bounds, options) {
+  // Since this is all Chicago-specific, go ahead and specify the city.
+  if (location.toLowerCase().indexOf('NYC') === -1) {
+    location += ', NYC NY'
+  }
+  return mapQuest_geocode.call(this, location, bounds, options);
+}
+
+var placeFormView_setLocation = Shareabouts.PlaceFormView.prototype.setLocation;
+Shareabouts.PlaceFormView.prototype.setLocation = function(locationData) {
+  placeFormView_setLocation.call(this, locationData);
+
+  var $placeNameField = this.$('[name="name"]'),
+      $approxAddress = $placeNameField.next();
+
+  if ($approxAddress.length === 0) {
+    $approxAddress = $('<p class="approx-address"></p>').insertAfter($placeNameField);
+  }
+
+  $approxAddress.html('<br/><span class="address-label">Approximate location:</span> ' + Handlebars.templates['location-string'](locationData));
+}
+
+    $(Shareabouts).on('panelshow', function(evt, app, path) {
+    var input = document.getElementById("place-source").focus();
+    });
+
+</script>
+
+<!-- zoom to marker on click -->
+<script>
+  (function(NS, $) {
+    
+    var originalOnMarkerClick = Shareabouts.LayerView.prototype.onMarkerClick;
+    NS.LayerView.prototype.onMarkerClick = function(evt) {
+      var self = this;
+      originalOnMarkerClick.apply(this, arguments);
+      if (this.map.getZoom() < this.map.getMaxZoom()-3) {
+        _.delay(function() {
+          self.map.setView(evt.latlng, self.map.getMaxZoom()-3, {
+            animate: true
+          });
+
+          self.map.invalidateSize({ animate:false, pan:false });
+        }, 200);
+      }
+    }
+
+  }(Shareabouts, jQuery));
+</script>
+{% endblock %}

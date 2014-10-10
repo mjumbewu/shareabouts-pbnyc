@@ -1,0 +1,7 @@
+Thanks for submitting a new {{ place.properties.location_type }} idea to improve your community!
+
+Here's what you suggested: {{ place.properties.name}}
+
+You can see people's comments on your idea at http://{{ request.get_host }}/place/{{ place.id }}. 
+
+For more information on the Participatory Budgeting process, go to www.council.nyc.gov/PB.
