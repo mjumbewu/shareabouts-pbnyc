@@ -411,7 +411,7 @@ place_types:
           iconAnchor: [38, 90]
 
   transit:
-    label: _(Transit)
+    label: _(Transit & Transportation)
     rules:
       - condition: '"{{location_type}}" === "transit" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
@@ -640,7 +640,7 @@ place_types:
           shadowSize: [31, 32]
           iconAnchor: [16, 25]     
   transit-shortlisted:
-    label: _(Transit)
+    label: _(Transit & Transportation)
     rules:
       - condition: 'true'
         icon:
@@ -732,7 +732,7 @@ place:
           value: seniors
         - label: _(Streets & Sidewalks)
           value: streets
-        - label: _(Transit)
+        - label: _(Transit & Transportation)
           value: transit
         - label: _(Youth)
           value: youth
