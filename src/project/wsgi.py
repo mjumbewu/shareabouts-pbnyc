@@ -36,3 +36,6 @@ application = ExpiresMiddleware(application, {
     'text/css':               365*24*60*60,
     'image/png':              365*24*60*60,
 })
+
+from .wsgi_middleware import basic_auth_protected
+application = basic_auth_protected(application)
