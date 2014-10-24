@@ -2,7 +2,7 @@
 {% load i18n %}
 
 {% block site-title %}
-<a href="http://pbnyc.org/"><img id="site-logo" src="{{ config.static_url }}css/images/logo.png"><span id="site-tagline">{{ config.app.tagline }}</span></a>
+<a href="http://council.nyc.gov/html/pb/home.shtml"><img id="site-logo" src="{{ config.static_url }}css/images/logo.png"><span id="site-tagline">{{ config.app.tagline }}</span></a>
 {% endblock %}
 
 
@@ -45,18 +45,18 @@
 {% block sidebar %}
 
 <ul class="legend">
-  <li class="clearfix"><img src="/static/css/images/markers/new/dot-aa3c1e.png"> Culture and Community Facilities</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/dot-7fccd9.png"> Schools and Education</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/dot-55a504.png"> Environment</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/dot-f50a8e.png"> Housing</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/dot-fa5b13.png"> Parks and Recreation</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/dot-ff78be.png"> Public Health</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/dot-fc9229.png"> Public Safety</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/dot-c4ed52.png"> Seniors</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/dot-a0b4c6.png"> Streets and Sidewalks</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/dot-b75ab8.png"> Transit and Transportation</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/dot-ffd614.png"> Youth</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/dot-white.png"> Previously funded</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-aa3c1e.png"> {% trans 'Culture and Community Facilities' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-7fccd9.png"> {% trans 'Schools and Education' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-55a504.png"> {% trans 'Environment' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-f50a8e.png"> {% trans 'Housing' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-fa5b13.png"> {% trans 'Parks and Recreation' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-ff78be.png"> {% trans 'Public Health' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-fc9229.png"> {% trans 'Public Safety' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-c4ed52.png"> {% trans 'Seniors' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-a0b4c6.png"> {% trans 'Streets and Sidewalks' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-b75ab8.png"> {% trans 'Transit and Transportation' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-ffd614.png"> {% trans 'Youth' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-white.png"> {% trans 'Previously funded' %}</li>
 </ul>
 {% endblock %}
 

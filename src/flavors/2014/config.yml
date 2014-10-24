@@ -822,21 +822,21 @@ support:
   submit_btn_text: _(Support This!)
   response_name: _(support)
   response_plural_name: _(supports)
-  action_text: supported
+  action_text: _(supported)
   anonymous_name: _(Someone)
 
 pages:
-  - title: About
+  - title: _(About)
     slug: about
     name: about
     start_page: true
-  - title: Guidelines
+  - title: _(Guidelines)
     slug: guidelines
     name: guidelines
-  - title: Get More Involved
-    slug: involved
-    name: involved
-  - title: Go to your District
+  - title: _(Get More Involved)
+    url: http://council.nyc.gov/html/pb/home.shtml
+    external: true
+  - title: _(Go to your District)
     slug: district
     name: district
 
