@@ -790,6 +790,18 @@ place:
       attrs:
         - key: maxlength
           value: 1000
+    - prompt: _(Date entry person name)
+      type: text
+      name: private-dataentry-name
+      sticky: true
+      attrs:
+        - key: size
+          value: 30
+    - type: hidden
+      name: private-dataentry-map
+      attrs:
+        - key: value
+          value: yes
 
 survey:
   submission_type: comments
