@@ -25,16 +25,20 @@
       <h1>{{ name }}</h1>
       
       <span class="place-submission-details">
+        {{#_}}
 
-        {{#_}}<strong class="point-submitter">
+        {{#if source}}
+          A {{place_type_label location_type }} idea {{#if CounDist}} in District {{ CounDist }}{{/if}} from <strong>{{ source }}</strong>
+        {{^}}
+        <strong class="point-submitter">
           {{#if submitter}}
             <img src="{{ submitter.avatar_url }}" class="avatar" /> {{ submitter.name }}
           {{^}}
             <!-- TODO: FIXME: don't hardcode image URL -->
             <img src="/static/css/images/user-50.png" class="avatar" /> {{ submitter_name }}
           {{/if}}
-    
             </strong> suggested this {{place_type_label location_type }} idea {{#if CounDist}} in District {{ CounDist }}{{/if}}. 
+        {{/if}}
             <p><small>Near {{>location-string location }}</small></p>
 
         {{/_}}
