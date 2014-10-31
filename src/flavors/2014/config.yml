@@ -9,6 +9,13 @@ app:
   district: 
   tagline: _(How would YOU spend $1 Million?)
 
+languages:
+  - code: en
+    label: English
+
+  - code: es
+    label: Español
+
 # Settings for map and layer configs
 map:
   geolocation_enabled: true
