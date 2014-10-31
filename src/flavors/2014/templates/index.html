@@ -92,7 +92,7 @@ Shareabouts.PlaceFormView.prototype.setLocation = function(locationData) {
     $approxAddress = $('<p class="approx-address"></p>').insertAfter($placeNameField);
   }
 
-  $approxAddress.html('<br/><span class="address-label">Approximate location:</span> ' + Handlebars.templates['location-string'](locationData));
+  $approxAddress.html('<br/><span class="address-label">{% trans 'Approximate location:' %}</span> ' + Handlebars.templates['location-string'](locationData));
 }
 </script>
 

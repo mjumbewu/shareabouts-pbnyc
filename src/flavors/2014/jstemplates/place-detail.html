@@ -51,6 +51,7 @@
 </header>
 
 <section class="place-items">
+{{#_}}
   {{#if shortlisted }}
     <p><strong>Location</strong>: {{ Location }}</p>
     <p><strong>Description</strong>: {{ description }}</p>
@@ -86,6 +87,7 @@
     <a href="/place/{{ id }}" class="view-on-map-btn btn btn-small">View On Map</a>
   {{/if}}
   
+{{/_}}  
 </section>
 
 {{#survey_config}}
