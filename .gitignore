@@ -19,7 +19,6 @@ coverage.data
 
 # compiled files
 *.py[co]
-*.mo
 
 # environment
 env/
