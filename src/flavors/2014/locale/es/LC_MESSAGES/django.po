@@ -139,7 +139,7 @@ msgstr "Medioambiente"
 #: flavors/2014/jstemplates/pages/guidelines.html:25
 #: flavors/2014/templates/index.html:52
 msgid "Housing"
-msgstr "Vivienda"
+msgstr "Viviendas"
 
 #: flavors/2014/_config.translations.py:32
 #: flavors/2014/_config.translations.py:68
@@ -244,7 +244,7 @@ msgstr "Las ideas deben ser proyectos de \"capital\":  construcción, instalaci�
 
 #: flavors/2014/_config.translations.py:74
 msgid "About"
-msgstr "Acerca de"
+msgstr "Información"
 
 #: flavors/2014/_config.translations.py:75
 #: flavors/2014/jstemplates/pages/guidelines.html:20
@@ -253,11 +253,11 @@ msgstr "Pautas"
 
 #: flavors/2014/_config.translations.py:76
 msgid "Get More Involved"
-msgstr "Participa más"
+msgstr "Participar"
 
 #: flavors/2014/_config.translations.py:77
 msgid "Go to your District"
-msgstr "Ir a tu Distrito"
+msgstr "Elegir Distrito"
 
 #: flavors/2014/jstemplates/activity-list-item.html:1
 msgid ""
