@@ -107,7 +107,17 @@ ul.recent-points {
   color: #000;
 }
 
+/* Hiding the comment form  
+-------------------------------------------------------------- */
 
+.reply-link {
+  visibility: hidden;
+}
+
+#new_response {
+  visibility: hidden;
+}
+        
 /* =Legend & Guidelines Chart
 -------------------------------------------------------------- */
 
