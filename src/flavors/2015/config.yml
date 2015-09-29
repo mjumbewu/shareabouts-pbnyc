@@ -849,6 +849,9 @@ pages:
   - title: _(Categories)
     slug: filter-type
     pages:
+      - title: _(Show All)
+        url: /filter/all
+        external: true
       - title: _(Culture & Community Facilities)
         url: /filter/culture
         external: true
