@@ -4,11 +4,12 @@
 
 #site-header {
   color: #000;
-  background-color: #fff;
+  background-color: #0697D7;
 }
 #site-title {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: "Prenton", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 500;
   text-shadow: none;
 }
 #site-title a:link,
@@ -23,8 +24,10 @@
 }
 #site-logo {
   float: left;
-  height: 2.75em;
+  height: 3.75em;
   margin-right: 0.5em;
+  margin-top: -0.5em;
+  margin-left: -0.5em;
 }
 #site-tagline {
   display: none;

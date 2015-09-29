@@ -2,7 +2,7 @@
 {% load i18n %}
 
 {% block site-title %}
-<a href="http://council.nyc.gov/html/pb/home.shtml"><img id="site-logo" src="{{ config.static_url }}css/images/logo.png"><span id="site-tagline">{{ config.app.tagline }}</span></a>
+<a href="http://council.nyc.gov/html/pb/home.shtml"><img id="site-logo" src="{{ config.static_url }}css/images/long-logo-pbnyc-light-blue-english.png"><!-- <span id="site-tagline">{{ config.app.tagline }}</span> --></a>
 {% endblock %}
 
 
@@ -71,6 +71,9 @@
   Analytics, custom JS, and such go here
  -->
 {% block includes %}
+<script src="https://use.typekit.net/fmd6ixf.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
 <script>
 var mapQuest_geocode = Shareabouts.Util.MapQuest.geocode;
 Shareabouts.Util.MapQuest.geocode = function(location, bounds, options) {
