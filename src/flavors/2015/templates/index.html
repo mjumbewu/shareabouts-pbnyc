@@ -180,6 +180,25 @@ Shareabouts.PlaceFormView.prototype.setLocation = function(locationData) {
       }
     }
 
+    $(document).on('click', 'a[href^="/"]', function(evt) {
+      var $link = $(evt.currentTarget),
+          href = $link.attr('href'),
+          url;
+
+      // Handle data-internal links
+      if (!_.isUndefined($link.attr('data-internal'))) {
+        evt.preventDefault();
+
+        // Remove leading slashes and hash bangs (backward compatablility)
+        url = href.replace(/^\//, '').replace('#!/', '');
+
+        // # Instruct Backbone to trigger routing events
+        window.app.navigate(url, { trigger: true });
+
+        return false;
+      }
+    });
+
   }(Shareabouts, jQuery));
 </script>
 {% endblock %}
