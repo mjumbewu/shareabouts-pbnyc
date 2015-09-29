@@ -5,54 +5,20 @@ Shareabouts is an online mapping tool to gather crowdsourced public input in a s
 
 Read more about Shareabouts and find links to recent sites [on the OpenPlans website](http://openplans.org/shareabouts/).
 
-Problems? Ideas? Let us know!
---------------------
 
-We strongly welcome your feature suggestions. [Check out our roadmap](https://trello.com/b/94MT3WRQ/openplans-roadmap) and help us with prioritizing by commenting on the features you'd like to see. If you encounted a bug, [create an issue](https://github.com/openplans/shareabouts/issues) on this GitHub repo.
+A short guide to setting up Shareabouts
+-----------
 
-If you have questions for the development team,
-* [community.openplans.org](http://community.openplans.org) is a good starting point for troubleshooting or questions, or just to share your Shareabouts stories
-* you'll find the Shareabouts team in #shareabouts on [irc.freenode.net](http://irc.freenode.net).
-* hit us up on Twitter [@OpenPlans](http://twitter.com/openplans)
-* email us at hello@openplans.org
+It's helpful, but not required, to know about the [architecture of Shareabouts](https://github.com/openplans/shareabouts/blob/master/doc/ARCHITECTURE.md) before starting.
 
+<a name="heroku-button"></a>The easiest way to set up Shareabouts is to use the Heroku Button.
 
-Features
--------------
-<dl>
-  <dt>Add New Places</dt>
-  <dd>Adding places is easy. The simple interface lets users quickly drop pins on the map with descriptions and other useful information.</dd>
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-  <dt>Comment on Places</dt>
-  <dd>Engage your audience in meaningful conversation. Users can leave [rich media] comments on places.</dd>
+This will deploy a fully-functional Shareabouts map and datastore to your account on Heroku (an easy-to-manage hosting service). Hosting this way will cost $50-100 monthly. [Here's the process](https://github.com/openplans/shareabouts/blob/master/doc/HEROKU_BUTTON.md).
 
-  <dt>Explore Places and Comments</dt>
-  <dd>The map allows users to find places and comments in their areas of interest.</dd>
+Alternatively, you may want to use a [different hosting service](https://github.com/openplans/shareabouts/blob/master/doc/DEPLOY.md) and set up the components of Shareabouts manually.
 
-  <dt>Show Support</dt>
-  <dd>Need to know which places are most popular? Users can vote for their favorite places to show their support.</dd>
-
-  <dt>Social Sharing</dt>
-  <dd>Harness the power of viral marketing. Users engage their social network when they share places on Twitter and Facebook.</dd>
-
-  <dt>Activity Feed</dt>
-  <dd>See a list of recently submitted places, comments, and support.</dd>
-
-  <dt>Place Types</dt>
-  <dd>Collect information about different types of places.  Data filtering by place type.</dd>
-
-  <dt>Responsive Design</dt>
-  <dd>We've designed Shareabouts to work great and look beautiful on all screen sizes—desktop, mobile, and touch screens!</dd>
-
-  <dt>Configurable Surveys</dt>
-  <dd>Want to collect specific information? Our flexible data storage allows you to create your own surveys. Crowdsource more than just comments.</dd>
-
-  <dt>Custom Map Layers</dt>
-  <dd>Overlay pertinent geographic data. Applying your custom style rules, the Shareabouts map can pull in your GeoJson URLs as additional map layers.</dd>
-
-  <dt>Internationalization</dt>
-  <dd>Do your users speak various languages? Shareabouts is internationalizable. It's easy to customize the user interface with locale-specific translations.</dd>
-</dl>
 
 Documentation
 -------------
@@ -62,10 +28,18 @@ All of our documentation is is our `doc` directory. Use it to learn more about:
 * [testing the source](https://github.com/openplans/shareabouts/blob/master/doc/TESTING.md)
 * [interface configuration](https://github.com/openplans/shareabouts/blob/master/doc/CONFIG.md)
 * [custom themes](https://github.com/openplans/shareabouts/blob/master/doc/CUSTOM_THEME.md)
-* [how to deploy](https://github.com/openplans/shareabouts/blob/master/doc/DEPLOY.md)
+* [deploying with the Heroku button](https://github.com/openplans/shareabouts/blob/master/doc/HEROKU_BUTTON.md) and [in other ways](https://github.com/openplans/shareabouts/blob/master/doc/DEPLOY.md)
 * [upgrading from an older version](https://github.com/openplans/shareabouts/blob/master/doc/UPGRADE.md)
+* [getting your data once you have a map running](https://github.com/openplans/shareabouts/blob/master/doc/GETTING_YOUR_DATA.md)
 
-Where is Sharabouts going? Check [our roadmap](https://trello.com/b/94MT3WRQ/openplans-roadmap) for details of possble future features we've identified.
+Questions? Problems? Ideas? 
+--------------------
+
+The best place to ask questions or get help is [community.openplans.org](http://community.openplans.org), an open forum on Shareabouts (and some other stuff from OpenPlans). Asking questions there will help everyone else.
+
+If you encounted a bug, [create an issue](https://github.com/openplans/shareabouts/issues) on this GitHub repo.
+
+We have a [Trello board](https://trello.com/b/94MT3WRQ/openplans-roadmap) to collect feature suggestions, but you might get more eyeballs and responses by posting to the forum first.
 
 Contributing
 ------------

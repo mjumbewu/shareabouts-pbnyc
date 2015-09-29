@@ -1,43 +1,49 @@
-Setting up a Shareabouts Web instance
-=====================================
+# Configuring your Shareabouts web instance
 
-Step 0: Create a Dataset
-------------------------
+## Step 0: Create local_settings.py
+
+Your `local_settings.py` tells Shareabouts where your map's data is stored, what flavor to use,
+and some other settings. Until this file exists, your map won't run.
+
+Copy the *project/local_settings.py.template* file to
+*project/local_settings.py*.
+
+If you are only running the map locally, edit the file to remove 
+everything after the `MAPQUEST_KEY`. Only keep the full file if you plan
+on running a local API server too.
+
+At this point, you can [start your map](https://github.com/openplans/shareabouts/tree/master/doc#starting-and-stopping-your-server) - it will have the default settings.
+
+### Keep local_settings out of version control!
+You don't want to check the API key information in to your
+repository, as anyone would be able to write to your data using your
+API key.
+
+## Step 1: Get a dataset
 
 You'll need an account on a Shareabouts API server.
 
 To use the OpenPlans hosted server, request a dataset and key via support@openplans.org. Your dataset will be on the OpenPlans API server,
 [data.shareabouts.org](http://data.shareabouts.org).
 
-Step 1: Create a flavor
------------------------
+Edit your `local_setting.py` file, update `DATASET_ROOT`, and `DATASET_KEY`. Get this info from your API server. 
+
+### Troubleshooting dataset problems
+
+If after completing setup you see [a screen like this](https://f.cloud.github.com/assets/146749/1627911/d5e82492-56fe-11e3-89d7-9d6b35f10c6b.png) when saving or supporting a place or submitting a reply, then you probably have you dataset key set incorrectly in your settings.
+
+
+## Step 2: Create a flavor
 
 A "flavor" is a particular configuration of Shareabouts.
 
 Copy the *flavors/default* folder to a new subdirectory
 of *flavors/*.  Name it whatever you want.
 
-
-Step 2: Set up your local settings
------------------------
-
-Copy the *project/local_settings.py.template* file to
-*project/local_settings.py*.
-
-Edit the new file, changing `SHAREABOUTS_FLAVOR` to the name of the flavor directory you just
+Edit your `local_setting.py` file, changing `SHAREABOUTS_FLAVOR` to the name of the flavor directory you just
 created.
 
-Also update `DATASET_ROOT`, and `DATASET_KEY`. Get this info from your API server. In `DATASET_ROOT`, change _v1_ to _v2_.
-
-**NOTE: You don't want to check the API key information in to your
-repository, as anyone would be able to write to your data using your
-API key.**
-
-If after completing setup you see [a screen like this](https://f.cloud.github.com/assets/146749/1627911/d5e82492-56fe-11e3-89d7-9d6b35f10c6b.png) when saving or supporting a place or submitting a reply, then you probably have you dataset key set incorrectly in your settings.
-
-
-Step 3: Edit your flavor
------------------------
+## Step 3: Edit your flavor
 
 Your flavor directory contains a *config.yml* file that you will be
 editing throughout the rest of these instructions. Once you're done with config and local testing,
@@ -46,7 +52,7 @@ editing throughout the rest of these instructions. Once you're done with config 
 ### The Map
 
 The map options are for initial map setup and match the [Leaflet Map
-options](http://leaflet.cloudmade.com/reference.html#map-options).
+options](http://leafletjs.com/reference.html#map-options).
 
 
 Option       |Type      |Default   |Description
@@ -60,15 +66,15 @@ Option       |Type      |Default   |Description
 ### Base Layer Options
 
 The base_layer value configures a single
-[TileLayer](http://leaflet.cloudmade.com/reference.html#tilelayer) as the base
+[TileLayer](http://leafletjs.com/reference.html#tilelayer) as the base
 layer for the map. This section is completely optional and defaults to MapBox
 Streets tiles based on OpenStreetMap. Common options are listed below, and all
 options are defined
-[here](http://leaflet.cloudmade.com/reference.html#tilelayer).
+[here](http://leafletjs.com/reference.html#tilelayer).
 
 Option         |Type      |Default   |Description
 ---------------|----------|----------|-----------
-`url`          |String    |None      |The URL template to the tile server. eg. `http://{s}.somedomain.com/blabla/{z}/{x}/{y}.png`. See [this](http://leaflet.cloudmade.com/reference.html#url-template) description for details.
+`url`          |String    |None      |The URL template to the tile server. eg. `http://{s}.somedomain.com/blabla/{z}/{x}/{y}.png`. See [this](http://leafletjs.com/reference.html#url-template) description for details.
 `attribution`  |String    |None      |The string used to describe the layer data.
 
 ### Extra Layer Options
@@ -91,7 +97,7 @@ Shareabouts can handle multiple types of Place. To set up the types
 syou're interested in, edit config.yml and add items to the `place_types`
 section. Each Place value should match a location_type.
 
-Look at the config.yml for examples of styling Places. The properties of icons are as per the Leaflet docs, see http://leaflet.cloudmade.com/reference.html#icon
+Look at the config.yml for examples of styling Places. The properties of icons are as per the Leaflet docs, see http://leafletjs.com/reference.html#icon
 But briefly:
 
 The *iconUrl* is relative to the root of the website. Put the corresponding
@@ -214,9 +220,6 @@ it as a hidden input named *location_type*, like so:
       attrs:
         - key: value
           value: <your place type name goes here>
-
-(Yes, it's odd that the names are inconsistent. Needs to be fixed;
-see https://www.pivotaltracker.com/story/show/35697987)
 
 If you have more than one place type, and want your users to be able to
 choose which type they're adding, then use a select input, like so:
