@@ -846,6 +846,42 @@ pages:
   - title: _(Go to your District)
     slug: district
     name: district
+  - title: _(Categories)
+    slug: filter-type
+    pages:
+      - title: _(Culture & Community Facilities)
+        url: /filter/culture
+        external: true
+      - title: _(Schools & Education)
+        url: /filter/education
+        external: true
+      - title: _(Environment)
+        url: /filter/environment
+        external: true
+      - title: _(Housing)
+        url: /filter/housing
+        external: true
+      - title: _(Parks & Recreation)
+        url: /filter/parks
+        external: true
+      - title: _(Public Health)
+        url: /filter/health
+        external: true
+      - title: _(Public Safety)
+        url: /filter/safety
+        external: true
+      - title: _(Seniors)
+        url: /filter/seniors
+        external: true
+      - title: _(Streets & Sidewalks)
+        url: /filter/streets
+        external: true
+      - title: _(Transit & Transportation)
+        url: /filter/transit
+        external: true
+      - title: _(Youth)
+        url: /filter/youth
+        external: true
 
 notifications:
   on_new_place: true
