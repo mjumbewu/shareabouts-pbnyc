@@ -37,6 +37,10 @@
     <meta property="og:title" content="{{ config.app.title }}" />
     <meta property="og:description" content="{{ config.app.meta_description }}" />
   {% endif%}
+
+<script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet'>
+
 {% endblock %}
 
 <!--
@@ -73,9 +77,6 @@
 {% block includes %}
 <script src="https://use.typekit.net/fmd6ixf.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
-
-<script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
-<link href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet'>
 
 <script>
 $(function() {
