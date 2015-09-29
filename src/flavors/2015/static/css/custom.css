@@ -90,6 +90,23 @@ a.add-place:hover {
 }
 
 
+/* =The New Point Form
+-------------------------------------------------------------- */
+
+.address-label {
+  display: block;
+  font-weight: normal;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  color: #999;
+  margin-right: 0.5em;
+}
+
+.approx-address {
+  font-weight: bold;
+}
+
+
 /* =The Ticker
 -------------------------------------------------------------- */
 
