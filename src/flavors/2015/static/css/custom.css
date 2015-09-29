@@ -46,8 +46,8 @@
   color: #999;
   text-shadow: none;
 }
-.access a:visited, 
-.access a:active, 
+.access a:visited,
+.access a:active,
 .access a:link {
   color: #000;
   background-color: #eee;
@@ -60,8 +60,8 @@
   color: #fff;
 }
 
-a.list-toggle-btn:visited, 
-a.list-toggle-btn:active, 
+a.list-toggle-btn:visited,
+a.list-toggle-btn:active,
 a.list-toggle-btn:link {
   background-color: #000;
   color: #eee;
@@ -110,7 +110,7 @@ ul.recent-points {
   color: #000;
 }
 
-/* Hiding the comment form  
+/* Hiding the comment form
 -------------------------------------------------------------- */
 
 .reply-link {
@@ -120,7 +120,7 @@ ul.recent-points {
 #new_response {
   visibility: hidden;
 }
-        
+
 /* =Legend & Guidelines Chart
 -------------------------------------------------------------- */
 
@@ -229,37 +229,37 @@ ul.recent-points {
   background-repeat: no-repeat;
 }
 .culture .approved-location-icon {
-  background-image: url(images/markers/new/facilities-small.png); 
+  background-image: url(images/markers/new/facilities-small.png);
 }
 .education .approved-location-icon {
-  background-image: url(images/markers/new/education-small.png); 
+  background-image: url(images/markers/new/education-small.png);
 }
 .environment .approved-location-icon {
-  background-image: url(images/markers/new/tree-small.png); 
+  background-image: url(images/markers/new/tree-small.png);
 }
 .housing .approved-location-icon {
-  background-image: url(images/markers/new/housing-small.png); 
+  background-image: url(images/markers/new/housing-small.png);
 }
 .parks .approved-location-icon {
-  background-image: url(images/markers/new/playground-small.png); 
+  background-image: url(images/markers/new/playground-small.png);
 }
 .health .approved-location-icon {
-  background-image: url(images/markers/new/health-small.png); 
+  background-image: url(images/markers/new/health-small.png);
 }
 .safety .approved-location-icon {
-  background-image: url(images/markers/new/safety-small.png); 
+  background-image: url(images/markers/new/safety-small.png);
 }
 .seniors .approved-location-icon {
-  background-image: url(images/markers/new/seniors-small.png); 
+  background-image: url(images/markers/new/seniors-small.png);
 }
 .streets .approved-location-icon {
-  background-image: url(images/markers/new/street-sidewalk-small.png); 
+  background-image: url(images/markers/new/street-sidewalk-small.png);
 }
 .transit .approved-location-icon {
-  background-image: url(images/markers/new/transit-small.png); 
+  background-image: url(images/markers/new/transit-small.png);
 }
 .youth .approved-location-icon {
-  background-image: url(images/markers/new/youth-small.png); 
+  background-image: url(images/markers/new/youth-small.png);
 }
 
 
@@ -319,8 +319,8 @@ input.geocode-address-field {
   .access li {
     margin: 0;
   }
-  .access a:visited, 
-  .access a:active, 
+  .access a:visited,
+  .access a:active,
   .access a:link {
     background-color: #fff;
   }
@@ -333,8 +333,8 @@ input.geocode-address-field {
     float: left;
     margin-left: 0;
   }
-  a.list-toggle-btn:visited, 
-  a.list-toggle-btn:active, 
+  a.list-toggle-btn:visited,
+  a.list-toggle-btn:active,
   a.list-toggle-btn:link {
     background-color: #fff;
     color: #000;
