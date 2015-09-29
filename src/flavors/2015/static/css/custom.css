@@ -12,6 +12,7 @@
   font-weight: 500;
   text-shadow: none;
 }
+#site-title a,
 #site-title a:link,
 #site-title a:visited {
   display: block;
@@ -46,6 +47,7 @@
   color: #999;
   text-shadow: none;
 }
+.access a,
 .access a:visited,
 .access a:active,
 .access a:link {
@@ -60,6 +62,7 @@
   color: #fff;
 }
 
+a.list-toggle-btn,
 a.list-toggle-btn:visited,
 a.list-toggle-btn:active,
 a.list-toggle-btn:link {
@@ -284,6 +287,7 @@ ul.recent-points {
   #site-title {
     margin-right: 0;
   }
+  #site-title a,
   #site-title a:link,
   #site-title a:visited {
     font-size: 1.375em;
@@ -298,6 +302,7 @@ ul.recent-points {
   .access li {
     margin: 0;
   }
+  .access a,
   .access a:visited,
   .access a:active,
   .access a:link {
@@ -312,6 +317,7 @@ ul.recent-points {
     float: left;
     margin-left: 0;
   }
+  a.list-toggle-btn,
   a.list-toggle-btn:visited,
   a.list-toggle-btn:active,
   a.list-toggle-btn:link {
