@@ -74,7 +74,35 @@
 <script src="https://use.typekit.net/fmd6ixf.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
+<script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet'>
+
 <script>
+$(function() {
+  L.mapbox.accessToken = 'pk.eyJ1Ijoib3BlbnBsYW5zIiwiYSI6ImZRQzRPYnMifQ.f75KI3Q9rFXRY2Zciz6DKw';
+  Shareabouts.geocoderControl = L.mapbox.geocoderControl('mapbox.places', {autocomplete: true});
+  window.app.appView.mapView.map.addControl(Shareabouts.geocoderControl);
+
+  Shareabouts.mapboxToMapQuestResults = function(data) {
+    // Make Mapbox reverse geocode results look kinda like
+    // MapQuest results.
+    data.results = data.features;
+    if (data.results.length > 0) {
+      data.results[0] = {locations: [data.results[0]]};
+    }
+    return data;
+  };
+
+  Shareabouts.geocoderControl.on('select', function(res) {
+    $(Shareabouts).trigger('reversegeocode', res.feature);
+    Shareabouts.geocoderControl._closeIfOpen();
+  });
+
+  $(Shareabouts).on('reversegeocode', function() {
+    // Shareabouts.geocoderControl._closeIfOpen();
+  })
+});
+
 var mapQuest_geocode = Shareabouts.Util.MapQuest.geocode;
 Shareabouts.Util.MapQuest.geocode = function(location, bounds, options) {
   // Since this is all Chicago-specific, go ahead and specify the city.
@@ -83,6 +111,22 @@ Shareabouts.Util.MapQuest.geocode = function(location, bounds, options) {
   }
   return mapQuest_geocode.call(this, location, bounds, options);
 }
+
+Shareabouts.Util.MapQuest.reverseGeocode = function(latLng, options) {
+  // Use the mapbox geocoder instead of mapquest
+  var geocoder = Shareabouts.geocoderControl.geocoder;
+  var callback = function(err, data) {
+    if (err && options.error) {
+      options.error(err);
+
+    } else if (options.success) {
+      data = Shareabouts.mapboxToMapQuestResults(data);
+      options.success(data);
+    }
+  };
+
+  geocoder.reverseQuery([latLng.lng, latLng.lat], callback);
+};
 
 var placeFormView_setLocation = Shareabouts.PlaceFormView.prototype.setLocation;
 Shareabouts.PlaceFormView.prototype.setLocation = function(locationData) {

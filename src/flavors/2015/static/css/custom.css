@@ -266,29 +266,8 @@ ul.recent-points {
 /* =Geocoding
 -------------------------------------------------------------- */
 
-#geocode-address-bar {
-  background-color: #eee;
-  border-right: 1px solid #ddd;
-  margin-top: 0;
-}
-input.geocode-address-field {
-  border-width: 0;
-  background-color: #fff;
-  color: #555;
-}
-#geocode-address-bar .error {
-  line-height: 1.75;
-  background-color: #F26161;
-  box-shadow: 2px 2px 0 #F26161, 2px -2px 0 #F26161, -2px 2px 0 #F26161, -2px -2px 0 #F26161;
-}
-#geocode-address-bar .error + form {
-  box-shadow: 2px 2px 0 #F26161, 2px -2px 0 #F26161, -2px 2px 0 #F26161, -2px -2px 0 #F26161;
-}
-#geocode-address-bar .error.is-hidden + form {
-  box-shadow: none;
-}
-.geocode-spinner {
-  background-color: #fff;
+.geocoding-enabled #geocode-address-bar {
+  display: none;
 }
 
 
@@ -358,4 +337,51 @@ input.geocode-address-field {
   .list-toggle-nav {
     font-size: 1em;
   }
+}
+
+@media only screen and (min-width: 60em) {
+  #map .leaflet-top.leaflet-right {
+    top: 123px;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .geocoding-enabled #map-container,
+  .geocoding-enabled #content {
+    top: 5em;
+  }
+}
+
+#map .leaflet-bar .leaflet-control-zoom-in {
+  background-position: 4px 4px;  /* offset by 4, 4 */
+}
+#map .leaflet-bar .leaflet-control-zoom-out {
+  background-position: 4px -22px;  /* offset by 4, 4 */
+}
+
+#map .leaflet-bar .leaflet-control-mapbox-geocoder-toggle {
+  background-position: 4px -152px;  /* offset by 4, 4 */
+}
+
+#map .leaflet-control-mapbox-geocoder-wrap {
+  height: 35px;
+}
+
+#map .leaflet-control-mapbox-geocoder .leaflet-control-mapbox-geocoder-form input {
+  height: 33px;
+}
+
+#map .leaflet-control-mapbox-geocoder .leaflet-control-mapbox-geocoder-wrap {
+  left: 33px;
+}
+
+#map .leaflet-control-mapbox-geocoder-results {
+  left: 33px;
+  top: 33px;
+}
+
+#map .leaflet-control-mapbox-geocoder-results a,
+#map .leaflet-control-mapbox-geocoder-results a:hover,
+#map .leaflet-control-mapbox-geocoder-results span {
+  width: 100%;
 }
