@@ -84,18 +84,33 @@ $(function() {
   Shareabouts.geocoderControl = L.mapbox.geocoderControl('mapbox.places', {autocomplete: true});
   window.app.appView.mapView.map.addControl(Shareabouts.geocoderControl);
 
+  Shareabouts.mapboxToMapQuestResult = function(result) {
+    result.latLng = {lat: result.center[1], lng: result.center[0]}
+
+    if (result.center) delete result.center;
+    if (result.bbox)   delete result.bbox;
+    if (result.id)     delete result.id;
+    if (result.text)   delete result.text;
+    if (result.type)   delete result.type;
+
+    return result;
+  };
+
   Shareabouts.mapboxToMapQuestResults = function(data) {
     // Make Mapbox reverse geocode results look kinda like
     // MapQuest results.
     data.results = data.features;
     if (data.results.length > 0) {
-      data.results[0] = {locations: [data.results[0]]};
+      data.results[0] = {locations: [
+        Shareabouts.mapboxToMapQuestResult(data.results[0])
+      ]};
     }
     return data;
   };
 
-  Shareabouts.geocoderControl.on('select', function(res) {
-    $(Shareabouts).trigger('reversegeocode', res.feature);
+  Shareabouts.geocoderControl.on('select', function(result) {
+    result = Shareabouts.mapboxToMapQuestResult(result.feature);
+    $(Shareabouts).trigger('reversegeocode', result);
     Shareabouts.geocoderControl._closeIfOpen();
   });
 
