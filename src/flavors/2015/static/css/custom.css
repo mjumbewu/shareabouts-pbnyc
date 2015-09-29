@@ -291,6 +291,57 @@ ul.recent-points {
 }
 
 
+/* =Leaflet Controls and Mapbox Geocoding
+-------------------------------------------------------------- */
+
+@media only screen and (min-width: 60em) {
+  #map .leaflet-top.leaflet-right {
+    top: 123px;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .geocoding-enabled #map-container,
+  .geocoding-enabled #content {
+    top: 5em;
+  }
+}
+
+#map .leaflet-bar .leaflet-control-zoom-in {
+  background-position: 4px 4px;  /* offset by 4, 4 */
+}
+#map .leaflet-bar .leaflet-control-zoom-out {
+  background-position: 4px -22px;  /* offset by 4, 4 */
+}
+
+#map .leaflet-bar .leaflet-control-mapbox-geocoder-toggle {
+  background-position: 4px -152px;  /* offset by 4, 4 */
+}
+
+#map .leaflet-control-mapbox-geocoder-wrap {
+  height: 35px;
+}
+
+#map .leaflet-control-mapbox-geocoder .leaflet-control-mapbox-geocoder-form input {
+  height: 33px;
+}
+
+#map .leaflet-control-mapbox-geocoder .leaflet-control-mapbox-geocoder-wrap {
+  left: 33px;
+}
+
+#map .leaflet-control-mapbox-geocoder-results {
+  left: 33px;
+  top: 33px;
+}
+
+#map .leaflet-control-mapbox-geocoder-results a,
+#map .leaflet-control-mapbox-geocoder-results a:hover,
+#map .leaflet-control-mapbox-geocoder-results span {
+  width: 100%;
+}
+
+
 /* =Media Queries
 -------------------------------------------------------------- */
 
@@ -360,51 +411,4 @@ ul.recent-points {
   .list-toggle-nav {
     font-size: 1em;
   }
-}
-
-@media only screen and (min-width: 60em) {
-  #map .leaflet-top.leaflet-right {
-    top: 123px;
-  }
-}
-
-@media only screen and (min-width: 60em) {
-  .geocoding-enabled #map-container,
-  .geocoding-enabled #content {
-    top: 5em;
-  }
-}
-
-#map .leaflet-bar .leaflet-control-zoom-in {
-  background-position: 4px 4px;  /* offset by 4, 4 */
-}
-#map .leaflet-bar .leaflet-control-zoom-out {
-  background-position: 4px -22px;  /* offset by 4, 4 */
-}
-
-#map .leaflet-bar .leaflet-control-mapbox-geocoder-toggle {
-  background-position: 4px -152px;  /* offset by 4, 4 */
-}
-
-#map .leaflet-control-mapbox-geocoder-wrap {
-  height: 35px;
-}
-
-#map .leaflet-control-mapbox-geocoder .leaflet-control-mapbox-geocoder-form input {
-  height: 33px;
-}
-
-#map .leaflet-control-mapbox-geocoder .leaflet-control-mapbox-geocoder-wrap {
-  left: 33px;
-}
-
-#map .leaflet-control-mapbox-geocoder-results {
-  left: 33px;
-  top: 33px;
-}
-
-#map .leaflet-control-mapbox-geocoder-results a,
-#map .leaflet-control-mapbox-geocoder-results a:hover,
-#map .leaflet-control-mapbox-geocoder-results span {
-  width: 100%;
 }
