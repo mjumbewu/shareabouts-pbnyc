@@ -133,14 +133,14 @@ ul.recent-points {
 /* Hiding the comment form
 -------------------------------------------------------------- */
 
-.reply-link {
+/*.reply-link {
   visibility: hidden;
 }
 
 #new_response {
   visibility: hidden;
 }
-
+*/
 /* =Legend & Guidelines Chart
 -------------------------------------------------------------- */
 
