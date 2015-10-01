@@ -154,13 +154,31 @@ Shareabouts.PlaceFormView.prototype.setLocation = function(locationData) {
   placeFormView_setLocation.call(this, locationData);
 
   var $placeNameField = this.$('[name="name"]'),
-      $approxAddress = $placeNameField.next();
+      $approxAddress = $placeNameField.next(),
+      $district;
 
   if ($approxAddress.length === 0) {
     $approxAddress = $('<p class="approx-address"></p>').insertAfter($placeNameField);
   }
 
-  $approxAddress.html('<br/><span class="address-label">{% trans 'Approximate location:' %}</span> ' + Handlebars.templates['location-string'](locationData));
+  $approxAddress.html(
+    '<br/><span class="address-label">{% trans 'Approximate location:' %}</span> ' +
+    '<div class="district-display"></div>' +
+    '<div class="address-display">' +
+      Handlebars.templates['location-string'](locationData) +
+    '</div>');
+
+  $district = $approxAddress.find('.district-display');
+
+  $.ajax({
+    url: 'https://shareabouts-region-service.herokuapp.com/api/v1/nyc/pb-districts-2015?ll=' + locationData.latLng.lat + ',' + locationData.latLng.lng,
+    success: function(data) {
+      $district.html('District ' + data['CounDist']);
+    },
+    error: function() {
+      $district.html('{% trans '(Outside of the PB districts)' %}');
+    }
+  });
 }
 </script>
 

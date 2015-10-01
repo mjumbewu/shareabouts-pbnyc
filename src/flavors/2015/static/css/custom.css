@@ -106,6 +106,22 @@ a.add-place:hover {
   font-weight: bold;
 }
 
+.address-display {
+  display: inline;
+}
+
+.district-display {
+  display: inline;
+}
+
+.district-display::after {
+  content: ': ';
+}
+
+.district-display:empty::after {
+  content: '';
+}
+
 
 /* =The Ticker
 -------------------------------------------------------------- */
