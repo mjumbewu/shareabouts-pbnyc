@@ -430,3 +430,12 @@ ul.recent-points {
     font-family: "Prenton", Helvetica, Roboto, Arial, sans-serif;
   }
 }
+
+@media only screen and (min-width: 60em) {
+  #current-filter-type {
+    position: absolute;
+    white-space: nowrap;
+    display: inline-block;
+    transform: translate(-50%,0);
+  }
+}
