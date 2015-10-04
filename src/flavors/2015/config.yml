@@ -840,10 +840,7 @@ pages:
   - title: _(Guidelines)
     slug: guidelines
     name: guidelines
-  - title: _(Get More Involved)
-    url: http://council.nyc.gov/html/pb/home.shtml
-    external: true
-  - title: _(Go to your District)
+  - title: _(Districts)
     slug: district
     name: district
   - title: _(Categories)
