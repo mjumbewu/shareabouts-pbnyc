@@ -173,7 +173,7 @@ Shareabouts.PlaceFormView.prototype.setLocation = function(locationData) {
   $.ajax({
     url: 'https://shareabouts-region-service.herokuapp.com/api/v1/nyc/pb-districts-2015?ll=' + locationData.latLng.lat + ',' + locationData.latLng.lng,
     success: function(data) {
-      $district.html('District ' + data['CounDist']);
+      $district.html('{% trans 'District' %} ' + data['CounDist'] + ', {% trans 'Councilperson' %} ' + data['CounPerson']);
     },
     error: function() {
       $district.html('{% trans '(Outside of the PB districts)' %}');
