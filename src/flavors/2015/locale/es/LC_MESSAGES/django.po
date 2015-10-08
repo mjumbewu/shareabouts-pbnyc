@@ -686,8 +686,12 @@ msgid "Approximate location:"
 msgstr "Ubicación aproximada:"
 
 #: src/flavors/2015/templates/index.html:177
-msgid "Councilperson"
+msgid "Council Member"
 msgstr "Concejal"
+
+#: src/flavors/2015/templates/index.html:177
+msgid "Speaker"
+msgstr "Presidenta del Concejo Municipal"
 
 #: src/flavors/2015/templates/index.html:180
 msgid "(Outside of the PB districts)"
