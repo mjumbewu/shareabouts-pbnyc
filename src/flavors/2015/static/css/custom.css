@@ -122,6 +122,10 @@ a.add-place:hover {
   content: '';
 }
 
+.district-item {
+  padding-left: 2rem;
+}
+
 
 /* =The Ticker
 -------------------------------------------------------------- */
