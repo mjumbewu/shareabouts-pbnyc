@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Carlos Carino <ccarino@council.nyc.gov>, 2015
 # Frank Hebbert <frank@openplans.org>, 2014
@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Shareabouts PBNYC 2015/16\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-07 12:46-0400\n"
-"PO-Revision-Date: 2015-10-07 22:40+0000\n"
+"PO-Revision-Date: 2015-10-08 04:01+0000\n"
 "Last-Translator: Ivan Luevanos <ILuevanos@council.nyc.gov>\n"
 "Language-Team: Spanish (http://www.transifex.com/mjumbewu/shareabouts-pbnyc-201516/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -26,7 +26,7 @@ msgid "Enter an address..."
 msgstr "Escriba una dirección..."
 
 #: src/flavors/2015/_config.translations.py:2
-msgid "Participatory Budgeting for NYC"
+msgid "New York City Council's Participatory Budgeting"
 msgstr "Presupuesto Participativo del Concejo Municipal de la Ciudad de Nueva York"
 
 #: src/flavors/2015/_config.translations.py:3
@@ -314,7 +314,7 @@ msgid ""
 "            {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}\n"
 "          {{/if }}\n"
 "          "
-msgstr "\n\n        {{#if place.source}}\n        Una nueva idea de <span class=\"place-type\">{{   place.place_type_label }} </span>de <strong>\"{{ place.source }}\"</strong>{{#if place.CounDist}} en Distrito {{ place.CounDist }}{{/if}} para <span class=\"place-name\">\"{{ place.name }}\"</span>\n\n        {{^}}\n          <strong>\n          {{#if target.submitter}}\n            <img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar\" /> {{ target.submitter.name }}\n          {{^}}\n            <!-- TODO: FIXME: don't hardcode image URL -->\n            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> {{ target.submitter_name }}\n          {{/if}}\n          </strong>\n    \n          {{#if is_place }}\n            {{ action }} una idea de <span class=\"place-type\">{{     place.place_type_label }} </span>\n            {{#if place.CounDist}} en Distrito {{ place.CounDist }}{{/if}}\n            {{#if place.name }}\n              para <span class=\"place-name\">\"{{ place.name }}\"</span>\n            {{^}}\n              {{#if place.location }}\n                en <span class=\"place-name\">{{>location-string place.location }}</span>\n              {{/if }}\n            {{/if }}\n          {{else}}\n            {{ action }}\n    \n            {{#if place.name }}\n              <span class=\"place-name\">\"{{ place.name }}\"</span>\n            {{else}}\n              una idea de {{ place.    place_type_label }}\n            {{/if }}\n            {{#if place.CounDist}} en Distrito {{ place.CounDist }}{{/if}}\n          {{/if }}\n          "
+msgstr "\n\n        {{#if place.source}}\n        Una nueva idea de <span class=\"place-type\">{{   place.place_type_label }} </span>de <strong>\"{{ place.source }}\"</strong>{{#if place.CounDist}} en el Distrito {{ place.CounDist }}{{/if}} nombrada <span class=\"place-name\">\"{{ place.name }}\"</span>\n\n        {{^}}\n          <strong>\n          {{#if target.submitter}}\n            <img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar\" /> {{ target.submitter.name }}\n          {{^}}\n            <!-- TODO: FIXME: don't hardcode image URL -->\n            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> {{ target.submitter_name }}\n          {{/if}}\n          </strong>\n    \n          {{#if is_place }}\n            {{ action }} una idea de <span class=\"place-type\">{{     place.place_type_label }} </span>\n            {{#if place.CounDist}} en el Distrito {{ place.CounDist }}{{/if}}\n            {{#if place.name }}\n              nombrada <span class=\"place-name\">\"{{ place.name }}\"</span>\n            {{^}}\n              {{#if place.location }}\n                en <span class=\"place-name\">{{>location-string place.location }}</span>\n              {{/if }}\n            {{/if }}\n          {{else}}\n            {{ action }}\n    \n            {{#if place.name }}\n              <span class=\"place-name\">\"{{ place.name }}\"</span>\n            {{else}}\n              una idea de {{ place.    place_type_label }}\n            {{/if }}\n            {{#if place.CounDist}} en el Distrito {{ place.CounDist }}{{/if}}\n          {{/if }}\n          "
 
 #: src/flavors/2015/jstemplates/activity-list-item.html:37
 msgid ""
@@ -353,7 +353,7 @@ msgid ""
 "            {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}\n"
 "          {{/if }}\n"
 "          "
-msgstr "\n        {{#if place.source}}\n        Una idea nueva de <span class=\"place-type\">{{   place.place_type_label }}</span> de <strong>\"{{ place.source }}\"</strong>{{#if place.CounDist}} en Distrito {{ place.CounDist }}{{/if}} para <span class=\"place-name\">\"{{ place.name }}\"</span>\n\n        {{^}}\n          <strong>\n          {{#if target.submitter}}\n            <img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar\" /> {{ target.submitter.name }}\n          {{^}}\n            <!-- TODO: FIXME: don't hardcode image URL -->\n            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> {{ target.submitter_name }}\n          {{/if}}\n          </strong>\n  \n          {{#if is_place }}\n            {{ action }} una idea de <span class=\"place-type\">{{   place.place_type_label }} </span>\n            {{#if place.CounDist}} en Distrito {{ place.CounDist }}{{/if}}\n            {{#if place.name }}\n              para <span class=\"place-name\">\"{{ place.name }}\"</span>\n            {{^}}\n              {{#if place.location }}\n                en <span class=\"place-name\">{{>location-string place.location }}</span>\n              {{/if }}\n            {{/if }}\n          {{else}}\n            {{ action }}\n  \n            {{#if place.name }}\n              <span class=\"place-name\">\"{{ place.name }}\"</span>\n            {{else}}\n              una idea de {{ place.  place_type_label }}\n            {{/if }}\n            {{#if place.CounDist}} en Distrito {{ place.CounDist }}{{/if}}\n          {{/if }}\n          "
+msgstr "\n        {{#if place.source}}\n        Una idea nueva de <span class=\"place-type\">{{   place.place_type_label }}</span> de <strong>\"{{ place.source }}\"</strong>{{#if place.CounDist}} en el Distrito {{ place.CounDist }}{{/if}} nombrada <span class=\"place-name\">\"{{ place.name }}\"</span>\n\n        {{^}}\n          <strong>\n          {{#if target.submitter}}\n            <img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar\" /> {{ target.submitter.name }}\n          {{^}}\n            <!-- TODO: FIXME: don't hardcode image URL -->\n            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> {{ target.submitter_name }}\n          {{/if}}\n          </strong>\n  \n          {{#if is_place }}\n            {{ action }} una idea de <span class=\"place-type\">{{   place.place_type_label }} </span>\n            {{#if place.CounDist}} en el Distrito {{ place.CounDist }}{{/if}}\n            {{#if place.name }}\n              nombrada <span class=\"place-name\">\"{{ place.name }}\"</span>\n            {{^}}\n              {{#if place.location }}\n                en <span class=\"place-name\">{{>location-string place.location }}</span>\n              {{/if }}\n            {{/if }}\n          {{else}}\n            {{ action }}\n  \n            {{#if place.name }}\n              <span class=\"place-name\">\"{{ place.name }}\"</span>\n            {{else}}\n              una idea de {{ place.  place_type_label }}\n            {{/if }}\n            {{#if place.CounDist}} en el Distrito {{ place.CounDist }}{{/if}}\n          {{/if }}\n          "
 
 #: src/flavors/2015/jstemplates/pages/about.html:1
 msgid ""
@@ -362,11 +362,11 @@ msgid ""
 "work in your district to turn ideas into real proposals for a ballot, with "
 "input from city agencies. These proposals will be up for a community-wide "
 "vote in the spring."
-msgstr ""
+msgstr "Después que entregue su idea en este mapa de ideas, su idea sera entregada a voluntarios comunitarios llamados delegados del presupuesto. Los delegados del presupuesto trabajan en su distrito para convertir sus ideas en propuestas concretas para una boleta, con la ayuda de agencias municipales. Estas propuestas estarán listas para la semana de votación en la primavera. "
 
 #: src/flavors/2015/jstemplates/pages/about.html:2
 msgid "Check out the guidelines</a> to see what ideas can be funded."
-msgstr "Revise las directrices</a> para ver cuáles ideas pueden ser financiados."
+msgstr "Revise los reglamentos</a> para ver cuáles ideas pueden ser financiadas."
 
 #: src/flavors/2015/jstemplates/pages/about.html:3
 msgid ""
@@ -399,7 +399,7 @@ msgid ""
 "community. <a href=\"/page/guidelines\" title=\"Participatory Budgeting in "
 "New York City | REAL MONEY. REAL PROJECTS. REAL POWER.\">Check out the "
 "guidelines</a> to see what ideas can be funded."
-msgstr ""
+msgstr "Comparta sus ideas en el mapa para ver como cosas podrían ser mejoradas en su comunidad.<a href=\"/page/guidelines\" title=\"Participatory Budgeting in New York City | REAL MONEY. REAL PROJECTS. REAL POWER.\"> Revise los reglamentos </a> para ver cuales ideas pueden ser financiadas. "
 
 #: src/flavors/2015/jstemplates/pages/about.html:9
 msgid ""
@@ -430,8 +430,8 @@ msgid "After school programs"
 msgstr "Programas Despues del Horario Escolar"
 
 #: src/flavors/2015/jstemplates/pages/guidelines.html:4
-msgid "All ideas must be submitted by <strong>November 16, 2014</strong>."
-msgstr "Todas las ideas deben ser sometidas antes del .......&^%$#@"
+msgid "All ideas must be submitted by <strong>November 16, 2015</strong>."
+msgstr "Todas las ideas deben ser sometidas antes del <strong>16 de Noviembre del </strong>."
 
 #: src/flavors/2015/jstemplates/pages/guidelines.html:5
 msgid "Anyone can post ideas."
