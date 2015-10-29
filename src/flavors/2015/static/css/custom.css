@@ -443,3 +443,9 @@ ul.recent-points {
     transform: translate(-50%,0);
   }
 }
+
+.closed-district {
+  color: red;
+  font-size: 0.8em;
+  font-style: italic;
+}
