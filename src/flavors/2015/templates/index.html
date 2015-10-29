@@ -181,6 +181,9 @@ Shareabouts.PlaceFormView.prototype.setLocation = function(locationData) {
       // has already closed its PB period.
       if (_(closedDistricts).contains(data['CounDist'])) {
         $district.prepend('<span class="closed-district">{% trans 'Please note that the input period for this district is over for 2015.' %}</span> ');
+        $('#save-place-btn').prop('disabled', true);
+      } else {
+        $('#save-place-btn').prop('disabled', false);
       }
     },
     error: function() {
