@@ -683,3 +683,7 @@ msgstr ""
 #: flavors/2014/templates/index.html:96
 msgid "Approximate location:"
 msgstr ""
+
+#: src/flavors/2015/templates/index.html:183
+msgid "Please note that the input period for this district is over for 2015."
+msgstr ""

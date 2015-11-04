@@ -702,3 +702,7 @@ msgid ""
 "For example, \"Build a wheelchair accessible ramp, improved lighting\" or "
 "\"Weatherization of public housing\"."
 msgstr "Por ejemplo, Construir una rampa accesible para silla de ruedas o Climatización en Viviendas Publicas"
+
+#: src/flavors/2015/templates/index.html:183
+msgid "Please note that the input period for this district is over for 2015."
+msgstr "Tenga en cuenta que el periodo para someter su idea en este distrito ha terminado."
