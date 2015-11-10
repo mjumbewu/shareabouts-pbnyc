@@ -173,7 +173,7 @@ Shareabouts.PlaceFormView.prototype.setLocation = function(locationData) {
   $.ajax({
     url: 'https://shareabouts-region-service.herokuapp.com/api/v1/nyc/pb-districts-2015?ll=' + locationData.latLng.lat + ',' + locationData.latLng.lng,
     success: function(data) {
-      var closedDistricts = [39, 22, 6, 34, 30, 8];
+      var closedDistricts = [39, 22, 6, 34, 30, 8, 7, 10];
 
       $district.html('{% trans 'District' %} ' + data['CounDist'] + ', ' + (data['CounDist'] == 8 ? '{% trans 'Speaker' %} ' : '{% trans 'Council Member' %} ') + data['CounPerson']);
 
