@@ -1,0 +1,60 @@
+_prefs: 
+  mapid: openplans.ae84e8cf
+  saveCenter: false
+_properties: 
+  bridge: 
+    "group-by": layer
+attribution: "<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>"
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - -73.9826
+  - 40.7038
+  - 11
+description: A monotone basemap that's easy to recolor.
+format: "png8:m=h"
+interactivity_layer: ''
+layers: 
+  - landuse
+  - waterway
+  - water
+  - aeroway
+  - barrier_line
+  - building
+  - landuse_overlay
+  - tunnel
+  - road
+  - bridge
+  - admin
+  - districts
+  - districts.border_label
+  - country_label_line
+  - country_label
+  - marine_label
+  - state_label
+  - place_label
+  - water_label
+  - subway-stops
+  - subway-stops.label
+  - school-points
+  - school-points.label
+  - nycha-development-points.label
+  - poi_label
+  - road_label
+  - waterway_label
+  - housenum_label
+  - nycha-development-footprints
+  - nycha-building-footprints
+  - nycha-development-points
+maxzoom: 22
+minzoom: 0
+name: PBNYC Base Map
+source: "mapbox:///mapbox.mapbox-streets-v5,openplans.e4d40108,openplans.ebae7acc"
+styles: 
+  - style.mss
+  - labels.mss
+  - roads.mss
+template: ''
