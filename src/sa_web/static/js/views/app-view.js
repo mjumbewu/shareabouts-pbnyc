@@ -26,7 +26,7 @@ var Shareabouts = Shareabouts || {};
     initialize: function(){
       var self = this,
           // Only include submissions if the list view is enabled (anything but false)
-          includeSubmissions = S.Config.flavor.app.list_enabled !== false,
+          includeSubmissions = self.options.config.app.list_enabled !== false,
           placeParams = {
             // NOTE: this is to simply support the list view. It won't
             // scale well, so let's think about a better solution.
@@ -35,8 +35,8 @@ var Shareabouts = Shareabouts || {};
 
       // Use the page size as dictated by the server by default, unless
       // directed to do otherwise in the configuration.
-      if (S.Config.flavor.app.places_page_size) {
-        placeParams.page_size = S.Config.flavor.app.places_page_size;
+      if (self.options.config.app.places_page_size) {
+        placeParams.page_size = self.options.config.app.places_page_size;
       }
 
       // Boodstrapped data from the page
@@ -134,7 +134,7 @@ var Shareabouts = Shareabouts || {};
 
       // Init the map view to display the places
       this.mapView = new S.MapView({
-        el: '#map',
+        el: this.options.mapEl,
         mapConfig: this.options.mapConfig,
         collection: this.collection,
         router: this.options.router,
@@ -182,17 +182,16 @@ var Shareabouts = Shareabouts || {};
       $(S).on('reversegeocode', function(evt, locationData) {
         var locationString = Handlebars.templates['location-string'](locationData);
         self.geocodeAddressView.setAddress($.trim(locationString));
-        self.placeFormView.setLatLng(locationData.latLng);
         self.placeFormView.setLocation(locationData);
       });
 
 
       // List view is enabled by default (undefined) or by enabling it
       // explicitly. Set it to a falsey value to disable activity.
-      if (_.isUndefined(S.Config.flavor.app.list_enabled) ||
-        S.Config.flavor.app.list_enabled) {
+      if (_.isUndefined(self.options.config.app.list_enabled) ||
+        self.options.config.app.list_enabled) {
           this.listView = new S.PlaceListView({
-            el: '#list-container',
+            el: self.options.listContainerEl || '#list-container',
             collection: this.collection
           }).render();
       }
@@ -434,7 +433,7 @@ var Shareabouts = Shareabouts || {};
     },
     viewPlace: function(model, responseId, zoom) {
       var self = this,
-          includeSubmissions = S.Config.flavor.app.list_enabled !== false,
+          includeSubmissions = self.options.config.app.list_enabled !== false,
           layout = S.Util.getPageLayout(),
           onPlaceFound, onPlaceNotFound, modelId;
 

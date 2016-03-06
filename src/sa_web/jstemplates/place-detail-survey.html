@@ -1,18 +1,34 @@
-          {{#survey_config.show_responses}}
           <h4 class="survey-header">
-            {{ responses.length }}
-            {{# has_single_response }}{{ survey_config.response_name }}{{/ has_single_response }}
-            {{^ has_single_response }}{{ survey_config.response_plural_name }}{{/ has_single_response }}
+            {{!-- If there are responses to the survey already, then the
+                  number of responses will be shown. Otherwise, a prompt
+                  to leave a response is shown. --}}
+            {{#if survey_config.show_responses}}
+              {{#if responses}}
+                {{ responses.length }}
+                {{# has_single_response }}{{ survey_config.response_name }}{{/ has_single_response }}
+                {{^ has_single_response }}{{ survey_config.response_plural_name }}{{/ has_single_response }}
+              {{else if survey_config.adding_supported}}
+                {{survey_config.form_link_text}}
+              {{/if}}
+            {{else}}
+              {{#if survey_config.adding_supported}}
+                {{survey_config.form_link_text}}
+              {{/if}}
+            {{/if}}
           </h4>
 
-          {{#if survey_config.single_submission}}
-            {{^if user_submitted}}
-            <a href="#reply" class="reply-link btn btn-small">{{ survey_config.form_link_text }}</a>
+          {{!-- If there are already responses to the survey, a button/link
+                will be shown that, when clicked, should focus on the first
+                field in the survey form. --}}
+          {{#if responses}}
+            {{#if survey_config.single_submission}}
+              {{^if user_submitted}}
+              <a href="#reply" class="reply-link btn btn-small">{{ survey_config.form_link_text }}</a>
+              {{/if}}
             {{/if}}
-          {{else}}
-          <a href="#reply" class="reply-link btn btn-small">{{ survey_config.form_link_text }}</a>
           {{/if}}
 
+          {{#if survey_config.show_responses}}
           <ol class="responses unstyled-list">
             {{#responses}}
             <li>
@@ -46,7 +62,7 @@
             </li>
             {{/responses}}
           </ol>
-          {{/survey_config.show_responses}}
+          {{/if}} {{! survey_config.show_responses }}
 
           {{#if survey_config.single_submission}}
             {{^if user_submitted}}

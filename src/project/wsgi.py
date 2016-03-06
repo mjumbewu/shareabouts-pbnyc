@@ -37,5 +37,7 @@ application = ExpiresMiddleware(application, {
     'image/png':              365*24*60*60,
 })
 
-from .wsgi_middleware import basic_auth_protected
-application = basic_auth_protected(application)
+from .basic_auth import BasicAuthMiddleware
+application = BasicAuthMiddleware(application, exempt=(
+    r'^/api/',
+))
