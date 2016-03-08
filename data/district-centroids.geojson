@@ -11,6 +11,25 @@
       "type": "Feature",
       "properties": {
         "Borough": "Queens",
+        "CounPerson": "Barry Grodenchik",
+        "Shape_Area": 305406624.935,
+        "Shape_Leng": 77503.940278,
+        "CounDist": 23
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -73.74313982047199545,
+            40.73857870192646402
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
         "CounPerson": "Eric Ulrich",
         "Shape_Area": 310080995.081000,
         "Shape_Leng": 311528.020294,
