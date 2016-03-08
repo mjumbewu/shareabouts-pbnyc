@@ -1,45 +1,45 @@
-_prefs: 
+_prefs:
   disabled: []
   inspector: false
   mapid: openplans.ebae7acc
   rev: s-867ccc93
   saveCenter: true
 attribution: ''
-center: 
+center:
   - -74.0067
   - 40.6834
   - 12
 description: PBNYC 2015 contextual data -- specifically schools, subway stops, and NYCHA developments
-Layer: 
+Layer:
   - id: nycha-development-footprints
-    Datasource: 
-      file: /home/mjumbewu/Programming/poepublic/pbnyc15-16/data/nycha-development-footprints.geojson
+    Datasource:
+      file: /home/mjumbewu/Programming/poepublic/shareabouts-pbnyc-2015/data/nycha-development-footprints.geojson
       layer: nycha-development-footprints
       type: geojson
     description: NYCHA Development Footprints
-    fields: 
+    fields:
       DEVELOPMEN: String
-    properties: 
+    properties:
       "buffer-size": 8
     srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
   - id: nycha-development-points
-    Datasource: 
-      file: /home/mjumbewu/Programming/poepublic/pbnyc15-16/data/nycha-development-points.geojson
+    Datasource:
+      file: /home/mjumbewu/Programming/poepublic/shareabouts-pbnyc-2015/data/nycha-development-points.geojson
       layer: nycha-development-points
       type: geojson
     description: NYCHA Development Points
-    fields: 
+    fields:
       DEVELOPMEN: String
-    properties: 
+    properties:
       "buffer-size": 50
     srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
   - id: subway-stops
-    Datasource: 
-      file: /home/mjumbewu/Programming/poepublic/pbnyc15-16/data/subway-stops.geojson
+    Datasource:
+      file: /home/mjumbewu/Programming/poepublic/shareabouts-pbnyc-2015/data/subway-stops.geojson
       layer: subway-stops
       type: geojson
     description: Subway Stops
-    fields: 
+    fields:
       Express: String
       NAME_CUR: String
       PARENT_STA: Number
@@ -48,21 +48,21 @@ Layer:
       Routes_WKD: String
       STOP_NAME: String
       ZONE_ID: Number
-    properties: 
+    properties:
       "buffer-size": 50
     srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
   - id: school-points
-    Datasource: 
-      file: /home/mjumbewu/Programming/poepublic/pbnyc15-16/data/school-points.geojson
+    Datasource:
+      file: /home/mjumbewu/Programming/poepublic/shareabouts-pbnyc-2015/data/school-points.geojson
       layer: school-points
       type: geojson
     description: School Points
-    fields: 
+    fields:
       FacAddress: String
       FacName: String
       FacType: Number
       SchoolDist: Number
-    properties: 
+    properties:
       "buffer-size": 50
     srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
 maxzoom: 16

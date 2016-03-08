@@ -16,9 +16,9 @@
 <Layer name="nycha-development-footprints"
   buffer-size="8"
   srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
-    
+
     <Datasource>
-       <Parameter name="file"><![CDATA[/home/mjumbewu/Programming/poepublic/pbnyc15-16/data/nycha-development-footprints.geojson]]></Parameter>
+       <Parameter name="file"><![CDATA[/home/mjumbewu/Programming/poepublic/shareabouts-pbnyc-2015/data/nycha-development-footprints.geojson]]></Parameter>
        <Parameter name="layer"><![CDATA[nycha-development-footprints]]></Parameter>
        <Parameter name="type"><![CDATA[geojson]]></Parameter>
     </Datasource>
@@ -27,9 +27,9 @@
 <Layer name="nycha-development-points"
   buffer-size="50"
   srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
-    
+
     <Datasource>
-       <Parameter name="file"><![CDATA[/home/mjumbewu/Programming/poepublic/pbnyc15-16/data/nycha-development-points.geojson]]></Parameter>
+       <Parameter name="file"><![CDATA[/home/mjumbewu/Programming/poepublic/shareabouts-pbnyc-2015/data/nycha-development-points.geojson]]></Parameter>
        <Parameter name="layer"><![CDATA[nycha-development-points]]></Parameter>
        <Parameter name="type"><![CDATA[geojson]]></Parameter>
     </Datasource>
@@ -38,9 +38,9 @@
 <Layer name="subway-stops"
   buffer-size="50"
   srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
-    
+
     <Datasource>
-       <Parameter name="file"><![CDATA[/home/mjumbewu/Programming/poepublic/pbnyc15-16/data/subway-stops.geojson]]></Parameter>
+       <Parameter name="file"><![CDATA[/home/mjumbewu/Programming/poepublic/shareabouts-pbnyc-2015/data/subway-stops.geojson]]></Parameter>
        <Parameter name="layer"><![CDATA[subway-stops]]></Parameter>
        <Parameter name="type"><![CDATA[geojson]]></Parameter>
     </Datasource>
@@ -49,9 +49,9 @@
 <Layer name="school-points"
   buffer-size="50"
   srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
-    
+
     <Datasource>
-       <Parameter name="file"><![CDATA[/home/mjumbewu/Programming/poepublic/pbnyc15-16/data/school-points.geojson]]></Parameter>
+       <Parameter name="file"><![CDATA[/home/mjumbewu/Programming/poepublic/shareabouts-pbnyc-2015/data/school-points.geojson]]></Parameter>
        <Parameter name="layer"><![CDATA[school-points]]></Parameter>
        <Parameter name="type"><![CDATA[geojson]]></Parameter>
     </Datasource>
