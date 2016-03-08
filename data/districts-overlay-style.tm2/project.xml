@@ -18,22 +18,22 @@
 <Style name="landuse" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([class] = 'park')</Filter>
+    <Filter>([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#818181" />
   </Rule>
   <Rule>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([class] = 'park')</Filter>
+    <Filter>([class] = 'wood')</Filter>
     <PolygonSymbolizer fill="#808080" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([class] = 'wood')</Filter>
+    <Filter>([class] = 'park')</Filter>
     <PolygonSymbolizer fill="#818181" />
   </Rule>
   <Rule>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([class] = 'wood')</Filter>
+    <Filter>([class] = 'park')</Filter>
     <PolygonSymbolizer fill="#808080" />
   </Rule>
   <Rule>
@@ -51,19 +51,19 @@
     <PolygonSymbolizer fill="#8e8e8e" />
   </Rule>
   <Rule>
-    <Filter>([class] = 'school')</Filter>
-    <PolygonSymbolizer fill="#8e8e8e" />
-  </Rule>
-  <Rule>
     <Filter>([class] = 'hospital')</Filter>
     <PolygonSymbolizer fill="#8e8e8e" />
   </Rule>
   <Rule>
-    <Filter>([class] = 'pitch')</Filter>
-    <PolygonSymbolizer fill="#7a7a7a" />
+    <Filter>([class] = 'school')</Filter>
+    <PolygonSymbolizer fill="#8e8e8e" />
   </Rule>
   <Rule>
     <Filter>([class] = 'sand')</Filter>
+    <PolygonSymbolizer fill="#7a7a7a" />
+  </Rule>
+  <Rule>
+    <Filter>([class] = 'pitch')</Filter>
     <PolygonSymbolizer fill="#7a7a7a" />
   </Rule>
 </Style>
@@ -3487,137 +3487,7 @@
 
 <Style name="districts" filter-mode="first">
   <Rule>
-    <Filter>([CounDist] = 47)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#0697d7" />
-    <PolygonSymbolizer comp-op="src" fill-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([CounDist] = 33)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#0697d7" />
-    <PolygonSymbolizer comp-op="src" fill-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([CounDist] = 29)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#0697d7" />
-    <PolygonSymbolizer comp-op="src" fill-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([CounDist] = 44)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#0697d7" />
-    <PolygonSymbolizer comp-op="src" fill-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([CounDist] = 40)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#0697d7" />
-    <PolygonSymbolizer comp-op="src" fill-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([CounDist] = 27)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#0697d7" />
-    <PolygonSymbolizer comp-op="src" fill-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([CounDist] = 26)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#0697d7" />
-    <PolygonSymbolizer comp-op="src" fill-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([CounDist] = 21)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#0697d7" />
-    <PolygonSymbolizer comp-op="src" fill-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([CounDist] = 19)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#0697d7" />
-    <PolygonSymbolizer comp-op="src" fill-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([CounDist] = 45)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#0697d7" />
-    <PolygonSymbolizer comp-op="src" fill-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([CounDist] = 35)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#0697d7" />
-    <PolygonSymbolizer comp-op="src" fill-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([CounDist] = 15)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#0697d7" />
-    <PolygonSymbolizer comp-op="src" fill-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([CounDist] = 11)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#0697d7" />
-    <PolygonSymbolizer comp-op="src" fill-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([CounDist] = 32)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#0697d7" />
-    <PolygonSymbolizer comp-op="src" fill-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([CounDist] = 36)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#0697d7" />
-    <PolygonSymbolizer comp-op="src" fill-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([CounDist] = 31)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#0697d7" />
-    <PolygonSymbolizer comp-op="src" fill-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([CounDist] = 5)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#0697d7" />
-    <PolygonSymbolizer comp-op="src" fill-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([CounDist] = 38)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#0697d7" />
-    <PolygonSymbolizer comp-op="src" fill-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([CounDist] = 39)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#0697d7" />
-    <PolygonSymbolizer comp-op="src" fill-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([CounDist] = 22)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#0697d7" />
-    <PolygonSymbolizer comp-op="src" fill-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([CounDist] = 6)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#0697d7" />
-    <PolygonSymbolizer comp-op="src" fill-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([CounDist] = 34)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#0697d7" />
-    <PolygonSymbolizer comp-op="src" fill-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([CounDist] = 30)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#0697d7" />
-    <PolygonSymbolizer comp-op="src" fill-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([CounDist] = 8)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#0697d7" />
-    <PolygonSymbolizer comp-op="src" fill-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([CounDist] = 7)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#0697d7" />
-    <PolygonSymbolizer comp-op="src" fill-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([CounDist] = 10)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#0697d7" />
-    <PolygonSymbolizer comp-op="src" fill-opacity="0.5" />
-  </Rule>
-  <Rule>
-    <Filter>([CounDist] = 3)</Filter>
+    <Filter>([CounDist] = -1)</Filter>
     <LineSymbolizer stroke-width="1" stroke="#0697d7" />
     <PolygonSymbolizer comp-op="src" fill-opacity="0.5" />
   </Rule>

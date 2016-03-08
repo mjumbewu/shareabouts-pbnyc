@@ -1,59 +1,59 @@
-_prefs:
+_prefs: 
   disabled: []
   inspector: false
   mapid: openplans.7f05ca8c
-  rev: s-e712f97c
+  rev: s-10ba6cb6
   saveCenter: true
 attribution: ''
-center:
+center: 
   - -73.9789
   - 40.7809
   - 11
 description: ''
-Layer:
+Layer: 
   - id: districts
-    Datasource:
+    Datasource: 
       file: /home/mjumbewu/Programming/poepublic/shareabouts-pbnyc-2015/data/districts.geojson
       layer: districts
       type: geojson
     description: District Shapes
-    fields:
+    fields: 
       Borough: String
       CounDist: Number
       CounPerson: String
       Shape_Area: Number
       Shape_Leng: Number
-    properties:
+    properties: 
       "buffer-size": 8
     srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
   - id: district-outlines
-    Datasource:
+    Datasource: 
       file: /home/mjumbewu/Programming/poepublic/shareabouts-pbnyc-2015/data/districts.geojson
       layer: districts
       type: geojson
     description: District Outlines
-    fields:
+    fields: 
       Borough: String
       CounDist: Number
       CounPerson: String
       Shape_Area: Number
       Shape_Leng: Number
-    properties:
+    properties: 
       "buffer-size": 8
     srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
   - id: district-centroids
-    Datasource:
+    Datasource: 
       file: /home/mjumbewu/Programming/poepublic/shareabouts-pbnyc-2015/data/district-centroids.geojson
       layer: district-centroids
       type: geojson
     description: Points for District Labels
-    fields:
+    fields: 
       Borough: String
       CounDist: Number
       CounPerson: String
       Shape_Area: Number
       Shape_Leng: Number
-    properties:
+    properties: 
       "buffer-size": 8
     srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
 maxzoom: 16

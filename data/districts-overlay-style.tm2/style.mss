@@ -123,33 +123,7 @@ Map { background-color: @land; }
   
   // Give districts whose input periods have ended a
   // certain amount of opacity.
-  [CounDist=39],
-  [CounDist=22],
-  [CounDist=6],
-  [CounDist=34],
-  [CounDist=30],
-  [CounDist=8],
-  [CounDist=7],
-  [CounDist=10],
-  [CounDist=3],
-  [CounDist=5],
-  [CounDist=11],
-  [CounDist=15],
-  [CounDist=19],
-  [CounDist=21],
-  [CounDist=26],
-  [CounDist=27],
-  [CounDist=29],
-  [CounDist=31],
-  [CounDist=32],
-  [CounDist=33],
-  [CounDist=35],
-  [CounDist=36],
-  [CounDist=38],
-  [CounDist=40],
-  [CounDist=44],
-  [CounDist=45],
-  [CounDist=47] {
+  [CounDist=-1] {
     polygon-comp-op: src;
     polygon-opacity: 0.5;
   }
