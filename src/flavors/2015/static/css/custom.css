@@ -324,6 +324,22 @@ ul.recent-points {
   margin-top: 3em;
 }
 
+p.ballot-project-location-notes {
+  font-size: 0.7em;
+  font-style: italic;
+  margin-top: -0.5em;
+  margin-bottom: 1em!important;
+}
+
+.ballot-project-location strong,
+.ballot-project-description strong,
+.ballot-project-cost strong,
+.vote-instructions strong{
+  font-family: "Prenton", Helvetica, Roboto, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
 
 /* =Geocoding
 -------------------------------------------------------------- */

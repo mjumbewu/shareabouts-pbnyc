@@ -54,6 +54,9 @@
 {{#_}}
   {{#if shortlisted }}
     <p class="ballot-project-location"><strong>Location</strong>: {{ Location }}</p>
+    {{#if [Notes ] }}
+    <p class="ballot-project-location-notes">{{ [Notes ] }}</p>
+    {{/if }}
     <p class="ballot-project-description"><strong>Description</strong>: {{ description }}</p>
     <p class="ballot-project-cost"><strong>Cost</strong>: {{ Cost }}</p>
     <p class="vote-instructions">Vote for this project between March 26th and April 3rd. <a href="http://pbnyc.org/" title="Participatory Budgeting in New York City | REAL MONEY. REAL PROJECTS. REAL POWER.">Find out how and where</a>.</p>
