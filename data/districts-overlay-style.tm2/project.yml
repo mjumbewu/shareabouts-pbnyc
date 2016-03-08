@@ -1,0 +1,29 @@
+_prefs: 
+  mapid: openplans.3cc003fb
+  saveCenter: false
+_properties: 
+  bridge: 
+    "group-by": layer
+attribution: "<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>"
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - 15.293
+  - 50.8476
+  - 4
+description: A dark version of the PBNYC 2015 base map with holes cut out for the districts
+format: "png8:m=h"
+interactivity_layer: ''
+layers: null
+maxzoom: 22
+minzoom: 0
+name: PBNYC 2015 Overlay
+source: "mapbox:///mapbox.mapbox-streets-v5,openplans.7f05ca8c"
+styles: 
+  - style.mss
+  - labels.mss
+  - roads.mss
+template: ''

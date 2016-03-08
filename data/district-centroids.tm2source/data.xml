@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+
+<Parameters>
+  <Parameter name="center">-73.9789,40.7809,11</Parameter>
+  <Parameter name="format">pbf</Parameter>
+  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"districts","description":"District Shapes","fields":{"Borough":"String","CounDist":"Number","CounPerson":"String","Shape_Area":"Number","Shape_Leng":"Number"}},{"id":"district-outlines","description":"District Outlines","fields":{"Borough":"String","CounDist":"Number","CounPerson":"String","Shape_Area":"Number","Shape_Leng":"Number"}},{"id":"district-centroids","description":"Points for District Labels","fields":{"Borough":"String","CounDist":"Number","CounPerson":"String","Shape_Area":"Number","Shape_Leng":"Number"}}]}]]></Parameter>
+  <Parameter name="maxzoom">16</Parameter>
+  <Parameter name="minzoom">8</Parameter>
+  <Parameter name="name"><![CDATA[PBNYC15 District With Label Points]]></Parameter>
+</Parameters>
+
+
+<Layer name="districts"
+  buffer-size="8"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/home/mjumbewu/Programming/poepublic/pbnyc15-16/data/districts.geojson]]></Parameter>
+       <Parameter name="layer"><![CDATA[districts]]></Parameter>
+       <Parameter name="type"><![CDATA[geojson]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="district-outlines"
+  buffer-size="8"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/home/mjumbewu/Programming/poepublic/pbnyc15-16/data/districts.geojson]]></Parameter>
+       <Parameter name="layer"><![CDATA[districts]]></Parameter>
+       <Parameter name="type"><![CDATA[geojson]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="district-centroids"
+  buffer-size="8"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/home/mjumbewu/Programming/poepublic/pbnyc15-16/data/district-centroids.geojson]]></Parameter>
+       <Parameter name="layer"><![CDATA[district-centroids]]></Parameter>
+       <Parameter name="type"><![CDATA[geojson]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>

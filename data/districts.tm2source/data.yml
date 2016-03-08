@@ -1,0 +1,31 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: openplans.e4d40108
+  rev: s-6a21c87c
+  saveCenter: true
+attribution: ''
+center: 
+  - -73.9078
+  - 40.7478
+  - 11
+description: ''
+Layer: 
+  - id: districts
+    Datasource: 
+      file: /home/mjumbewu/Programming/poepublic/pbnyc15-16/data/districts.geojson
+      layer: districts
+      type: geojson
+    description: PBNYC 2015/16 Districts
+    fields: 
+      Borough: String
+      CounDist: Number
+      CounPerson: String
+      Shape_Area: Number
+      Shape_Leng: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+maxzoom: 16
+minzoom: 0
+name: PBNYC 2015/16 Council Districts

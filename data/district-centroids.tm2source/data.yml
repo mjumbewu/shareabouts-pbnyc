@@ -1,0 +1,61 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: openplans.7f05ca8c
+  rev: s-e712f97c
+  saveCenter: true
+attribution: ''
+center: 
+  - -73.9789
+  - 40.7809
+  - 11
+description: ''
+Layer: 
+  - id: districts
+    Datasource: 
+      file: /home/mjumbewu/Programming/poepublic/pbnyc15-16/data/districts.geojson
+      layer: districts
+      type: geojson
+    description: District Shapes
+    fields: 
+      Borough: String
+      CounDist: Number
+      CounPerson: String
+      Shape_Area: Number
+      Shape_Leng: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+  - id: district-outlines
+    Datasource: 
+      file: /home/mjumbewu/Programming/poepublic/pbnyc15-16/data/districts.geojson
+      layer: districts
+      type: geojson
+    description: District Outlines
+    fields: 
+      Borough: String
+      CounDist: Number
+      CounPerson: String
+      Shape_Area: Number
+      Shape_Leng: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+  - id: district-centroids
+    Datasource: 
+      file: /home/mjumbewu/Programming/poepublic/pbnyc15-16/data/district-centroids.geojson
+      layer: district-centroids
+      type: geojson
+    description: Points for District Labels
+    fields: 
+      Borough: String
+      CounDist: Number
+      CounPerson: String
+      Shape_Area: Number
+      Shape_Leng: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+maxzoom: 16
+minzoom: 8
+name: PBNYC15 District With Label Points
