@@ -537,6 +537,60 @@ place_types:
           shadowSize: [41, 41]
           iconAnchor: [38, 90]
 
+  sanitation:
+    label: _(Sanitation)
+    rules:
+      - condition: '"{{location_type}}" === "sanitation" && "{{status}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [11, 11]
+          iconAnchor: [6, 6]
+      - condition: '"{{location_type}}" === "sanitation" && "{{status}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
+      - condition: '"{{location_type}}" === "sanitation" && "{{status}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
+
+      - condition: '"{{location_type}}" === "sanitation" && "{{shortlisted}}".toLowerCase() === "true" && {{layer.focused}} === false && {{map.zoom}} < 14'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-8ea4b8.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
+      - condition: '"{{location_type}}" === "sanitation" && "{{shortlisted}}".toLowerCase() === "true" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/street-sidewalk-small.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "sanitation" && "{{shortlisted}}".toLowerCase() === "true" && {{layer.focused}} === false && {{map.zoom}} >= 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/street-sidewalk-small.png
+          iconSize: [50, 60]
+          iconAnchor: [25, 60]
+
+      - condition: '"{{location_type}}" === "sanitation" && {{layer.focused}} == false'
+        style:
+          radius: 2
+          stroke: true
+          fill: true
+          weight: 0.5
+          opacity: 0.7
+          fillOpacity: 0.8
+          color: '#000'
+          fillColor: '#8ea4b8'
+
+      - condition: '"{{location_type}}" === "sanitation" && {{layer.focused}} === true'
+        icon:
+          iconUrl: /static/css/images/markers/new/street-sidewalk.png
+          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
+
   transit:
     label: _(Transit & Transportation)
     rules:
@@ -1013,6 +1067,9 @@ pages:
         external: true
       - title: _(Public Safety)
         url: /filter/safety
+        external: true
+      - title: _(Sanitation)
+        url: /filter/sanitation
         external: true
       - title: _(Seniors)
         url: /filter/seniors
