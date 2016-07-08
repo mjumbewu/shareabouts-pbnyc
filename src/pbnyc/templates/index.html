@@ -1,0 +1,237 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block site-title %}
+<a href="http://council.nyc.gov/html/pb/home.shtml"><img id="site-logo" src="{{ config.static_url }}css/images/long-logo-pbnyc-light-blue-english.png"><!-- <span id="site-tagline">{{ config.app.tagline }}</span> --></a>
+{% endblock %}
+
+
+{% block meta %}
+  {% if place %}
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ place.properties.name }}">
+    <meta name="twitter:description" content="{{ place.properties.description }}">
+    {% with attachment=place.properties.attachments|first %}
+    <meta name="twitter:image:src" content="{{ attachment.file }}">
+    {% endwith %}
+    {% comment %} TODO: Fill this in when we know if the username is from twitter
+      <meta name="twitter:creator" content="place.submitter.username">
+    {% endcomment %}
+
+    <!-- Facebook -->
+    <meta property="og:site_name" content="{{ config.app.title }}" />
+    <meta property="og:title" content="{{ place.properties.name }}" />
+    <meta property="og:description" content="{{ place.properties.description }}" />
+    {% with attachment=place.properties.attachments|first %}
+    <meta name="og:image" content="{{ attachment.file }}">
+    {% endwith %}
+  {% else %}
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ config.app.title }}">
+    <meta name="twitter:description" content="{{ config.app.meta_description }}">
+
+    <!-- Facebook -->
+    <meta property="og:site_name" content="{{ config.app.title }}" />
+    <meta property="og:title" content="{{ config.app.title }}" />
+    <meta property="og:description" content="{{ config.app.meta_description }}" />
+  {% endif%}
+
+{% endblock %}
+
+{% block cdn_load %}
+<script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet'>
+{% endblock %}
+
+<!--
+  This will place content at the top of the side bar
+ -->
+{% block sidebar %}
+
+<ul class="legend">
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-aa3c1e.png"> {% trans 'Culture and Community Facilities' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-7fccd9.png"> {% trans 'Schools and Education' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-55a504.png"> {% trans 'Environment' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-f50a8e.png"> {% trans 'Housing' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-fa5b13.png"> {% trans 'Parks and Recreation' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-ff78be.png"> {% trans 'Public Health' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-fc9229.png"> {% trans 'Public Safety' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-8ea4b8.png"> {% trans 'Sanitation' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-c4ed52.png"> {% trans 'Seniors' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-a0b4c6.png"> {% trans 'Streets and Sidewalks' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-b75ab8.png"> {% trans 'Transit and Transportation' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-ffd614.png"> {% trans 'Youth' %}</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/dot-white.png"> {% trans 'Previously funded' %}</li>
+</ul>
+{% endblock %}
+
+<!--
+  This will place content in the colophon below the map
+ -->
+{% block colophon %}
+<p id="powered-by">{% blocktrans %}Powered by{% endblocktrans %} <a href="http://shareabouts.org/" class="shareabouts-logo" target="_blank">Shareabouts</a>, <span class="nobreak">a project of <a href="http://openplans.org/" class="openplans-logo" target="_blank">OpenPlans</a>.</span></p>
+{% endblock %}
+
+<!--
+  Analytics, custom JS, and such go here
+ -->
+{% block includes %}
+<script src="https://use.typekit.net/fmd6ixf.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+<script>
+$(function() {
+  L.mapbox.accessToken = 'pk.eyJ1Ijoib3BlbnBsYW5zIiwiYSI6ImNpZjVjdWxpMDBhMnVzcG0zYjZzaXcyczMifQ.lY5dtGpiFt2BvlywF1n59Q';
+  Shareabouts.geocoderControl = L.mapbox.geocoderControl('mapbox.places', {autocomplete: true});
+  window.app.appView.mapView.map.addControl(Shareabouts.geocoderControl);
+
+  Shareabouts.mapboxToMapQuestResult = function(result) {
+    result.latLng = {lat: result.center[1], lng: result.center[0]}
+
+    if (result.center)    delete result.center;
+    if (result.relevance) delete result.relevance;
+    if (result.address)   delete result.address;
+    if (result.context)   delete result.context;
+    if (result.bbox)      delete result.bbox;
+    if (result.id)        delete result.id;
+    if (result.text)      delete result.text;
+    if (result.type)      delete result.type;
+
+    return result;
+  };
+
+  Shareabouts.mapboxToMapQuestResults = function(data) {
+    // Make Mapbox reverse geocode results look kinda like
+    // MapQuest results.
+    data.results = data.features;
+    if (data.results.length > 0) {
+      data.results[0] = {locations: [
+        Shareabouts.mapboxToMapQuestResult(data.results[0])
+      ]};
+    }
+    return data;
+  };
+
+  Shareabouts.geocoderControl.on('select', function(result) {
+    result = Shareabouts.mapboxToMapQuestResult(result.feature);
+    $(Shareabouts).trigger('reversegeocode', result);
+    Shareabouts.geocoderControl._closeIfOpen();
+  });
+
+  $(Shareabouts).on('reversegeocode', function() {
+    // Shareabouts.geocoderControl._closeIfOpen();
+  })
+});
+
+var mapQuest_geocode = Shareabouts.Util.MapQuest.geocode;
+Shareabouts.Util.MapQuest.geocode = function(location, bounds, options) {
+  // Since this is all Chicago-specific, go ahead and specify the city.
+  if (location.toLowerCase().indexOf('NYC') === -1) {
+    location += ', NYC NY'
+  }
+  return mapQuest_geocode.call(this, location, bounds, options);
+}
+
+Shareabouts.Util.MapQuest.reverseGeocode = function(latLng, options) {
+  // Use the mapbox geocoder instead of mapquest
+  var geocoder = Shareabouts.geocoderControl.geocoder;
+  var callback = function(err, data) {
+    if (err && options.error) {
+      options.error(err);
+
+    } else if (options.success) {
+      data = Shareabouts.mapboxToMapQuestResults(data);
+      options.success(data);
+    }
+  };
+
+  geocoder.reverseQuery([latLng.lng, latLng.lat], callback);
+};
+
+var placeFormView_setLocation = Shareabouts.PlaceFormView.prototype.setLocation;
+Shareabouts.PlaceFormView.prototype.setLocation = function(locationData) {
+  placeFormView_setLocation.call(this, locationData);
+
+  var $placeNameField = this.$('[name="name"]'),
+      $approxAddress = $placeNameField.next(),
+      $district;
+
+  if ($approxAddress.length === 0) {
+    $approxAddress = $('<p class="approx-address"></p>').insertAfter($placeNameField);
+  }
+
+  $approxAddress.html(
+    '<br/><span class="address-label">{% trans 'Approximate location:' %}</span> ' +
+    '<div class="district-display"></div>' +
+    '<div class="address-display">' +
+      Handlebars.templates['location-string'](locationData) +
+    '</div>');
+
+  $district = $approxAddress.find('.district-display');
+
+  $.ajax({
+    url: 'https://shareabouts-region-service.herokuapp.com/api/v1/nyc/pb-districts-2015?ll=' + locationData.latLng.lat + ',' + locationData.latLng.lng,
+    success: function(data) {
+      var closedDistricts = [39, 22, 6, 34, 30, 8, 7, 10, 3, 5, 11, 15, 19, 21, 26, 27, 29, 31, 32, 33, 35, 36, 38, 40, 44, 45, 47]
+
+      $district.html('{% trans 'District' %} ' + data['CounDist'] + ', ' + (data['CounDist'] == 8 ? '{% trans 'Speaker' %} ' : '{% trans 'Council Member' %} ') + data['CounPerson']);
+
+      // Let the user know if the district they're trying to leave an idea in
+      // has already closed its PB period.
+      if (_(closedDistricts).contains(data['CounDist'])) {
+        $district.prepend('<span class="closed-district">{% trans 'Please note that the input period for this district is over for 2015.' %}</span> ');
+        $('#save-place-btn').prop('disabled', true);
+      } else {
+        $('#save-place-btn').prop('disabled', false);
+      }
+    },
+    error: function() {
+      $district.html('{% trans '(Outside of the PB districts)' %}');
+    }
+  });
+}
+</script>
+
+<!-- zoom to marker on click -->
+<script>
+  (function(NS, $) {
+
+    var originalOnMarkerClick = Shareabouts.LayerView.prototype.onMarkerClick;
+    NS.LayerView.prototype.onMarkerClick = function(evt) {
+      var self = this;
+      originalOnMarkerClick.apply(this, arguments);
+      if (this.map.getZoom() < this.map.getMaxZoom()-3) {
+        _.delay(function() {
+          self.map.setView(evt.latlng, self.map.getMaxZoom()-3, {
+            animate: true
+          });
+
+          self.map.invalidateSize({ animate:false, pan:false });
+        }, 200);
+      }
+    }
+
+    $(document).on('click', 'a[href^="/"]', function(evt) {
+      var $link = $(evt.currentTarget),
+          href = $link.attr('href'),
+          url;
+
+      // Handle data-internal links
+      if (!_.isUndefined($link.attr('data-internal'))) {
+        evt.preventDefault();
+
+        // Remove leading slashes and hash bangs (backward compatablility)
+        url = href.replace(/^\//, '').replace('#!/', '');
+
+        // # Instruct Backbone to trigger routing events
+        window.app.navigate(url, { trigger: true });
+
+        return false;
+      }
+    });
+
+  }(Shareabouts, jQuery));
+</script>
+{% endblock %}
