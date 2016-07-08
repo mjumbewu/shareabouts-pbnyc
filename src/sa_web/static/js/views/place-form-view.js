@@ -7,7 +7,8 @@ var Shareabouts = Shareabouts || {};
     // View responsible for the form for adding and editing places.
     events: {
       'submit form': 'onSubmit',
-      'change input[type="file"]': 'onInputFileChange'
+      'change input[type="file"]': 'onInputFileChange',
+      'change [data-group-required]': 'onRequiredOptionButtonChange'
     },
     initialize: function(){
       S.TemplateHelpers.overridePlaceTypeConfig(this.options.placeConfig.items,
@@ -26,6 +27,7 @@ var Shareabouts = Shareabouts || {};
       }, S.stickyFieldValues, this.model.toJSON());
 
       this.$el.html(Handlebars.templates['place-form'](data));
+      this.updatedRequiredOptionButtons();
       return this;
     },
     remove: function() {
@@ -99,6 +101,25 @@ var Shareabouts = Shareabouts || {};
           canvas: true
         });
       }
+    },
+    updatedRequiredOptionButtons: function(optionButtons) {
+      var groupNames = []
+
+      this.$(optionButtons || '[data-group-required]').each(function(index, btn) {
+        groupNames.push($(btn).attr('name'));
+      });
+
+      _.chain(groupNames).uniq().each(function(groupName) {
+        var groupOptions = this.$('[name="' + groupName + '"]');
+        if (groupOptions.is(':checked')) {
+          groupOptions.removeAttr('required');
+        } else {
+          groupOptions.attr('required', 'required');
+        }
+      }, this);
+    },
+    onRequiredOptionButtonChange: function(evt) {
+      this.updatedRequiredOptionButtons(evt.currentTarget)
     },
     onSubmit: Gatekeeper.onValidSubmit(function(evt) {
       // Make sure that the center point has been set after the form was
