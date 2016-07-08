@@ -1,0 +1,489 @@
+
+/* =The Site Header
+-------------------------------------------------------------- */
+
+#site-header {
+  color: #000;
+  background-color: #0697D7;
+}
+#site-title {
+  /*font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;*/
+  font-family: "Prenton", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 500;
+  text-shadow: none;
+}
+#site-title a,
+#site-title a:link,
+#site-title a:visited {
+  display: block;
+  position: relative;
+  color: #000;
+  font-size: 1em;
+}
+#site-title a:hover {
+  color: #000;
+}
+#site-logo {
+  float: left;
+  height: 3.75em;
+  margin-right: 0.5em;
+  margin-top: -0.5em;
+  margin-left: -0.5em;
+}
+#site-tagline {
+  display: none;
+  float: left;
+  max-width: 8.75em;
+  position: relative;
+  top: 0.25em;
+}
+
+
+/* =Navigation Menu
+-------------------------------------------------------------- */
+
+#nav-btn {
+  background-color: #eee;
+  color: #999;
+  text-shadow: none;
+}
+.access a,
+.access a:visited,
+.access a:active,
+.access a:link {
+  color: #000;
+  background-color: #eee;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+.access a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+a.list-toggle-btn,
+a.list-toggle-btn:visited,
+a.list-toggle-btn:active,
+a.list-toggle-btn:link {
+  background-color: #000;
+  color: #eee;
+  text-shadow: none;
+  box-shadow: none;
+}
+a.list-toggle-btn:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+
+/* =The Big Button to Add A New Point
+-------------------------------------------------------------- */
+
+a.add-place {
+  background-color: #000;
+  color: #eee;
+  text-shadow: none;
+}
+a.add-place:hover {
+  color: #fff;
+}
+
+
+/* =The New Point Form
+-------------------------------------------------------------- */
+
+.address-label {
+  display: block;
+  font-weight: normal;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  color: #999;
+  margin-right: 0.5em;
+}
+
+.approx-address {
+  font-weight: bold;
+}
+
+.address-display {
+  display: inline;
+}
+
+.district-display {
+  display: inline;
+}
+
+.district-display::after {
+  content: ': ';
+}
+
+.district-display:empty::after {
+  content: '';
+}
+
+.district-item {
+  padding-left: 2rem;
+}
+
+
+/* =The Ticker
+-------------------------------------------------------------- */
+
+#ticker {
+  background-color: #fff;
+}
+ul.recent-points {
+  color: #000;
+}
+.recent-points li {
+  border-bottom: 1px solid #ddd;
+}
+.recent-points li:hover {
+  background: #eee;
+}
+.recent-points a {
+  color: #000;
+}
+.recent-points li:hover a,
+.recent-points a:hover {
+  color: #000;
+}
+
+/* Hiding the comment form
+-------------------------------------------------------------- */
+
+/*.reply-link {
+  visibility: hidden;
+}
+
+#new_response {
+  visibility: hidden;
+}
+*/
+/* =Legend & Guidelines Chart
+-------------------------------------------------------------- */
+
+.legend {
+  background-color: #eee;
+  padding: 15px 10px;
+  border-bottom: 1px solid #ddd;
+  list-style: none;
+  margin: 0;
+  font-weight: bold;
+}
+.legend li {
+  padding: 8px 0 2px 0 !important;
+}
+.legend img {
+  float: left;
+  position: relative;
+  margin-right: 8px;
+  margin-top: 1px;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+}
+.legend img + img {
+  margin-right: -21px;
+  right: 31px;
+  z-index: 1;
+  opacity: 0.25;
+}
+.color-info {
+  font-size: 0.85em;
+  background: #ddd;
+  color: #666;
+  margin: 0 0 -6px !important;
+  padding: 6px 4px 8px 0 !important;
+}
+.color-info img {
+  margin-top: -12px;
+}
+
+.guidelines-header {
+  clear: both;
+  padding-top: 0.75em;
+  border-top: 1px solid #ddd;
+}
+.guidelines-header img {
+  float: right;
+  position: relative;
+  z-index: 2;
+}
+.guidelines-header img + img {
+  margin-right: -31px;
+  z-index: 1;
+  opacity: 0.25;
+}
+.eligibility-header {
+  text-transform: uppercase;
+  color: #777;
+}
+.eligible {
+  float: left;
+  width: 48%;
+}
+.non-eligible {
+  float: right;
+  width: 48%;
+}
+.muted {
+  font-size: 0.85em;
+  font-weight: normal;
+}
+
+/* =Place Details
+-------------------------------------------------------------- */
+
+.place-items {
+  padding-bottom: 1.5em;
+}
+.place-items p {
+  margin-bottom: 0.5em !important;
+}
+.description {
+  font-size: 1.5em;
+}
+.approved-location-type {
+  background-color: #ffee80;
+  float: left;
+  padding: 0.5em 1em 0.5em 56px;
+  position: relative;
+  font-size: 0.85em;
+  line-height: 1.5;
+}
+.approved-location-type + h1 {
+  clear: left;
+}
+.approved-location-icon {
+  float: left;
+  width: 50px;
+  height: 60px;
+  position: absolute;
+  top: -6px;
+  left: 2px;
+  z-index: 2;
+  background-color: transparent;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.culture .approved-location-icon {
+  background-image: url(images/markers/new/facilities-small.png);
+}
+.education .approved-location-icon {
+  background-image: url(images/markers/new/education-small.png);
+}
+.environment .approved-location-icon {
+  background-image: url(images/markers/new/tree-small.png);
+}
+.housing .approved-location-icon {
+  background-image: url(images/markers/new/housing-small.png);
+}
+.parks .approved-location-icon {
+  background-image: url(images/markers/new/playground-small.png);
+}
+.health .approved-location-icon {
+  background-image: url(images/markers/new/health-small.png);
+}
+.safety .approved-location-icon {
+  background-image: url(images/markers/new/safety-small.png);
+}
+.seniors .approved-location-icon {
+  background-image: url(images/markers/new/seniors-small.png);
+}
+.streets .approved-location-icon {
+  background-image: url(images/markers/new/street-sidewalk-small.png);
+}
+.transit .approved-location-icon {
+  background-image: url(images/markers/new/transit-small.png);
+}
+.youth .approved-location-icon {
+  background-image: url(images/markers/new/youth-small.png);
+}
+
+.ballot-declaration {
+  background-color: #0697D7;
+  padding: 1em;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8em;
+  font-family: "Prenton", Helvetica, Roboto, Arial, sans-serif;
+  text-transform: uppercase;
+  border: 2px solid #003CA6;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.vote-instructions {
+  font-weight: bold;
+  font-size: 0.8em;
+  font-family: "Prenton", Helvetica, Roboto, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 3em;
+}
+
+p.ballot-project-location-notes {
+  font-size: 0.7em;
+  font-style: italic;
+  margin-top: -0.5em;
+  margin-bottom: 1em!important;
+}
+
+.ballot-project-location strong,
+.ballot-project-description strong,
+.ballot-project-cost strong,
+.vote-instructions strong{
+  font-family: "Prenton", Helvetica, Roboto, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+
+/* =Geocoding
+-------------------------------------------------------------- */
+
+.geocoding-enabled #geocode-address-bar {
+  display: none;
+}
+
+
+/* =Leaflet Controls and Mapbox Geocoding
+-------------------------------------------------------------- */
+
+@media only screen and (min-width: 60em) {
+  #map .leaflet-top.leaflet-right {
+    top: 123px;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .geocoding-enabled #map-container,
+  .geocoding-enabled #content {
+    top: 5em;
+  }
+}
+
+#map .leaflet-bar .leaflet-control-zoom-in {
+  background-position: 4px 4px;  /* offset by 4, 4 */
+}
+#map .leaflet-bar .leaflet-control-zoom-out {
+  background-position: 4px -22px;  /* offset by 4, 4 */
+}
+
+#map .leaflet-bar .leaflet-control-mapbox-geocoder-toggle {
+  background-position: 4px -152px;  /* offset by 4, 4 */
+}
+
+#map .leaflet-control-mapbox-geocoder-wrap {
+  height: 35px;
+}
+
+#map .leaflet-control-mapbox-geocoder .leaflet-control-mapbox-geocoder-form input {
+  height: 33px;
+}
+
+#map .leaflet-control-mapbox-geocoder .leaflet-control-mapbox-geocoder-wrap {
+  left: 33px;
+}
+
+#map .leaflet-control-mapbox-geocoder-results {
+  left: 33px;
+  top: 33px;
+}
+
+#map .leaflet-control-mapbox-geocoder-results a,
+#map .leaflet-control-mapbox-geocoder-results a:hover,
+#map .leaflet-control-mapbox-geocoder-results span {
+  width: 100%;
+}
+
+
+/* =Media Queries
+-------------------------------------------------------------- */
+
+@media only screen and (min-width: 22em) {
+  #site-tagline {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  #site-title {
+    margin-right: 0;
+  }
+  #site-title a,
+  #site-title a:link,
+  #site-title a:visited {
+    font-size: 1.375em;
+  }
+  #site-tagline {
+    top: 0.25em;
+    font-size: 0.875em;
+  }
+  .access {
+    font-size: 0.75em;
+  }
+  .access li {
+    margin: 0;
+  }
+  .access a,
+  .access a:visited,
+  .access a:active,
+  .access a:link {
+    background-color: #0697D7;  /* light-blue */
+    color: #fff;
+  }
+  .access a:hover {
+    background-color: #002D6D;  /* dark-blue */
+  }
+  .list-toggle-nav {
+    font-size: 0.75em;
+    float: left;
+    margin-left: 0;
+  }
+  a.list-toggle-btn,
+  a.list-toggle-btn:visited,
+  a.list-toggle-btn:active,
+  a.list-toggle-btn:link {
+    background-color: #0697D7;  /* light-blue */
+    color: #fff;
+    border: 0;
+    border-radius: 0;
+  }
+  a.list-toggle-btn:hover {
+    color: #fff;
+    background-color: #002D6D;  /* dark-blue */
+  }
+}
+
+@media only screen and (min-width: 74em) {
+  #site-tagline {
+    top: 0.125em;
+    font-size: 1em;
+  }
+  .access {
+    /*font-size: 0.8em;*/
+    font-family: "Prenton", Helvetica, Roboto, Arial, sans-serif;
+  }
+  .list-toggle-nav {
+    /*font-size: 0.8em;*/
+    font-family: "Prenton", Helvetica, Roboto, Arial, sans-serif;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  #current-filter-type {
+    position: absolute;
+    white-space: nowrap;
+    display: inline-block;
+    transform: translate(-50%,0);
+  }
+}
+
+.closed-district {
+  color: red;
+  font-size: 0.8em;
+  font-style: italic;
+}
