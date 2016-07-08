@@ -1,7 +1,7 @@
-Thanks for submitting a new {{ place.properties.location_type }} idea to improve your community!
+{% blocktrans %}Thanks for submitting a new {{ place.properties.location_type }} idea to improve your community!{% endblocktrans %}
 
-Here's what you suggested: {{ place.properties.name}}
+{% blocktrans %}Here's what you suggested:{% endblocktrans %} {{ place.properties.name}}
 
-You can see people's comments on your idea at http://{{ request.get_host }}/place/{{ place.id }}.
+{% blocktrans %}You can see people's comments on your idea at http://{{ request.get_host }}/place/{{ place.id }}.{% endblocktrans %}
 
-For more information on the Participatory Budgeting process, go to www.council.nyc.gov/PB.
+{% blocktrans %}For more information on the Participatory Budgeting process, go to http://labs.council.nyc/pb.{% endblocktrans %}
