@@ -172,16 +172,20 @@ Shareabouts.PlaceFormView.prototype.setLocation = function(locationData) {
   $district = $approxAddress.find('.district-display');
 
   $.ajax({
-    url: 'https://shareabouts-region-service.herokuapp.com/api/v1/nyc/pb-districts-2015?ll=' + locationData.latLng.lat + ',' + locationData.latLng.lng,
+    url: 'https://shareabouts-region-service.herokuapp.com/api/v1/nyc/pb-districts-2016?ll=' + locationData.latLng.lat + ',' + locationData.latLng.lng,
     success: function(data) {
-      var closedDistricts = [39, 22, 6, 34, 30, 8, 7, 10, 3, 5, 11, 15, 19, 21, 26, 27, 29, 31, 32, 33, 35, 36, 38, 40, 44, 45, 47]
+      var unopenedDistricts = []
+      var closedDistricts = []
 
       $district.html('{% trans 'District' %} ' + data['CounDist'] + ', ' + (data['CounDist'] == 8 ? '{% trans 'Speaker' %} ' : '{% trans 'Council Member' %} ') + data['CounPerson']);
 
       // Let the user know if the district they're trying to leave an idea in
       // has already closed its PB period.
-      if (_(closedDistricts).contains(data['CounDist'])) {
-        $district.prepend('<span class="closed-district">{% trans 'Please note that the input period for this district is over for 2015.' %}</span> ');
+      if (_(unopenedDistricts).contains(data['CounDist'])) {
+        $district.prepend('<span class="closed-district">{% trans 'Please note that the input period for this district has not yet begun for 2016.' %}</span> ');
+        $('#save-place-btn').prop('disabled', true);
+      } else if (_(closedDistricts).contains(data['CounDist'])) {
+        $district.prepend('<span class="closed-district">{% trans 'Please note that the input period for this district is over for 2016.' %}</span> ');
         $('#save-place-btn').prop('disabled', true);
       } else {
         $('#save-place-btn').prop('disabled', false);
