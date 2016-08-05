@@ -76,6 +76,10 @@ a.list-toggle-btn:hover {
   background-color: #333;
 }
 
+.menu-item-filter-type ul {
+  width: 80%;
+  margin: auto;
+}
 
 /* =The Big Button to Add A New Point
 -------------------------------------------------------------- */
@@ -421,6 +425,10 @@ p.ballot-project-location-notes {
   #site-tagline {
     top: 0.25em;
     font-size: 0.875em;
+  }
+  .menu-item-filter-type ul {
+    width: auto;
+    margin: 0;
   }
   button[name="language"] {
     height: 3em;
