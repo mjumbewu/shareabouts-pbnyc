@@ -182,10 +182,10 @@ Shareabouts.PlaceFormView.prototype.setLocation = function(locationData) {
       // Let the user know if the district they're trying to leave an idea in
       // has already closed its PB period.
       if (_(unopenedDistricts).contains(data['CounDist'])) {
-        $district.prepend('<span class="closed-district">{% trans 'Please note that the input period for this district has not yet begun for 2016.' %}</span> ');
+        $district.prepend('<span class="closed-district">{% include '_unopened_district_message.html' %}</span> ');
         $('#save-place-btn').prop('disabled', true);
       } else if (_(closedDistricts).contains(data['CounDist'])) {
-        $district.prepend('<span class="closed-district">{% trans 'Please note that the input period for this district is over for 2016.' %}</span> ');
+        $district.prepend('<span class="closed-district">{% include '_closed_district_message.html' %}</span> ');
         $('#save-place-btn').prop('disabled', true);
       } else {
         $('#save-place-btn').prop('disabled', false);
