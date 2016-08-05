@@ -2,7 +2,7 @@ _prefs:
   disabled: []
   inspector: false
   mapid: openplans.7f05ca8c
-  rev: s-10ba6cb6
+  rev: s-d9f2204f
   saveCenter: true
 attribution: ''
 center: 
@@ -13,7 +13,7 @@ description: ''
 Layer: 
   - id: districts
     Datasource: 
-      file: /home/mjumbewu/Programming/poepublic/shareabouts-pbnyc-2015/data/districts.geojson
+      file: /home/mjumbewu/Programming/poepublic/shareabouts-pbnyc/data/districts.geojson
       layer: districts
       type: geojson
     description: District Shapes
@@ -28,7 +28,7 @@ Layer:
     srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
   - id: district-outlines
     Datasource: 
-      file: /home/mjumbewu/Programming/poepublic/shareabouts-pbnyc-2015/data/districts.geojson
+      file: /home/mjumbewu/Programming/poepublic/shareabouts-pbnyc/data/districts.geojson
       layer: districts
       type: geojson
     description: District Outlines
@@ -43,7 +43,7 @@ Layer:
     srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
   - id: district-centroids
     Datasource: 
-      file: /home/mjumbewu/Programming/poepublic/shareabouts-pbnyc-2015/data/district-centroids.geojson
+      file: /home/mjumbewu/Programming/poepublic/shareabouts-pbnyc/data/district-centroids.geojson
       layer: district-centroids
       type: geojson
     description: Points for District Labels

@@ -17,7 +17,7 @@
   srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
     
     <Datasource>
-       <Parameter name="file"><![CDATA[/home/mjumbewu/Programming/poepublic/shareabouts-pbnyc-2015/data/districts.geojson]]></Parameter>
+       <Parameter name="file"><![CDATA[/home/mjumbewu/Programming/poepublic/shareabouts-pbnyc/data/districts.geojson]]></Parameter>
        <Parameter name="layer"><![CDATA[districts]]></Parameter>
        <Parameter name="type"><![CDATA[geojson]]></Parameter>
     </Datasource>
@@ -28,7 +28,7 @@
   srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
     
     <Datasource>
-       <Parameter name="file"><![CDATA[/home/mjumbewu/Programming/poepublic/shareabouts-pbnyc-2015/data/districts.geojson]]></Parameter>
+       <Parameter name="file"><![CDATA[/home/mjumbewu/Programming/poepublic/shareabouts-pbnyc/data/districts.geojson]]></Parameter>
        <Parameter name="layer"><![CDATA[districts]]></Parameter>
        <Parameter name="type"><![CDATA[geojson]]></Parameter>
     </Datasource>
@@ -39,7 +39,7 @@
   srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
     
     <Datasource>
-       <Parameter name="file"><![CDATA[/home/mjumbewu/Programming/poepublic/shareabouts-pbnyc-2015/data/district-centroids.geojson]]></Parameter>
+       <Parameter name="file"><![CDATA[/home/mjumbewu/Programming/poepublic/shareabouts-pbnyc/data/district-centroids.geojson]]></Parameter>
        <Parameter name="layer"><![CDATA[district-centroids]]></Parameter>
        <Parameter name="type"><![CDATA[geojson]]></Parameter>
     </Datasource>

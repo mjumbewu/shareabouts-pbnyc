@@ -13,7 +13,7 @@ description: ''
 Layer:
   - id: districts
     Datasource:
-      file: /home/mjumbewu/Programming/poepublic/shareabouts-pbnyc-2015/data/districts.geojson
+      file: /home/mjumbewu/Programming/poepublic/shareabouts-pbnyc/data/districts.geojson
       layer: districts
       type: geojson
     description: PBNYC 2015/16 Districts
