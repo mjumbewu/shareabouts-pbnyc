@@ -16,8 +16,8 @@ languages:
   - code: es
     label: Español
 
-  - code: zh-hans
-    label: 中文
+  # - code: zh-hans
+  #   label: 中文
 
 # Settings for map and layer configs
 map:
