@@ -172,7 +172,7 @@ Shareabouts.PlaceFormView.prototype.setLocation = function(locationData) {
   $district = $approxAddress.find('.district-display');
 
   $.ajax({
-    url: 'https://shareabouts-region-service.herokuapp.com/api/v1/nyc/pb-districts-2016?ll=' + locationData.latLng.lat + ',' + locationData.latLng.lng,
+    url: '{% include '_region_service_url' %}?ll=' + locationData.latLng.lat + ',' + locationData.latLng.lng,
     success: function(data) {
       var unopenedDistricts = []
       var closedDistricts = []
