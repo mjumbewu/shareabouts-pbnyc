@@ -51,31 +51,30 @@
 </header>
 
 <section class="place-items">
-{{#_}}
   {{#if shortlisted }}
-    <p class="ballot-project-location"><strong>Location</strong>: {{ Location }}</p>
+    <p class="ballot-project-location"><strong>{{#_}}Location{{/_}}</strong>: {{ Location }}</p>
     {{#if Notes }}
     <p class="ballot-project-location-notes">{{ Notes }}</p>
     {{/if }}
-    <p class="ballot-project-description"><strong>Description</strong>: {{ description }}</p>
-    <p class="ballot-project-cost"><strong>Cost</strong>: {{ Cost }}</p>
-    <p class="vote-instructions">Vote for this project between March 26th and April 3rd. <a href="http://labs.council.nyc/districts/{{ CounDist }}/" title="District {{ CounDist }}, {{ CounPerson }}">Find out how and where in District {{ CounDist }}</a>.</p>
+    <p class="ballot-project-description"><strong>{{#_}}Description{{/_}}</strong>: {{ description }}</p>
+    <p class="ballot-project-cost"><strong>{{#_}}Cost{{/_}}</strong>: {{ Cost }}</p>
+    <p class="vote-instructions">{{#_}}Vote for this project between March 26th and April 3rd.{{/_}} <a href="http://labs.council.nyc/districts/{{ CounDist }}/" title="District {{ CounDist }}, {{ CounPerson }}">{{#_}}Find out how and where in District {{ CounDist }}{{/_}}</a>.</p>
   {{ else }}
     {{#if year }} <!-- it's a manually-added project from previous years -->
       <p class="description">{{ description }}</p>
 
       {{#if status }}
-        <p><strong>Status</strong>: {{ status }} {{#if updated }} (last updated {{ updated }}) {{/if }}</p>
+        <p><strong>{{#_}}Status{{/_}}</strong>: {{ status }} {{#if updated }} (last updated {{ updated }}) {{/if }}</p>
       {{/if }}
 
-      <p><strong>Cost</strong>: {{ cost }}</p>
-      {{#if agency}}<p><strong>Agency</strong>: {{ agency }}</p> {{/if}}
+      <p><strong>{{#_}}Cost{{/_}}</strong>: {{ cost }}</p>
+      {{#if agency}}<p><strong>{{#_}}Agency{{/_}}</strong>: {{ agency }}</p> {{/if}}
 
     {{ else }}
 
-      {{#if name }} <p>My project idea is: <span class="idea-title">{{ name }}</span></p> {{/if }}
+      {{#if name }} <p>{{#_}}My project idea is{{/_}}: <span class="idea-title">{{ name }}</span></p> {{/if }}
 
-      {{#if description }} <p>So that people could: {{ description }}</p> {{/if }}
+      {{#if description }} <p>{{#_}}So that people could{{/_}}: {{ description }}</p> {{/if }}
 
       {{# attachments }}
         <div class="place-item place-attachment-{{ name }}">
@@ -87,10 +86,8 @@
   {{/if }}
 
   {{^if survey_config}}
-    <a href="/place/{{ id }}" class="view-on-map-btn btn btn-small">View On Map</a>
+    <a href="/place/{{ id }}" class="view-on-map-btn btn btn-small">{{#_}}View On Map{{/_}}</a>
   {{/if}}
-
-{{/_}}
 </section>
 
 {{#survey_config}}

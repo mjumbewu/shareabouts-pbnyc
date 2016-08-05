@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-04 21:47-0500\n"
+"POT-Creation-Date: 2016-08-04 22:25-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -682,57 +682,43 @@ msgid ""
 msgstr ""
 
 #: pbnyc/jstemplates/place-detail.html:18
-msgid ""
-"\n"
-"  {{#if shortlisted }}\n"
-"    <p class=\"ballot-project-location\"><strong>Location</strong>: "
-"{{ Location }}</p>\n"
-"    {{#if Notes }}\n"
-"    <p class=\"ballot-project-location-notes\">{{ Notes }}</p>\n"
-"    {{/if }}\n"
-"    <p class=\"ballot-project-description\"><strong>Description</strong>: "
-"{{ description }}</p>\n"
-"    <p class=\"ballot-project-cost\"><strong>Cost</strong>: {{ Cost }}</p>\n"
-"    <p class=\"vote-instructions\">Vote for this project between March 26th "
-"and April 3rd. <a href=\"http://labs.council.nyc/districts/{{ CounDist }}/\" "
-"title=\"District {{ CounDist }}, {{ CounPerson }}\">Find out how and where "
-"in District {{ CounDist }}</a>.</p>\n"
-"  {{ else }}\n"
-"    {{#if year }} <!-- it's a manually-added project from previous years --"
-">\n"
-"      <p class=\"description\">{{ description }}</p>\n"
-"\n"
-"      {{#if status }}\n"
-"        <p><strong>Status</strong>: {{ status }} {{#if updated }} (last "
-"updated {{ updated }}) {{/if }}</p>\n"
-"      {{/if }}\n"
-"\n"
-"      <p><strong>Cost</strong>: {{ cost }}</p>\n"
-"      {{#if agency}}<p><strong>Agency</strong>: {{ agency }}</p> {{/if}}\n"
-"\n"
-"    {{ else }}\n"
-"\n"
-"      {{#if name }} <p>My project idea is: <span class=\"idea-title"
-"\">{{ name }}</span></p> {{/if }}\n"
-"\n"
-"      {{#if description }} <p>So that people could: {{ description }}</p> {{/"
-"if }}\n"
-"\n"
-"      {{# attachments }}\n"
-"        <div class=\"place-item place-attachment-{{ name }}\">\n"
-"          <img src=\"{{ file }}\" class=\"place-value place-value-"
-"{{ name }}\" alt=\"{{ name }}\">\n"
-"        </div>\n"
-"      {{/ attachments }}\n"
-"\n"
-"    {{/if }}\n"
-"  {{/if }}\n"
-"\n"
-"  {{^if survey_config}}\n"
-"    <a href=\"/place/{{ id }}\" class=\"view-on-map-btn btn btn-small\">View "
-"On Map</a>\n"
-"  {{/if}}\n"
-"\n"
+msgid "Agency"
+msgstr ""
+
+#: pbnyc/jstemplates/place-detail.html:19
+msgid "Cost"
+msgstr ""
+
+#: pbnyc/jstemplates/place-detail.html:20
+msgid "Description"
+msgstr ""
+
+#: pbnyc/jstemplates/place-detail.html:21
+msgid "Find out how and where in District {{ CounDist }}"
+msgstr ""
+
+#: pbnyc/jstemplates/place-detail.html:22
+msgid "Location"
+msgstr ""
+
+#: pbnyc/jstemplates/place-detail.html:23
+msgid "My project idea is"
+msgstr ""
+
+#: pbnyc/jstemplates/place-detail.html:24
+msgid "So that people could"
+msgstr ""
+
+#: pbnyc/jstemplates/place-detail.html:25
+msgid "Status"
+msgstr ""
+
+#: pbnyc/jstemplates/place-detail.html:26
+msgid "View On Map"
+msgstr ""
+
+#: pbnyc/jstemplates/place-detail.html:27
+msgid "Vote for this project between March 26th and April 3rd."
 msgstr ""
 
 #: pbnyc/templates/index.html:56
@@ -782,4 +768,126 @@ msgstr ""
 #: pbnyc/templates/new_place_email_subject.txt:1
 #, python-format
 msgid "Thanks for submitting a new %(place.properties.location_type)s idea!"
+msgstr ""
+
+#: sa_web/jstemplates/auth-nav.html:1
+msgid "Log Out"
+msgstr ""
+
+#: sa_web/jstemplates/auth-nav.html:2
+msgid "Sign In"
+msgstr ""
+
+#: sa_web/jstemplates/auth-nav.html:3
+msgid ""
+"Signed in as</span> <span class=\"current-user\">{{ current_user \"name\" }}"
+msgstr ""
+
+#: sa_web/jstemplates/place-detail-promotion-bar.html:1
+msgid "Recommend on Facebook"
+msgstr ""
+
+#: sa_web/jstemplates/place-detail-promotion-bar.html:2
+msgid "Tweet This"
+msgstr ""
+
+#: sa_web/jstemplates/place-detail-survey.html:1
+msgid ""
+"<strong class=\"response-submitter\">\n"
+"                    {{#if submitter}}\n"
+"                      <img src=\"{{ submitter.avatar_url }}\" class=\"avatar"
+"\" /> {{ submitter.name }}\n"
+"                    {{^}}\n"
+"                      <!-- TODO: FIXME: don't hardcode image URL -->\n"
+"                      <img src=\"{{ STATIC_URL }}css/images/user-50.png\" "
+"class=\"avatar\" /> {{ submitter_name }}\n"
+"                    {{/if}}\n"
+"                  </strong>\n"
+"                  <span class=\"response-date\">\n"
+"                    around {{ pretty_created_datetime }}\n"
+"                  </span>\n"
+"                  "
+msgstr ""
+
+#: sa_web/jstemplates/place-form.html:1
+msgid "Drag the map to your location."
+msgstr ""
+
+#: sa_web/jstemplates/place-form.html:2
+msgid ""
+"It looks like you didn't set your location yet. Please drag the map to your "
+"location."
+msgstr ""
+
+#: sa_web/jstemplates/place-form.html:3
+msgid ""
+"Or sign in with <a class=\"auth-inline twitter-btn\" href=\"/users/login/"
+"twitter/\">Twitter</a> <a class=\"auth-inline facebook-btn\" href=\"/users/"
+"login/facebook/\">Facebook</a>"
+msgstr ""
+
+#: sa_web/jstemplates/place-form.html:4
+msgid "Sorry, your browser doesn't support file uploads."
+msgstr ""
+
+#: sa_web/jstemplates/place-form.html:5
+#: sa_web/jstemplates/place-survey-form.html:1
+msgid "optional"
+msgstr ""
+
+#: sa_web/jstemplates/place-list.html:1
+msgid "Most Recent"
+msgstr ""
+
+#: sa_web/jstemplates/place-list.html:2
+msgid "Most {{ support_label_plural }}"
+msgstr ""
+
+#: sa_web/jstemplates/place-list.html:3
+msgid "Most {{ survey_label_plural }}"
+msgstr ""
+
+#: sa_web/jstemplates/place-survey-response.html:1
+msgid "Thanks for participating!"
+msgstr ""
+
+#: sa_web/jstemplates/unsupported-overlay.html:1
+msgid "Proceed Anyway"
+msgstr ""
+
+#: sa_web/jstemplates/unsupported-overlay.html:2
+msgid ""
+"You are using an unsupported browser. Please\n"
+"    <a href=\"http://browsehappy.com/\">upgrade your browser</a> to improve\n"
+"    your experience."
+msgstr ""
+
+#: sa_web/templates/base.html:97
+#, python-format
+msgid ""
+"\n"
+"        Oops, %(config.app.name)s needs JavaScript to work properly.\n"
+"        "
+msgstr ""
+
+#: sa_web/templates/base.html:102
+#, python-format
+msgid ""
+"\n"
+"        %(config.app.name)s is great but it needs something called "
+"JavaScript to work\n"
+"        properly. But fear not, it's really easy to turn on. Click\n"
+"        <a href=\"http://enable-javascript.com/\" target=\"_blank\">here</a> "
+"for simple instructions!\n"
+"        "
+msgstr ""
+
+#: sa_web/templates/base.html:116
+msgid ""
+"We can't connect to the server at the moment. Hang tight while we re-"
+"establish communication."
+msgstr ""
+
+#: sa_web/templates/base.html:122
+msgid "Close"
 msgstr ""

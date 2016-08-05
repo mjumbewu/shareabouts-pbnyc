@@ -11,698 +11,1285 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Shareabouts PBNYC 2015/16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-07 12:46-0400\n"
+"POT-Creation-Date: 2016-08-04 22:25-0500\n"
 "PO-Revision-Date: 2015-10-08 04:01+0000\n"
 "Last-Translator: Ivan Luevanos <ILuevanos@council.nyc.gov>\n"
-"Language-Team: Spanish (http://www.transifex.com/mjumbewu/shareabouts-pbnyc-201516/language/es/)\n"
+"Language-Team: Spanish (http://www.transifex.com/mjumbewu/shareabouts-"
+"pbnyc-201516/language/es/)\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/flavors/2015/_config.translations.py:1
+#: flavors/2016/_config.translations.py:1
 msgid "Enter an address..."
 msgstr "Escriba una dirección..."
 
-#: src/flavors/2015/_config.translations.py:2
+#: flavors/2016/_config.translations.py:2
 msgid "New York City Council's Participatory Budgeting"
-msgstr "Presupuesto Participativo del Concejo Municipal de la Ciudad de Nueva York"
+msgstr ""
+"Presupuesto Participativo del Concejo Municipal de la Ciudad de Nueva York"
 
-#: src/flavors/2015/_config.translations.py:3
+#: flavors/2016/_config.translations.py:3
 msgid "How would YOU spend $1 Million?"
 msgstr "¿Cómo gastarías $1 millón?"
 
-#: src/flavors/2015/_config.translations.py:4
-msgid "supported"
-msgstr "apoyado por "
-
-#: src/flavors/2015/_config.translations.py:5
-#: src/flavors/2015/_config.translations.py:18
-#: src/flavors/2015/_config.translations.py:51
-msgid "Someone"
-msgstr "Alguien"
-
-#: src/flavors/2015/_config.translations.py:6
+#: flavors/2016/_config.translations.py:4
 msgid "support"
 msgstr "Apoyo"
 
-#: src/flavors/2015/_config.translations.py:7
+#: flavors/2016/_config.translations.py:5
+msgid "supported"
+msgstr "apoyado por "
+
+#: flavors/2016/_config.translations.py:6
+#: flavors/2016/_config.translations.py:18
+#: flavors/2016/_config.translations.py:51
+msgid "Someone"
+msgstr "Alguien"
+
+#: flavors/2016/_config.translations.py:7
 msgid "Support This!"
 msgstr "¡Apoye!"
 
-#: src/flavors/2015/_config.translations.py:8
+#: flavors/2016/_config.translations.py:8
 msgid "supports"
 msgstr "Apoya"
 
-#: src/flavors/2015/_config.translations.py:9
+#: flavors/2016/_config.translations.py:9
 msgid "comments"
 msgstr "comentarios"
 
-#: src/flavors/2015/_config.translations.py:10
+#: flavors/2016/_config.translations.py:10
 msgid "commented on"
 msgstr "comentó sobre"
 
-#: src/flavors/2015/_config.translations.py:11
-#: src/flavors/2015/_config.translations.py:17
+#: flavors/2016/_config.translations.py:11
+#: flavors/2016/_config.translations.py:14
 msgid "Leave a Comment"
 msgstr "Deje un comentario"
 
-#: src/flavors/2015/_config.translations.py:12
-#: src/flavors/2015/_config.translations.py:13
-#: src/flavors/2015/_config.translations.py:15
-msgid "Comment"
-msgstr "Comentario"
-
-#: src/flavors/2015/_config.translations.py:14
-msgid "Your Name"
-msgstr "Tu nombre"
-
-#: src/flavors/2015/_config.translations.py:16
+#: flavors/2016/_config.translations.py:12
 msgid "comment"
 msgstr "comentario"
 
-#: src/flavors/2015/_config.translations.py:19
+#: flavors/2016/_config.translations.py:13
+#: flavors/2016/_config.translations.py:15
+#: flavors/2016/_config.translations.py:16
+msgid "Comment"
+msgstr "Comentario"
+
+#: flavors/2016/_config.translations.py:17
+msgid "Your Name"
+msgstr "Tu nombre"
+
+#: flavors/2016/_config.translations.py:19
 msgid "Show on a map"
 msgstr "Ver en el mapa"
 
-#: src/flavors/2015/_config.translations.py:20
+#: flavors/2016/_config.translations.py:20
 msgid "Share my idea"
 msgstr "Comparte mi idea "
 
-#: src/flavors/2015/_config.translations.py:21
+#: flavors/2016/_config.translations.py:21
 msgid "Describe your idea"
 msgstr "Describe tu idea"
 
-#: src/flavors/2015/_config.translations.py:22
+#: flavors/2016/_config.translations.py:22
 msgid "My project idea is..."
 msgstr "Mi idea para un proyecto es..."
 
-#: src/flavors/2015/_config.translations.py:23
-#: src/flavors/2015/_config.translations.py:25
+#: flavors/2016/_config.translations.py:23
+#: flavors/2016/_config.translations.py:25
 msgid "..."
 msgstr "..."
 
-#: src/flavors/2015/_config.translations.py:24
+#: flavors/2016/_config.translations.py:24
 msgid "So that people could..."
 msgstr "Para que gente pueda..."
 
-#: src/flavors/2015/_config.translations.py:26
+#: flavors/2016/_config.translations.py:26
 msgid "Pick a category for your idea"
 msgstr "Elija una categoría para tu idea"
 
-#: src/flavors/2015/_config.translations.py:27
+#: flavors/2016/_config.translations.py:27
 msgid "Please choose..."
 msgstr "Elija..."
 
-#: src/flavors/2015/_config.translations.py:28
-#: src/flavors/2015/_config.translations.py:59
-#: src/flavors/2015/_config.translations.py:65
-#: src/flavors/2015/_config.translations.py:79
+#: flavors/2016/_config.translations.py:28
+#: flavors/2016/_config.translations.py:59
+#: flavors/2016/_config.translations.py:66
+#: flavors/2016/_config.translations.py:80
 msgid "Culture & Community Facilities"
 msgstr "Instalaciones comunitarias y culturales"
 
-#: src/flavors/2015/_config.translations.py:29
-#: src/flavors/2015/_config.translations.py:58
-#: src/flavors/2015/_config.translations.py:61
-#: src/flavors/2015/_config.translations.py:80
+#: flavors/2016/_config.translations.py:29
+#: flavors/2016/_config.translations.py:58
+#: flavors/2016/_config.translations.py:61
+#: flavors/2016/_config.translations.py:81
 msgid "Schools & Education"
 msgstr "Escuelas y educación"
 
-#: src/flavors/2015/_config.translations.py:30
-#: src/flavors/2015/_config.translations.py:62
-#: src/flavors/2015/_config.translations.py:69
-#: src/flavors/2015/_config.translations.py:81
-#: src/flavors/2015/jstemplates/pages/guidelines.html:14
-#: src/flavors/2015/templates/index.html:57
+#: flavors/2016/_config.translations.py:30
+#: flavors/2016/_config.translations.py:62
+#: flavors/2016/_config.translations.py:70
+#: flavors/2016/_config.translations.py:82
+#: pbnyc/jstemplates/pages/guidelines.html:14 pbnyc/templates/index.html:57
 msgid "Environment"
 msgstr "Medioambiente"
 
-#: src/flavors/2015/_config.translations.py:31
-#: src/flavors/2015/_config.translations.py:55
-#: src/flavors/2015/_config.translations.py:67
-#: src/flavors/2015/_config.translations.py:82
-#: src/flavors/2015/jstemplates/pages/guidelines.html:25
-#: src/flavors/2015/templates/index.html:58
+#: flavors/2016/_config.translations.py:31
+#: flavors/2016/_config.translations.py:55
+#: flavors/2016/_config.translations.py:68
+#: flavors/2016/_config.translations.py:83
+#: pbnyc/jstemplates/pages/guidelines.html:25 pbnyc/templates/index.html:58
 msgid "Housing"
 msgstr "Viviendas"
 
-#: src/flavors/2015/_config.translations.py:32
-#: src/flavors/2015/_config.translations.py:68
-#: src/flavors/2015/_config.translations.py:70
-#: src/flavors/2015/_config.translations.py:83
+#: flavors/2016/_config.translations.py:32
+#: flavors/2016/_config.translations.py:69
+#: flavors/2016/_config.translations.py:71
+#: flavors/2016/_config.translations.py:84
 msgid "Parks & Recreation"
 msgstr "Parques y Recreación"
 
-#: src/flavors/2015/_config.translations.py:33
-#: src/flavors/2015/_config.translations.py:54
-#: src/flavors/2015/_config.translations.py:71
-#: src/flavors/2015/_config.translations.py:84
-#: src/flavors/2015/jstemplates/pages/guidelines.html:33
-#: src/flavors/2015/templates/index.html:60
+#: flavors/2016/_config.translations.py:33
+#: flavors/2016/_config.translations.py:54
+#: flavors/2016/_config.translations.py:72
+#: flavors/2016/_config.translations.py:85
+#: pbnyc/jstemplates/pages/guidelines.html:33 pbnyc/templates/index.html:60
 msgid "Public Health"
 msgstr "Salud pública"
 
-#: src/flavors/2015/_config.translations.py:34
-#: src/flavors/2015/_config.translations.py:72
-#: src/flavors/2015/_config.translations.py:73
-#: src/flavors/2015/_config.translations.py:85
-#: src/flavors/2015/jstemplates/pages/guidelines.html:34
-#: src/flavors/2015/templates/index.html:61
+#: flavors/2016/_config.translations.py:34
+#: flavors/2016/_config.translations.py:73
+#: flavors/2016/_config.translations.py:74
+#: flavors/2016/_config.translations.py:86
+#: pbnyc/jstemplates/pages/guidelines.html:34 pbnyc/templates/index.html:61
 msgid "Public Safety"
 msgstr "Seguridad pública"
 
-#: src/flavors/2015/_config.translations.py:35
-#: src/flavors/2015/_config.translations.py:52
-#: src/flavors/2015/_config.translations.py:60
-#: src/flavors/2015/_config.translations.py:86
-#: src/flavors/2015/jstemplates/pages/guidelines.html:42
-#: src/flavors/2015/templates/index.html:62
+#: flavors/2016/_config.translations.py:35
+#: flavors/2016/_config.translations.py:52
+#: flavors/2016/_config.translations.py:60
+#: flavors/2016/_config.translations.py:88
+#: pbnyc/jstemplates/pages/guidelines.html:42 pbnyc/templates/index.html:63
 msgid "Seniors"
 msgstr "Personas mayores"
 
-#: src/flavors/2015/_config.translations.py:36
-#: src/flavors/2015/_config.translations.py:57
-#: src/flavors/2015/_config.translations.py:64
-#: src/flavors/2015/_config.translations.py:87
+#: flavors/2016/_config.translations.py:36
+#: flavors/2016/_config.translations.py:57
+#: flavors/2016/_config.translations.py:64
+#: flavors/2016/_config.translations.py:89
 msgid "Streets & Sidewalks"
 msgstr "Calles y aceras"
 
-#: src/flavors/2015/_config.translations.py:37
-#: src/flavors/2015/_config.translations.py:56
-#: src/flavors/2015/_config.translations.py:66
-#: src/flavors/2015/_config.translations.py:88
+#: flavors/2016/_config.translations.py:37
+#: flavors/2016/_config.translations.py:56
+#: flavors/2016/_config.translations.py:67
+#: flavors/2016/_config.translations.py:90
 msgid "Transit & Transportation"
 msgstr "Tránsito y transporte"
 
-#: src/flavors/2015/_config.translations.py:38
-#: src/flavors/2015/_config.translations.py:53
-#: src/flavors/2015/_config.translations.py:63
-#: src/flavors/2015/_config.translations.py:89
-#: src/flavors/2015/jstemplates/pages/guidelines.html:51
-#: src/flavors/2015/templates/index.html:65
+#: flavors/2016/_config.translations.py:38
+#: flavors/2016/_config.translations.py:53
+#: flavors/2016/_config.translations.py:63
+#: flavors/2016/_config.translations.py:91
+#: pbnyc/jstemplates/pages/guidelines.html:51 pbnyc/templates/index.html:66
 msgid "Youth"
 msgstr "Jóvenes"
 
-#: src/flavors/2015/_config.translations.py:39
+#: flavors/2016/_config.translations.py:39
 msgid "Your name (required and will be shown on map)"
 msgstr "Su nombre (requerido y se mostrará en el mapa)"
 
-#: src/flavors/2015/_config.translations.py:40
+#: flavors/2016/_config.translations.py:40
 msgid "Your email (required and will NOT be shown on the map)"
 msgstr "Su correo electrónico (requerido y no se mostrará en el mapa)"
 
-#: src/flavors/2015/_config.translations.py:41
+#: flavors/2016/_config.translations.py:41
 msgid "Your phone number (optional and will NOT be shown on the map)"
 msgstr "Su número de teléfono (opcional y NO se mostrará en el mapa)"
 
-#: src/flavors/2015/_config.translations.py:42
+#: flavors/2016/_config.translations.py:42
 msgid "Your zip code (optional and will NOT be shown on the map)"
 msgstr "Su código postal (opcional y NO se mostrará en el mapa)"
 
-#: src/flavors/2015/_config.translations.py:43
+#: flavors/2016/_config.translations.py:43
 msgid "Your age (optional and will NOT be shown on the map)"
 msgstr "Su edad (opcional y NO se mostrará en el mapa)"
 
-#: src/flavors/2015/_config.translations.py:44
+#: flavors/2016/_config.translations.py:44
 msgid "Your gender (optional and will NOT be shown on the map)"
 msgstr "Su género (opcional y NO se mostrará en el mapa)"
 
-#: src/flavors/2015/_config.translations.py:45
+#: flavors/2016/_config.translations.py:45
 msgid "I'd like to volunteer"
 msgstr "Me gustaría ser voluntario"
 
-#: src/flavors/2015/_config.translations.py:46
+#: flavors/2016/_config.translations.py:46
 msgid "Volunteer"
 msgstr "Ser voluntario"
 
-#: src/flavors/2015/_config.translations.py:47
+#: flavors/2016/_config.translations.py:47
 msgid "Submit an idea"
 msgstr "Someter una idea"
 
-#: src/flavors/2015/_config.translations.py:48
+#: flavors/2016/_config.translations.py:48
 msgid "Show as a list"
 msgstr "Ver como lista"
 
-#: src/flavors/2015/_config.translations.py:49
+#: flavors/2016/_config.translations.py:49
 msgid "suggested"
 msgstr "sugerido"
 
-#: src/flavors/2015/_config.translations.py:50
+#: flavors/2016/_config.translations.py:50
 msgid ""
 "Ideas must be \"capital\" projects - building, installing, or repairing "
 "something for public benefit, such as renovating a public basketball court "
 "or purchasing new computers for a library."
-msgstr "Las ideas deben ser proyectos de \"capital\":  construcción, instalación o reparación de algo para el beneficio público, como la renovación de una cancha de baloncesto pública o la compra de nuevas computadoras para una biblioteca."
+msgstr ""
+"Las ideas deben ser proyectos de \"capital\":  construcción, instalación o "
+"reparación de algo para el beneficio público, como la renovación de una "
+"cancha de baloncesto pública o la compra de nuevas computadoras para una "
+"biblioteca."
 
-#: src/flavors/2015/_config.translations.py:74
+#: flavors/2016/_config.translations.py:65
+#: flavors/2016/_config.translations.py:87 pbnyc/templates/index.html:62
+msgid "Sanitation"
+msgstr ""
+
+#: flavors/2016/_config.translations.py:75
 msgid "About"
 msgstr "Sobre"
 
-#: src/flavors/2015/_config.translations.py:75
-#: src/flavors/2015/jstemplates/pages/guidelines.html:20
+#: flavors/2016/_config.translations.py:76
+#: pbnyc/jstemplates/pages/guidelines.html:20
 msgid "Guidelines"
 msgstr "Reglamentos "
 
-#: src/flavors/2015/_config.translations.py:76
+#: flavors/2016/_config.translations.py:77
 msgid "Districts"
 msgstr "Distrito"
 
-#: src/flavors/2015/_config.translations.py:77
+#: flavors/2016/_config.translations.py:78
 msgid "Categories"
 msgstr "Categorías"
 
-#: src/flavors/2015/_config.translations.py:78
+#: flavors/2016/_config.translations.py:79
 msgid "Show All"
 msgstr "Mostrar Todo"
 
-#: src/flavors/2015/jstemplates/activity-list-item.html:1
-msgid ""
-"\n"
-"\n"
-"        {{#if place.source}}\n"
-"        A new <span class=\"place-type\">{{   place.place_type_label }} idea </span>from <strong>{{ place.source }}</strong>{{#if place.CounDist}} in District {{ place.CounDist }}{{/if}} named <span class=\"place-name\">{{ place.name }}</span>\n"
-"\n"
-"        {{^}}\n"
-"          <strong>\n"
-"          {{#if target.submitter}}\n"
-"            <img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar\" /> {{ target.submitter.name }}\n"
-"          {{^}}\n"
-"            <!-- TODO: FIXME: don't hardcode image URL -->\n"
-"            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> {{ target.submitter_name }}\n"
-"          {{/if}}\n"
-"          </strong>\n"
-"    \n"
-"          {{#if is_place }}\n"
-"            {{ action }} a{{#if place.type_starts_with_vowel }}n{{/if }} <span class=\"place-type\">{{     place.place_type_label }} idea </span>\n"
-"            {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}\n"
-"            {{#if place.name }}\n"
-"              named <span class=\"place-name\">{{ place.name }}</span>\n"
-"            {{^}}\n"
-"              {{#if place.location }}\n"
-"                at <span class=\"place-name\">{{>location-string place.location }}</span>\n"
-"              {{/if }}\n"
-"            {{/if }}\n"
-"          {{else}}\n"
-"            {{ action }}\n"
-"    \n"
-"            {{#if place.name }}\n"
-"              <span class=\"place-name\">{{ place.name }}</span>\n"
-"            {{else}}\n"
-"              a{{# place.type_starts_with_vowel }}n{{/ place.type_starts_with_vowel }} {{ place.    place_type_label }}\n"
-"            {{/if }}\n"
-"            {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}\n"
-"          {{/if }}\n"
-"          "
-msgstr "\n\n        {{#if place.source}}\n        Una nueva idea de <span class=\"place-type\">{{   place.place_type_label }} </span>de <strong>\"{{ place.source }}\"</strong>{{#if place.CounDist}} en el Distrito {{ place.CounDist }}{{/if}} nombrada <span class=\"place-name\">\"{{ place.name }}\"</span>\n\n        {{^}}\n          <strong>\n          {{#if target.submitter}}\n            <img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar\" /> {{ target.submitter.name }}\n          {{^}}\n            <!-- TODO: FIXME: don't hardcode image URL -->\n            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> {{ target.submitter_name }}\n          {{/if}}\n          </strong>\n    \n          {{#if is_place }}\n            {{ action }} una idea de <span class=\"place-type\">{{     place.place_type_label }} </span>\n            {{#if place.CounDist}} en el Distrito {{ place.CounDist }}{{/if}}\n            {{#if place.name }}\n              nombrada <span class=\"place-name\">\"{{ place.name }}\"</span>\n            {{^}}\n              {{#if place.location }}\n                en <span class=\"place-name\">{{>location-string place.location }}</span>\n              {{/if }}\n            {{/if }}\n          {{else}}\n            {{ action }}\n    \n            {{#if place.name }}\n              <span class=\"place-name\">\"{{ place.name }}\"</span>\n            {{else}}\n              una idea de {{ place.    place_type_label }}\n            {{/if }}\n            {{#if place.CounDist}} en el Distrito {{ place.CounDist }}{{/if}}\n          {{/if }}\n          "
-
-#: src/flavors/2015/jstemplates/activity-list-item.html:37
-msgid ""
-"\n"
-"        {{#if place.source}}\n"
-"        A new <span class=\"place-type\">{{   place.place_type_label }} idea </span>from <strong>{{ place.source }}</strong>{{#if place.CounDist}} in District {{ place.CounDist }}{{/if}} named <span class=\"place-name\">{{ place.name }}</span>\n"
-"\n"
-"        {{^}}\n"
-"          <strong>\n"
-"          {{#if target.submitter}}\n"
-"            <img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar\" /> {{ target.submitter.name }}\n"
-"          {{^}}\n"
-"            <!-- TODO: FIXME: don't hardcode image URL -->\n"
-"            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> {{ target.submitter_name }}\n"
-"          {{/if}}\n"
-"          </strong>\n"
-"  \n"
-"          {{#if is_place }}\n"
-"            {{ action }} a{{#if place.type_starts_with_vowel }}n{{/if }} <span class=\"place-type\">{{   place.place_type_label }} idea </span>\n"
-"            {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}\n"
-"            {{#if place.name }}\n"
-"              named <span class=\"place-name\">{{ place.name }}</span>\n"
-"            {{^}}\n"
-"              {{#if place.location }}\n"
-"                at <span class=\"place-name\">{{>location-string place.location }}</span>\n"
-"              {{/if }}\n"
-"            {{/if }}\n"
-"          {{else}}\n"
-"            {{ action }}\n"
-"  \n"
-"            {{#if place.name }}\n"
-"              <span class=\"place-name\">{{ place.name }}</span>\n"
-"            {{else}}\n"
-"              a{{# place.type_starts_with_vowel }}n{{/ place.type_starts_with_vowel }} {{ place.  place_type_label }}\n"
-"            {{/if }}\n"
-"            {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}\n"
-"          {{/if }}\n"
-"          "
-msgstr "\n        {{#if place.source}}\n        Una idea nueva de <span class=\"place-type\">{{   place.place_type_label }}</span> de <strong>\"{{ place.source }}\"</strong>{{#if place.CounDist}} en el Distrito {{ place.CounDist }}{{/if}} nombrada <span class=\"place-name\">\"{{ place.name }}\"</span>\n\n        {{^}}\n          <strong>\n          {{#if target.submitter}}\n            <img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar\" /> {{ target.submitter.name }}\n          {{^}}\n            <!-- TODO: FIXME: don't hardcode image URL -->\n            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> {{ target.submitter_name }}\n          {{/if}}\n          </strong>\n  \n          {{#if is_place }}\n            {{ action }} una idea de <span class=\"place-type\">{{   place.place_type_label }} </span>\n            {{#if place.CounDist}} en el Distrito {{ place.CounDist }}{{/if}}\n            {{#if place.name }}\n              nombrada <span class=\"place-name\">\"{{ place.name }}\"</span>\n            {{^}}\n              {{#if place.location }}\n                en <span class=\"place-name\">{{>location-string place.location }}</span>\n              {{/if }}\n            {{/if }}\n          {{else}}\n            {{ action }}\n  \n            {{#if place.name }}\n              <span class=\"place-name\">\"{{ place.name }}\"</span>\n            {{else}}\n              una idea de {{ place.  place_type_label }}\n            {{/if }}\n            {{#if place.CounDist}} en el Distrito {{ place.CounDist }}{{/if}}\n          {{/if }}\n          "
-
-#: src/flavors/2015/jstemplates/pages/about.html:1
+#: flavors/2016/jstemplates/pages/about.html:1
 msgid ""
 "After you submit your idea on this Idea Collection Map, your idea will be "
 "given to community volunteers, called Budget Delegates. Budget Delegates "
 "work in your district to turn ideas into real proposals for a ballot, with "
 "input from city agencies. These proposals will be up for a community-wide "
 "vote in the spring."
-msgstr "Después que entregue su idea en este mapa de ideas, su idea sera entregada a voluntarios comunitarios llamados delegados del presupuesto. Los delegados del presupuesto trabajan en su distrito para convertir sus ideas en propuestas concretas para una boleta, con la ayuda de agencias municipales. Estas propuestas estarán listas para la semana de votación en la primavera. "
+msgstr ""
+"Después que entregue su idea en este mapa de ideas, su idea sera entregada a "
+"voluntarios comunitarios llamados delegados del presupuesto. Los delegados "
+"del presupuesto trabajan en su distrito para convertir sus ideas en "
+"propuestas concretas para una boleta, con la ayuda de agencias municipales. "
+"Estas propuestas estarán listas para la semana de votación en la primavera. "
 
-#: src/flavors/2015/jstemplates/pages/about.html:2
+#: flavors/2016/jstemplates/pages/about.html:2
 msgid "Check out the guidelines</a> to see what ideas can be funded."
-msgstr "Revise los reglamentos</a> para ver cuáles ideas pueden ser financiadas."
+msgstr ""
+"Revise los reglamentos</a> para ver cuáles ideas pueden ser financiadas."
 
-#: src/flavors/2015/jstemplates/pages/about.html:3
+#: flavors/2016/jstemplates/pages/about.html:3
+#, fuzzy
+#| msgid ""
+#| "For more information on participatory budgeting, other community PB "
+#| "events like Neighborhood Assemblies, and how to get more involved, visit "
+#| "<a href=\"http://council.nyc.gov/PB\" target=\"_blank\">council.nyc.gov/"
+#| "PB</a>."
 msgid ""
 "For more information on participatory budgeting, other community PB events "
-"like Neighborhood Assemblies, and how to get more involved, visit <a "
-"href=\"http://council.nyc.gov/PB\" target=\"_blank\">council.nyc.gov/PB</a>."
-msgstr "Para obtener más información sobre el presupuesto participativo, otros eventos comunales de la PP, como Asambleas Comunales , y cómo te puedes envolver  más , visite <a href=\"http://council.nyc.gov/PB\" target=\"_blank\"> council.nyc . </a> gov / PB . "
+"like Neighborhood Assemblies, and how to get more involved, visit <a href="
+"\"http://labs.council.nyc/pb\" target=\"_blank\">labs.council.nyc/pb</a>."
+msgstr ""
+"Para obtener más información sobre el presupuesto participativo, otros "
+"eventos comunales de la PP, como Asambleas Comunales , y cómo te puedes "
+"envolver  más , visite <a href=\"http://council.nyc.gov/PB\" target=\"_blank"
+"\"> council.nyc . </a> gov / PB . "
 
-#: src/flavors/2015/jstemplates/pages/about.html:4
+#: flavors/2016/jstemplates/pages/about.html:4
 msgid ""
 "If you have an idea about how things could work better in your community, "
 "share it on the map."
-msgstr "Si tiene una idea de cómo las cosas podrían funcionar mejor en su comunidad, compártalo en el mapa."
+msgstr ""
+"Si tiene una idea de cómo las cosas podrían funcionar mejor en su comunidad, "
+"compártalo en el mapa."
 
-#: src/flavors/2015/jstemplates/pages/about.html:5
+#: flavors/2016/jstemplates/pages/about.html:5
 msgid "Real Money."
 msgstr "Dinero Real."
 
-#: src/flavors/2015/jstemplates/pages/about.html:6
+#: flavors/2016/jstemplates/pages/about.html:6
 msgid "Real Power."
 msgstr "Poder Real."
 
-#: src/flavors/2015/jstemplates/pages/about.html:7
+#: flavors/2016/jstemplates/pages/about.html:7
 msgid "Real Projects."
 msgstr "Proyectos Reales"
 
-#: src/flavors/2015/jstemplates/pages/about.html:8
+#: flavors/2016/jstemplates/pages/about.html:8
 msgid ""
 "Share your ideas on the map for how things could be better in your "
 "community. <a href=\"/page/guidelines\" title=\"Participatory Budgeting in "
 "New York City | REAL MONEY. REAL PROJECTS. REAL POWER.\">Check out the "
 "guidelines</a> to see what ideas can be funded."
-msgstr "Comparta sus ideas en el mapa para ver como cosas podrían ser mejoradas en su comunidad.<a href=\"/page/guidelines\" title=\"Participatory Budgeting in New York City | REAL MONEY. REAL PROJECTS. REAL POWER.\"> Revise los reglamentos </a> para ver cuales ideas pueden ser financiadas. "
+msgstr ""
+"Comparta sus ideas en el mapa para ver como cosas podrían ser mejoradas en "
+"su comunidad.<a href=\"/page/guidelines\" title=\"Participatory Budgeting in "
+"New York City | REAL MONEY. REAL PROJECTS. REAL POWER.\"> Revise los "
+"reglamentos </a> para ver cuales ideas pueden ser financiadas. "
 
-#: src/flavors/2015/jstemplates/pages/about.html:9
+#: flavors/2016/jstemplates/pages/about.html:9
 msgid ""
 "Through Participatory Budgeting, community members - like you - directly "
 "decide how to spend at least $1,000,000 of the public budget in "
 "participating Council District."
-msgstr "A través del Presupuesto Participativo, miembros de la comunidad - como tú - deciden directamente cómo gastar al menos $ 1.000.000 del presupuesto público en  Distritos participantes  del  Concejo Municipal."
+msgstr ""
+"A través del Presupuesto Participativo, miembros de la comunidad - como tú - "
+"deciden directamente cómo gastar al menos $ 1.000.000 del presupuesto "
+"público en  Distritos participantes  del  Concejo Municipal."
 
-#: src/flavors/2015/jstemplates/pages/district.html:1
+#: flavors/2016/jstemplates/pages/district.html:1
+msgid "Bronx"
+msgstr ""
+
+#: flavors/2016/jstemplates/pages/district.html:2
+msgid "Brooklyn"
+msgstr ""
+
+#: flavors/2016/jstemplates/pages/district.html:3
 msgid "Choose Your Council District"
 msgstr "Elija su distrito del Concejo Municipal"
 
-#: src/flavors/2015/jstemplates/pages/district.html:2
-#: src/flavors/2015/templates/index.html:177
+#: flavors/2016/jstemplates/pages/district.html:4
+#: pbnyc/templates/index.html:181
+msgid "Council Member"
+msgstr "Concejal"
+
+#: flavors/2016/jstemplates/pages/district.html:5
+#: pbnyc/templates/index.html:181
 msgid "District"
 msgstr "Distrito"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:1
+#: flavors/2016/jstemplates/pages/district.html:6
+msgid "Manhattan"
+msgstr ""
+
+#: flavors/2016/jstemplates/pages/district.html:7
+msgid "Queens"
+msgstr ""
+
+#: flavors/2016/jstemplates/pages/district.html:8
+#: pbnyc/templates/index.html:181
+msgid "Speaker"
+msgstr "Presidenta del Concejo Municipal"
+
+#: flavors/2016/jstemplates/pages/district.html:9
+msgid "Staten Island"
+msgstr ""
+
+#: flavors/2016/templates/_closed_district_message.html:1
+#, fuzzy
+#| msgid ""
+#| "Please note that the input period for this district is over for 2015."
+msgid "Please note that the input period for this district is over for 2016."
+msgstr ""
+"Tenga en cuenta que el periodo para someter su idea en este distrito ha "
+"terminado."
+
+#: flavors/2016/templates/_unopened_district_message.html:1
+#, fuzzy
+#| msgid ""
+#| "Please note that the input period for this district is over for 2015."
+msgid ""
+"Please note that the input period for this district has not yet begun for "
+"2016."
+msgstr ""
+"Tenga en cuenta que el periodo para someter su idea en este distrito ha "
+"terminado."
+
+#: flavors/staff/templates/index.html:68 pbnyc/templates/index.html:75
+msgid "Powered by"
+msgstr "Potenciado por"
+
+#: pbnyc/jstemplates/activity-list-item.html:1
+msgid ""
+"\n"
+"\n"
+"        {{#if place.source}}\n"
+"        A new <span class=\"place-type\">{{   place.place_type_label }} idea "
+"</span>from <strong>{{ place.source }}</strong>{{#if place.CounDist}} in "
+"District {{ place.CounDist }}{{/if}} named <span class=\"place-name"
+"\">{{ place.name }}</span>\n"
+"\n"
+"        {{^}}\n"
+"          <strong>\n"
+"          {{#if target.submitter}}\n"
+"            <img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar\" /"
+"> {{ target.submitter.name }}\n"
+"          {{^}}\n"
+"            <!-- TODO: FIXME: don't hardcode image URL -->\n"
+"            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> "
+"{{ target.submitter_name }}\n"
+"          {{/if}}\n"
+"          </strong>\n"
+"    \n"
+"          {{#if is_place }}\n"
+"            {{ action }} a{{#if place.type_starts_with_vowel }}n{{/if }} "
+"<span class=\"place-type\">{{     place.place_type_label }} idea </span>\n"
+"            {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}\n"
+"            {{#if place.name }}\n"
+"              named <span class=\"place-name\">{{ place.name }}</span>\n"
+"            {{^}}\n"
+"              {{#if place.location }}\n"
+"                at <span class=\"place-name\">{{>location-string place."
+"location }}</span>\n"
+"              {{/if }}\n"
+"            {{/if }}\n"
+"          {{else}}\n"
+"            {{ action }}\n"
+"    \n"
+"            {{#if place.name }}\n"
+"              <span class=\"place-name\">{{ place.name }}</span>\n"
+"            {{else}}\n"
+"              a{{# place.type_starts_with_vowel }}n{{/ place."
+"type_starts_with_vowel }} {{ place.    place_type_label }}\n"
+"            {{/if }}\n"
+"            {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}\n"
+"          {{/if }}\n"
+"          "
+msgstr ""
+"\n"
+"\n"
+"        {{#if place.source}}\n"
+"        Una nueva idea de <span class=\"place-type\">{{   place."
+"place_type_label }} </span>de <strong>\"{{ place.source }}\"</strong>{{#if "
+"place.CounDist}} en el Distrito {{ place.CounDist }}{{/if}} nombrada <span "
+"class=\"place-name\">\"{{ place.name }}\"</span>\n"
+"\n"
+"        {{^}}\n"
+"          <strong>\n"
+"          {{#if target.submitter}}\n"
+"            <img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar\" /"
+"> {{ target.submitter.name }}\n"
+"          {{^}}\n"
+"            <!-- TODO: FIXME: don't hardcode image URL -->\n"
+"            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> "
+"{{ target.submitter_name }}\n"
+"          {{/if}}\n"
+"          </strong>\n"
+"    \n"
+"          {{#if is_place }}\n"
+"            {{ action }} una idea de <span class=\"place-type\">{{     place."
+"place_type_label }} </span>\n"
+"            {{#if place.CounDist}} en el Distrito {{ place.CounDist }}{{/"
+"if}}\n"
+"            {{#if place.name }}\n"
+"              nombrada <span class=\"place-name\">\"{{ place.name }}\"</"
+"span>\n"
+"            {{^}}\n"
+"              {{#if place.location }}\n"
+"                en <span class=\"place-name\">{{>location-string place."
+"location }}</span>\n"
+"              {{/if }}\n"
+"            {{/if }}\n"
+"          {{else}}\n"
+"            {{ action }}\n"
+"    \n"
+"            {{#if place.name }}\n"
+"              <span class=\"place-name\">\"{{ place.name }}\"</span>\n"
+"            {{else}}\n"
+"              una idea de {{ place.    place_type_label }}\n"
+"            {{/if }}\n"
+"            {{#if place.CounDist}} en el Distrito {{ place.CounDist }}{{/"
+"if}}\n"
+"          {{/if }}\n"
+"          "
+
+#: pbnyc/jstemplates/activity-list-item.html:37
+msgid ""
+"\n"
+"        {{#if place.source}}\n"
+"        A new <span class=\"place-type\">{{   place.place_type_label }} idea "
+"</span>from <strong>{{ place.source }}</strong>{{#if place.CounDist}} in "
+"District {{ place.CounDist }}{{/if}} named <span class=\"place-name"
+"\">{{ place.name }}</span>\n"
+"\n"
+"        {{^}}\n"
+"          <strong>\n"
+"          {{#if target.submitter}}\n"
+"            <img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar\" /"
+"> {{ target.submitter.name }}\n"
+"          {{^}}\n"
+"            <!-- TODO: FIXME: don't hardcode image URL -->\n"
+"            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> "
+"{{ target.submitter_name }}\n"
+"          {{/if}}\n"
+"          </strong>\n"
+"  \n"
+"          {{#if is_place }}\n"
+"            {{ action }} a{{#if place.type_starts_with_vowel }}n{{/if }} "
+"<span class=\"place-type\">{{   place.place_type_label }} idea </span>\n"
+"            {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}\n"
+"            {{#if place.name }}\n"
+"              named <span class=\"place-name\">{{ place.name }}</span>\n"
+"            {{^}}\n"
+"              {{#if place.location }}\n"
+"                at <span class=\"place-name\">{{>location-string place."
+"location }}</span>\n"
+"              {{/if }}\n"
+"            {{/if }}\n"
+"          {{else}}\n"
+"            {{ action }}\n"
+"  \n"
+"            {{#if place.name }}\n"
+"              <span class=\"place-name\">{{ place.name }}</span>\n"
+"            {{else}}\n"
+"              a{{# place.type_starts_with_vowel }}n{{/ place."
+"type_starts_with_vowel }} {{ place.  place_type_label }}\n"
+"            {{/if }}\n"
+"            {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}\n"
+"          {{/if }}\n"
+"          "
+msgstr ""
+"\n"
+"        {{#if place.source}}\n"
+"        Una idea nueva de <span class=\"place-type\">{{   place."
+"place_type_label }}</span> de <strong>\"{{ place.source }}\"</strong>{{#if "
+"place.CounDist}} en el Distrito {{ place.CounDist }}{{/if}} nombrada <span "
+"class=\"place-name\">\"{{ place.name }}\"</span>\n"
+"\n"
+"        {{^}}\n"
+"          <strong>\n"
+"          {{#if target.submitter}}\n"
+"            <img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar\" /"
+"> {{ target.submitter.name }}\n"
+"          {{^}}\n"
+"            <!-- TODO: FIXME: don't hardcode image URL -->\n"
+"            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> "
+"{{ target.submitter_name }}\n"
+"          {{/if}}\n"
+"          </strong>\n"
+"  \n"
+"          {{#if is_place }}\n"
+"            {{ action }} una idea de <span class=\"place-type\">{{   place."
+"place_type_label }} </span>\n"
+"            {{#if place.CounDist}} en el Distrito {{ place.CounDist }}{{/"
+"if}}\n"
+"            {{#if place.name }}\n"
+"              nombrada <span class=\"place-name\">\"{{ place.name }}\"</"
+"span>\n"
+"            {{^}}\n"
+"              {{#if place.location }}\n"
+"                en <span class=\"place-name\">{{>location-string place."
+"location }}</span>\n"
+"              {{/if }}\n"
+"            {{/if }}\n"
+"          {{else}}\n"
+"            {{ action }}\n"
+"  \n"
+"            {{#if place.name }}\n"
+"              <span class=\"place-name\">\"{{ place.name }}\"</span>\n"
+"            {{else}}\n"
+"              una idea de {{ place.  place_type_label }}\n"
+"            {{/if }}\n"
+"            {{#if place.CounDist}} en el Distrito {{ place.CounDist }}{{/"
+"if}}\n"
+"          {{/if }}\n"
+"          "
+
+#: pbnyc/jstemplates/pages/guidelines.html:1
 msgid " Schools and Education"
 msgstr "Escuelas y Educación"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:2
+#: pbnyc/jstemplates/pages/guidelines.html:2
 msgid "(Expenses)"
 msgstr "(Gastos)"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:3
+#: pbnyc/jstemplates/pages/guidelines.html:3
 msgid "After school programs"
 msgstr "Programas Despues del Horario Escolar"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:4
+#: pbnyc/jstemplates/pages/guidelines.html:4
 msgid "All ideas must be submitted by <strong>November 16, 2015</strong>."
-msgstr "Todas las ideas deben ser sometidas antes del <strong>16 de Noviembre del </strong>."
+msgstr ""
+"Todas las ideas deben ser sometidas antes del <strong>16 de Noviembre del </"
+"strong>."
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:5
+#: pbnyc/jstemplates/pages/guidelines.html:5
 msgid "Anyone can post ideas."
 msgstr "Cualquiera puede sugerir ideas"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:6
+#: pbnyc/jstemplates/pages/guidelines.html:6
 msgid "Basketball court, park benches, skate park"
 msgstr "Cancha de baloncesto, bancas en el parque, parque para patinar"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:7
+#: pbnyc/jstemplates/pages/guidelines.html:7
 msgid "Build a wheelchair accessible ramp, improved lighting"
-msgstr "Construir infraestructuras aptas para personas discapacitadas, mejorar iluminación"
+msgstr ""
+"Construir infraestructuras aptas para personas discapacitadas, mejorar "
+"iluminación"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:8
+#: pbnyc/jstemplates/pages/guidelines.html:8
 msgid ""
 "Buy lighting, sound, or other equipment for a local cultural organization"
-msgstr "Comprar equipos de iluminación, audio para una organización cultural local"
+msgstr ""
+"Comprar equipos de iluminación, audio para una organización cultural local"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:9
-#: src/flavors/2015/templates/index.html:55
+#: pbnyc/jstemplates/pages/guidelines.html:9 pbnyc/templates/index.html:55
 msgid "Culture and Community Facilities"
 msgstr "Instalaciones comunitarias y culturales "
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:10
+#: pbnyc/jstemplates/pages/guidelines.html:10
 msgid "Educational programs"
 msgstr "Programas educacionales"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:11
+#: pbnyc/jstemplates/pages/guidelines.html:11
 msgid ""
-"Eligible ideas must be for \"capital\" projects: physical infrastructure for"
-" public benefit, such as park improvements or new technology for schools. "
+"Eligible ideas must be for \"capital\" projects: physical infrastructure for "
+"public benefit, such as park improvements or new technology for schools. "
 "“Expense\" projects, such as afterschool programs or expanding bus service, "
 "are not eligible."
-msgstr "Las ideas elegibles deben ser para proyectos de \"capital\": la infraestructura física para el beneficio público, como las mejoras de parques o nuevas tecnologías para las escuelas. Proyectos de \"gastos\", tales como los programas despues del horario escolar o la ampliación del servicio de autobuses, no son elegibles."
+msgstr ""
+"Las ideas elegibles deben ser para proyectos de \"capital\": la "
+"infraestructura física para el beneficio público, como las mejoras de "
+"parques o nuevas tecnologías para las escuelas. Proyectos de \"gastos\", "
+"tales como los programas despues del horario escolar o la ampliación del "
+"servicio de autobuses, no son elegibles."
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:12
+#: pbnyc/jstemplates/pages/guidelines.html:12
 msgid "Eligible"
 msgstr "Elegible"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:13
+#: pbnyc/jstemplates/pages/guidelines.html:13
 msgid "Eligible:"
 msgstr "Elegible"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:15
+#: pbnyc/jstemplates/pages/guidelines.html:15
 msgid "Examples of Eligible Capital Ideas"
 msgstr "Ejemplos de ideas capitales calificadas"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:16
+#: pbnyc/jstemplates/pages/guidelines.html:16
 msgid "Expanding bus service"
 msgstr "Ampliar los servicios de autobuses"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:17
+#: pbnyc/jstemplates/pages/guidelines.html:17
 msgid "Extending library staff hours"
 msgstr "Extender las horas para el personal de la biblioteca"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:18
+#: pbnyc/jstemplates/pages/guidelines.html:18
 msgid "Green infrastructure such as bioswales and permeable pavement"
-msgstr "Infraestructura verde tal como canales de filtración biológico y pavimento permeable"
+msgstr ""
+"Infraestructura verde tal como canales de filtración biológico y pavimento "
+"permeable"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:19
+#: pbnyc/jstemplates/pages/guidelines.html:19
 msgid "Green roofs on schools"
 msgstr "Techos verdes en las escuelas"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:21
+#: pbnyc/jstemplates/pages/guidelines.html:21
 msgid "Hiring home health care workers"
 msgstr " Emplear trabajadores de la salud en el hogar"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:22
+#: pbnyc/jstemplates/pages/guidelines.html:22
 msgid "Hiring more police"
 msgstr "Emplear más policías"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:23
+#: pbnyc/jstemplates/pages/guidelines.html:23
 msgid "Hiring nurses for a clinic"
 msgstr "Emplear enfermeras para una clínica"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:24
+#: pbnyc/jstemplates/pages/guidelines.html:24
 msgid "Hiring security staff"
 msgstr "Emplear personal de seguridad"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:26
+#: pbnyc/jstemplates/pages/guidelines.html:26
 msgid "Make bathrooms ADA compliant"
 msgstr "Hacer que baños cumplan con la ADA"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:27
+#: pbnyc/jstemplates/pages/guidelines.html:27
 msgid "New computers for a local library"
 msgstr "Nuevas computadoras para una biblioteca local"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:28
+#: pbnyc/jstemplates/pages/guidelines.html:28
 msgid "Non-Eligible"
 msgstr "No elegible"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:29
-#: src/flavors/2015/templates/index.html:59
+#: pbnyc/jstemplates/pages/guidelines.html:29 pbnyc/templates/index.html:59
 msgid "Parks and Recreation"
 msgstr "Parques y Recreación"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:30
+#: pbnyc/jstemplates/pages/guidelines.html:30
 msgid "Paying bills for electricity of a public building, etc."
 msgstr "Pagar las cuentas de electricidad de un edificio público, etc."
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:31
+#: pbnyc/jstemplates/pages/guidelines.html:31
 msgid "Pedestrian safety improvements at intersections"
 msgstr "Mejoras la seguridad para peatones en las  intersecciones  "
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:32
+#: pbnyc/jstemplates/pages/guidelines.html:32
 msgid "Playground upgrades"
 msgstr "Mejoramiento de areas de recreo"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:35
+#: pbnyc/jstemplates/pages/guidelines.html:35
 msgid "Public exercise equipment"
 msgstr "Equipo de ejercicios para el público  "
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:36
+#: pbnyc/jstemplates/pages/guidelines.html:36
 msgid "Renovation of local community center"
 msgstr "Renovación de un centro comunitario local"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:37
+#: pbnyc/jstemplates/pages/guidelines.html:37
 msgid "Renovation of school property"
 msgstr "Renovación de propiedades escolares"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:38
+#: pbnyc/jstemplates/pages/guidelines.html:38
 msgid "Renovations for local hospital or clinic"
 msgstr "Renovaciones para un hospital local o clínica"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:39
+#: pbnyc/jstemplates/pages/guidelines.html:39
 msgid "Repairs to privately-owned sidewalks"
 msgstr "Reparaciones a aceras privadas"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:40
+#: pbnyc/jstemplates/pages/guidelines.html:40
 msgid "Road resurfacing"
 msgstr "Repavimentación de carreteras"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:41
+#: pbnyc/jstemplates/pages/guidelines.html:41
 msgid "Security cameras around schools and public housing"
 msgstr "Cámaras de seguridad alrededor de escuelas y viviendas públicas"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:43
-#: src/flavors/2015/templates/index.html:63
+#: pbnyc/jstemplates/pages/guidelines.html:43 pbnyc/templates/index.html:64
 msgid "Streets and Sidewalks"
 msgstr "Calles y aceras"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:44
+#: pbnyc/jstemplates/pages/guidelines.html:44
 msgid "Subway station improvements such as installation of help points"
-msgstr "Mejoramiento de las estaciones del tern subterráneo como  la instalación de puntos de ayuda."
+msgstr ""
+"Mejoramiento de las estaciones del tern subterráneo como  la instalación de "
+"puntos de ayuda."
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:45
+#: pbnyc/jstemplates/pages/guidelines.html:45
 msgid "Tech for public school"
 msgstr "Tecnología para escuelas públicas"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:46
+#: pbnyc/jstemplates/pages/guidelines.html:46
 msgid "Technology centers"
 msgstr "Centros tecnológicos"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:47
+#: pbnyc/jstemplates/pages/guidelines.html:47
 msgid ""
 "To add a spot, drag the map until the crosshairs are over the desired "
-"location. Ideas will be considered by the Council District within which they"
-" are located."
-msgstr "Para añadir un punto, arrastre el mapa hasta que la cruz del cursor se encuentre sobre la ubicación deseada. Las ideas serán consideradas por el distrito del Concejo Municipal en el que se encuentran."
+"location. Ideas will be considered by the Council District within which they "
+"are located."
+msgstr ""
+"Para añadir un punto, arrastre el mapa hasta que la cruz del cursor se "
+"encuentre sobre la ubicación deseada. Las ideas serán consideradas por el "
+"distrito del Concejo Municipal en el que se encuentran."
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:48
+#: pbnyc/jstemplates/pages/guidelines.html:48
 msgid "Transit"
 msgstr "Transporte"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:49
+#: pbnyc/jstemplates/pages/guidelines.html:49
 msgid "Upgrade public plazas"
 msgstr "Mejoramiento de plazas públicas"
 
-#: src/flavors/2015/jstemplates/pages/guidelines.html:50
+#: pbnyc/jstemplates/pages/guidelines.html:50
 msgid "Weatherization of public housing"
 msgstr "Climatización de  vivienda pública"
 
-#: src/flavors/2015/jstemplates/place-detail.html:1
+#: pbnyc/jstemplates/place-detail.html:1
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "\n"
+#| "        {{#if source}}\n"
+#| "          A {{place_type_label location_type }} idea {{#if CounDist}} in "
+#| "District {{ CounDist }}{{/if}} from <strong>{{ source }}</strong>\n"
+#| "        {{^}}\n"
+#| "        <strong class=\"point-submitter\">\n"
+#| "          {{#if submitter}}\n"
+#| "            <img src=\"{{ submitter.avatar_url }}\" class=\"avatar\" /> "
+#| "{{ submitter.name }}\n"
+#| "          {{^}}\n"
+#| "            <!-- TODO: FIXME: don't hardcode image URL -->\n"
+#| "            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /"
+#| "> {{ submitter_name }}\n"
+#| "          {{/if}}\n"
+#| "            </strong> suggested this {{place_type_label location_type }} "
+#| "idea {{#if CounDist}} in District {{ CounDist }}{{/if}}. \n"
+#| "        {{/if}}\n"
+#| "            <p><small>Near {{>location-string location }}</small></p>\n"
+#| "\n"
+#| "        "
 msgid ""
 "\n"
 "\n"
 "        {{#if source}}\n"
-"          A {{place_type_label location_type }} idea {{#if CounDist}} in District {{ CounDist }}{{/if}} from <strong>{{ source }}</strong>\n"
+"          A {{place_type_label location_type }} idea {{#if CounDist}} in "
+"District {{ CounDist }}{{/if}} from <strong>{{ source }}</strong>\n"
 "        {{^}}\n"
 "        <strong class=\"point-submitter\">\n"
 "          {{#if submitter}}\n"
-"            <img src=\"{{ submitter.avatar_url }}\" class=\"avatar\" /> {{ submitter.name }}\n"
+"            <img src=\"{{ submitter.avatar_url }}\" class=\"avatar\" /> "
+"{{ submitter.name }}\n"
 "          {{^}}\n"
 "            <!-- TODO: FIXME: don't hardcode image URL -->\n"
-"            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> {{ submitter_name }}\n"
+"            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> "
+"{{ submitter_name }}\n"
 "          {{/if}}\n"
-"            </strong> suggested this {{place_type_label location_type }} idea {{#if CounDist}} in District {{ CounDist }}{{/if}}. \n"
+"            </strong> suggested this {{place_type_label location_type }} "
+"idea {{#if CounDist}} in District {{ CounDist }}{{/if}}.\n"
 "        {{/if}}\n"
 "            <p><small>Near {{>location-string location }}</small></p>\n"
 "\n"
 "        "
-msgstr "\n\n        {{#if source}}\n          Una idea de {{place_type_label location_type }} {{#if CounDist}} en Distrito {{ CounDist }}{{/if}} de <strong>\"{{ source }}\"</strong>\n        {{^}}\n        <strong class=\"point-submitter\">\n          {{#if submitter}}\n            <img src=\"{{ submitter.avatar_url }}\" class=\"avatar\" /> {{ submitter.name }}\n          {{^}}\n            <!-- TODO: FIXME: don't hardcode image URL -->\n            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> {{ submitter_name }}\n          {{/if}}\n            </strong> sugerió esta idea de {{place_type_label location_type }} {{#if CounDist}} en Distrito {{ CounDist }}{{/if}}. \n        {{/if}}\n            <p><small>Cerca de {{>location-string location }}</small></p>\n\n        "
+msgstr ""
+"\n"
+"\n"
+"        {{#if source}}\n"
+"          Una idea de {{place_type_label location_type }} {{#if CounDist}} "
+"en Distrito {{ CounDist }}{{/if}} de <strong>\"{{ source }}\"</strong>\n"
+"        {{^}}\n"
+"        <strong class=\"point-submitter\">\n"
+"          {{#if submitter}}\n"
+"            <img src=\"{{ submitter.avatar_url }}\" class=\"avatar\" /> "
+"{{ submitter.name }}\n"
+"          {{^}}\n"
+"            <!-- TODO: FIXME: don't hardcode image URL -->\n"
+"            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> "
+"{{ submitter_name }}\n"
+"          {{/if}}\n"
+"            </strong> sugerió esta idea de {{place_type_label "
+"location_type }} {{#if CounDist}} en Distrito {{ CounDist }}{{/if}}. \n"
+"        {{/if}}\n"
+"            <p><small>Cerca de {{>location-string location }}</small></p>\n"
+"\n"
+"        "
 
-#: src/flavors/2015/jstemplates/place-detail.html:18
-msgid ""
-"\n"
-"  {{#if shortlisted }}\n"
-"    <p><strong>Location</strong>: {{ Location }}</p>\n"
-"    <p><strong>Description</strong>: {{ description }}</p>\n"
-"    <p><strong>Cost</strong>: {{ Cost }}</p>\n"
-"    <p>Vote for this project between March 29th and April 6th. <a href=\"http://pbnyc.org/\" title=\"Participatory Budgeting in New York City | REAL MONEY. REAL PROJECTS. REAL POWER.\">Find out how and where</a>.</p>\n"
-"  {{ else }}\n"
-"    {{#if year }} <!-- it's a manually-added project from previous years -->\n"
-"      <p class=\"description\">{{ description }}</p>\n"
-"    \n"
-"      {{#if status }}\n"
-"        <p><strong>Status</strong>: {{ status }} {{#if updated }} (last updated {{ updated }}) {{/if }}</p>\n"
-"      {{/if }}\n"
-"\n"
-"      <p><strong>Cost</strong>: {{ cost }}</p>\n"
-"      {{#if agency}}<p><strong>Agency</strong>: {{ agency }}</p> {{/if}}\n"
-"    \n"
-"    {{ else }}\n"
-"  \n"
-"      {{#if name }} <p>My project idea is: <span class=\"idea-title\">{{ name }}</span></p> {{/if }}\n"
-"\n"
-"      {{#if description }} <p>So that people could: {{ description }}</p> {{/if }}\n"
-"  \n"
-"      {{# attachments }}\n"
-"        <div class=\"place-item place-attachment-{{ name }}\">\n"
-"          <img src=\"{{ file }}\" class=\"place-value place-value-{{ name }}\" alt=\"{{ name }}\">\n"
-"        </div>\n"
-"      {{/ attachments }}\n"
-"\n"
-"    {{/if }}\n"
-"  {{/if }}\n"
-"  \n"
-"  {{^if survey_config}}\n"
-"    <a href=\"/place/{{ id }}\" class=\"view-on-map-btn btn btn-small\">View On Map</a>\n"
-"  {{/if}}\n"
-"  \n"
-msgstr "\n  {{#if shortlisted }}\n    <p><strong>Ubicación</strong>: {{ Location }}</p>\n    <p><strong>Idea</strong>: {{ description }}</p>\n    <p><strong>Costo</strong>: {{ Cost }}</p>\n    <p>Vote for this project between March 29th and April 6th. <a href=\"http://pbnyc.org/\" title=\"Participatory Budgeting in New York City | REAL MONEY. REAL PROJECTS. REAL POWER.\">Find out how and where</a>.</p>\n  {{ else }}\n    {{#if year }} <!-- it's a manually-added project from previous years -->\n      <p class=\"description\">{{ description }}</p>\n    \n      {{#if status }}\n        <p><strong>Estatus</strong>: {{ status }} {{#if updated }} (last updated {{ updated }}) {{/if }}</p>\n      {{/if }}\n\n      <p><strong>Costo</strong>: {{ cost }}</p>\n      {{#if agency}}<p><strong>Agencia</strong>: {{ agency }}</p> {{/if}}\n    \n    {{ else }}\n  \n      {{#if name }} <p>Mi idea es: <span class=\"idea-title\">\"{{ name }}\"</span></p> {{/if }}\n\n      {{#if description }} <p>Para que la gente pueda: \"{{ description }}\"</p> {{/if }}\n  \n      {{# attachments }}\n        <div class=\"place-item place-attachment-{{ name }}\">\n          <img src=\"{{ file }}\" class=\"place-value place-value-{{ name }}\" alt=\"{{ name }}\">\n        </div>\n      {{/ attachments }}\n\n    {{/if }}\n  {{/if }}\n  \n  {{^if survey_config}}\n    <a href=\"/place/{{ id }}\" class=\"view-on-map-btn btn btn-small\">Ver en el mapa</a>\n  {{/if}}\n  \n"
+#: pbnyc/jstemplates/place-detail.html:18
+msgid "Agency"
+msgstr ""
 
-#: src/flavors/2015/templates/index.html:56
+#: pbnyc/jstemplates/place-detail.html:19
+msgid "Cost"
+msgstr ""
+
+#: pbnyc/jstemplates/place-detail.html:20
+msgid "Description"
+msgstr ""
+
+#: pbnyc/jstemplates/place-detail.html:21
+msgid "Find out how and where in District {{ CounDist }}"
+msgstr ""
+
+#: pbnyc/jstemplates/place-detail.html:22
+msgid "Location"
+msgstr ""
+
+#: pbnyc/jstemplates/place-detail.html:23
+#, fuzzy
+#| msgid "My project idea is..."
+msgid "My project idea is"
+msgstr "Mi idea para un proyecto es..."
+
+#: pbnyc/jstemplates/place-detail.html:24
+#, fuzzy
+#| msgid "So that people could..."
+msgid "So that people could"
+msgstr "Para que gente pueda..."
+
+#: pbnyc/jstemplates/place-detail.html:25
+msgid "Status"
+msgstr ""
+
+#: pbnyc/jstemplates/place-detail.html:26
+msgid "View On Map"
+msgstr ""
+
+#: pbnyc/jstemplates/place-detail.html:27
+msgid "Vote for this project between March 26th and April 3rd."
+msgstr ""
+
+#: pbnyc/templates/index.html:56
 msgid "Schools and Education"
 msgstr "Escuelas y educación"
 
-#: src/flavors/2015/templates/index.html:64
+#: pbnyc/templates/index.html:65
 msgid "Transit and Transportation"
 msgstr "Tránsito y transportación"
 
-#: src/flavors/2015/templates/index.html:66
+#: pbnyc/templates/index.html:67
 msgid "Previously funded"
 msgstr "Previamente financiado"
 
-#: src/flavors/2015/templates/index.html:74
-msgid "Powered by"
-msgstr "Potenciado por"
-
-#: src/flavors/2015/templates/index.html:166
+#: pbnyc/templates/index.html:167
 msgid "Approximate location:"
 msgstr "Ubicación aproximada:"
 
-#: src/flavors/2015/templates/index.html:177
-msgid "Council Member"
-msgstr "Concejal"
-
-#: src/flavors/2015/templates/index.html:177
-msgid "Speaker"
-msgstr "Presidenta del Concejo Municipal"
-
-#: src/flavors/2015/templates/index.html:180
+#: pbnyc/templates/index.html:196
 msgid "(Outside of the PB districts)"
 msgstr "(Fuera de los Distritos PP participantes)"
 
-#: src/flavors/2015/templates/index.html:209
+#: pbnyc/templates/new_place_email_body.txt:1
+#, python-format
 msgid ""
-"For example, \"Build a wheelchair accessible ramp, improved lighting\" or "
-"\"Weatherization of public housing\"."
-msgstr "Por ejemplo, Construir una rampa accesible para silla de ruedas o Climatización en Viviendas Publicas"
+"Thanks for submitting a new %(place.properties.location_type)s idea to "
+"improve your community!"
+msgstr ""
 
-#: src/flavors/2015/templates/index.html:183
-msgid "Please note that the input period for this district is over for 2015."
-msgstr "Tenga en cuenta que el periodo para someter su idea en este distrito ha terminado."
+#: pbnyc/templates/new_place_email_body.txt:3
+msgid "Here's what you suggested:"
+msgstr ""
+
+#: pbnyc/templates/new_place_email_body.txt:5
+#, python-format
+msgid ""
+"You can see people's comments on your idea at http://%(request.get_host)s/"
+"place/%(place.id)s."
+msgstr ""
+
+#: pbnyc/templates/new_place_email_body.txt:7
+msgid ""
+"For more information on the Participatory Budgeting process, go to http://"
+"labs.council.nyc/pb."
+msgstr ""
+
+#: pbnyc/templates/new_place_email_subject.txt:1
+#, python-format
+msgid "Thanks for submitting a new %(place.properties.location_type)s idea!"
+msgstr ""
+
+#: sa_web/jstemplates/auth-nav.html:1
+msgid "Log Out"
+msgstr ""
+
+#: sa_web/jstemplates/auth-nav.html:2
+msgid "Sign In"
+msgstr ""
+
+#: sa_web/jstemplates/auth-nav.html:3
+msgid ""
+"Signed in as</span> <span class=\"current-user\">{{ current_user \"name\" }}"
+msgstr ""
+
+#: sa_web/jstemplates/place-detail-promotion-bar.html:1
+#, fuzzy
+#| msgid "commented on"
+msgid "Recommend on Facebook"
+msgstr "comentó sobre"
+
+#: sa_web/jstemplates/place-detail-promotion-bar.html:2
+msgid "Tweet This"
+msgstr ""
+
+#: sa_web/jstemplates/place-detail-survey.html:1
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "\n"
+#| "        {{#if source}}\n"
+#| "          A {{place_type_label location_type }} idea {{#if CounDist}} in "
+#| "District {{ CounDist }}{{/if}} from <strong>{{ source }}</strong>\n"
+#| "        {{^}}\n"
+#| "        <strong class=\"point-submitter\">\n"
+#| "          {{#if submitter}}\n"
+#| "            <img src=\"{{ submitter.avatar_url }}\" class=\"avatar\" /> "
+#| "{{ submitter.name }}\n"
+#| "          {{^}}\n"
+#| "            <!-- TODO: FIXME: don't hardcode image URL -->\n"
+#| "            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /"
+#| "> {{ submitter_name }}\n"
+#| "          {{/if}}\n"
+#| "            </strong> suggested this {{place_type_label location_type }} "
+#| "idea {{#if CounDist}} in District {{ CounDist }}{{/if}}. \n"
+#| "        {{/if}}\n"
+#| "            <p><small>Near {{>location-string location }}</small></p>\n"
+#| "\n"
+#| "        "
+msgid ""
+"<strong class=\"response-submitter\">\n"
+"                    {{#if submitter}}\n"
+"                      <img src=\"{{ submitter.avatar_url }}\" class=\"avatar"
+"\" /> {{ submitter.name }}\n"
+"                    {{^}}\n"
+"                      <!-- TODO: FIXME: don't hardcode image URL -->\n"
+"                      <img src=\"{{ STATIC_URL }}css/images/user-50.png\" "
+"class=\"avatar\" /> {{ submitter_name }}\n"
+"                    {{/if}}\n"
+"                  </strong>\n"
+"                  <span class=\"response-date\">\n"
+"                    around {{ pretty_created_datetime }}\n"
+"                  </span>\n"
+"                  "
+msgstr ""
+"\n"
+"\n"
+"        {{#if source}}\n"
+"          Una idea de {{place_type_label location_type }} {{#if CounDist}} "
+"en Distrito {{ CounDist }}{{/if}} de <strong>\"{{ source }}\"</strong>\n"
+"        {{^}}\n"
+"        <strong class=\"point-submitter\">\n"
+"          {{#if submitter}}\n"
+"            <img src=\"{{ submitter.avatar_url }}\" class=\"avatar\" /> "
+"{{ submitter.name }}\n"
+"          {{^}}\n"
+"            <!-- TODO: FIXME: don't hardcode image URL -->\n"
+"            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> "
+"{{ submitter_name }}\n"
+"          {{/if}}\n"
+"            </strong> sugerió esta idea de {{place_type_label "
+"location_type }} {{#if CounDist}} en Distrito {{ CounDist }}{{/if}}. \n"
+"        {{/if}}\n"
+"            <p><small>Cerca de {{>location-string location }}</small></p>\n"
+"\n"
+"        "
+
+#: sa_web/jstemplates/place-form.html:1
+msgid "Drag the map to your location."
+msgstr ""
+
+#: sa_web/jstemplates/place-form.html:2
+msgid ""
+"It looks like you didn't set your location yet. Please drag the map to your "
+"location."
+msgstr ""
+
+#: sa_web/jstemplates/place-form.html:3
+msgid ""
+"Or sign in with <a class=\"auth-inline twitter-btn\" href=\"/users/login/"
+"twitter/\">Twitter</a> <a class=\"auth-inline facebook-btn\" href=\"/users/"
+"login/facebook/\">Facebook</a>"
+msgstr ""
+
+#: sa_web/jstemplates/place-form.html:4
+msgid "Sorry, your browser doesn't support file uploads."
+msgstr ""
+
+#: sa_web/jstemplates/place-form.html:5
+#: sa_web/jstemplates/place-survey-form.html:1
+msgid "optional"
+msgstr ""
+
+#: sa_web/jstemplates/place-list.html:1
+msgid "Most Recent"
+msgstr ""
+
+#: sa_web/jstemplates/place-list.html:2
+msgid "Most {{ support_label_plural }}"
+msgstr ""
+
+#: sa_web/jstemplates/place-list.html:3
+msgid "Most {{ survey_label_plural }}"
+msgstr ""
+
+#: sa_web/jstemplates/place-survey-response.html:1
+msgid "Thanks for participating!"
+msgstr ""
+
+#: sa_web/jstemplates/unsupported-overlay.html:1
+msgid "Proceed Anyway"
+msgstr ""
+
+#: sa_web/jstemplates/unsupported-overlay.html:2
+msgid ""
+"You are using an unsupported browser. Please\n"
+"    <a href=\"http://browsehappy.com/\">upgrade your browser</a> to improve\n"
+"    your experience."
+msgstr ""
+
+#: sa_web/templates/base.html:97
+#, python-format
+msgid ""
+"\n"
+"        Oops, %(config.app.name)s needs JavaScript to work properly.\n"
+"        "
+msgstr ""
+
+#: sa_web/templates/base.html:102
+#, python-format
+msgid ""
+"\n"
+"        %(config.app.name)s is great but it needs something called "
+"JavaScript to work\n"
+"        properly. But fear not, it's really easy to turn on. Click\n"
+"        <a href=\"http://enable-javascript.com/\" target=\"_blank\">here</a> "
+"for simple instructions!\n"
+"        "
+msgstr ""
+
+#: sa_web/templates/base.html:116
+msgid ""
+"We can't connect to the server at the moment. Hang tight while we re-"
+"establish communication."
+msgstr ""
+
+#: sa_web/templates/base.html:122
+msgid "Close"
+msgstr ""
+
+#, fuzzy
+#~| msgid ""
+#~| "\n"
+#~| "  {{#if shortlisted }}\n"
+#~| "    <p><strong>Location</strong>: {{ Location }}</p>\n"
+#~| "    <p><strong>Description</strong>: {{ description }}</p>\n"
+#~| "    <p><strong>Cost</strong>: {{ Cost }}</p>\n"
+#~| "    <p>Vote for this project between March 29th and April 6th. <a href="
+#~| "\"http://pbnyc.org/\" title=\"Participatory Budgeting in New York City | "
+#~| "REAL MONEY. REAL PROJECTS. REAL POWER.\">Find out how and where</a>.</"
+#~| "p>\n"
+#~| "  {{ else }}\n"
+#~| "    {{#if year }} <!-- it's a manually-added project from previous years "
+#~| "-->\n"
+#~| "      <p class=\"description\">{{ description }}</p>\n"
+#~| "    \n"
+#~| "      {{#if status }}\n"
+#~| "        <p><strong>Status</strong>: {{ status }} {{#if updated }} (last "
+#~| "updated {{ updated }}) {{/if }}</p>\n"
+#~| "      {{/if }}\n"
+#~| "\n"
+#~| "      <p><strong>Cost</strong>: {{ cost }}</p>\n"
+#~| "      {{#if agency}}<p><strong>Agency</strong>: {{ agency }}</p> {{/"
+#~| "if}}\n"
+#~| "    \n"
+#~| "    {{ else }}\n"
+#~| "  \n"
+#~| "      {{#if name }} <p>My project idea is: <span class=\"idea-title"
+#~| "\">{{ name }}</span></p> {{/if }}\n"
+#~| "\n"
+#~| "      {{#if description }} <p>So that people could: {{ description }}</"
+#~| "p> {{/if }}\n"
+#~| "  \n"
+#~| "      {{# attachments }}\n"
+#~| "        <div class=\"place-item place-attachment-{{ name }}\">\n"
+#~| "          <img src=\"{{ file }}\" class=\"place-value place-value-"
+#~| "{{ name }}\" alt=\"{{ name }}\">\n"
+#~| "        </div>\n"
+#~| "      {{/ attachments }}\n"
+#~| "\n"
+#~| "    {{/if }}\n"
+#~| "  {{/if }}\n"
+#~| "  \n"
+#~| "  {{^if survey_config}}\n"
+#~| "    <a href=\"/place/{{ id }}\" class=\"view-on-map-btn btn btn-small"
+#~| "\">View On Map</a>\n"
+#~| "  {{/if}}\n"
+#~| "  \n"
+#~ msgid ""
+#~ "\n"
+#~ "  {{#if shortlisted }}\n"
+#~ "    <p class=\"ballot-project-location\"><strong>Location</strong>: "
+#~ "{{ Location }}</p>\n"
+#~ "    {{#if Notes }}\n"
+#~ "    <p class=\"ballot-project-location-notes\">{{ Notes }}</p>\n"
+#~ "    {{/if }}\n"
+#~ "    <p class=\"ballot-project-description\"><strong>Description</strong>: "
+#~ "{{ description }}</p>\n"
+#~ "    <p class=\"ballot-project-cost\"><strong>Cost</strong>: {{ Cost }}</"
+#~ "p>\n"
+#~ "    <p class=\"vote-instructions\">Vote for this project between March "
+#~ "26th and April 3rd. <a href=\"http://labs.council.nyc/districts/"
+#~ "{{ CounDist }}/\" title=\"District {{ CounDist }}, "
+#~ "{{ CounPerson }}\">Find out how and where in District {{ CounDist }}</a>."
+#~ "</p>\n"
+#~ "  {{ else }}\n"
+#~ "    {{#if year }} <!-- it's a manually-added project from previous years "
+#~ "-->\n"
+#~ "      <p class=\"description\">{{ description }}</p>\n"
+#~ "\n"
+#~ "      {{#if status }}\n"
+#~ "        <p><strong>Status</strong>: {{ status }} {{#if updated }} (last "
+#~ "updated {{ updated }}) {{/if }}</p>\n"
+#~ "      {{/if }}\n"
+#~ "\n"
+#~ "      <p><strong>Cost</strong>: {{ cost }}</p>\n"
+#~ "      {{#if agency}}<p><strong>Agency</strong>: {{ agency }}</p> {{/if}}\n"
+#~ "\n"
+#~ "    {{ else }}\n"
+#~ "\n"
+#~ "      {{#if name }} <p>My project idea is: <span class=\"idea-title"
+#~ "\">{{ name }}</span></p> {{/if }}\n"
+#~ "\n"
+#~ "      {{#if description }} <p>So that people could: {{ description }}</p> "
+#~ "{{/if }}\n"
+#~ "\n"
+#~ "      {{# attachments }}\n"
+#~ "        <div class=\"place-item place-attachment-{{ name }}\">\n"
+#~ "          <img src=\"{{ file }}\" class=\"place-value place-value-"
+#~ "{{ name }}\" alt=\"{{ name }}\">\n"
+#~ "        </div>\n"
+#~ "      {{/ attachments }}\n"
+#~ "\n"
+#~ "    {{/if }}\n"
+#~ "  {{/if }}\n"
+#~ "\n"
+#~ "  {{^if survey_config}}\n"
+#~ "    <a href=\"/place/{{ id }}\" class=\"view-on-map-btn btn btn-small"
+#~ "\">View On Map</a>\n"
+#~ "  {{/if}}\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "  {{#if shortlisted }}\n"
+#~ "    <p><strong>Ubicación</strong>: {{ Location }}</p>\n"
+#~ "    <p><strong>Idea</strong>: {{ description }}</p>\n"
+#~ "    <p><strong>Costo</strong>: {{ Cost }}</p>\n"
+#~ "    <p>Vote for this project between March 29th and April 6th. <a href="
+#~ "\"http://pbnyc.org/\" title=\"Participatory Budgeting in New York City | "
+#~ "REAL MONEY. REAL PROJECTS. REAL POWER.\">Find out how and where</a>.</p>\n"
+#~ "  {{ else }}\n"
+#~ "    {{#if year }} <!-- it's a manually-added project from previous years "
+#~ "-->\n"
+#~ "      <p class=\"description\">{{ description }}</p>\n"
+#~ "    \n"
+#~ "      {{#if status }}\n"
+#~ "        <p><strong>Estatus</strong>: {{ status }} {{#if updated }} (last "
+#~ "updated {{ updated }}) {{/if }}</p>\n"
+#~ "      {{/if }}\n"
+#~ "\n"
+#~ "      <p><strong>Costo</strong>: {{ cost }}</p>\n"
+#~ "      {{#if agency}}<p><strong>Agencia</strong>: {{ agency }}</p> {{/"
+#~ "if}}\n"
+#~ "    \n"
+#~ "    {{ else }}\n"
+#~ "  \n"
+#~ "      {{#if name }} <p>Mi idea es: <span class=\"idea-title\">"
+#~ "\"{{ name }}\"</span></p> {{/if }}\n"
+#~ "\n"
+#~ "      {{#if description }} <p>Para que la gente pueda: "
+#~ "\"{{ description }}\"</p> {{/if }}\n"
+#~ "  \n"
+#~ "      {{# attachments }}\n"
+#~ "        <div class=\"place-item place-attachment-{{ name }}\">\n"
+#~ "          <img src=\"{{ file }}\" class=\"place-value place-value-"
+#~ "{{ name }}\" alt=\"{{ name }}\">\n"
+#~ "        </div>\n"
+#~ "      {{/ attachments }}\n"
+#~ "\n"
+#~ "    {{/if }}\n"
+#~ "  {{/if }}\n"
+#~ "  \n"
+#~ "  {{^if survey_config}}\n"
+#~ "    <a href=\"/place/{{ id }}\" class=\"view-on-map-btn btn btn-small"
+#~ "\">Ver en el mapa</a>\n"
+#~ "  {{/if}}\n"
+#~ "  \n"
+
+#~ msgid ""
+#~ "For example, \"Build a wheelchair accessible ramp, improved lighting\" or "
+#~ "\"Weatherization of public housing\"."
+#~ msgstr ""
+#~ "Por ejemplo, Construir una rampa accesible para silla de ruedas o "
+#~ "Climatización en Viviendas Publicas"
