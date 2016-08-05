@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Shareabouts Philly Bike Share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-01 02:10-0500\n"
+"POT-Creation-Date: 2016-08-04 21:32-0500\n"
 "PO-Revision-Date: 2014-09-09 22:58+0000\n"
 "Last-Translator: Frank Hebbert <frank@openplans.org>\n"
 "Language-Team: Spanish (Mexico) (http://www.transifex.com/projects/p/"
@@ -270,6 +270,55 @@ msgstr ""
 
 #: flavors/2016/_config.translations.py:79
 msgid "Show All"
+msgstr ""
+
+#: flavors/2016/jstemplates/pages/district.html:1
+msgid "Bronx"
+msgstr ""
+
+#: flavors/2016/jstemplates/pages/district.html:2
+msgid "Brooklyn"
+msgstr ""
+
+#: flavors/2016/jstemplates/pages/district.html:3
+msgid "Choose Your Council District"
+msgstr ""
+
+#: flavors/2016/jstemplates/pages/district.html:4
+#: pbnyc/templates/index.html:181
+msgid "Council Member"
+msgstr ""
+
+#: flavors/2016/jstemplates/pages/district.html:5
+#: pbnyc/templates/index.html:181
+msgid "District"
+msgstr ""
+
+#: flavors/2016/jstemplates/pages/district.html:6
+msgid "Manhattan"
+msgstr ""
+
+#: flavors/2016/jstemplates/pages/district.html:7
+msgid "Queens"
+msgstr ""
+
+#: flavors/2016/jstemplates/pages/district.html:8
+#: pbnyc/templates/index.html:181
+msgid "Speaker"
+msgstr ""
+
+#: flavors/2016/jstemplates/pages/district.html:9
+msgid "Staten Island"
+msgstr ""
+
+#: flavors/2016/templates/_closed_district_message.html:1
+msgid "Please note that the input period for this district is over for 2016."
+msgstr ""
+
+#: flavors/2016/templates/_unopened_district_message.html:1
+msgid ""
+"Please note that the input period for this district has not yet begun for "
+"2016."
 msgstr ""
 
 #: flavors/staff/templates/index.html:68 pbnyc/templates/index.html:75
@@ -566,22 +615,6 @@ msgid ""
 "participating Council District."
 msgstr ""
 
-#: pbnyc/jstemplates/pages/district.html:1
-msgid "Choose Your Council District"
-msgstr ""
-
-#: pbnyc/jstemplates/pages/district.html:2 pbnyc/templates/index.html:180
-msgid "Council Member"
-msgstr ""
-
-#: pbnyc/jstemplates/pages/district.html:3 pbnyc/templates/index.html:180
-msgid "District"
-msgstr ""
-
-#: pbnyc/jstemplates/pages/district.html:4 pbnyc/templates/index.html:180
-msgid "Speaker"
-msgstr ""
-
 #: pbnyc/jstemplates/pages/guidelines.html:1
 msgid " Schools and Education"
 msgstr ""
@@ -861,11 +894,7 @@ msgstr ""
 msgid "Approximate location:"
 msgstr ""
 
-#: pbnyc/templates/index.html:185
-msgid "Please note that the input period for this district is over for 2015."
-msgstr ""
-
-#: pbnyc/templates/index.html:192
+#: pbnyc/templates/index.html:196
 msgid "(Outside of the PB districts)"
 msgstr ""
 
