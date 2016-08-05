@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Shareabouts Philly Bike Share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-04 21:32-0500\n"
+"POT-Creation-Date: 2016-08-04 21:41-0500\n"
 "PO-Revision-Date: 2014-09-09 22:58+0000\n"
 "Last-Translator: Frank Hebbert <frank@openplans.org>\n"
 "Language-Team: Spanish (Mexico) (http://www.transifex.com/projects/p/"
@@ -270,6 +270,59 @@ msgstr ""
 
 #: flavors/2016/_config.translations.py:79
 msgid "Show All"
+msgstr ""
+
+#: flavors/2016/jstemplates/pages/about.html:1
+msgid ""
+"After you submit your idea on this Idea Collection Map, your idea will be "
+"given to community volunteers, called Budget Delegates. Budget Delegates "
+"work in your district to turn ideas into real proposals for a ballot, with "
+"input from city agencies. These proposals will be up for a community-wide "
+"vote in the spring."
+msgstr ""
+
+#: flavors/2016/jstemplates/pages/about.html:2
+msgid "Check out the guidelines</a> to see what ideas can be funded."
+msgstr ""
+
+#: flavors/2016/jstemplates/pages/about.html:3
+msgid ""
+"For more information on participatory budgeting, other community PB events "
+"like Neighborhood Assemblies, and how to get more involved, visit <a href="
+"\"http://labs.council.nyc/pb\" target=\"_blank\">labs.council.nyc/pb</a>."
+msgstr ""
+
+#: flavors/2016/jstemplates/pages/about.html:4
+msgid ""
+"If you have an idea about how things could work better in your community, "
+"share it on the map."
+msgstr ""
+
+#: flavors/2016/jstemplates/pages/about.html:5
+msgid "Real Money."
+msgstr ""
+
+#: flavors/2016/jstemplates/pages/about.html:6
+msgid "Real Power."
+msgstr ""
+
+#: flavors/2016/jstemplates/pages/about.html:7
+msgid "Real Projects."
+msgstr ""
+
+#: flavors/2016/jstemplates/pages/about.html:8
+msgid ""
+"Share your ideas on the map for how things could be better in your "
+"community. <a href=\"/page/guidelines\" title=\"Participatory Budgeting in "
+"New York City | REAL MONEY. REAL PROJECTS. REAL POWER.\">Check out the "
+"guidelines</a> to see what ideas can be funded."
+msgstr ""
+
+#: flavors/2016/jstemplates/pages/about.html:9
+msgid ""
+"Through Participatory Budgeting, community members - like you - directly "
+"decide how to spend at least $1,000,000 of the public budget in "
+"participating Council District."
 msgstr ""
 
 #: flavors/2016/jstemplates/pages/district.html:1
@@ -561,59 +614,6 @@ msgstr ""
 "          {{/if }}\n"
 "\n"
 "        {{/if }}"
-
-#: pbnyc/jstemplates/pages/about.html:1
-msgid ""
-"After you submit your idea on this Idea Collection Map, your idea will be "
-"given to community volunteers, called Budget Delegates. Budget Delegates "
-"work in your district to turn ideas into real proposals for a ballot, with "
-"input from city agencies. These proposals will be up for a community-wide "
-"vote in the spring."
-msgstr ""
-
-#: pbnyc/jstemplates/pages/about.html:2
-msgid "Check out the guidelines</a> to see what ideas can be funded."
-msgstr ""
-
-#: pbnyc/jstemplates/pages/about.html:3
-msgid ""
-"For more information on participatory budgeting, other community PB events "
-"like Neighborhood Assemblies, and how to get more involved, visit <a href="
-"\"http://council.nyc.gov/PB\" target=\"_blank\">council.nyc.gov/PB</a>."
-msgstr ""
-
-#: pbnyc/jstemplates/pages/about.html:4
-msgid ""
-"If you have an idea about how things could work better in your community, "
-"share it on the map."
-msgstr ""
-
-#: pbnyc/jstemplates/pages/about.html:5
-msgid "Real Money."
-msgstr ""
-
-#: pbnyc/jstemplates/pages/about.html:6
-msgid "Real Power."
-msgstr ""
-
-#: pbnyc/jstemplates/pages/about.html:7
-msgid "Real Projects."
-msgstr ""
-
-#: pbnyc/jstemplates/pages/about.html:8
-msgid ""
-"Share your ideas on the map for how things could be better in your "
-"community. <a href=\"/page/guidelines\" title=\"Participatory Budgeting in "
-"New York City | REAL MONEY. REAL PROJECTS. REAL POWER.\">Check out the "
-"guidelines</a> to see what ideas can be funded."
-msgstr ""
-
-#: pbnyc/jstemplates/pages/about.html:9
-msgid ""
-"Through Participatory Budgeting, community members - like you - directly "
-"decide how to spend at least $1,000,000 of the public budget in "
-"participating Council District."
-msgstr ""
 
 #: pbnyc/jstemplates/pages/guidelines.html:1
 msgid " Schools and Education"
