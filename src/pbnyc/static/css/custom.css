@@ -422,6 +422,11 @@ p.ballot-project-location-notes {
     top: 0.25em;
     font-size: 0.875em;
   }
+  button[name="language"] {
+    height: 3em;
+    width: 8em;
+    margin: 1em 0.25em;
+  }
   .access {
     font-size: 0.75em;
   }
@@ -455,6 +460,12 @@ p.ballot-project-location-notes {
   a.list-toggle-btn:hover {
     color: #fff;
     background-color: #002D6D;  /* dark-blue */
+  }
+}
+
+@media only screen and (min-width: 66em) {
+  button[name="language"] {
+    margin: -0.5em 0.25em;
   }
 }
 
