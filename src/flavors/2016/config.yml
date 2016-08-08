@@ -1090,5 +1090,5 @@ pages:
         external: true
 
 notifications:
-  on_new_place: true
+  on_new_place: false
   submitter_email_field: "private-email"
