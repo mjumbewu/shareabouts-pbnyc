@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Shareabouts PBNYC 2015/16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-04 22:41-0500\n"
+"POT-Creation-Date: 2016-08-08 12:51-0500\n"
 "PO-Revision-Date: 2015-10-08 04:01+0000\n"
 "Last-Translator: Ivan Luevanos <ILuevanos@council.nyc.gov>\n"
 "Language-Team: Spanish (http://www.transifex.com/mjumbewu/shareabouts-"
@@ -135,7 +135,8 @@ msgstr "Escuelas y educación"
 #: flavors/2016/_config.translations.py:62
 #: flavors/2016/_config.translations.py:70
 #: flavors/2016/_config.translations.py:82
-#: pbnyc/jstemplates/pages/guidelines.html:14 pbnyc/templates/index.html:57
+#: flavors/2016/jstemplates/pages/guidelines.html:14
+#: pbnyc/templates/index.html:57
 msgid "Environment"
 msgstr "Medioambiente"
 
@@ -143,7 +144,8 @@ msgstr "Medioambiente"
 #: flavors/2016/_config.translations.py:55
 #: flavors/2016/_config.translations.py:68
 #: flavors/2016/_config.translations.py:83
-#: pbnyc/jstemplates/pages/guidelines.html:25 pbnyc/templates/index.html:58
+#: flavors/2016/jstemplates/pages/guidelines.html:25
+#: pbnyc/templates/index.html:58
 msgid "Housing"
 msgstr "Viviendas"
 
@@ -158,7 +160,8 @@ msgstr "Parques y Recreación"
 #: flavors/2016/_config.translations.py:54
 #: flavors/2016/_config.translations.py:72
 #: flavors/2016/_config.translations.py:85
-#: pbnyc/jstemplates/pages/guidelines.html:33 pbnyc/templates/index.html:60
+#: flavors/2016/jstemplates/pages/guidelines.html:33
+#: pbnyc/templates/index.html:60
 msgid "Public Health"
 msgstr "Salud pública"
 
@@ -166,7 +169,8 @@ msgstr "Salud pública"
 #: flavors/2016/_config.translations.py:73
 #: flavors/2016/_config.translations.py:74
 #: flavors/2016/_config.translations.py:86
-#: pbnyc/jstemplates/pages/guidelines.html:34 pbnyc/templates/index.html:61
+#: flavors/2016/jstemplates/pages/guidelines.html:34
+#: pbnyc/templates/index.html:61
 msgid "Public Safety"
 msgstr "Seguridad pública"
 
@@ -174,7 +178,8 @@ msgstr "Seguridad pública"
 #: flavors/2016/_config.translations.py:52
 #: flavors/2016/_config.translations.py:60
 #: flavors/2016/_config.translations.py:88
-#: pbnyc/jstemplates/pages/guidelines.html:42 pbnyc/templates/index.html:63
+#: flavors/2016/jstemplates/pages/guidelines.html:42
+#: pbnyc/templates/index.html:63
 msgid "Seniors"
 msgstr "Personas mayores"
 
@@ -196,7 +201,8 @@ msgstr "Tránsito y transporte"
 #: flavors/2016/_config.translations.py:53
 #: flavors/2016/_config.translations.py:63
 #: flavors/2016/_config.translations.py:91
-#: pbnyc/jstemplates/pages/guidelines.html:51 pbnyc/templates/index.html:66
+#: flavors/2016/jstemplates/pages/guidelines.html:51
+#: pbnyc/templates/index.html:66
 msgid "Youth"
 msgstr "Jóvenes"
 
@@ -265,7 +271,7 @@ msgid "About"
 msgstr "Sobre"
 
 #: flavors/2016/_config.translations.py:76
-#: pbnyc/jstemplates/pages/guidelines.html:20
+#: flavors/2016/jstemplates/pages/guidelines.html:20
 msgid "Guidelines"
 msgstr "Reglamentos "
 
@@ -397,6 +403,212 @@ msgstr "Presidenta del Concejo Municipal"
 #: flavors/2016/jstemplates/pages/district.html:9
 msgid "Staten Island"
 msgstr ""
+
+#: flavors/2016/jstemplates/pages/guidelines.html:1
+msgid " Schools and Education"
+msgstr "Escuelas y Educación"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:2
+msgid "(Expenses)"
+msgstr "(Gastos)"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:3
+msgid "After school programs"
+msgstr "Programas Despues del Horario Escolar"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:4
+#, fuzzy
+#| msgid "All ideas must be submitted by <strong>November 16, 2015</strong>."
+msgid "All ideas must be submitted by <strong>September 30, 2013</strong>."
+msgstr ""
+"Todas las ideas deben ser sometidas antes del <strong>16 de Noviembre del </"
+"strong>."
+
+#: flavors/2016/jstemplates/pages/guidelines.html:5
+msgid "Anyone can post ideas."
+msgstr "Cualquiera puede sugerir ideas"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:6
+msgid "Basketball court, park benches, skate park"
+msgstr "Cancha de baloncesto, bancas en el parque, parque para patinar"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:7
+msgid "Build a wheelchair accessible ramp, improved lighting"
+msgstr ""
+"Construir infraestructuras aptas para personas discapacitadas, mejorar "
+"iluminación"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:8
+msgid ""
+"Buy lighting, sound, or other equipment for a local cultural organization"
+msgstr ""
+"Comprar equipos de iluminación, audio para una organización cultural local"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:9
+#: pbnyc/templates/index.html:55
+msgid "Culture and Community Facilities"
+msgstr "Instalaciones comunitarias y culturales "
+
+#: flavors/2016/jstemplates/pages/guidelines.html:10
+msgid "Educational programs"
+msgstr "Programas educacionales"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:11
+msgid ""
+"Eligible ideas must be for \"capital\" projects: physical infrastructure for "
+"public benefit, such as park improvements or new technology for schools. "
+"“Expense\" projects, such as afterschool programs or expanding bus service, "
+"are not eligible."
+msgstr ""
+"Las ideas elegibles deben ser para proyectos de \"capital\": la "
+"infraestructura física para el beneficio público, como las mejoras de "
+"parques o nuevas tecnologías para las escuelas. Proyectos de \"gastos\", "
+"tales como los programas despues del horario escolar o la ampliación del "
+"servicio de autobuses, no son elegibles."
+
+#: flavors/2016/jstemplates/pages/guidelines.html:12
+msgid "Eligible"
+msgstr "Elegible"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:13
+msgid "Eligible:"
+msgstr "Elegible"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:15
+msgid "Examples of Eligible Capital Ideas"
+msgstr "Ejemplos de ideas capitales calificadas"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:16
+msgid "Expanding bus service"
+msgstr "Ampliar los servicios de autobuses"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:17
+msgid "Extending library staff hours"
+msgstr "Extender las horas para el personal de la biblioteca"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:18
+msgid "Green infrastructure such as bioswales and permeable pavement"
+msgstr ""
+"Infraestructura verde tal como canales de filtración biológico y pavimento "
+"permeable"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:19
+msgid "Green roofs on schools"
+msgstr "Techos verdes en las escuelas"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:21
+msgid "Hiring home health care workers"
+msgstr " Emplear trabajadores de la salud en el hogar"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:22
+msgid "Hiring more police"
+msgstr "Emplear más policías"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:23
+msgid "Hiring nurses for a clinic"
+msgstr "Emplear enfermeras para una clínica"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:24
+msgid "Hiring security staff"
+msgstr "Emplear personal de seguridad"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:26
+msgid "Make bathrooms ADA compliant"
+msgstr "Hacer que baños cumplan con la ADA"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:27
+msgid "New computers for a local library"
+msgstr "Nuevas computadoras para una biblioteca local"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:28
+msgid "Non-Eligible"
+msgstr "No elegible"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:29
+#: pbnyc/templates/index.html:59
+msgid "Parks and Recreation"
+msgstr "Parques y Recreación"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:30
+msgid "Paying bills for electricity of a public building, etc."
+msgstr "Pagar las cuentas de electricidad de un edificio público, etc."
+
+#: flavors/2016/jstemplates/pages/guidelines.html:31
+msgid "Pedestrian safety improvements at intersections"
+msgstr "Mejoras la seguridad para peatones en las  intersecciones  "
+
+#: flavors/2016/jstemplates/pages/guidelines.html:32
+msgid "Playground upgrades"
+msgstr "Mejoramiento de areas de recreo"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:35
+msgid "Public exercise equipment"
+msgstr "Equipo de ejercicios para el público  "
+
+#: flavors/2016/jstemplates/pages/guidelines.html:36
+msgid "Renovation of local community center"
+msgstr "Renovación de un centro comunitario local"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:37
+msgid "Renovation of school property"
+msgstr "Renovación de propiedades escolares"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:38
+msgid "Renovations for local hospital or clinic"
+msgstr "Renovaciones para un hospital local o clínica"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:39
+msgid "Repairs to privately-owned sidewalks"
+msgstr "Reparaciones a aceras privadas"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:40
+msgid "Road resurfacing"
+msgstr "Repavimentación de carreteras"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:41
+msgid "Security cameras around schools and public housing"
+msgstr "Cámaras de seguridad alrededor de escuelas y viviendas públicas"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:43
+#: pbnyc/templates/index.html:64
+msgid "Streets and Sidewalks"
+msgstr "Calles y aceras"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:44
+msgid "Subway station improvements such as installation of help points"
+msgstr ""
+"Mejoramiento de las estaciones del tern subterráneo como  la instalación de "
+"puntos de ayuda."
+
+#: flavors/2016/jstemplates/pages/guidelines.html:45
+msgid "Tech for public school"
+msgstr "Tecnología para escuelas públicas"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:46
+msgid "Technology centers"
+msgstr "Centros tecnológicos"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:47
+msgid ""
+"To add a spot, drag the map until the crosshairs are over the desired "
+"location. Ideas will be considered by the Council District within which they "
+"are located."
+msgstr ""
+"Para añadir un punto, arrastre el mapa hasta que la cruz del cursor se "
+"encuentre sobre la ubicación deseada. Las ideas serán consideradas por el "
+"distrito del Concejo Municipal en el que se encuentran."
+
+#: flavors/2016/jstemplates/pages/guidelines.html:48
+msgid "Transit"
+msgstr "Transporte"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:49
+msgid "Upgrade public plazas"
+msgstr "Mejoramiento de plazas públicas"
+
+#: flavors/2016/jstemplates/pages/guidelines.html:50
+msgid "Weatherization of public housing"
+msgstr "Climatización de  vivienda pública"
 
 #: flavors/2016/templates/_closed_district_message.html:1
 #, fuzzy
@@ -607,207 +819,6 @@ msgstr ""
 "if}}\n"
 "          {{/if }}\n"
 "          "
-
-#: pbnyc/jstemplates/pages/guidelines.html:1
-msgid " Schools and Education"
-msgstr "Escuelas y Educación"
-
-#: pbnyc/jstemplates/pages/guidelines.html:2
-msgid "(Expenses)"
-msgstr "(Gastos)"
-
-#: pbnyc/jstemplates/pages/guidelines.html:3
-msgid "After school programs"
-msgstr "Programas Despues del Horario Escolar"
-
-#: pbnyc/jstemplates/pages/guidelines.html:4
-msgid "All ideas must be submitted by <strong>November 16, 2015</strong>."
-msgstr ""
-"Todas las ideas deben ser sometidas antes del <strong>16 de Noviembre del </"
-"strong>."
-
-#: pbnyc/jstemplates/pages/guidelines.html:5
-msgid "Anyone can post ideas."
-msgstr "Cualquiera puede sugerir ideas"
-
-#: pbnyc/jstemplates/pages/guidelines.html:6
-msgid "Basketball court, park benches, skate park"
-msgstr "Cancha de baloncesto, bancas en el parque, parque para patinar"
-
-#: pbnyc/jstemplates/pages/guidelines.html:7
-msgid "Build a wheelchair accessible ramp, improved lighting"
-msgstr ""
-"Construir infraestructuras aptas para personas discapacitadas, mejorar "
-"iluminación"
-
-#: pbnyc/jstemplates/pages/guidelines.html:8
-msgid ""
-"Buy lighting, sound, or other equipment for a local cultural organization"
-msgstr ""
-"Comprar equipos de iluminación, audio para una organización cultural local"
-
-#: pbnyc/jstemplates/pages/guidelines.html:9 pbnyc/templates/index.html:55
-msgid "Culture and Community Facilities"
-msgstr "Instalaciones comunitarias y culturales "
-
-#: pbnyc/jstemplates/pages/guidelines.html:10
-msgid "Educational programs"
-msgstr "Programas educacionales"
-
-#: pbnyc/jstemplates/pages/guidelines.html:11
-msgid ""
-"Eligible ideas must be for \"capital\" projects: physical infrastructure for "
-"public benefit, such as park improvements or new technology for schools. "
-"“Expense\" projects, such as afterschool programs or expanding bus service, "
-"are not eligible."
-msgstr ""
-"Las ideas elegibles deben ser para proyectos de \"capital\": la "
-"infraestructura física para el beneficio público, como las mejoras de "
-"parques o nuevas tecnologías para las escuelas. Proyectos de \"gastos\", "
-"tales como los programas despues del horario escolar o la ampliación del "
-"servicio de autobuses, no son elegibles."
-
-#: pbnyc/jstemplates/pages/guidelines.html:12
-msgid "Eligible"
-msgstr "Elegible"
-
-#: pbnyc/jstemplates/pages/guidelines.html:13
-msgid "Eligible:"
-msgstr "Elegible"
-
-#: pbnyc/jstemplates/pages/guidelines.html:15
-msgid "Examples of Eligible Capital Ideas"
-msgstr "Ejemplos de ideas capitales calificadas"
-
-#: pbnyc/jstemplates/pages/guidelines.html:16
-msgid "Expanding bus service"
-msgstr "Ampliar los servicios de autobuses"
-
-#: pbnyc/jstemplates/pages/guidelines.html:17
-msgid "Extending library staff hours"
-msgstr "Extender las horas para el personal de la biblioteca"
-
-#: pbnyc/jstemplates/pages/guidelines.html:18
-msgid "Green infrastructure such as bioswales and permeable pavement"
-msgstr ""
-"Infraestructura verde tal como canales de filtración biológico y pavimento "
-"permeable"
-
-#: pbnyc/jstemplates/pages/guidelines.html:19
-msgid "Green roofs on schools"
-msgstr "Techos verdes en las escuelas"
-
-#: pbnyc/jstemplates/pages/guidelines.html:21
-msgid "Hiring home health care workers"
-msgstr " Emplear trabajadores de la salud en el hogar"
-
-#: pbnyc/jstemplates/pages/guidelines.html:22
-msgid "Hiring more police"
-msgstr "Emplear más policías"
-
-#: pbnyc/jstemplates/pages/guidelines.html:23
-msgid "Hiring nurses for a clinic"
-msgstr "Emplear enfermeras para una clínica"
-
-#: pbnyc/jstemplates/pages/guidelines.html:24
-msgid "Hiring security staff"
-msgstr "Emplear personal de seguridad"
-
-#: pbnyc/jstemplates/pages/guidelines.html:26
-msgid "Make bathrooms ADA compliant"
-msgstr "Hacer que baños cumplan con la ADA"
-
-#: pbnyc/jstemplates/pages/guidelines.html:27
-msgid "New computers for a local library"
-msgstr "Nuevas computadoras para una biblioteca local"
-
-#: pbnyc/jstemplates/pages/guidelines.html:28
-msgid "Non-Eligible"
-msgstr "No elegible"
-
-#: pbnyc/jstemplates/pages/guidelines.html:29 pbnyc/templates/index.html:59
-msgid "Parks and Recreation"
-msgstr "Parques y Recreación"
-
-#: pbnyc/jstemplates/pages/guidelines.html:30
-msgid "Paying bills for electricity of a public building, etc."
-msgstr "Pagar las cuentas de electricidad de un edificio público, etc."
-
-#: pbnyc/jstemplates/pages/guidelines.html:31
-msgid "Pedestrian safety improvements at intersections"
-msgstr "Mejoras la seguridad para peatones en las  intersecciones  "
-
-#: pbnyc/jstemplates/pages/guidelines.html:32
-msgid "Playground upgrades"
-msgstr "Mejoramiento de areas de recreo"
-
-#: pbnyc/jstemplates/pages/guidelines.html:35
-msgid "Public exercise equipment"
-msgstr "Equipo de ejercicios para el público  "
-
-#: pbnyc/jstemplates/pages/guidelines.html:36
-msgid "Renovation of local community center"
-msgstr "Renovación de un centro comunitario local"
-
-#: pbnyc/jstemplates/pages/guidelines.html:37
-msgid "Renovation of school property"
-msgstr "Renovación de propiedades escolares"
-
-#: pbnyc/jstemplates/pages/guidelines.html:38
-msgid "Renovations for local hospital or clinic"
-msgstr "Renovaciones para un hospital local o clínica"
-
-#: pbnyc/jstemplates/pages/guidelines.html:39
-msgid "Repairs to privately-owned sidewalks"
-msgstr "Reparaciones a aceras privadas"
-
-#: pbnyc/jstemplates/pages/guidelines.html:40
-msgid "Road resurfacing"
-msgstr "Repavimentación de carreteras"
-
-#: pbnyc/jstemplates/pages/guidelines.html:41
-msgid "Security cameras around schools and public housing"
-msgstr "Cámaras de seguridad alrededor de escuelas y viviendas públicas"
-
-#: pbnyc/jstemplates/pages/guidelines.html:43 pbnyc/templates/index.html:64
-msgid "Streets and Sidewalks"
-msgstr "Calles y aceras"
-
-#: pbnyc/jstemplates/pages/guidelines.html:44
-msgid "Subway station improvements such as installation of help points"
-msgstr ""
-"Mejoramiento de las estaciones del tern subterráneo como  la instalación de "
-"puntos de ayuda."
-
-#: pbnyc/jstemplates/pages/guidelines.html:45
-msgid "Tech for public school"
-msgstr "Tecnología para escuelas públicas"
-
-#: pbnyc/jstemplates/pages/guidelines.html:46
-msgid "Technology centers"
-msgstr "Centros tecnológicos"
-
-#: pbnyc/jstemplates/pages/guidelines.html:47
-msgid ""
-"To add a spot, drag the map until the crosshairs are over the desired "
-"location. Ideas will be considered by the Council District within which they "
-"are located."
-msgstr ""
-"Para añadir un punto, arrastre el mapa hasta que la cruz del cursor se "
-"encuentre sobre la ubicación deseada. Las ideas serán consideradas por el "
-"distrito del Concejo Municipal en el que se encuentran."
-
-#: pbnyc/jstemplates/pages/guidelines.html:48
-msgid "Transit"
-msgstr "Transporte"
-
-#: pbnyc/jstemplates/pages/guidelines.html:49
-msgid "Upgrade public plazas"
-msgstr "Mejoramiento de plazas públicas"
-
-#: pbnyc/jstemplates/pages/guidelines.html:50
-msgid "Weatherization of public housing"
-msgstr "Climatización de  vivienda pública"
 
 #: pbnyc/jstemplates/place-detail.html:1
 #, fuzzy
