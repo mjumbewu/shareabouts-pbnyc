@@ -2,12 +2,12 @@ _prefs:
   disabled: []
   inspector: false
   mapid: openplans.7f05ca8c
-  rev: s-d9f2204f
+  rev: s-657e6b63
   saveCenter: true
 attribution: ''
 center: 
-  - -73.9789
-  - 40.7809
+  - -73.8631
+  - 40.7972
   - 11
 description: ''
 Layer: 

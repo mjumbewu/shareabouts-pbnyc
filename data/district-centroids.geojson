@@ -1,7 +1,7 @@
 {
 "type": "FeatureCollection",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-                                                                                
+
 "features": [
 { "type": "Feature", "properties": { "Borough": "Queens", "CounPerson": "Barry Grodenchik", "Shape_Area": 305406624.935000, "Shape_Leng": 77503.940278, "CounDist": 23 }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -73.743139820471995, 40.738578701926464 ] ] } },
 { "type": "Feature", "properties": { "Borough": "Queens", "CounPerson": "Eric Ulrich", "Shape_Area": 310080995.081000, "Shape_Leng": 311528.020294, "CounDist": 32 }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -73.866660820020115, 40.570930512849664 ] ] } },
@@ -33,7 +33,6 @@
 { "type": "Feature", "properties": { "Borough": "Queens", "CounPerson": "Karen Koslowitz", "Shape_Area": 120055246.187000, "Shape_Leng": 57685.345988, "CounDist": 29 }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -73.844610412989667, 40.71715717497738 ] ] } },
 { "type": "Feature", "properties": { "Borough": "Queens", "CounPerson": "Elizabeth Crowley", "Shape_Area": 253777725.847000, "Shape_Leng": 96682.238285, "CounDist": 30 }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -73.88739549404734, 40.712410625595801 ] ] } },
 { "type": "Feature", "properties": { "Borough": "Staten Island", "CounPerson": "Deborah Rose", "Shape_Area": null, "Shape_Leng": null, "CounDist": 49 }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -74.098000073205355, 40.6284896258651 ] ] } },
-{ "type": "Feature", "properties": { "Borough": "Bronx", "CounPerson": "James Vacca", "Shape_Area": null, "Shape_Leng": null, "CounDist": 13 }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -73.830835256631758, 40.845561039331152 ] ] } },
 { "type": "Feature", "properties": { "Borough": "Bronx", "CounPerson": "Vanessa Gibson", "Shape_Area": null, "Shape_Leng": null, "CounDist": 16 }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -73.915020003520837, 40.833037688554271 ] ] } },
 { "type": "Feature", "properties": { "Borough": "Bronx", "CounPerson": "Rafael Salamanca", "Shape_Area": null, "Shape_Leng": null, "CounDist": 17 }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -73.887190335127755, 40.819818596067556 ] ] } }
 ]

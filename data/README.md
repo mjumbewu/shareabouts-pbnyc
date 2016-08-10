@@ -15,3 +15,7 @@ Open a new qgis project and add layers from *district-centroids.geojson* and
 *districts.geojson*. Make sure that there are centroids for each district. If
 not, convert the districts layer to a shapefile, add the required centroids,
 and save the geojson file again.
+
+Open the *districts.tm2source* in Mapbox Studio (Classic). It should
+automatically pull from the districts and district-centroids files. Under
+**Settings** click **Upload to Mapbox**.

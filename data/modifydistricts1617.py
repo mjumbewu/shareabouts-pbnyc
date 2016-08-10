@@ -28,7 +28,6 @@ districts = {
     19: ('Paul Vallone', 'Queens'),
     26: ('Jimmy Van Bramer', 'Queens'),
     45: ('Jumaane Williams', 'Brooklyn'),
-    13: ('James Vacca', 'Bronx'),
     16: ('Vanessa Gibson', 'Bronx'),
     17: ('Rafael Salamanca', 'Bronx'),
     49: ('Deborah Rose', 'Staten Island'),
