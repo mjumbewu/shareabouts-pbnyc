@@ -89,14 +89,34 @@ place_types:
           iconSize: [50, 60]
           iconAnchor: [25, 60]
 
-      - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false'
+      - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false && {{map.zoom}} <= 11'
         style:
-          radius: 2
+          radius: 3
           stroke: true
           fill: true
-          weight: 0.5
+          weight: 1
           opacity: 0.7
           fillOpacity: 0.8
+          color: "#000"
+          fillColor: "#aa3c1e"
+      - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false && {{map.zoom}} <= 13'
+        style:
+          radius: 5
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 0.9
+          color: "#000"
+          fillColor: "#aa3c1e"
+      - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false'
+        style:
+          radius: 10
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 1
           color: "#000"
           fillColor: "#aa3c1e"
 
@@ -143,14 +163,34 @@ place_types:
           iconSize: [50, 60]
           iconAnchor: [25, 60]
 
-      - condition: '"{{location_type}}" === "education" && {{layer.focused}} == false'
+      - condition: '"{{location_type}}" === "education" && {{layer.focused}} == false && {{map.zoom}} <= 11'
         style:
-          radius: 2
+          radius: 3
           stroke: true
           fill: true
           weight: 0.5
           opacity: 0.7
           fillOpacity: 0.8
+          color: '#000'
+          fillColor: '#7fccd9'
+      - condition: '"{{location_type}}" === "education" && {{layer.focused}} == false && {{map.zoom}} <= 13'
+        style:
+          radius: 5
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 0.9
+          color: '#000'
+          fillColor: '#7fccd9'
+      - condition: '"{{location_type}}" === "education" && {{layer.focused}} == false'
+        style:
+          radius: 10
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 1
           color: '#000'
           fillColor: '#7fccd9'
 
@@ -197,14 +237,34 @@ place_types:
           iconSize: [50, 60]
           iconAnchor: [25, 60]
 
-      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} == false'
+      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} == false && {{map.zoom}} <= 11'
         style:
-          radius: 2
+          radius: 3
           stroke: true
           fill: true
           weight: 0.5
           opacity: 0.7
           fillOpacity: 0.8
+          color: '#000'
+          fillColor: '#55a504'
+      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} == false && {{map.zoom}} <= 13'
+        style:
+          radius: 5
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 0.9
+          color: '#000'
+          fillColor: '#55a504'
+      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} == false'
+        style:
+          radius: 10
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 1
           color: '#000'
           fillColor: '#55a504'
 
@@ -251,14 +311,34 @@ place_types:
           iconSize: [50, 60]
           iconAnchor: [25, 60]
 
-      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} == false'
+      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} == false && {{map.zoom}} <= 11'
         style:
-          radius: 2
+          radius: 3
           stroke: true
           fill: true
           weight: 0.5
           opacity: 0.7
           fillOpacity: 0.8
+          color: '#000'
+          fillColor: '#f50a8e'
+      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} == false && {{map.zoom}} <= 13'
+        style:
+          radius: 5
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 0.9
+          color: '#000'
+          fillColor: '#f50a8e'
+      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} == false'
+        style:
+          radius: 10
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 1
           color: '#000'
           fillColor: '#f50a8e'
 
@@ -305,14 +385,34 @@ place_types:
           iconSize: [50, 60]
           iconAnchor: [25, 60]
 
-      - condition: '"{{location_type}}" === "parks" && {{layer.focused}} == false'
+      - condition: '"{{location_type}}" === "parks" && {{layer.focused}} == false && {{map.zoom}} <= 11'
         style:
-          radius: 2
+          radius: 3
           stroke: true
           fill: true
           weight: 0.5
           opacity: 0.7
           fillOpacity: 0.8
+          color: '#000'
+          fillColor: '#fa5b13'
+      - condition: '"{{location_type}}" === "parks" && {{layer.focused}} == false && {{map.zoom}} <= 13'
+        style:
+          radius: 5
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 0.9
+          color: '#000'
+          fillColor: '#fa5b13'
+      - condition: '"{{location_type}}" === "parks" && {{layer.focused}} == false'
+        style:
+          radius: 10
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 1
           color: '#000'
           fillColor: '#fa5b13'
 
@@ -359,14 +459,34 @@ place_types:
           iconSize: [50, 60]
           iconAnchor: [25, 60]
 
-      - condition: '"{{location_type}}" === "health" && {{layer.focused}} == false'
+      - condition: '"{{location_type}}" === "health" && {{layer.focused}} == false && {{map.zoom}} <= 11'
         style:
-          radius: 2
+          radius: 3
           stroke: true
           fill: true
           weight: 0.5
           opacity: 0.7
           fillOpacity: 0.8
+          color: '#000'
+          fillColor: '#ff78be'
+      - condition: '"{{location_type}}" === "health" && {{layer.focused}} == false && {{map.zoom}} <= 13'
+        style:
+          radius: 5
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 0.9
+          color: '#000'
+          fillColor: '#ff78be'
+      - condition: '"{{location_type}}" === "health" && {{layer.focused}} == false'
+        style:
+          radius: 10
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 1
           color: '#000'
           fillColor: '#ff78be'
 
@@ -413,14 +533,34 @@ place_types:
           iconSize: [50, 60]
           iconAnchor: [25, 60]
 
-      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} == false'
+      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} == false && {{map.zoom}} <= 11'
         style:
-          radius: 2
+          radius: 3
           stroke: true
           fill: true
           weight: 0.5
           opacity: 0.7
           fillOpacity: 0.8
+          color: '#000'
+          fillColor: '#fc9229'
+      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} == false && {{map.zoom}} <= 13'
+        style:
+          radius: 5
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 0.9
+          color: '#000'
+          fillColor: '#fc9229'
+      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} == false'
+        style:
+          radius: 10
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 1
           color: '#000'
           fillColor: '#fc9229'
 
@@ -467,14 +607,34 @@ place_types:
           iconSize: [50, 60]
           iconAnchor: [25, 60]
 
-      - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} == false'
+      - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} == false && {{map.zoom}} <= 11'
         style:
-          radius: 2
+          radius: 3
           stroke: true
           fill: true
           weight: 0.5
           opacity: 0.7
           fillOpacity: 0.8
+          color: '#000'
+          fillColor: '#c4ed52'
+      - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} == false && {{map.zoom}} <= 13'
+        style:
+          radius: 5
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 0.9
+          color: '#000'
+          fillColor: '#c4ed52'
+      - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} == false'
+        style:
+          radius: 10
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 1
           color: '#000'
           fillColor: '#c4ed52'
 
@@ -521,14 +681,34 @@ place_types:
           iconSize: [50, 60]
           iconAnchor: [25, 60]
 
-      - condition: '"{{location_type}}" === "streets" && {{layer.focused}} == false'
+      - condition: '"{{location_type}}" === "streets" && {{layer.focused}} == false && {{map.zoom}} <= 11'
         style:
-          radius: 2
+          radius: 3
           stroke: true
           fill: true
           weight: 0.5
           opacity: 0.7
           fillOpacity: 0.8
+          color: '#000'
+          fillColor: '#a0b4c6'
+      - condition: '"{{location_type}}" === "streets" && {{layer.focused}} == false && {{map.zoom}} <= 13'
+        style:
+          radius: 5
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 0.9
+          color: '#000'
+          fillColor: '#a0b4c6'
+      - condition: '"{{location_type}}" === "streets" && {{layer.focused}} == false'
+        style:
+          radius: 10
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 1
           color: '#000'
           fillColor: '#a0b4c6'
 
@@ -575,14 +755,34 @@ place_types:
           iconSize: [50, 60]
           iconAnchor: [25, 60]
 
-      - condition: '"{{location_type}}" === "sanitation" && {{layer.focused}} == false'
+      - condition: '"{{location_type}}" === "sanitation" && {{layer.focused}} == false && {{map.zoom}} <= 11'
         style:
-          radius: 2
+          radius: 3
           stroke: true
           fill: true
           weight: 0.5
           opacity: 0.7
           fillOpacity: 0.8
+          color: '#000'
+          fillColor: '#8ea4b8'
+      - condition: '"{{location_type}}" === "sanitation" && {{layer.focused}} == false && {{map.zoom}} <= 13'
+        style:
+          radius: 5
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 0.9
+          color: '#000'
+          fillColor: '#8ea4b8'
+      - condition: '"{{location_type}}" === "sanitation" && {{layer.focused}} == false'
+        style:
+          radius: 10
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 1
           color: '#000'
           fillColor: '#8ea4b8'
 
@@ -629,14 +829,34 @@ place_types:
           iconSize: [50, 60]
           iconAnchor: [25, 60]
 
-      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} == false'
+      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} == false && {{map.zoom}} <= 11'
         style:
-          radius: 2
+          radius: 3
           stroke: true
           fill: true
           weight: 0.5
           opacity: 0.7
           fillOpacity: 0.8
+          color: '#000'
+          fillColor: '#b75ab8'
+      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} == false && {{map.zoom}} <= 13'
+        style:
+          radius: 5
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 0.9
+          color: '#000'
+          fillColor: '#b75ab8'
+      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} == false'
+        style:
+          radius: 10
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 1
           color: '#000'
           fillColor: '#b75ab8'
 
@@ -683,14 +903,34 @@ place_types:
           iconSize: [50, 60]
           iconAnchor: [25, 60]
 
-      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} == false'
+      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} == false && {{map.zoom}} <= 11'
         style:
-          radius: 2
+          radius: 3
           stroke: true
           fill: true
           weight: 0.5
           opacity: 0.7
           fillOpacity: 0.8
+          color: '#000'
+          fillColor: '#ffd614'
+      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} == false && {{map.zoom}} <= 13'
+        style:
+          radius: 5
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 0.9
+          color: '#000'
+          fillColor: '#ffd614'
+      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} == false'
+        style:
+          radius: 10
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 1
           color: '#000'
           fillColor: '#ffd614'
 
