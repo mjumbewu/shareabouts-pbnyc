@@ -57,6 +57,65 @@ place_types:
   culture:
     label: _(Culture & Community Facilities)
     rules:
+      # Normal, unfocused icons for culture
+      - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false && {{map.zoom}} <= 11 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 1
+          stroke: false
+          fill: true
+          fillOpacity: 0.6
+          fillColor: "#aa3c1e"
+      - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false && {{map.zoom}} <= 13 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 2
+          stroke: false
+          fill: true
+          fillOpacity: 0.7
+          fillColor: "#aa3c1e"
+      - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false && {{map.zoom}} > 13 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 3
+          stroke: true
+          weight: 0.5
+          opacity: 0.5
+          color: '#000'
+          fill: true
+          fillOpacity: 0.7
+          fillColor: "#aa3c1e"
+
+      # Shortlisted, unfocused icons for culture
+      - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false && {{map.zoom}} >= 13 && {{map.zoom}} < 16 && "{{shortlisted}}" === "true"'
+        icon:
+          iconUrl: /static/css/images/markers/new/facilities-small.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "culture"  && {{layer.focused}} === false && {{map.zoom}} >= 16 && "{{shortlisted}}" === "true"'
+        icon:
+          iconUrl: /static/css/images/markers/new/facilities-small.png
+          iconSize: [50, 60]
+          iconAnchor: [25, 60]
+      - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false && {{map.zoom}} <= 11 && "{{shortlisted}}" === "true"'
+        style:
+          radius: 4
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 0.8
+          color: "#fff"
+          fillColor: "#aa3c1e"
+      - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false && {{map.zoom}} <= 13 && "{{shortlisted}}" === "true"'
+        style:
+          radius: 6
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 0.9
+          color: "#fff"
+          fillColor: "#aa3c1e"
+
+      # Winners for culture
       - condition: '"{{location_type}}" === "culture" && "{{status}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
           iconUrl: /static/css/images/markers/new/dot-white.png
@@ -73,38 +132,12 @@ place_types:
           iconSize: [20, 20]
           iconAnchor: [10, 10]
 
-      - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
+      # Focused for culture
+      - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === true && "{{shortlisted}}" !== "true"'
         icon:
           iconUrl: /static/css/images/markers/new/facilities-small.png
           iconSize: [25, 30]
           iconAnchor: [13, 30]
-      - condition: '"{{location_type}}" === "culture"  && {{layer.focused}} === false && {{map.zoom}} >= 16'
-        icon:
-          iconUrl: /static/css/images/markers/new/facilities-small.png
-          iconSize: [50, 60]
-          iconAnchor: [25, 60]
-
-      - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false && {{map.zoom}} <= 11'
-        style:
-          radius: 4
-          stroke: true
-          fill: true
-          weight: 1
-          opacity: 0.7
-          fillOpacity: 0.8
-          color: "#000"
-          fillColor: "#aa3c1e"
-      - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false && {{map.zoom}} <= 13'
-        style:
-          radius: 6
-          stroke: true
-          fill: true
-          weight: 1
-          opacity: 1
-          fillOpacity: 0.9
-          color: "#000"
-          fillColor: "#aa3c1e"
-
       - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === true'
         icon:
           iconUrl: /static/css/images/markers/new/facilities.png
@@ -116,6 +149,65 @@ place_types:
   education:
     label: _(Schools & Education)
     rules:
+      # Normal, unfocused icons for education
+      - condition: '"{{location_type}}" === "education" && {{layer.focused}} == false && {{map.zoom}} <= 11 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 1
+          stroke: false
+          fill: true
+          fillOpacity: 0.6
+          fillColor: '#7fccd9'
+      - condition: '"{{location_type}}" === "education" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 2
+          stroke: false
+          fill: true
+          fillOpacity: 0.7
+          fillColor: '#7fccd9'
+      - condition: '"{{location_type}}" === "education" && {{layer.focused}} == false && {{map.zoom}} > 13 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 3
+          stroke: true
+          weight: 0.5
+          opacity: 0.5
+          color: '#000'
+          fill: true
+          fillOpacity: 0.7
+          fillColor: '#7fccd9'
+
+      # Shortlisted, unfocused icons for education
+      - condition: '"{{location_type}}" === "education" && {{layer.focused}} === false && {{map.zoom}} >= 13 && {{map.zoom}} < 16 && "{{shortlisted}}" === "true"'
+        icon:
+          iconUrl: /static/css/images/markers/new/education-small.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "education" && {{layer.focused}} === false && {{map.zoom}} >= 16 && "{{shortlisted}}" === "true"'
+        icon:
+          iconUrl: /static/css/images/markers/new/education-small.png
+          iconSize: [50, 60]
+          iconAnchor: [25, 60]
+      - condition: '"{{location_type}}" === "education" && {{layer.focused}} == false && {{map.zoom}} <= 11 && "{{shortlisted}}" === "true"'
+        style:
+          radius: 4
+          stroke: true
+          fill: true
+          weight: 0.5
+          opacity: 1
+          fillOpacity: 0.8
+          color: '#fff'
+          fillColor: '#7fccd9'
+      - condition: '"{{location_type}}" === "education" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" === "true"'
+        style:
+          radius: 6
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 0.9
+          color: '#fff'
+          fillColor: '#7fccd9'
+
+      # Winners for education
       - condition: '"{{location_type}}" === "education" && "{{status}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
           iconUrl: /static/css/images/markers/new/dot-white.png
@@ -132,38 +224,12 @@ place_types:
           iconSize: [20, 20]
           iconAnchor: [10, 10]
 
-      - condition: '"{{location_type}}" === "education" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
+      # Focused for education
+      - condition: '"{{location_type}}" === "education" && {{layer.focused}} === true && "{{shortlisted}}" !== "true"'
         icon:
           iconUrl: /static/css/images/markers/new/education-small.png
           iconSize: [25, 30]
           iconAnchor: [13, 30]
-      - condition: '"{{location_type}}" === "education" && {{layer.focused}} === false && {{map.zoom}} >= 16'
-        icon:
-          iconUrl: /static/css/images/markers/new/education-small.png
-          iconSize: [50, 60]
-          iconAnchor: [25, 60]
-
-      - condition: '"{{location_type}}" === "education" && {{layer.focused}} == false && {{map.zoom}} <= 11'
-        style:
-          radius: 4
-          stroke: true
-          fill: true
-          weight: 0.5
-          opacity: 0.7
-          fillOpacity: 0.8
-          color: '#000'
-          fillColor: '#7fccd9'
-      - condition: '"{{location_type}}" === "education" && {{layer.focused}} == false && {{map.zoom}} <= 13'
-        style:
-          radius: 6
-          stroke: true
-          fill: true
-          weight: 1
-          opacity: 1
-          fillOpacity: 0.9
-          color: '#000'
-          fillColor: '#7fccd9'
-
       - condition: '"{{location_type}}" === "education" && {{layer.focused}} === true'
         icon:
           iconUrl: /static/css/images/markers/new/education.png
@@ -175,6 +241,65 @@ place_types:
   environment:
     label: _(Environment)
     rules:
+      # Normal, unfocused icons for environment
+      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} == false && {{map.zoom}} <= 11 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 1
+          stroke: false
+          fill: true
+          fillOpacity: 0.6
+          fillColor: '#55a504'
+      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 2
+          stroke: false
+          fill: true
+          fillOpacity: 0.7
+          fillColor: '#55a504'
+      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} == false && {{map.zoom}} > 13 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 3
+          stroke: true
+          weight: 0.5
+          opacity: 0.5
+          color: '#000'
+          fill: true
+          fillOpacity: 0.7
+          fillColor: '#55a504'
+
+      # Shortlisted, unfocused icons for environment
+      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === false && {{map.zoom}} >= 13 && {{map.zoom}} < 16 && "{{shortlisted}}" === "true"'
+        icon:
+          iconUrl: /static/css/images/markers/new/tree-small.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === false && {{map.zoom}} >= 16 && "{{shortlisted}}" === "true"'
+        icon:
+          iconUrl: /static/css/images/markers/new/tree-small.png
+          iconSize: [50, 60]
+          iconAnchor: [25, 60]
+      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} == false && {{map.zoom}} <= 11 && "{{shortlisted}}" === "true"'
+        style:
+          radius: 4
+          stroke: true
+          fill: true
+          weight: 0.5
+          opacity: 1
+          fillOpacity: 0.8
+          color: '#fff'
+          fillColor: '#55a504'
+      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" === "true"'
+        style:
+          radius: 6
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 0.9
+          color: '#fff'
+          fillColor: '#55a504'
+
+      # Winners for environment
       - condition: '"{{location_type}}" === "environment" && "{{status}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
           iconUrl: /static/css/images/markers/new/dot-white.png
@@ -191,38 +316,12 @@ place_types:
           iconSize: [20, 20]
           iconAnchor: [10, 10]
 
-      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
+      # Focused for environment
+      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === true && "{{shortlisted}}" !== "true"'
         icon:
           iconUrl: /static/css/images/markers/new/tree-small.png
           iconSize: [25, 30]
           iconAnchor: [13, 30]
-      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === false && {{map.zoom}} >= 16'
-        icon:
-          iconUrl: /static/css/images/markers/new/tree-small.png
-          iconSize: [50, 60]
-          iconAnchor: [25, 60]
-
-      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} == false && {{map.zoom}} <= 11'
-        style:
-          radius: 4
-          stroke: true
-          fill: true
-          weight: 0.5
-          opacity: 0.7
-          fillOpacity: 0.8
-          color: '#000'
-          fillColor: '#55a504'
-      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} == false && {{map.zoom}} <= 13'
-        style:
-          radius: 6
-          stroke: true
-          fill: true
-          weight: 1
-          opacity: 1
-          fillOpacity: 0.9
-          color: '#000'
-          fillColor: '#55a504'
-
       - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === true'
         icon:
           iconUrl: /static/css/images/markers/new/tree.png
@@ -234,6 +333,65 @@ place_types:
   housing:
     label: _(Housing)
     rules:
+      # Normal, unfocused icons for housing
+      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} == false && {{map.zoom}} <= 11 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 1
+          stroke: false
+          fill: true
+          fillOpacity: 0.6
+          fillColor: '#f50a8e'
+      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 2
+          stroke: false
+          fill: true
+          fillOpacity: 0.7
+          fillColor: '#f50a8e'
+      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} == false && {{map.zoom}} > 13 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 3
+          stroke: true
+          weight: 0.5
+          opacity: 0.5
+          color: '#000'
+          fill: true
+          fillOpacity: 0.7
+          fillColor: '#f50a8e'
+
+      # Shortlisted, unfocused icons for housing
+      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} === false && {{map.zoom}} >= 13 && {{map.zoom}} < 16 && "{{shortlisted}}" === "true"'
+        icon:
+          iconUrl: /static/css/images/markers/new/housing-small.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} === false && {{map.zoom}} >= 16 && "{{shortlisted}}" === "true"'
+        icon:
+          iconUrl: /static/css/images/markers/new/housing-small.png
+          iconSize: [50, 60]
+          iconAnchor: [25, 60]
+      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} == false && {{map.zoom}} <= 11 && "{{shortlisted}}" === "true"'
+        style:
+          radius: 4
+          stroke: true
+          fill: true
+          weight: 0.5
+          opacity: 1
+          fillOpacity: 0.8
+          color: '#fff'
+          fillColor: '#f50a8e'
+      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" === "true"'
+        style:
+          radius: 6
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 0.9
+          color: '#fff'
+          fillColor: '#f50a8e'
+
+      # Winners for housing
       - condition: '"{{location_type}}" === "housing" && "{{status}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
           iconUrl: /static/css/images/markers/new/dot-white.png
@@ -250,38 +408,12 @@ place_types:
           iconSize: [20, 20]
           iconAnchor: [10, 10]
 
-      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
+      # Focused for housing
+      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} === true && "{{shortlisted}}" !== "true"'
         icon:
           iconUrl: /static/css/images/markers/new/housing-small.png
           iconSize: [25, 30]
           iconAnchor: [13, 30]
-      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} === false && {{map.zoom}} >= 16'
-        icon:
-          iconUrl: /static/css/images/markers/new/housing-small.png
-          iconSize: [50, 60]
-          iconAnchor: [25, 60]
-
-      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} == false && {{map.zoom}} <= 11'
-        style:
-          radius: 4
-          stroke: true
-          fill: true
-          weight: 0.5
-          opacity: 0.7
-          fillOpacity: 0.8
-          color: '#000'
-          fillColor: '#f50a8e'
-      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} == false && {{map.zoom}} <= 13'
-        style:
-          radius: 6
-          stroke: true
-          fill: true
-          weight: 1
-          opacity: 1
-          fillOpacity: 0.9
-          color: '#000'
-          fillColor: '#f50a8e'
-
       - condition: '"{{location_type}}" === "housing" && {{layer.focused}} === true'
         icon:
           iconUrl: /static/css/images/markers/new/housing.png
@@ -293,6 +425,65 @@ place_types:
   parks:
     label: _(Parks & Recreation)
     rules:
+      # Normal, unfocused icons for parks
+      - condition: '"{{location_type}}" === "parks" && {{layer.focused}} == false && {{map.zoom}} <= 11 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 1
+          stroke: false
+          fill: true
+          fillOpacity: 0.6
+          fillColor: '#fa5b13'
+      - condition: '"{{location_type}}" === "parks" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 2
+          stroke: false
+          fill: true
+          fillOpacity: 0.7
+          fillColor: '#fa5b13'
+      - condition: '"{{location_type}}" === "parks" && {{layer.focused}} == false && {{map.zoom}} > 13 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 3
+          stroke: true
+          weight: 0.5
+          opacity: 0.5
+          color: '#000'
+          fill: true
+          fillOpacity: 0.7
+          fillColor: '#fa5b13'
+
+      # Shortlisted, unfocused icons for parks
+      - condition: '"{{location_type}}" === "parks" && {{layer.focused}} === false && {{map.zoom}} >= 13 && {{map.zoom}} < 16 && "{{shortlisted}}" === "true"'
+        icon:
+          iconUrl: /static/css/images/markers/new/playground-small.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "parks" && {{layer.focused}} === false && {{map.zoom}} >= 16 && "{{shortlisted}}" === "true"'
+        icon:
+          iconUrl: /static/css/images/markers/new/playground-small.png
+          iconSize: [50, 60]
+          iconAnchor: [25, 60]
+      - condition: '"{{location_type}}" === "parks" && {{layer.focused}} == false && {{map.zoom}} <= 11 && "{{shortlisted}}" === "true"'
+        style:
+          radius: 4
+          stroke: true
+          fill: true
+          weight: 0.5
+          opacity: 1
+          fillOpacity: 0.8
+          color: '#fff'
+          fillColor: '#fa5b13'
+      - condition: '"{{location_type}}" === "parks" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" === "true"'
+        style:
+          radius: 6
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 0.9
+          color: '#fff'
+          fillColor: '#fa5b13'
+
+      # Winners for parks
       - condition: '"{{location_type}}" === "parks" && "{{status}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
           iconUrl: /static/css/images/markers/new/dot-white.png
@@ -309,38 +500,12 @@ place_types:
           iconSize: [20, 20]
           iconAnchor: [10, 10]
 
-      - condition: '"{{location_type}}" === "parks" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
+      # Focused for parks
+      - condition: '"{{location_type}}" === "parks" && {{layer.focused}} === true && "{{shortlisted}}" !== "true"'
         icon:
           iconUrl: /static/css/images/markers/new/playground-small.png
           iconSize: [25, 30]
           iconAnchor: [13, 30]
-      - condition: '"{{location_type}}" === "parks" && {{layer.focused}} === false && {{map.zoom}} >= 16'
-        icon:
-          iconUrl: /static/css/images/markers/new/playground-small.png
-          iconSize: [50, 60]
-          iconAnchor: [25, 60]
-
-      - condition: '"{{location_type}}" === "parks" && {{layer.focused}} == false && {{map.zoom}} <= 11'
-        style:
-          radius: 4
-          stroke: true
-          fill: true
-          weight: 0.5
-          opacity: 0.7
-          fillOpacity: 0.8
-          color: '#000'
-          fillColor: '#fa5b13'
-      - condition: '"{{location_type}}" === "parks" && {{layer.focused}} == false && {{map.zoom}} <= 13'
-        style:
-          radius: 6
-          stroke: true
-          fill: true
-          weight: 1
-          opacity: 1
-          fillOpacity: 0.9
-          color: '#000'
-          fillColor: '#fa5b13'
-
       - condition: '"{{location_type}}" === "parks" && {{layer.focused}} === true'
         icon:
           iconUrl: /static/css/images/markers/new/playground.png
@@ -352,6 +517,65 @@ place_types:
   health:
     label: _(Public Health)
     rules:
+      # Normal, unfocused icons for health
+      - condition: '"{{location_type}}" === "health" && {{layer.focused}} == false && {{map.zoom}} <= 11 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 1
+          stroke: false
+          fill: true
+          fillOpacity: 0.6
+          fillColor: '#ff78be'
+      - condition: '"{{location_type}}" === "health" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 2
+          stroke: false
+          fill: true
+          fillOpacity: 0.7
+          fillColor: '#ff78be'
+      - condition: '"{{location_type}}" === "health" && {{layer.focused}} == false && {{map.zoom}} > 13 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 3
+          stroke: true
+          weight: 0.5
+          opacity: 0.5
+          color: '#000'
+          fill: true
+          fillOpacity: 0.7
+          fillColor: '#ff78be'
+
+      # Shortlisted, unfocused icons for health
+      - condition: '"{{location_type}}" === "health" && {{layer.focused}} === false && {{map.zoom}} >= 13 && {{map.zoom}} < 16 && "{{shortlisted}}" === "true"'
+        icon:
+          iconUrl: /static/css/images/markers/new/health-small.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "health" && {{layer.focused}} === false && {{map.zoom}} >= 16 && "{{shortlisted}}" === "true"'
+        icon:
+          iconUrl: /static/css/images/markers/new/health-small.png
+          iconSize: [50, 60]
+          iconAnchor: [25, 60]
+      - condition: '"{{location_type}}" === "health" && {{layer.focused}} == false && {{map.zoom}} <= 11 && "{{shortlisted}}" === "true"'
+        style:
+          radius: 4
+          stroke: true
+          fill: true
+          weight: 0.5
+          opacity: 1
+          fillOpacity: 0.8
+          color: '#fff'
+          fillColor: '#ff78be'
+      - condition: '"{{location_type}}" === "health" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" === "true"'
+        style:
+          radius: 6
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 0.9
+          color: '#fff'
+          fillColor: '#ff78be'
+
+      # Winners for health
       - condition: '"{{location_type}}" === "health" && "{{status}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
           iconUrl: /static/css/images/markers/new/dot-white.png
@@ -368,38 +592,12 @@ place_types:
           iconSize: [20, 20]
           iconAnchor: [10, 10]
 
-      - condition: '"{{location_type}}" === "health" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
+      # Focused for health
+      - condition: '"{{location_type}}" === "health" && {{layer.focused}} === true && "{{shortlisted}}" !== "true"'
         icon:
           iconUrl: /static/css/images/markers/new/health-small.png
           iconSize: [25, 30]
           iconAnchor: [13, 30]
-      - condition: '"{{location_type}}" === "health" && {{layer.focused}} === false && {{map.zoom}} >= 16'
-        icon:
-          iconUrl: /static/css/images/markers/new/health-small.png
-          iconSize: [50, 60]
-          iconAnchor: [25, 60]
-
-      - condition: '"{{location_type}}" === "health" && {{layer.focused}} == false && {{map.zoom}} <= 11'
-        style:
-          radius: 4
-          stroke: true
-          fill: true
-          weight: 0.5
-          opacity: 0.7
-          fillOpacity: 0.8
-          color: '#000'
-          fillColor: '#ff78be'
-      - condition: '"{{location_type}}" === "health" && {{layer.focused}} == false && {{map.zoom}} <= 13'
-        style:
-          radius: 6
-          stroke: true
-          fill: true
-          weight: 1
-          opacity: 1
-          fillOpacity: 0.9
-          color: '#000'
-          fillColor: '#ff78be'
-
       - condition: '"{{location_type}}" === "health" && {{layer.focused}} === true'
         icon:
           iconUrl: /static/css/images/markers/new/health.png
@@ -411,6 +609,65 @@ place_types:
   safety:
     label: _(Public Safety)
     rules:
+      # Normal, unfocused icons for safety
+      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} == false && {{map.zoom}} <= 11 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 1
+          stroke: false
+          fill: true
+          fillOpacity: 0.6
+          fillColor: '#fc9229'
+      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 2
+          stroke: false
+          fill: true
+          fillOpacity: 0.7
+          fillColor: '#fc9229'
+      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} == false && {{map.zoom}} > 13 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 3
+          stroke: true
+          weight: 0.5
+          opacity: 0.5
+          color: '#000'
+          fill: true
+          fillOpacity: 0.7
+          fillColor: '#fc9229'
+
+      # Shortlisted, unfocused icons for safety
+      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === false && {{map.zoom}} >= 13 && {{map.zoom}} < 16 && "{{shortlisted}}" === "true"'
+        icon:
+          iconUrl: /static/css/images/markers/new/safety-small.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === false && {{map.zoom}} >= 16 && "{{shortlisted}}" === "true"'
+        icon:
+          iconUrl: /static/css/images/markers/new/safety-small.png
+          iconSize: [50, 60]
+          iconAnchor: [25, 60]
+      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} == false && {{map.zoom}} <= 11 && "{{shortlisted}}" === "true"'
+        style:
+          radius: 4
+          stroke: true
+          fill: true
+          weight: 0.5
+          opacity: 1
+          fillOpacity: 0.8
+          color: '#fff'
+          fillColor: '#fc9229'
+      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" === "true"'
+        style:
+          radius: 6
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 0.9
+          color: '#fff'
+          fillColor: '#fc9229'
+
+      # Winners for safety
       - condition: '"{{location_type}}" === "safety" && "{{status}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
           iconUrl: /static/css/images/markers/new/dot-white.png
@@ -427,38 +684,12 @@ place_types:
           iconSize: [20, 20]
           iconAnchor: [10, 10]
 
-      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
+      # Focused for safety
+      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === true && "{{shortlisted}}" !== "true"'
         icon:
           iconUrl: /static/css/images/markers/new/safety-small.png
           iconSize: [25, 30]
           iconAnchor: [13, 30]
-      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === false && {{map.zoom}} >= 16'
-        icon:
-          iconUrl: /static/css/images/markers/new/safety-small.png
-          iconSize: [50, 60]
-          iconAnchor: [25, 60]
-
-      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} == false && {{map.zoom}} <= 11'
-        style:
-          radius: 4
-          stroke: true
-          fill: true
-          weight: 0.5
-          opacity: 0.7
-          fillOpacity: 0.8
-          color: '#000'
-          fillColor: '#fc9229'
-      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} == false && {{map.zoom}} <= 13'
-        style:
-          radius: 6
-          stroke: true
-          fill: true
-          weight: 1
-          opacity: 1
-          fillOpacity: 0.9
-          color: '#000'
-          fillColor: '#fc9229'
-
       - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === true'
         icon:
           iconUrl: /static/css/images/markers/new/safety.png
@@ -470,6 +701,65 @@ place_types:
   seniors:
     label: _(Seniors)
     rules:
+      # Normal, unfocused icons for seniors
+      - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} == false && {{map.zoom}} <= 11 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 1
+          stroke: false
+          fill: true
+          fillOpacity: 0.6
+          fillColor: '#c4ed52'
+      - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 2
+          stroke: false
+          fill: true
+          fillOpacity: 0.7
+          fillColor: '#c4ed52'
+      - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} == false && {{map.zoom}} > 13 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 3
+          stroke: true
+          weight: 0.5
+          opacity: 0.5
+          color: '#000'
+          fill: true
+          fillOpacity: 0.7
+          fillColor: '#c4ed52'
+
+      # Shortlisted, unfocused icons for seniors
+      - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} === false && {{map.zoom}} >= 13 && {{map.zoom}} < 16 && "{{shortlisted}}" === "true"'
+        icon:
+          iconUrl: /static/css/images/markers/new/seniors-small.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} === false && {{map.zoom}} >= 16 && "{{shortlisted}}" === "true"'
+        icon:
+          iconUrl: /static/css/images/markers/new/seniors-small.png
+          iconSize: [50, 60]
+          iconAnchor: [25, 60]
+      - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} == false && {{map.zoom}} <= 11 && "{{shortlisted}}" === "true"'
+        style:
+          radius: 4
+          stroke: true
+          fill: true
+          weight: 0.5
+          opacity: 1
+          fillOpacity: 0.8
+          color: '#fff'
+          fillColor: '#c4ed52'
+      - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" === "true"'
+        style:
+          radius: 6
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 0.9
+          color: '#fff'
+          fillColor: '#c4ed52'
+
+      # Winners for seniors
       - condition: '"{{location_type}}" === "seniors" && "{{status}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
           iconUrl: /static/css/images/markers/new/dot-white.png
@@ -486,38 +776,12 @@ place_types:
           iconSize: [20, 20]
           iconAnchor: [10, 10]
 
-      - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
+      # Focused for seniors
+      - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} === true && "{{shortlisted}}" !== "true"'
         icon:
           iconUrl: /static/css/images/markers/new/seniors-small.png
           iconSize: [25, 30]
           iconAnchor: [13, 30]
-      - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} === false && {{map.zoom}} >= 16'
-        icon:
-          iconUrl: /static/css/images/markers/new/seniors-small.png
-          iconSize: [50, 60]
-          iconAnchor: [25, 60]
-
-      - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} == false && {{map.zoom}} <= 11'
-        style:
-          radius: 4
-          stroke: true
-          fill: true
-          weight: 0.5
-          opacity: 0.7
-          fillOpacity: 0.8
-          color: '#000'
-          fillColor: '#c4ed52'
-      - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} == false && {{map.zoom}} <= 13'
-        style:
-          radius: 6
-          stroke: true
-          fill: true
-          weight: 1
-          opacity: 1
-          fillOpacity: 0.9
-          color: '#000'
-          fillColor: '#c4ed52'
-
       - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} === true'
         icon:
           iconUrl: /static/css/images/markers/new/seniors.png
@@ -529,6 +793,65 @@ place_types:
   streets:
     label: _(Streets & Sidewalks)
     rules:
+      # Normal, unfocused icons for streets
+      - condition: '"{{location_type}}" === "streets" && {{layer.focused}} == false && {{map.zoom}} <= 11 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 1
+          stroke: false
+          fill: true
+          fillOpacity: 0.6
+          fillColor: '#a0b4c6'
+      - condition: '"{{location_type}}" === "streets" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 2
+          stroke: false
+          fill: true
+          fillOpacity: 0.7
+          fillColor: '#a0b4c6'
+      - condition: '"{{location_type}}" === "streets" && {{layer.focused}} == false && {{map.zoom}} > 13 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 3
+          stroke: true
+          weight: 0.5
+          opacity: 0.5
+          color: '#000'
+          fill: true
+          fillOpacity: 0.7
+          fillColor: '#a0b4c6'
+
+      # Shortlisted, unfocused icons for streets
+      - condition: '"{{location_type}}" === "streets" && {{layer.focused}} === false && {{map.zoom}} >= 13 && {{map.zoom}} < 16 && "{{shortlisted}}" === "true"'
+        icon:
+          iconUrl: /static/css/images/markers/new/street-sidewalk-small.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "streets" && {{layer.focused}} === false && {{map.zoom}} >= 16 && "{{shortlisted}}" === "true"'
+        icon:
+          iconUrl: /static/css/images/markers/new/street-sidewalk-small.png
+          iconSize: [50, 60]
+          iconAnchor: [25, 60]
+      - condition: '"{{location_type}}" === "streets" && {{layer.focused}} == false && {{map.zoom}} <= 11 && "{{shortlisted}}" === "true"'
+        style:
+          radius: 4
+          stroke: true
+          fill: true
+          weight: 0.5
+          opacity: 1
+          fillOpacity: 0.8
+          color: '#fff'
+          fillColor: '#a0b4c6'
+      - condition: '"{{location_type}}" === "streets" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" === "true"'
+        style:
+          radius: 6
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 0.9
+          color: '#fff'
+          fillColor: '#a0b4c6'
+
+      # Winners for streets
       - condition: '"{{location_type}}" === "streets" && "{{status}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
           iconUrl: /static/css/images/markers/new/dot-white.png
@@ -545,38 +868,12 @@ place_types:
           iconSize: [20, 20]
           iconAnchor: [10, 10]
 
-      - condition: '"{{location_type}}" === "streets" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
+      # Focused for streets
+      - condition: '"{{location_type}}" === "streets" && {{layer.focused}} === true && "{{shortlisted}}" !== "true"'
         icon:
           iconUrl: /static/css/images/markers/new/street-sidewalk-small.png
           iconSize: [25, 30]
           iconAnchor: [13, 30]
-      - condition: '"{{location_type}}" === "streets" && {{layer.focused}} === false && {{map.zoom}} >= 16'
-        icon:
-          iconUrl: /static/css/images/markers/new/street-sidewalk-small.png
-          iconSize: [50, 60]
-          iconAnchor: [25, 60]
-
-      - condition: '"{{location_type}}" === "streets" && {{layer.focused}} == false && {{map.zoom}} <= 11'
-        style:
-          radius: 4
-          stroke: true
-          fill: true
-          weight: 0.5
-          opacity: 0.7
-          fillOpacity: 0.8
-          color: '#000'
-          fillColor: '#a0b4c6'
-      - condition: '"{{location_type}}" === "streets" && {{layer.focused}} == false && {{map.zoom}} <= 13'
-        style:
-          radius: 6
-          stroke: true
-          fill: true
-          weight: 1
-          opacity: 1
-          fillOpacity: 0.9
-          color: '#000'
-          fillColor: '#a0b4c6'
-
       - condition: '"{{location_type}}" === "streets" && {{layer.focused}} === true'
         icon:
           iconUrl: /static/css/images/markers/new/street-sidewalk.png
@@ -588,6 +885,65 @@ place_types:
   sanitation:
     label: _(Sanitation)
     rules:
+      # Normal, unfocused icons for sanitation
+      - condition: '"{{location_type}}" === "sanitation" && {{layer.focused}} == false && {{map.zoom}} <= 11 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 1
+          stroke: false
+          fill: true
+          fillOpacity: 0.6
+          fillColor: '#8ea4b8'
+      - condition: '"{{location_type}}" === "sanitation" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 2
+          stroke: false
+          fill: true
+          fillOpacity: 0.7
+          fillColor: '#8ea4b8'
+      - condition: '"{{location_type}}" === "sanitation" && {{layer.focused}} == false && {{map.zoom}} > 13 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 3
+          stroke: true
+          weight: 0.5
+          opacity: 0.5
+          color: '#000'
+          fill: true
+          fillOpacity: 0.7
+          fillColor: '#8ea4b8'
+
+      # Shortlisted, unfocused icons for sanitation
+      - condition: '"{{location_type}}" === "sanitation" && {{layer.focused}} === false && {{map.zoom}} >= 13 && {{map.zoom}} < 16 && "{{shortlisted}}" === "true"'
+        icon:
+          iconUrl: /static/css/images/markers/new/street-sidewalk-small.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "sanitation" && {{layer.focused}} === false && {{map.zoom}} >= 16 && "{{shortlisted}}" === "true"'
+        icon:
+          iconUrl: /static/css/images/markers/new/street-sidewalk-small.png
+          iconSize: [50, 60]
+          iconAnchor: [25, 60]
+      - condition: '"{{location_type}}" === "sanitation" && {{layer.focused}} == false && {{map.zoom}} <= 11 && "{{shortlisted}}" === "true"'
+        style:
+          radius: 4
+          stroke: true
+          fill: true
+          weight: 0.5
+          opacity: 1
+          fillOpacity: 0.8
+          color: '#fff'
+          fillColor: '#8ea4b8'
+      - condition: '"{{location_type}}" === "sanitation" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" === "true"'
+        style:
+          radius: 6
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 0.9
+          color: '#fff'
+          fillColor: '#8ea4b8'
+
+      # Winners for sanitation
       - condition: '"{{location_type}}" === "sanitation" && "{{status}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
           iconUrl: /static/css/images/markers/new/dot-white.png
@@ -604,38 +960,12 @@ place_types:
           iconSize: [20, 20]
           iconAnchor: [10, 10]
 
-      - condition: '"{{location_type}}" === "sanitation" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
+      # Focused for sanitation
+      - condition: '"{{location_type}}" === "sanitation" && {{layer.focused}} === true && "{{shortlisted}}" !== "true"'
         icon:
           iconUrl: /static/css/images/markers/new/street-sidewalk-small.png
           iconSize: [25, 30]
           iconAnchor: [13, 30]
-      - condition: '"{{location_type}}" === "sanitation" && {{layer.focused}} === false && {{map.zoom}} >= 16'
-        icon:
-          iconUrl: /static/css/images/markers/new/street-sidewalk-small.png
-          iconSize: [50, 60]
-          iconAnchor: [25, 60]
-
-      - condition: '"{{location_type}}" === "sanitation" && {{layer.focused}} == false && {{map.zoom}} <= 11'
-        style:
-          radius: 4
-          stroke: true
-          fill: true
-          weight: 0.5
-          opacity: 0.7
-          fillOpacity: 0.8
-          color: '#000'
-          fillColor: '#8ea4b8'
-      - condition: '"{{location_type}}" === "sanitation" && {{layer.focused}} == false && {{map.zoom}} <= 13'
-        style:
-          radius: 6
-          stroke: true
-          fill: true
-          weight: 1
-          opacity: 1
-          fillOpacity: 0.9
-          color: '#000'
-          fillColor: '#8ea4b8'
-
       - condition: '"{{location_type}}" === "sanitation" && {{layer.focused}} === true'
         icon:
           iconUrl: /static/css/images/markers/new/street-sidewalk.png
@@ -647,6 +977,65 @@ place_types:
   transit:
     label: _(Transit & Transportation)
     rules:
+      # Normal, unfocused icons for transit
+      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} == false && {{map.zoom}} <= 11 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 1
+          stroke: false
+          fill: true
+          fillOpacity: 0.6
+          fillColor: '#b75ab8'
+      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 2
+          stroke: false
+          fill: true
+          fillOpacity: 0.7
+          fillColor: '#b75ab8'
+      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} == false && {{map.zoom}} > 13 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 3
+          stroke: true
+          weight: 0.5
+          opacity: 0.5
+          color: '#000'
+          fill: true
+          fillOpacity: 0.7
+          fillColor: '#b75ab8'
+
+      # Shortlisted, unfocused icons for transit
+      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} === false && {{map.zoom}} >= 13 && {{map.zoom}} < 16 && "{{shortlisted}}" === "true"'
+        icon:
+          iconUrl: /static/css/images/markers/new/transit-small.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} === false && {{map.zoom}} >= 16 && "{{shortlisted}}" === "true"'
+        icon:
+          iconUrl: /static/css/images/markers/new/transit-small.png
+          iconSize: [50, 60]
+          iconAnchor: [25, 60]
+      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} == false && {{map.zoom}} <= 11 && "{{shortlisted}}" === "true"'
+        style:
+          radius: 4
+          stroke: true
+          fill: true
+          weight: 0.5
+          opacity: 1
+          fillOpacity: 0.8
+          color: '#fff'
+          fillColor: '#b75ab8'
+      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" === "true"'
+        style:
+          radius: 6
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 0.9
+          color: '#fff'
+          fillColor: '#b75ab8'
+
+      # Winners for transit
       - condition: '"{{location_type}}" === "transit" && "{{status}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
           iconUrl: /static/css/images/markers/new/dot-white.png
@@ -663,38 +1052,12 @@ place_types:
           iconSize: [20, 20]
           iconAnchor: [10, 10]
 
-      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
+      # Focused for transit
+      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} === true && "{{shortlisted}}" !== "true"'
         icon:
           iconUrl: /static/css/images/markers/new/transit-small.png
           iconSize: [25, 30]
           iconAnchor: [13, 30]
-      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} === false && {{map.zoom}} >= 16'
-        icon:
-          iconUrl: /static/css/images/markers/new/transit-small.png
-          iconSize: [50, 60]
-          iconAnchor: [25, 60]
-
-      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} == false && {{map.zoom}} <= 11'
-        style:
-          radius: 4
-          stroke: true
-          fill: true
-          weight: 0.5
-          opacity: 0.7
-          fillOpacity: 0.8
-          color: '#000'
-          fillColor: '#b75ab8'
-      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} == false && {{map.zoom}} <= 13'
-        style:
-          radius: 6
-          stroke: true
-          fill: true
-          weight: 1
-          opacity: 1
-          fillOpacity: 0.9
-          color: '#000'
-          fillColor: '#b75ab8'
-
       - condition: '"{{location_type}}" === "transit" && {{layer.focused}} === true'
         icon:
           iconUrl: /static/css/images/markers/new/transit.png
@@ -706,6 +1069,65 @@ place_types:
   youth:
     label: _(Youth)
     rules:
+      # Normal, unfocused icons for youth
+      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} == false && {{map.zoom}} <= 11 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 1
+          stroke: false
+          fill: true
+          fillOpacity: 0.6
+          fillColor: '#ffd614'
+      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 2
+          stroke: false
+          fill: true
+          fillOpacity: 0.7
+          fillColor: '#ffd614'
+      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} == false && {{map.zoom}} > 13 && "{{shortlisted}}" !== "true" && "{{status}}" !== "winner"'
+        style:
+          radius: 3
+          stroke: true
+          weight: 0.5
+          opacity: 0.5
+          color: '#000'
+          fill: true
+          fillOpacity: 0.7
+          fillColor: '#ffd614'
+
+      # Shortlisted, unfocused icons for youth
+      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === false && {{map.zoom}} >= 13 && {{map.zoom}} < 16 && "{{shortlisted}}" === "true"'
+        icon:
+          iconUrl: /static/css/images/markers/new/youth-small.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === false && {{map.zoom}} >= 16 && "{{shortlisted}}" === "true"'
+        icon:
+          iconUrl: /static/css/images/markers/new/youth-small.png
+          iconSize: [50, 60]
+          iconAnchor: [25, 60]
+      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} == false && {{map.zoom}} <= 11 && "{{shortlisted}}" === "true"'
+        style:
+          radius: 4
+          stroke: true
+          fill: true
+          weight: 0.5
+          opacity: 1
+          fillOpacity: 0.8
+          color: '#fff'
+          fillColor: '#ffd614'
+      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" === "true"'
+        style:
+          radius: 6
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 0.9
+          color: '#fff'
+          fillColor: '#ffd614'
+
+      # Winners for youth
       - condition: '"{{location_type}}" === "youth" && "{{status}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
           iconUrl: /static/css/images/markers/new/dot-white.png
@@ -722,38 +1144,12 @@ place_types:
           iconSize: [20, 20]
           iconAnchor: [10, 10]
 
-      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
+      # Focused for youth
+      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === true && "{{shortlisted}}" !== "true"'
         icon:
           iconUrl: /static/css/images/markers/new/youth-small.png
           iconSize: [25, 30]
           iconAnchor: [13, 30]
-      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === false && {{map.zoom}} >= 16'
-        icon:
-          iconUrl: /static/css/images/markers/new/youth-small.png
-          iconSize: [50, 60]
-          iconAnchor: [25, 60]
-
-      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} == false && {{map.zoom}} <= 11'
-        style:
-          radius: 4
-          stroke: true
-          fill: true
-          weight: 0.5
-          opacity: 0.7
-          fillOpacity: 0.8
-          color: '#000'
-          fillColor: '#ffd614'
-      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} == false && {{map.zoom}} <= 13'
-        style:
-          radius: 6
-          stroke: true
-          fill: true
-          weight: 1
-          opacity: 1
-          fillOpacity: 0.9
-          color: '#000'
-          fillColor: '#ffd614'
-
       - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === true'
         icon:
           iconUrl: /static/css/images/markers/new/youth.png
