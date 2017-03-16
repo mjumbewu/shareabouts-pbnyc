@@ -102,7 +102,7 @@ place_types:
           weight: 1
           opacity: 1
           fillOpacity: 0.8
-          color: "#fff"
+          color: "black"
           fillColor: "#aa3c1e"
       - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false && {{map.zoom}} <= 13 && "{{shortlisted}}" === "true"'
         style:
@@ -112,7 +112,7 @@ place_types:
           weight: 1
           opacity: 1
           fillOpacity: 0.9
-          color: "#fff"
+          color: "black"
           fillColor: "#aa3c1e"
 
       # Winners for culture
@@ -194,7 +194,7 @@ place_types:
           weight: 0.5
           opacity: 1
           fillOpacity: 0.8
-          color: '#fff'
+          color: 'black'
           fillColor: '#7fccd9'
       - condition: '"{{location_type}}" === "education" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" === "true"'
         style:
@@ -204,7 +204,7 @@ place_types:
           weight: 1
           opacity: 1
           fillOpacity: 0.9
-          color: '#fff'
+          color: 'black'
           fillColor: '#7fccd9'
 
       # Winners for education
@@ -286,7 +286,7 @@ place_types:
           weight: 0.5
           opacity: 1
           fillOpacity: 0.8
-          color: '#fff'
+          color: 'black'
           fillColor: '#55a504'
       - condition: '"{{location_type}}" === "environment" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" === "true"'
         style:
@@ -296,7 +296,7 @@ place_types:
           weight: 1
           opacity: 1
           fillOpacity: 0.9
-          color: '#fff'
+          color: 'black'
           fillColor: '#55a504'
 
       # Winners for environment
@@ -378,7 +378,7 @@ place_types:
           weight: 0.5
           opacity: 1
           fillOpacity: 0.8
-          color: '#fff'
+          color: 'black'
           fillColor: '#f50a8e'
       - condition: '"{{location_type}}" === "housing" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" === "true"'
         style:
@@ -388,7 +388,7 @@ place_types:
           weight: 1
           opacity: 1
           fillOpacity: 0.9
-          color: '#fff'
+          color: 'black'
           fillColor: '#f50a8e'
 
       # Winners for housing
@@ -470,7 +470,7 @@ place_types:
           weight: 0.5
           opacity: 1
           fillOpacity: 0.8
-          color: '#fff'
+          color: 'black'
           fillColor: '#fa5b13'
       - condition: '"{{location_type}}" === "parks" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" === "true"'
         style:
@@ -480,7 +480,7 @@ place_types:
           weight: 1
           opacity: 1
           fillOpacity: 0.9
-          color: '#fff'
+          color: 'black'
           fillColor: '#fa5b13'
 
       # Winners for parks
@@ -562,7 +562,7 @@ place_types:
           weight: 0.5
           opacity: 1
           fillOpacity: 0.8
-          color: '#fff'
+          color: 'black'
           fillColor: '#ff78be'
       - condition: '"{{location_type}}" === "health" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" === "true"'
         style:
@@ -572,7 +572,7 @@ place_types:
           weight: 1
           opacity: 1
           fillOpacity: 0.9
-          color: '#fff'
+          color: 'black'
           fillColor: '#ff78be'
 
       # Winners for health
@@ -654,7 +654,7 @@ place_types:
           weight: 0.5
           opacity: 1
           fillOpacity: 0.8
-          color: '#fff'
+          color: 'black'
           fillColor: '#fc9229'
       - condition: '"{{location_type}}" === "safety" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" === "true"'
         style:
@@ -664,7 +664,7 @@ place_types:
           weight: 1
           opacity: 1
           fillOpacity: 0.9
-          color: '#fff'
+          color: 'black'
           fillColor: '#fc9229'
 
       # Winners for safety
@@ -746,7 +746,7 @@ place_types:
           weight: 0.5
           opacity: 1
           fillOpacity: 0.8
-          color: '#fff'
+          color: 'black'
           fillColor: '#c4ed52'
       - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" === "true"'
         style:
@@ -756,7 +756,7 @@ place_types:
           weight: 1
           opacity: 1
           fillOpacity: 0.9
-          color: '#fff'
+          color: 'black'
           fillColor: '#c4ed52'
 
       # Winners for seniors
@@ -838,7 +838,7 @@ place_types:
           weight: 0.5
           opacity: 1
           fillOpacity: 0.8
-          color: '#fff'
+          color: 'black'
           fillColor: '#a0b4c6'
       - condition: '"{{location_type}}" === "streets" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" === "true"'
         style:
@@ -848,7 +848,7 @@ place_types:
           weight: 1
           opacity: 1
           fillOpacity: 0.9
-          color: '#fff'
+          color: 'black'
           fillColor: '#a0b4c6'
 
       # Winners for streets
@@ -930,7 +930,7 @@ place_types:
           weight: 0.5
           opacity: 1
           fillOpacity: 0.8
-          color: '#fff'
+          color: 'black'
           fillColor: '#8ea4b8'
       - condition: '"{{location_type}}" === "sanitation" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" === "true"'
         style:
@@ -940,7 +940,7 @@ place_types:
           weight: 1
           opacity: 1
           fillOpacity: 0.9
-          color: '#fff'
+          color: 'black'
           fillColor: '#8ea4b8'
 
       # Winners for sanitation
@@ -1022,7 +1022,7 @@ place_types:
           weight: 0.5
           opacity: 1
           fillOpacity: 0.8
-          color: '#fff'
+          color: 'black'
           fillColor: '#b75ab8'
       - condition: '"{{location_type}}" === "transit" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" === "true"'
         style:
@@ -1032,7 +1032,7 @@ place_types:
           weight: 1
           opacity: 1
           fillOpacity: 0.9
-          color: '#fff'
+          color: 'black'
           fillColor: '#b75ab8'
 
       # Winners for transit
@@ -1114,7 +1114,7 @@ place_types:
           weight: 0.5
           opacity: 1
           fillOpacity: 0.8
-          color: '#fff'
+          color: 'black'
           fillColor: '#ffd614'
       - condition: '"{{location_type}}" === "youth" && {{layer.focused}} == false && {{map.zoom}} <= 13 && "{{shortlisted}}" === "true"'
         style:
@@ -1124,7 +1124,7 @@ place_types:
           weight: 1
           opacity: 1
           fillOpacity: 0.9
-          color: '#fff'
+          color: 'black'
           fillColor: '#ffd614'
 
       # Winners for youth
