@@ -1460,7 +1460,7 @@ survey:
 
   # Response config
   adding_supported: false
-  show_responses: true
+  show_responses: false
   response_name: _(comment)
   response_plural_name: _(comments)
   action_text: _(commented on)
