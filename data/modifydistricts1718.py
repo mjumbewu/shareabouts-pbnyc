@@ -1,7 +1,8 @@
+#!/usr/bin/env python3
+
 import json
 
 districts = {
-District,Council Member,Borough
     3:  ('Corey Johnson', 'Manhattan'),
     5:  ('Ben Kallos', 'Manhattan'),
     6:  ('Helen Rosenthal', 'Manhattan'),
