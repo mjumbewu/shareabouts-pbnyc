@@ -1,3 +1,4 @@
+import dateutil.parser
 import requests
 import yaml
 import ujson as json
@@ -6,7 +7,6 @@ import os
 import time
 import hashlib
 import httpagentparser
-import urllib2
 from .config import get_shareabouts_config
 from django.shortcuts import render
 from django.conf import settings
@@ -59,6 +59,38 @@ class ShareaboutsApi (object):
         return (res.text if res.status_code == 200 else default)
 
 
+def calc_adding_support(adding_supported):
+    if isinstance(adding_supported, dict):
+        # Get the first list item. If there is no list item, then adding is not
+        # supported.
+        try:
+            start = adding_supported['from']
+        except KeyError:
+            return False
+
+        # Try to parse the start time. If now is before the start time then
+        # adding is not supported.
+        if dateutil.parser.parse(start) > now():
+            return False
+
+        # Get the next list item. If there is no next list item, then the
+        # adding period never ends and adding is supported.
+        try:
+            end = adding_supported['until']
+        except KeyError:
+            return True
+
+        # Try to parse the end time. If now is before the end time then adding
+        # is supported.
+        if dateutil.parser.parse(end) > now():
+            return True
+
+        return False
+
+    else:
+        return adding_supported
+
+
 @ensure_csrf_cookie
 def index(request, place_id=None):
     # Load app config settings
@@ -75,6 +107,15 @@ def index(request, place_id=None):
     pages_config = config.get('pages', [])
     pages_config_json = json.dumps(pages_config)
 
+    # Set the map adding enabled statuses
+    place_config = config.get('place', {})
+    survey_config = config.get('survey', {})
+    support_config = config.get('support', {})
+
+    place_config['adding_supported'] = calc_adding_support(place_config.get('adding_supported'))
+    survey_config['adding_supported'] = calc_adding_support(survey_config.get('adding_supported'))
+    support_config['adding_supported'] = calc_adding_support(support_config.get('adding_supported'))
+
     # The user token will be a pair, with the first element being the type
     # of identification, and the second being an identifier. It could be
     # 'username:mjumbewu' or 'ip:123.231.132.213', etc.  If the user is
@@ -82,7 +123,7 @@ def index(request, place_id=None):
     if 'user_token' not in request.session:
         t = int(time.time() * 1000)
         ip = request.META['REMOTE_ADDR']
-        unique_string = str(t) + str(ip)
+        unique_string = (str(t) + str(ip)).encode()
         session_token = 'session:' + hashlib.md5(unique_string).hexdigest()
         request.session['user_token'] = session_token
         request.session.set_expiry(0)

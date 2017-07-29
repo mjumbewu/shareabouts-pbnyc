@@ -86,6 +86,9 @@ STATICFILES_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
 )
 
+# Cache-busting static assets
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
+
 ATTACHMENT_STORAGE = 'django.core.files.storage.FileSystemStorage'
 
 # List of finder classes that know how to find static files in
@@ -341,7 +344,8 @@ LOCAL_SETTINGS_FILE = os.path.join(os.path.dirname(__file__), 'local_settings.py
 if os.path.exists(LOCAL_SETTINGS_FILE):
     # By doing this instead of import, local_settings.py can refer to
     # local variables from settings.py without circular imports.
-    execfile(LOCAL_SETTINGS_FILE)
+    with open(LOCAL_SETTINGS_FILE) as settingsfile:
+        exec(settingsfile.read())
 
 
 ##############################################################################

@@ -34,6 +34,7 @@ map:
     zoom: 14
     minZoom: 10
     maxZoom: 17
+    scrollWheelZoom: false
   layers:
     # Raster Tile Layers
     # ==================
@@ -170,7 +171,9 @@ activity:
   interval: 30000
 
 place:
-  adding_supported: true
+  adding_supported:
+    from: '2017-03-07 00:00 -0500'   # Daylight savings begins mid-March
+    until: '2021-04-07 00:00 -0400'  # and ends mid-October.
   add_button_label: _(Add a Place)
   # Labels for the buttons that toggle the map and list views
   show_list_button_label: _(List All Places)
@@ -227,6 +230,30 @@ place:
       name: location_type
       attrs:
         - key: required
+    - prompt: _(Yes or no question)
+      type: radiogroup
+      options:
+        - label: _(Indeed)
+          value: yeah
+        - label: _(I don't think so)
+          value: nah
+      name: y_or_n
+      attrs:
+        - key: required
+    - prompt: _(All that apply questiion)
+      type: checkboxgroup
+      options:
+        - label: _(First)
+          value: option1
+        - label: _(Second)
+          value: option2
+        - label: _(Third)
+          value: option3
+        - label: _(Fourth)
+          value: option4
+      name: all_that_apply
+      attrs:
+        - key: required
     - prompt: _(Description)
       type: textarea
       name: description
@@ -265,6 +292,30 @@ survey:
       label: _(Comment)
       type: textarea
       name: comment
+      attrs:
+        - key: required
+    - prompt: _(Yes or no question)
+      type: radiogroup
+      options:
+        - label: _(Indeed)
+          value: yeah
+        - label: _(I don't think so)
+          value: nah
+      name: y_or_n
+      attrs:
+        - key: required
+    - prompt: _(All that apply questiion)
+      type: checkboxgroup
+      options:
+        - label: _(First)
+          value: option1
+        - label: _(Second)
+          value: option2
+        - label: _(Third)
+          value: option3
+        - label: _(Fourth)
+          value: option4
+      name: all_that_apply
       attrs:
         - key: required
     - prompt: _(Your Name)
