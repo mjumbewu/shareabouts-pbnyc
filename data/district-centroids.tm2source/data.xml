@@ -3,12 +3,12 @@
 <Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
 
 <Parameters>
-  <Parameter name="center">-73.8631,40.7972,11</Parameter>
+  <Parameter name="center">-73.8577,40.7249,11</Parameter>
   <Parameter name="format">pbf</Parameter>
   <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"districts","description":"District Shapes","fields":{"Borough":"String","CounDist":"Number","CounPerson":"String","Shape_Area":"Number","Shape_Leng":"Number"}},{"id":"district-outlines","description":"District Outlines","fields":{"Borough":"String","CounDist":"Number","CounPerson":"String","Shape_Area":"Number","Shape_Leng":"Number"}},{"id":"district-centroids","description":"Points for District Labels","fields":{"Borough":"String","CounDist":"Number","CounPerson":"String","Shape_Area":"Number","Shape_Leng":"Number"}}]}]]></Parameter>
   <Parameter name="maxzoom">16</Parameter>
   <Parameter name="minzoom">8</Parameter>
-  <Parameter name="name"><![CDATA[PBNYC15 District With Label Points]]></Parameter>
+  <Parameter name="name"><![CDATA[PBNYC District With Label Points]]></Parameter>
 </Parameters>
 
 

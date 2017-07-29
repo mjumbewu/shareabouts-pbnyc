@@ -2,12 +2,12 @@ _prefs:
   disabled: []
   inspector: false
   mapid: openplans.7f05ca8c
-  rev: s-657e6b63
+  rev: s-2d4e76c2
   saveCenter: true
 attribution: ''
 center: 
-  - -73.8631
-  - 40.7972
+  - -73.8577
+  - 40.7249
   - 11
 description: ''
 Layer: 
@@ -58,4 +58,4 @@ Layer:
     srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
 maxzoom: 16
 minzoom: 8
-name: PBNYC15 District With Label Points
+name: PBNYC District With Label Points
