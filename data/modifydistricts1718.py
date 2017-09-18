@@ -15,7 +15,6 @@ districts = {
     17: ('Rafael Salamanca', 'Bronx'),
     19: ('Paul Vallone', 'Queens'),
     22: ('Costa Constantinides', 'Queens'),
-    23: ('Barry Grodenchik', 'Queens'),
     26: ('Jimmy Van Bramer', 'Queens'),
     27: ('I. Daneek Miller', 'Queens'),
     29: ('Karen Koslowitz', 'Queens'),
