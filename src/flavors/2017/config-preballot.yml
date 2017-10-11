@@ -949,7 +949,7 @@ activity:
 place:
   adding_supported:
     from: '2017-07-01 00:00 -0500'   # Daylight savings begins mid-March
-    until: '2017-10-13 00:00 -0400'  # and ends mid-October.
+    until: '2017-10-14 00:00 -0500'  # and ends early-November.
   add_button_label: _(Submit an idea)
   # Labels for the buttons that toggle the map and list views
   show_list_button_label: _(Show as a list)
@@ -1067,7 +1067,7 @@ survey:
   # Response config
   adding_supported:
     from: '2017-07-01 00:00 -0500'   # Daylight savings begins mid-March
-    until: '2017-10-13 00:00 -0400'  # and ends mid-October.
+    until: '2017-10-14 00:00 -0500'  # and ends early-November.
   show_responses: true
   response_name: _(comment)
   response_plural_name: _(comments)
@@ -1093,7 +1093,7 @@ survey:
 support:
   adding_supported:
     from: '2017-07-01 00:00 -0500'   # Daylight savings begins mid-March
-    until: '2017-10-13 00:00 -0400'  # and ends mid-October.
+    until: '2017-10-14 00:00 -0500'  # and ends early-November.
   submission_type: support
   submit_btn_text: _(Support This!)
   response_name: _(support)
