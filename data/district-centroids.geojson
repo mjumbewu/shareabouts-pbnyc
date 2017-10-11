@@ -3,7 +3,6 @@
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 
 "features": [
-{ "type": "Feature", "properties": { "Borough": "Queens", "CounPerson": "Barry Grodenchik", "Shape_Area": 305406624.935000, "Shape_Leng": 77503.940278, "CounDist": 23 }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -73.743139820471995, 40.738578701926464 ] ] } },
 { "type": "Feature", "properties": { "Borough": "Manhattan", "CounPerson": "Corey Johnson", "Shape_Area": 82529615.768100, "Shape_Leng": 93880.447904, "CounDist": 3 }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -73.998275791027069, 40.748682898823631 ] ] } },
 { "type": "Feature", "properties": { "Borough": "Manhattan", "CounPerson": "Ben Kallos", "Shape_Area": 37202938.561100, "Shape_Leng": 63314.424912, "CounDist": 5 }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -73.952410017486585, 40.770470734439179 ] ] } },
 { "type": "Feature", "properties": { "Borough": "Manhattan", "CounPerson": "Mark Levine", "Shape_Area": 51413492.218500, "Shape_Leng": 50136.801452, "CounDist": 7 }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -73.956126582221628, 40.817050086855829 ] ] } },
