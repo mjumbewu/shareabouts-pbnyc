@@ -10,7 +10,7 @@
 
   {{#if shortlisted }}
 
-    <h1>{{ name }}</h1>
+    <h1>{{ Title }}</h1>
     <p class="ballot-declaration"> A {{ place_type_label location_type }} project on the ballot this year.</p>
   {{ else }}
     <!-- if it's an old project, we don't want to show who submitted it -->
@@ -56,7 +56,7 @@
     {{#if Notes }}
     <p class="ballot-project-location-notes">{{ Notes }}</p>
     {{/if }}
-    <p class="ballot-project-description"><strong>{{#_}}Description{{/_}}</strong>: {{ description }}</p>
+    <p class="ballot-project-description"><strong>{{#_}}Description{{/_}}</strong>: {{ Description }}</p>
     <p class="ballot-project-cost"><strong>{{#_}}Cost{{/_}}</strong>: {{ Cost }}</p>
     <p class="vote-instructions">{{#_}}Vote for this project between March 25th and April 2nd.{{/_}} <a href="http://labs.council.nyc/district-{{ CounDist }}/" title="District {{ CounDist }}, {{ CounPerson }}">{{#_}}Find out how and where in District {{ CounDist }}{{/_}}</a>.</p>
   {{ else }}
