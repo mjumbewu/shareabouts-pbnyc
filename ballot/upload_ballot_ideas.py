@@ -4,6 +4,9 @@
 Usage:
 -----
 
+First, ensure that you have set SHAREABOUTS_FLAVOR, SHAREABOUTS_DATASET_ROOT,
+SHAREABOUTS_USERNAME, and SHAREABOUTS_PASSWORD.
+
     foreman run ballot/upload_ballot_ideas.py [BALLOT_IDEAS_CSV_FILE] > [OUTPUT_CSV_FILE]
 
     e.g., foreman run ballot/upload_ballot_ideas.py ~/Downloads/PBNYC\ FY19\ Ballot\ -\ Form\ Responses\ 1.csv
