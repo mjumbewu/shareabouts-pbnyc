@@ -11,6 +11,17 @@ SHAREABOUTS_USERNAME, and SHAREABOUTS_PASSWORD.
 
     e.g., foreman run ballot/upload_ballot_ideas.py ~/Downloads/PBNYC\ FY19\ Ballot\ -\ Form\ Responses\ 1.csv
 
+You may end up with a different `prep_geojson_...` function each year. Final
+features should have:
+
+* shortlisted (True)
+* location_type
+* Title
+* Description
+* Location
+* CounDist
+* CounPerson
+
 """
 
 import csv
@@ -43,7 +54,7 @@ def get_categories():
     return category_map
 
 
-def prep_geojson():
+def prep_geojson_2017():
     infilename = sys.argv[1]
     with open(infilename, 'rU') as infile:
         reader = csv.DictReader(infile)
@@ -110,7 +121,7 @@ def request_with_retry(session, method, *args, **kwargs):
 
 
 if __name__ == '__main__':
-    data = prep_geojson()
+    data = prep_geojson_2017()
 
     username = os.environ['SHAREABOUTS_USERNAME']
     password = os.environ['SHAREABOUTS_PASSWORD']
