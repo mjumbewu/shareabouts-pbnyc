@@ -1509,40 +1509,40 @@ pages:
         url: /filter/all
         external: true
       - title: _(Culture & Community Facilities)
-        url: /filter/culture
+        url: /filter/culture-shortlisted
         external: true
       - title: _(Schools & Education)
-        url: /filter/education
+        url: /filter/education-shortlisted
         external: true
       - title: _(Environment)
-        url: /filter/environment
+        url: /filter/environment-shortlisted
         external: true
       - title: _(Housing)
-        url: /filter/housing
+        url: /filter/housing-shortlisted
         external: true
       - title: _(Parks & Recreation)
-        url: /filter/parks
+        url: /filter/parks-shortlisted
         external: true
       - title: _(Public Health)
-        url: /filter/health
+        url: /filter/health-shortlisted
         external: true
       - title: _(Public Safety)
-        url: /filter/safety
+        url: /filter/safety-shortlisted
         external: true
       - title: _(Sanitation)
-        url: /filter/sanitation
+        url: /filter/sanitation-shortlisted
         external: true
       - title: _(Seniors)
-        url: /filter/seniors
+        url: /filter/seniors-shortlisted
         external: true
       - title: _(Streets & Sidewalks)
-        url: /filter/streets
+        url: /filter/streets-shortlisted
         external: true
       - title: _(Transit & Transportation)
-        url: /filter/transit
+        url: /filter/transit-shortlisted
         external: true
       - title: _(Youth)
-        url: /filter/youth
+        url: /filter/youth-shortlisted
         external: true
 
 notifications:
