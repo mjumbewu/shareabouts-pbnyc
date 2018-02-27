@@ -18,7 +18,6 @@ districts = {
     26: ('Jimmy Van Bramer', 'Queens'),
     27: ('I. Daneek Miller', 'Queens'),
     29: ('Karen Koslowitz', 'Queens'),
-    30: ('Elizabeth Crowley', 'Queens'),
     31: ('Donovan Richards', 'Queens'),
     33: ('Stephen Levin', 'Brooklyn'),
     34: ('Antonio Reynoso', 'Brooklyn_Queens'),
