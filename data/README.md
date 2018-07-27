@@ -9,6 +9,17 @@ script and update the participating districts. Run this script from within the
 *data/* folder to generate a new *districts.geojson* file. This file should be
 added to the boundary service instance.
 
+Update the URL in *[flavor]/templates/\_region_service_url*. Be careful not to
+include a newline at the end of the file.
+
+## Districts Page
+
+Copy the latest *generatedistricts.py* script and update the years. Open the new
+script and update the participating districts. Run this script from within the
+*data/* folder, something like:
+
+    ./generatedistricts.py > ../src/flavors/2018/jstemplates/pages/district.html
+
 ## Map Tiles
 
 Open a new qgis project and add layers from *district-centroids.geojson* and
