@@ -1,5 +1,6 @@
 # Django settings for project project.
 import datetime
+import os
 import os.path
 
 HERE = os.path.dirname(__file__)
@@ -13,6 +14,7 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
+USE_GEODB = (os.environ.get('USE_GEODB', 'True').lower() == 'true')
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.dummy',
@@ -226,7 +228,9 @@ if 'DATABASE_URL' in env:
     import dj_database_url
     # NOTE: Be sure that your DATABASE_URL has the 'postgis://' scheme.
     DATABASES = {'default': dj_database_url.config()}
-    DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
+
+    if USE_GEODB:
+        DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
 
 if 'REDIS_URL' in env or 'REDISCLOUD_URL' in env:
     redis_url = env.get('REDIS_URL') or env.get('REDISCLOUD_URL')
