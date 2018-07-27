@@ -1,6 +1,5 @@
 {
 "type": "FeatureCollection",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 
 "features": [
 { "type": "Feature", "properties": { "Borough": "Manhattan", "CounPerson": "Corey Johnson", "Shape_Area": 82529615.768100, "Shape_Leng": 93880.447904, "CounDist": 3 }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -73.998275791027069, 40.748682898823631 ] ] } },

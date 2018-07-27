@@ -1,0 +1,883 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "id": 1,
+   "properties": {
+    "CounDist": 1
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -74.00665283203124,
+      40.711873951908096
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 2,
+   "properties": {
+    "CounDist": 2
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.98536682128906,
+      40.727486422997785
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 3,
+   "properties": {
+    "Borough": "Manhattan",
+    "CounPerson": "Corey Johnson",
+    "CounDist": 3
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.99827579102707,
+      40.74868289882363
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 4,
+   "properties": {
+    "CounDist": 4
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.97472381591797,
+      40.75479943576424
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 5,
+   "properties": {
+    "Borough": "Manhattan",
+    "CounPerson": "Ben Kallos",
+    "CounDist": 5
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.95241001748659,
+      40.77047073443918
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 6,
+   "properties": {
+    "Borough": "Manhattan",
+    "CounPerson": "Helen Rosenthal",
+    "CounDist": 6
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.97277041641503,
+      40.78363388310196
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 7,
+   "properties": {
+    "Borough": "Manhattan",
+    "CounPerson": "Mark Levine",
+    "CounDist": 7
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.95612658222163,
+      40.81705008685583
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 8,
+   "properties": {
+    "Borough": "Manhattan_Bronx",
+    "CounPerson": "Melissa Mark-Viverito",
+    "CounDist": 8
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.92742601455426,
+      40.8034132782566
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 9,
+   "properties": {
+    "CounDist": 9
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.94554138183594,
+      40.809131953785965
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 10,
+   "properties": {
+    "Borough": "Manhattan",
+    "CounPerson": "Ydanis Rodriguez",
+    "CounDist": 10
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.92921793582794,
+      40.85807692628197
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 11,
+   "properties": {
+    "Borough": "Bronx",
+    "CounPerson": "Andrew Cohen",
+    "CounDist": 11
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.88938223500108,
+      40.891558155280144
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 12,
+   "properties": {
+    "CounDist": 12
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.84391784667969,
+      40.88003522603099
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 13,
+   "properties": {
+    "CounDist": 13
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.83087158203125,
+      40.84368404941431
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 14,
+   "properties": {
+    "CounDist": 14
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.90846252441406,
+      40.85848657915526
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 15,
+   "properties": {
+    "Borough": "Bronx",
+    "CounPerson": "Ritchie Torres",
+    "CounDist": 15
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.88308980925098,
+      40.854804106408906
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 16,
+   "properties": {
+    "Borough": "Bronx",
+    "CounPerson": "Vanessa Gibson",
+    "CounDist": 16
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.91502000352084,
+      40.83303768855427
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 17,
+   "properties": {
+    "Borough": "Bronx",
+    "CounPerson": "Rafael Salamanca",
+    "CounDist": 17
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.88719033512776,
+      40.819818596067556
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 18,
+   "properties": {
+    "CounDist": 18
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.85971069335938,
+      40.82498139044294
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 19,
+   "properties": {
+    "Borough": "Queens",
+    "CounPerson": "Paul Vallone",
+    "CounDist": 19
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.79446956802771,
+      40.7756558227466
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 20,
+   "properties": {
+    "CounDist": 20
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.817138671875,
+      40.753499070431374
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 21,
+   "properties": {
+    "CounDist": 21
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.861083984375,
+      40.75245875985305
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 22,
+   "properties": {
+    "Borough": "Queens",
+    "CounPerson": "Costa Constantinides",
+    "CounDist": 22
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.90518184573747,
+      40.77365291403579
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 23,
+   "properties": {
+    "CounDist": 23
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.74813079833984,
+      40.73737242735457
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 24,
+   "properties": {
+    "CounDist": 24
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.80855560302734,
+      40.72566515672145
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 25,
+   "properties": {
+    "CounDist": 25
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.88511657714844,
+      40.74205475883487
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 26,
+   "properties": {
+    "Borough": "Queens",
+    "CounPerson": "Jimmy Van Bramer",
+    "CounDist": 26
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.92748733997823,
+      40.747373623641465
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 27,
+   "properties": {
+    "Borough": "Queens",
+    "CounPerson": "Daneek Miller",
+    "CounDist": 27
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.76012521487692,
+      40.69830554663985
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 28,
+   "properties": {
+    "CounDist": 28
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.8064956665039,
+      40.68454331694491
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 29,
+   "properties": {
+    "Borough": "Queens",
+    "CounPerson": "Karen Koslowitz",
+    "CounDist": 29
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.84461041298967,
+      40.71715717497738
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 30,
+   "properties": {
+    "CounDist": 30
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.88786315917969,
+      40.713175131022695
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 31,
+   "properties": {
+    "Borough": "Queens",
+    "CounPerson": "Donovan Richards",
+    "CounDist": 31
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.7706740330901,
+      40.63724753048257
+     ],
+     [
+      -73.77731323242188,
+      40.594663726004995
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 32,
+   "properties": {
+    "CounDist": 32
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.8724136352539,
+      40.567024247788396
+     ],
+     [
+      -73.84323120117186,
+      40.67282675532094
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 33,
+   "properties": {
+    "Borough": "Brooklyn",
+    "CounPerson": "Steve Levin",
+    "CounDist": 33
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.9576090040537,
+      40.72462114697971
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 34,
+   "properties": {
+    "Borough": "Brooklyn_Queens",
+    "CounPerson": "Antonio Reynoso",
+    "CounDist": 34
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.9316468411494,
+      40.70811304938374
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 35,
+   "properties": {
+    "Borough": "Brooklyn",
+    "CounPerson": "Laurie Cumbo",
+    "CounDist": 35
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.97031129760894,
+      40.688586682028536
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 36,
+   "properties": {
+    "Borough": "Brooklyn",
+    "CounPerson": "Robert Cornegy",
+    "CounDist": 36
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.94105791197336,
+      40.68463198260223
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 37,
+   "properties": {
+    "CounDist": 37
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.89163970947266,
+      40.67959657544238
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 38,
+   "properties": {
+    "Borough": "Brooklyn",
+    "CounPerson": "Carlos Menchaca",
+    "CounDist": 38
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -74.00475220315704,
+      40.65213968751106
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 39,
+   "properties": {
+    "Borough": "Brooklyn",
+    "CounPerson": "Brad Lander",
+    "CounDist": 39
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.98250712614525,
+      40.663421220688946
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 40,
+   "properties": {
+    "Borough": "Brooklyn",
+    "CounPerson": "Mathieu Eugene",
+    "CounDist": 40
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.95826820939848,
+      40.649198696526355
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 41,
+   "properties": {
+    "CounDist": 41
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.92116546630858,
+      40.66553541102791
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 42,
+   "properties": {
+    "CounDist": 42
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.8895797729492,
+      40.660847697284815
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 43,
+   "properties": {
+    "CounDist": 43
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -74.01969909667969,
+      40.61603737424187
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 44,
+   "properties": {
+    "Borough": "Brooklyn",
+    "CounPerson": "David Greenfield",
+    "CounDist": 44
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.97897203910799,
+      40.62114454002134
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 45,
+   "properties": {
+    "Borough": "Brooklyn",
+    "CounPerson": "Jumaane Williams",
+    "CounDist": 45
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.93988070183617,
+      40.63494024222369
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 46,
+   "properties": {
+    "CounDist": 46
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.91498565673828,
+      40.61864344909241
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 47,
+   "properties": {
+    "Borough": "Brooklyn",
+    "CounPerson": "Mark Treyger",
+    "CounDist": 47
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.98461569977333,
+      40.59151852782271
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 48,
+   "properties": {
+    "CounDist": 48
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -73.95240783691405,
+      40.593620934177494
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 49,
+   "properties": {
+    "Borough": "Staten Island",
+    "CounPerson": "Deborah Rose",
+    "CounDist": 49
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -74.09800007320536,
+      40.6284896258651
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 50,
+   "properties": {
+    "CounDist": 50
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -74.14707183837889,
+      40.599095409829815
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "id": 51,
+   "properties": {
+    "CounDist": 51
+   },
+   "geometry": {
+    "type": "MultiPoint",
+    "coordinates": [
+     [
+      -74.19445037841797,
+      40.54406959045767
+     ]
+    ]
+   }
+  }
+ ]
+}
