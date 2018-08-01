@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-31 08:04-0500\n"
+"POT-Creation-Date: 2018-07-31 21:36-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Mjumbe Poe <mjumbewu@gmail.com>, 2016\n"
 "Language-Team: Spanish (https://www.transifex.com/mjumbewu/teams/64915/es/)\n"
@@ -18,290 +18,1302 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: flavors/2016/templates/_closed_district_message.html:1
+#: env/lib/python3.6/site-packages/django/contrib/messages/apps.py:7
+msgid "Messages"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/contrib/sitemaps/apps.py:7
+msgid "Site Maps"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/contrib/staticfiles/apps.py:7
+msgid "Static Files"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/contrib/syndication/apps.py:7
+msgid "Syndication"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/contrib/webdesign/apps.py:7
+msgid "Web Design"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/core/validators.py:20
+#, fuzzy
+#| msgid "Enter an address..."
+msgid "Enter a valid value."
+msgstr "Escriba una dirección..."
+
+#: env/lib/python3.6/site-packages/django/core/validators.py:94
+#: env/lib/python3.6/site-packages/django/forms/fields.py:712
+#, fuzzy
+#| msgid "Enter an address..."
+msgid "Enter a valid URL."
+msgstr "Escriba una dirección..."
+
+#: env/lib/python3.6/site-packages/django/core/validators.py:137
+#, fuzzy
+#| msgid "Enter an address..."
+msgid "Enter a valid integer."
+msgstr "Escriba una dirección..."
+
+#: env/lib/python3.6/site-packages/django/core/validators.py:148
+#, fuzzy
+#| msgid "Enter an address..."
+msgid "Enter a valid email address."
+msgstr "Escriba una dirección..."
+
+#: env/lib/python3.6/site-packages/django/core/validators.py:222
+msgid ""
+"Enter a valid 'slug' consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/core/validators.py:227
+#: env/lib/python3.6/site-packages/django/core/validators.py:246
+#, fuzzy
+#| msgid "Enter an address..."
+msgid "Enter a valid IPv4 address."
+msgstr "Escriba una dirección..."
+
+#: env/lib/python3.6/site-packages/django/core/validators.py:232
+#: env/lib/python3.6/site-packages/django/core/validators.py:247
+#, fuzzy
+#| msgid "Enter an address..."
+msgid "Enter a valid IPv6 address."
+msgstr "Escriba una dirección..."
+
+#: env/lib/python3.6/site-packages/django/core/validators.py:242
+#: env/lib/python3.6/site-packages/django/core/validators.py:245
+#, fuzzy
+#| msgid "Enter an address..."
+msgid "Enter a valid IPv4 or IPv6 address."
+msgstr "Escriba una dirección..."
+
+#: env/lib/python3.6/site-packages/django/core/validators.py:270
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1144
+msgid "Enter only digits separated by commas."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/core/validators.py:279
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/core/validators.py:305
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/core/validators.py:312
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/core/validators.py:321
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.6/site-packages/django/core/validators.py:332
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.6/site-packages/django/db/models/base.py:1130
+#: env/lib/python3.6/site-packages/django/forms/models.py:718
+msgid "and"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/base.py:1132
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:107
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:108
+msgid "This field cannot be null."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:109
+msgid "This field cannot be blank."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:110
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr ""
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or 'month'.
+#. Eg: "Title must be unique for pub_date year"
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:114
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:132
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:922
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1833
+msgid "Integer"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:926
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1831
+#, python-format
+msgid "'%(value)s' value must be an integer."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1001
+#, python-format
+msgid "'%(value)s' value must be either True or False."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1003
+msgid "Boolean (Either True or False)"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1078
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1139
+msgid "Comma-separated integers"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1188
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1190
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1340
+#, python-format
+msgid ""
+"'%(value)s' value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1193
+msgid "Date (without time)"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1338
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1342
+#, python-format
+msgid ""
+"'%(value)s' value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1346
+msgid "Date (with time)"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1498
+#, python-format
+msgid "'%(value)s' value must be a decimal number."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1500
+msgid "Decimal number"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1651
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid format. It must be in [DD] [HH:[MM:]]ss[."
+"uuuuuu] format."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1654
+msgid "Duration"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1706
+#, fuzzy
+#| msgid "Enter an address..."
+msgid "Email address"
+msgstr "Escriba una dirección..."
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1730
+msgid "File path"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1797
+#, python-format
+msgid "'%(value)s' value must be a float."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1799
+msgid "Floating point number"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1900
+msgid "Big (8 byte) integer"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1915
+#, fuzzy
+#| msgid "Enter an address..."
+msgid "IPv4 address"
+msgstr "Escriba una dirección..."
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1951
+#, fuzzy
+#| msgid "Enter an address..."
+msgid "IP address"
+msgstr "Escriba una dirección..."
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:2030
+#, python-format
+msgid "'%(value)s' value must be either None, True or False."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:2032
+msgid "Boolean (Either True, False or None)"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:2092
+msgid "Positive integer"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:2104
+msgid "Positive small integer"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:2117
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:2146
+msgid "Small integer"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:2153
+msgid "Text"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:2176
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:2178
+#, python-format
+msgid ""
+"'%(value)s' value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:2181
+msgid "Time"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:2309
+msgid "URL"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:2332
+msgid "Raw binary data"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/__init__.py:2376
+#, python-format
+msgid "'%(value)s' is not a valid UUID."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/files.py:238
+msgid "File"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/files.py:388
+msgid "Image"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/related.py:1809
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r does not exist."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/related.py:1811
+msgid "Foreign Key (type determined by related field)"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/related.py:2041
+msgid "One-to-one relationship"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/db/models/fields/related.py:2131
+msgid "Many-to-many relationship"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/forms/fields.py:64
+msgid "This field is required."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/forms/fields.py:237
+#, fuzzy
+#| msgid "Enter an address..."
+msgid "Enter a whole number."
+msgstr "Escriba una dirección..."
+
+#: env/lib/python3.6/site-packages/django/forms/fields.py:280
+#: env/lib/python3.6/site-packages/django/forms/fields.py:317
+#, fuzzy
+#| msgid "Enter an address..."
+msgid "Enter a number."
+msgstr "Escriba una dirección..."
+
+#: env/lib/python3.6/site-packages/django/forms/fields.py:319
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.6/site-packages/django/forms/fields.py:323
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.6/site-packages/django/forms/fields.py:327
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.6/site-packages/django/forms/fields.py:438
+#: env/lib/python3.6/site-packages/django/forms/fields.py:1193
+#, fuzzy
+#| msgid "Enter an address..."
+msgid "Enter a valid date."
+msgstr "Escriba una dirección..."
+
+#: env/lib/python3.6/site-packages/django/forms/fields.py:462
+#: env/lib/python3.6/site-packages/django/forms/fields.py:1194
+#, fuzzy
+#| msgid "Enter an address..."
+msgid "Enter a valid time."
+msgstr "Escriba una dirección..."
+
+#: env/lib/python3.6/site-packages/django/forms/fields.py:484
+#, fuzzy
+#| msgid "Enter an address..."
+msgid "Enter a valid date/time."
+msgstr "Escriba una dirección..."
+
+#: env/lib/python3.6/site-packages/django/forms/fields.py:525
+#, fuzzy
+#| msgid "Enter an address..."
+msgid "Enter a valid duration."
+msgstr "Escriba una dirección..."
+
+#: env/lib/python3.6/site-packages/django/forms/fields.py:591
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/forms/fields.py:592
+msgid "No file was submitted."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/forms/fields.py:593
+msgid "The submitted file is empty."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/forms/fields.py:595
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.6/site-packages/django/forms/fields.py:598
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/forms/fields.py:660
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/forms/fields.py:827
+#: env/lib/python3.6/site-packages/django/forms/fields.py:921
+#: env/lib/python3.6/site-packages/django/forms/models.py:1238
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/forms/fields.py:922
+#: env/lib/python3.6/site-packages/django/forms/fields.py:1037
+#: env/lib/python3.6/site-packages/django/forms/models.py:1237
+#, fuzzy
+#| msgid "Enter an address..."
+msgid "Enter a list of values."
+msgstr "Escriba una dirección..."
+
+#: env/lib/python3.6/site-packages/django/forms/fields.py:1038
+#, fuzzy
+#| msgid "Enter an address..."
+msgid "Enter a complete value."
+msgstr "Escriba una dirección..."
+
+#: env/lib/python3.6/site-packages/django/forms/fields.py:1264
+#, fuzzy
+#| msgid "Enter an address..."
+msgid "Enter a valid UUID."
+msgstr "Escriba una dirección..."
+
+#. Translators: This is the default suffix added to form field labels
+#: env/lib/python3.6/site-packages/django/forms/forms.py:129
+msgid ":"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/forms/forms.py:214
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr ""
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: env/lib/python3.6/site-packages/django/forms/forms.py:659
+msgid ":?.!"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/forms/formsets.py:96
+msgid "ManagementForm data is missing or has been tampered with"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/forms/formsets.py:333
+#, python-format
+msgid "Please submit %d or fewer forms."
+msgid_plural "Please submit %d or fewer forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.6/site-packages/django/forms/formsets.py:340
+#, python-format
+msgid "Please submit %d or more forms."
+msgid_plural "Please submit %d or more forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.6/site-packages/django/forms/formsets.py:368
+#: env/lib/python3.6/site-packages/django/forms/formsets.py:370
+msgid "Order"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/forms/formsets.py:372
+msgid "Delete"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/forms/models.py:712
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/forms/models.py:716
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/forms/models.py:722
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/forms/models.py:730
+msgid "Please correct the duplicate values below."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/forms/models.py:1053
+msgid "The inline foreign key did not match the parent instance primary key."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/forms/models.py:1123
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/forms/models.py:1240
+#, python-format
+msgid "\"%(pk)s\" is not a valid value for a primary key."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/forms/utils.py:165
+#, python-format
+msgid ""
+"%(datetime)s couldn't be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/forms/widgets.py:345
+msgid "Currently"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/forms/widgets.py:346
+msgid "Change"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/forms/widgets.py:347
+msgid "Clear"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/forms/widgets.py:555
+msgid "Unknown"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/forms/widgets.py:556
+msgid "Yes"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/forms/widgets.py:557
+msgid "No"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/template/defaultfilters.py:865
+msgid "yes,no,maybe"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/template/defaultfilters.py:894
+#: env/lib/python3.6/site-packages/django/template/defaultfilters.py:906
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.6/site-packages/django/template/defaultfilters.py:908
+#, python-format
+msgid "%s KB"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/template/defaultfilters.py:910
+#, python-format
+msgid "%s MB"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/template/defaultfilters.py:912
+#, python-format
+msgid "%s GB"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/template/defaultfilters.py:914
+#, python-format
+msgid "%s TB"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/template/defaultfilters.py:916
+#, python-format
+msgid "%s PB"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dateformat.py:61
+msgid "p.m."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dateformat.py:62
+msgid "a.m."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dateformat.py:67
+msgid "PM"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dateformat.py:68
+msgid "AM"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dateformat.py:153
+msgid "midnight"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dateformat.py:155
+msgid "noon"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:6
+msgid "Monday"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:6
+msgid "Tuesday"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:6
+msgid "Wednesday"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:6
+msgid "Thursday"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:6
+msgid "Friday"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:7
+msgid "Saturday"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:7
+msgid "Sunday"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:10
+msgid "Mon"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:10
+msgid "Tue"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:10
+msgid "Wed"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:10
+msgid "Thu"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:10
+msgid "Fri"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:11
+msgid "Sat"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:11
+msgid "Sun"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:18
+msgid "January"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:18
+msgid "February"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:18
+msgid "March"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:18
+msgid "April"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:18
+msgid "May"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:18
+msgid "June"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:19
+msgid "July"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:19
+msgid "August"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:19
+msgid "September"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:19
+msgid "October"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:19
+msgid "November"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:20
+msgid "December"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:23
+msgid "jan"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:23
+msgid "feb"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:23
+msgid "mar"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:23
+msgid "apr"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:23
+msgid "may"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:23
+msgid "jun"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:24
+msgid "jul"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:24
+msgid "aug"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:24
+msgid "sep"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:24
+msgid "oct"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:24
+msgid "nov"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:24
+msgid "dec"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:31
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:32
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:33
+msgctxt "abbrev. month"
+msgid "March"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:34
+msgctxt "abbrev. month"
+msgid "April"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:35
+msgctxt "abbrev. month"
+msgid "May"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:36
+msgctxt "abbrev. month"
+msgid "June"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:37
+msgctxt "abbrev. month"
+msgid "July"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:38
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:39
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:40
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:41
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:42
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:45
+msgctxt "alt. month"
+msgid "January"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:46
+msgctxt "alt. month"
+msgid "February"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:47
+msgctxt "alt. month"
+msgid "March"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:48
+msgctxt "alt. month"
+msgid "April"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:49
+msgctxt "alt. month"
+msgid "May"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:50
+msgctxt "alt. month"
+msgid "June"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:51
+msgctxt "alt. month"
+msgid "July"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:52
+msgctxt "alt. month"
+msgid "August"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:53
+msgctxt "alt. month"
+msgid "September"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:54
+msgctxt "alt. month"
+msgid "October"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:55
+msgctxt "alt. month"
+msgid "November"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/dates.py:56
+msgctxt "alt. month"
+msgid "December"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/ipv6.py:10
+#, fuzzy
+#| msgid "Enter an address..."
+msgid "This is not a valid IPv6 address."
+msgstr "Escriba una dirección..."
+
+#: env/lib/python3.6/site-packages/django/utils/text.py:79
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s..."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/text.py:248
+msgid "or"
+msgstr ""
+
+#. Translators: This string is used as a separator between list elements
+#: env/lib/python3.6/site-packages/django/utils/text.py:267
+#: env/lib/python3.6/site-packages/django/utils/timesince.py:58
+msgid ", "
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/utils/timesince.py:10
+#, python-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.6/site-packages/django/utils/timesince.py:11
+#, python-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.6/site-packages/django/utils/timesince.py:12
+#, python-format
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.6/site-packages/django/utils/timesince.py:13
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.6/site-packages/django/utils/timesince.py:14
+#, python-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.6/site-packages/django/utils/timesince.py:15
+#, python-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.6/site-packages/django/utils/timesince.py:47
+msgid "0 minutes"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/csrf.py:107
+msgid "Forbidden"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/csrf.py:108
+msgid "CSRF verification failed. Request aborted."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/csrf.py:112
+msgid ""
+"You are seeing this message because this HTTPS site requires a 'Referer "
+"header' to be sent by your Web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/csrf.py:117
+msgid ""
+"If you have configured your browser to disable 'Referer' headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for 'same-"
+"origin' requests."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/csrf.py:122
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/csrf.py:127
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for 'same-origin' requests."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/csrf.py:132
+msgid "More information is available with DEBUG=True."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/debug.py:583
+msgid "Welcome to Django"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/debug.py:584
+msgid "It worked!"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/debug.py:585
+msgid "Congratulations on your first Django-powered page."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/debug.py:586
+msgid ""
+"Of course, you haven't actually done any work yet. Next, start your first "
+"app by running <code>python manage.py startapp [app_label]</code>."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/debug.py:588
+msgid ""
+"You're seeing this message because you have <code>DEBUG = True</code> in "
+"your Django settings file and you haven't configured any URLs. Get to work!"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/generic/dates.py:48
+msgid "No year specified"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/generic/dates.py:104
+msgid "No month specified"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/generic/dates.py:163
+msgid "No day specified"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/generic/dates.py:219
+msgid "No week specified"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/generic/dates.py:378
+#: env/lib/python3.6/site-packages/django/views/generic/dates.py:406
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/generic/dates.py:660
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/generic/dates.py:694
+#, python-format
+msgid "Invalid date string '%(datestr)s' given format '%(format)s'"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/generic/detail.py:55
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/generic/list.py:76
+msgid "Page is not 'last', nor can it be converted to an int."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/generic/list.py:81
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/generic/list.py:172
+#, python-format
+msgid "Empty list and '%(class_name)s.allow_empty' is False."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/static.py:44
+msgid "Directory indexes are not allowed here."
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/static.py:46
+#, python-format
+msgid "\"%(path)s\" does not exist"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/django/views/static.py:86
+#, python-format
+msgid "Index of %(directory)s"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:313
+msgid "usage: "
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:821
+msgid ".__call__() not defined"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:1105
+#, python-format
+msgid "unknown parser %r (choices: %s)"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:1146
+#, python-format
+msgid "argument \"-\" with mode %r"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:1349
+#, python-format
+msgid "cannot merge actions - two groups are named %r"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:1387
+msgid "'required' is an invalid argument for positionals"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:1407
+#, python-format
+msgid "invalid option string %r: must start with a character %r"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:1428
+#, python-format
+msgid "dest= is required for options like %r"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:1445
+#, python-format
+msgid "invalid conflict_resolution value: %r"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:1463
+#, python-format
+msgid "conflicting option string(s): %s"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:1526
+msgid "mutually exclusive arguments must be optional"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:1596
+msgid "positional arguments"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:1597
+msgid "optional arguments"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:1615
+msgid "show this help message and exit"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:1621
+msgid "show program's version number and exit"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:1653
+msgid "cannot have multiple subparser arguments"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:1705
+#, python-format
+msgid "unrecognized arguments: %s"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:1802
+#, python-format
+msgid "not allowed with argument %s"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:1848
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:1862
+#, python-format
+msgid "ignored explicit argument %r"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:1952
+msgid "too few arguments"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:1959
+#, python-format
+msgid "argument %s is required"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:1973
+#, python-format
+msgid "one of the arguments %s is required"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:2019
+msgid "expected one argument"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:2020
+msgid "expected at most one argument"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:2021
+msgid "expected at least one argument"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:2023
+#, python-format
+msgid "expected %s argument(s)"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:2080
+#, python-format
+msgid "ambiguous option: %s could match %s"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:2142
+#, python-format
+msgid "unexpected option string: %s"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:2243
+#, python-format
+msgid "%r is not callable"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:2259
+#, fuzzy, python-format
+#| msgid "Enter an address..."
+msgid "invalid %s value: %r"
+msgstr "Escriba una dirección..."
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:2269
+#, python-format
+msgid "invalid choice: %r (choose from %s)"
+msgstr ""
+
+#: env/lib/python3.6/site-packages/gunicorn/argparse_compat.py:2362
+#, python-format
+msgid "%s: error: %s\n"
+msgstr ""
+
+#: src/flavors/2016/templates/_closed_district_message.html:1
+msgid "Please note that the input period for this district is over for 2016."
+msgstr ""
+
+#: src/flavors/2016/templates/_unopened_district_message.html:1
+msgid ""
+"Please note that the input period for this district has not yet begun for "
+"2016."
+msgstr ""
+
+#: src/flavors/2017/templates/_closed_district_message.html:1
+#: src/flavors/2018/templates/_closed_district_message.html:1
 msgid "Please note that the input period for this district is over for 2017."
 msgstr ""
 
-#: flavors/2016/templates/_unopened_district_message.html:1
+#: src/flavors/2017/templates/_unopened_district_message.html:1
+#: src/flavors/2018/templates/_unopened_district_message.html:1
 msgid ""
 "Please note that the input period for this district has not yet begun for "
 "2017."
 msgstr ""
 
-#: flavors/2017/_config.translations.py:1
-#, fuzzy
-#| msgid "comment"
-msgid "commented on"
-msgstr "comentario"
-
-#: flavors/2017/_config.translations.py:2
-#: flavors/2017/_config.translations.py:3
-#: flavors/2017/_config.translations.py:4
-msgid "Comment"
-msgstr "Comentario"
-
-#: flavors/2017/_config.translations.py:5
-msgid "Your Name"
-msgstr "Tu nombre"
-
-#: flavors/2017/_config.translations.py:6
-#: flavors/2017/_config.translations.py:9
-msgid "Leave a Comment"
-msgstr "Deje un comentario"
-
-#: flavors/2017/_config.translations.py:7
-#: flavors/2017/_config.translations.py:12
-#: flavors/2017/_config.translations.py:71
-msgid "Someone"
-msgstr "Alguien"
-
-#: flavors/2017/_config.translations.py:8
-msgid "comment"
-msgstr "comentario"
-
-#: flavors/2017/_config.translations.py:10
-msgid "comments"
-msgstr "comentarios"
-
-#: flavors/2017/_config.translations.py:11
-#, fuzzy
-#| msgid "Enter an address..."
-msgid "Enter an address..."
-msgstr "Escriba una dirección..."
-
-#: flavors/2017/_config.translations.py:13
-msgid "supported"
-msgstr "apoyado por "
-
-#: flavors/2017/_config.translations.py:14
-msgid "Support This!"
-msgstr "¡Apoye!"
-
-#: flavors/2017/_config.translations.py:15
-msgid "support"
-msgstr "Apoyo"
-
-#: flavors/2017/_config.translations.py:16
-msgid "supports"
-msgstr "Apoya"
-
-#: flavors/2017/_config.translations.py:17
-#: flavors/2017/_config.translations.py:30
-#: flavors/2017/_config.translations.py:55
-#: flavors/2017/_config.translations.py:85
-#: flavors/2017/jstemplates/pages/guidelines.html:34
-#: pbnyc/templates/index.html:61
-msgid "Public Safety"
-msgstr "Seguridad pública"
-
-#: flavors/2017/_config.translations.py:18
-#: flavors/2017/_config.translations.py:19
-#: flavors/2017/_config.translations.py:51
-#: flavors/2017/_config.translations.py:81
-#: flavors/2017/jstemplates/pages/guidelines.html:14
-#: pbnyc/templates/index.html:57
-msgid "Environment"
-msgstr "Medioambiente"
-
-#: flavors/2017/_config.translations.py:20
-#: flavors/2017/_config.translations.py:33
-#: flavors/2017/_config.translations.py:54
-#: flavors/2017/_config.translations.py:84
-#: flavors/2017/jstemplates/pages/guidelines.html:33
-#: pbnyc/templates/index.html:60
-msgid "Public Health"
-msgstr "Salud pública"
-
-#: flavors/2017/_config.translations.py:21
-#: flavors/2017/_config.translations.py:39
-#: flavors/2017/_config.translations.py:56
-#: flavors/2017/_config.translations.py:87
-#: flavors/2017/jstemplates/pages/guidelines.html:42
-#: pbnyc/templates/index.html:63
-msgid "Seniors"
-msgstr "Personas mayores"
-
-#: flavors/2017/_config.translations.py:22
-#: flavors/2017/_config.translations.py:38
-#: flavors/2017/_config.translations.py:49
-#: flavors/2017/_config.translations.py:79
-msgid "Culture & Community Facilities"
-msgstr "Instalaciones comunitarias y culturales"
-
-#: flavors/2017/_config.translations.py:23
-#: flavors/2017/_config.translations.py:35
-#: flavors/2017/_config.translations.py:58
-#: flavors/2017/_config.translations.py:89
-msgid "Transit & Transportation"
-msgstr "Tránsito y transporte"
-
-#: flavors/2017/_config.translations.py:24
-#: flavors/2017/_config.translations.py:27
-#: flavors/2017/_config.translations.py:50
-#: flavors/2017/_config.translations.py:80
-msgid "Schools & Education"
-msgstr "Escuelas y educación"
-
-#: flavors/2017/_config.translations.py:25
-#: flavors/2017/_config.translations.py:86 pbnyc/templates/index.html:62
-msgid "Sanitation"
-msgstr ""
-
-#: flavors/2017/_config.translations.py:26
-#: flavors/2017/_config.translations.py:29
-#: flavors/2017/_config.translations.py:52
-#: flavors/2017/_config.translations.py:82
-#: flavors/2017/jstemplates/pages/guidelines.html:25
-#: pbnyc/templates/index.html:58
-msgid "Housing"
-msgstr "Viviendas"
-
-#: flavors/2017/_config.translations.py:28
-#: flavors/2017/_config.translations.py:34
-#: flavors/2017/_config.translations.py:59
-#: flavors/2017/_config.translations.py:90
-#: flavors/2017/jstemplates/pages/guidelines.html:51
-#: pbnyc/templates/index.html:66
-msgid "Youth"
-msgstr "Jóvenes"
-
-#: flavors/2017/_config.translations.py:31
-#: flavors/2017/_config.translations.py:37
-#: flavors/2017/_config.translations.py:53
-#: flavors/2017/_config.translations.py:83
-msgid "Parks & Recreation"
-msgstr "Parques y Recreación"
-
-#: flavors/2017/_config.translations.py:32
-#: flavors/2017/_config.translations.py:36
-#: flavors/2017/_config.translations.py:57
-#: flavors/2017/_config.translations.py:88
-msgid "Streets & Sidewalks"
-msgstr "Calles y aceras"
-
-#: flavors/2017/_config.translations.py:40
-msgid "Show on a map"
-msgstr "Ver en el mapa"
-
-#: flavors/2017/_config.translations.py:41
-msgid "suggested"
-msgstr "sugerido"
-
-#: flavors/2017/_config.translations.py:42
-msgid ""
-"Ideas must be \"capital\" projects - building, installing, or repairing "
-"something for public benefit, such as renovating a public basketball court "
-"or purchasing new computers for a library."
-msgstr ""
-"Las ideas deben ser proyectos de \"capital\":  construcción, instalación o "
-"reparación de algo para el beneficio público, como la renovación de una "
-"cancha de baloncesto pública o la compra de nuevas computadoras para una "
-"biblioteca."
-
-#: flavors/2017/_config.translations.py:43
-#, fuzzy
-#| msgid "My project idea is..."
-msgid "My project idea is..."
-msgstr "Mi idea para un proyecto es..."
-
-#: flavors/2017/_config.translations.py:44
-#: flavors/2017/_config.translations.py:46
-msgid "..."
-msgstr "..."
-
-#: flavors/2017/_config.translations.py:45
-#, fuzzy
-#| msgid "So that people could..."
-msgid "So that people could..."
-msgstr "Para que gente pueda..."
-
-#: flavors/2017/_config.translations.py:47
-msgid "Pick a category for your idea"
-msgstr "Elija una categoría para tu idea"
-
-#: flavors/2017/_config.translations.py:48
-msgid "Please choose..."
-msgstr "Elija..."
-
-#: flavors/2017/_config.translations.py:60
-msgid "Your name (required and will be shown on map)"
-msgstr "Su nombre (requerido y se mostrará en el mapa)"
-
-#: flavors/2017/_config.translations.py:61
-msgid "Your email (required and will NOT be shown on the map)"
-msgstr "Su correo electrónico (requerido y no se mostrará en el mapa)"
-
-#: flavors/2017/_config.translations.py:62
-msgid "Your phone number (optional and will NOT be shown on the map)"
-msgstr "Su número de teléfono (opcional y NO se mostrará en el mapa)"
-
-#: flavors/2017/_config.translations.py:63
-msgid "Your zip code (optional and will NOT be shown on the map)"
-msgstr "Su código postal (opcional y NO se mostrará en el mapa)"
-
-#: flavors/2017/_config.translations.py:64
-msgid "Your age (optional and will NOT be shown on the map)"
-msgstr "Su edad (opcional y NO se mostrará en el mapa)"
-
-#: flavors/2017/_config.translations.py:65
-msgid "Your gender (optional and will NOT be shown on the map)"
-msgstr "Su género (opcional y NO se mostrará en el mapa)"
-
-#: flavors/2017/_config.translations.py:66
-msgid "I'd like to volunteer"
-msgstr "Me gustaría ser voluntario"
-
-#: flavors/2017/_config.translations.py:67
-msgid "Volunteer"
-msgstr "Ser voluntario"
-
-#: flavors/2017/_config.translations.py:68
-msgid "Show as a list"
-msgstr "Ver como lista"
-
-#: flavors/2017/_config.translations.py:69
-msgid "Submit an idea"
-msgstr "Someter una idea"
-
-#: flavors/2017/_config.translations.py:70
-msgid "Describe your idea"
-msgstr "Describe tu idea"
-
-#: flavors/2017/_config.translations.py:72
-msgid "Share my idea"
-msgstr "Comparte mi idea "
-
-#: flavors/2017/_config.translations.py:73
-msgid "How would YOU spend $1 Million?"
-msgstr "¿Cómo gastarías $1 millón?"
-
-#: flavors/2017/_config.translations.py:74
-msgid "New York City Council's Participatory Budgeting"
-msgstr ""
-"Presupuesto Participativo del Concejo Municipal de la Ciudad de Nueva York"
-
-#: flavors/2017/_config.translations.py:75
-msgid "About"
-msgstr "Sobre"
-
-#: flavors/2017/_config.translations.py:76
-#: flavors/2017/jstemplates/pages/guidelines.html:20
-msgid "Guidelines"
-msgstr "Reglamentos "
-
-#: flavors/2017/_config.translations.py:77
-msgid "Districts"
-msgstr "Distrito"
-
-#: flavors/2017/_config.translations.py:78
-msgid "Show All"
-msgstr "Mostrar Todo"
-
-#: flavors/2017/_config.translations.py:91
-msgid "Categories"
-msgstr "Categorías"
-
-#: flavors/2017/jstemplates/pages/about.html:1
+#: src/flavors/2018/jstemplates/pages/about.html:1
 msgid ""
 "After you submit your idea on this Idea Collection Map, your idea will be "
 "given to community volunteers, called Budget Delegates. Budget Delegates "
@@ -315,19 +1327,19 @@ msgstr ""
 "propuestas concretas para una boleta, con la ayuda de agencias municipales. "
 "Estas propuestas estarán listas para la semana de votación en la primavera. "
 
-#: flavors/2017/jstemplates/pages/about.html:2
+#: src/flavors/2018/jstemplates/pages/about.html:2
 msgid "Check out the guidelines</a> to see what ideas can be funded."
 msgstr ""
 "Revise los reglamentos</a> para ver cuáles ideas pueden ser financiadas."
 
-#: flavors/2017/jstemplates/pages/about.html:3
+#: src/flavors/2018/jstemplates/pages/about.html:3
 msgid ""
 "For more information on participatory budgeting, other community PB events "
 "like Neighborhood Assemblies, and how to get more involved, visit <a href="
-"\"http://labs.council.nyc/pb\" target=\"_blank\">labs.council.nyc/pb</a>."
+"\"https://council.nyc.gov/pb/\" target=\"_blank\">council.nyc.gov/pb/</a>."
 msgstr ""
 
-#: flavors/2017/jstemplates/pages/about.html:4
+#: src/flavors/2018/jstemplates/pages/about.html:4
 msgid ""
 "If you have an idea about how things could work better in your community, "
 "share it on the map."
@@ -335,19 +1347,21 @@ msgstr ""
 "Si tiene una idea de cómo las cosas podrían funcionar mejor en su comunidad, "
 "compártalo en el mapa."
 
-#: flavors/2017/jstemplates/pages/about.html:5
+#: src/flavors/2018/jstemplates/pages/about.html:5
 msgid "Real Money."
 msgstr "Dinero Real."
 
-#: flavors/2017/jstemplates/pages/about.html:6
-msgid "Real Power."
+#: src/flavors/2018/jstemplates/pages/about.html:6
+#, fuzzy
+#| msgid "Real Power."
+msgid "Real People."
 msgstr "Poder Real."
 
-#: flavors/2017/jstemplates/pages/about.html:7
+#: src/flavors/2018/jstemplates/pages/about.html:7
 msgid "Real Projects."
 msgstr "Proyectos Reales"
 
-#: flavors/2017/jstemplates/pages/about.html:8
+#: src/flavors/2018/jstemplates/pages/about.html:8
 msgid ""
 "Share your ideas on the map for how things could be better in your "
 "community. <a href=\"/page/guidelines\" title=\"Participatory Budgeting in "
@@ -359,101 +1373,93 @@ msgstr ""
 "New York City | REAL MONEY. REAL PROJECTS. REAL POWER.\"> Revise los "
 "reglamentos </a> para ver cuales ideas pueden ser financiadas. "
 
-#: flavors/2017/jstemplates/pages/about.html:9
+#: src/flavors/2018/jstemplates/pages/about.html:9
 msgid ""
 "Through Participatory Budgeting, community members - like you - directly "
 "decide how to spend at least $1,000,000 of the public budget in "
-"participating Council District."
+"participating Council Districts."
 msgstr ""
 "A través del Presupuesto Participativo, miembros de la comunidad - como tú - "
 "deciden directamente cómo gastar al menos $ 1.000.000 del presupuesto "
 "público en  Distritos participantes  del  Concejo Municipal."
 
-#: flavors/2017/jstemplates/pages/district.html:1
+#: src/flavors/2018/jstemplates/pages/district.html:1
 msgid "Bronx"
 msgstr ""
 
-#: flavors/2017/jstemplates/pages/district.html:2
+#: src/flavors/2018/jstemplates/pages/district.html:2
 msgid "Brooklyn"
 msgstr ""
 
-#: flavors/2017/jstemplates/pages/district.html:3
+#: src/flavors/2018/jstemplates/pages/district.html:3
 msgid "Choose Your Council District"
 msgstr "Elija su distrito del Concejo Municipal"
 
-#: flavors/2017/jstemplates/pages/district.html:4
-#: pbnyc/templates/index.html:181
-msgid "Council Member"
-msgstr "Concejal"
-
-#: flavors/2017/jstemplates/pages/district.html:5
-#: pbnyc/templates/index.html:181
+#: src/flavors/2018/jstemplates/pages/district.html:4
+#: src/pbnyc/templates/index.html:181
 msgid "District"
 msgstr "Distrito"
 
-#: flavors/2017/jstemplates/pages/district.html:6
+#: src/flavors/2018/jstemplates/pages/district.html:5
 msgid "Manhattan"
 msgstr ""
 
-#: flavors/2017/jstemplates/pages/district.html:7
+#: src/flavors/2018/jstemplates/pages/district.html:6
 msgid "Queens"
 msgstr ""
 
-#: flavors/2017/jstemplates/pages/district.html:8
-#: pbnyc/templates/index.html:181
-msgid "Speaker"
-msgstr "Presidenta del Concejo Municipal"
-
-#: flavors/2017/jstemplates/pages/district.html:9
+#: src/flavors/2018/jstemplates/pages/district.html:7
 msgid "Staten Island"
 msgstr ""
 
-#: flavors/2017/jstemplates/pages/guidelines.html:1
+#: src/flavors/2018/jstemplates/pages/guidelines.html:1
 msgid " Schools and Education"
 msgstr "Escuelas y Educación"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:2
+#: src/flavors/2018/jstemplates/pages/guidelines.html:2
 msgid "(Expenses)"
 msgstr "(Gastos)"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:3
+#: src/flavors/2018/jstemplates/pages/guidelines.html:3
 msgid "After school programs"
 msgstr "Programas Despues del Horario Escolar"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:4
-msgid "All ideas must be submitted by <strong>September 30, 2016</strong>."
+#: src/flavors/2018/jstemplates/pages/guidelines.html:4
+msgid ""
+"All ideas must be submitted by <strong>October 5, 2018</strong>. Ideas "
+"submitted after October 5 will not be considered for the Cycle 8 ballot."
 msgstr ""
 
-#: flavors/2017/jstemplates/pages/guidelines.html:5
+#: src/flavors/2018/jstemplates/pages/guidelines.html:5
 msgid "Anyone can post ideas."
 msgstr "Cualquiera puede sugerir ideas"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:6
+#: src/flavors/2018/jstemplates/pages/guidelines.html:6
 msgid "Basketball court, park benches, skate park"
 msgstr "Cancha de baloncesto, bancas en el parque, parque para patinar"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:7
+#: src/flavors/2018/jstemplates/pages/guidelines.html:7
 msgid "Build a wheelchair accessible ramp, improved lighting"
 msgstr ""
 "Construir infraestructuras aptas para personas discapacitadas, mejorar "
 "iluminación"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:8
+#: src/flavors/2018/jstemplates/pages/guidelines.html:8
 msgid ""
 "Buy lighting, sound, or other equipment for a local cultural organization"
 msgstr ""
 "Comprar equipos de iluminación, audio para una organización cultural local"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:9
-#: pbnyc/templates/index.html:55
+#: src/flavors/2018/jstemplates/pages/guidelines.html:9
+#: src/pbnyc/templates/index.html:55
 msgid "Culture and Community Facilities"
 msgstr "Instalaciones comunitarias y culturales "
 
-#: flavors/2017/jstemplates/pages/guidelines.html:10
+#: src/flavors/2018/jstemplates/pages/guidelines.html:10
 msgid "Educational programs"
 msgstr "Programas educacionales"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:11
+#: src/flavors/2018/jstemplates/pages/guidelines.html:11
 msgid ""
 "Eligible ideas must be for \"capital\" projects: physical infrastructure for "
 "public benefit, such as park improvements or new technology for schools. "
@@ -466,129 +1472,158 @@ msgstr ""
 "tales como los programas despues del horario escolar o la ampliación del "
 "servicio de autobuses, no son elegibles."
 
-#: flavors/2017/jstemplates/pages/guidelines.html:12
+#: src/flavors/2018/jstemplates/pages/guidelines.html:12
 msgid "Eligible"
 msgstr "Elegible"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:13
+#: src/flavors/2018/jstemplates/pages/guidelines.html:13
 msgid "Eligible:"
 msgstr "Elegible"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:15
+#: src/flavors/2018/jstemplates/pages/guidelines.html:14
+#: src/pbnyc/templates/index.html:57
+msgid "Environment"
+msgstr "Medioambiente"
+
+#: src/flavors/2018/jstemplates/pages/guidelines.html:15
 msgid "Examples of Eligible Capital Ideas"
 msgstr "Ejemplos de ideas capitales calificadas"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:16
+#: src/flavors/2018/jstemplates/pages/guidelines.html:16
 msgid "Expanding bus service"
 msgstr "Ampliar los servicios de autobuses"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:17
+#: src/flavors/2018/jstemplates/pages/guidelines.html:17
 msgid "Extending library staff hours"
 msgstr "Extender las horas para el personal de la biblioteca"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:18
+#: src/flavors/2018/jstemplates/pages/guidelines.html:18
 msgid "Green infrastructure such as bioswales and permeable pavement"
 msgstr ""
 "Infraestructura verde tal como canales de filtración biológico y pavimento "
 "permeable"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:19
+#: src/flavors/2018/jstemplates/pages/guidelines.html:19
 msgid "Green roofs on schools"
 msgstr "Techos verdes en las escuelas"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:21
+#: src/flavors/2018/jstemplates/pages/guidelines.html:20
+msgid "Guidelines"
+msgstr "Reglamentos "
+
+#: src/flavors/2018/jstemplates/pages/guidelines.html:21
 msgid "Hiring home health care workers"
 msgstr " Emplear trabajadores de la salud en el hogar"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:22
+#: src/flavors/2018/jstemplates/pages/guidelines.html:22
 msgid "Hiring more police"
 msgstr "Emplear más policías"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:23
+#: src/flavors/2018/jstemplates/pages/guidelines.html:23
 msgid "Hiring nurses for a clinic"
 msgstr "Emplear enfermeras para una clínica"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:24
+#: src/flavors/2018/jstemplates/pages/guidelines.html:24
 msgid "Hiring security staff"
 msgstr "Emplear personal de seguridad"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:26
+#: src/flavors/2018/jstemplates/pages/guidelines.html:25
+#: src/pbnyc/templates/index.html:58
+msgid "Housing"
+msgstr "Viviendas"
+
+#: src/flavors/2018/jstemplates/pages/guidelines.html:26
 msgid "Make bathrooms ADA compliant"
 msgstr "Hacer que baños cumplan con la ADA"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:27
+#: src/flavors/2018/jstemplates/pages/guidelines.html:27
 msgid "New computers for a local library"
 msgstr "Nuevas computadoras para una biblioteca local"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:28
+#: src/flavors/2018/jstemplates/pages/guidelines.html:28
 msgid "Non-Eligible"
 msgstr "No elegible"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:29
-#: pbnyc/templates/index.html:59
+#: src/flavors/2018/jstemplates/pages/guidelines.html:29
+#: src/pbnyc/templates/index.html:59
 msgid "Parks and Recreation"
 msgstr "Parques y Recreación"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:30
+#: src/flavors/2018/jstemplates/pages/guidelines.html:30
 msgid "Paying bills for electricity of a public building, etc."
 msgstr "Pagar las cuentas de electricidad de un edificio público, etc."
 
-#: flavors/2017/jstemplates/pages/guidelines.html:31
+#: src/flavors/2018/jstemplates/pages/guidelines.html:31
 msgid "Pedestrian safety improvements at intersections"
 msgstr "Mejoras la seguridad para peatones en las  intersecciones  "
 
-#: flavors/2017/jstemplates/pages/guidelines.html:32
+#: src/flavors/2018/jstemplates/pages/guidelines.html:32
 msgid "Playground upgrades"
 msgstr "Mejoramiento de areas de recreo"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:35
+#: src/flavors/2018/jstemplates/pages/guidelines.html:33
+#: src/pbnyc/templates/index.html:60
+msgid "Public Health"
+msgstr "Salud pública"
+
+#: src/flavors/2018/jstemplates/pages/guidelines.html:34
+#: src/pbnyc/templates/index.html:61
+msgid "Public Safety"
+msgstr "Seguridad pública"
+
+#: src/flavors/2018/jstemplates/pages/guidelines.html:35
 msgid "Public exercise equipment"
 msgstr "Equipo de ejercicios para el público  "
 
-#: flavors/2017/jstemplates/pages/guidelines.html:36
+#: src/flavors/2018/jstemplates/pages/guidelines.html:36
 msgid "Renovation of local community center"
 msgstr "Renovación de un centro comunitario local"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:37
+#: src/flavors/2018/jstemplates/pages/guidelines.html:37
 msgid "Renovation of school property"
 msgstr "Renovación de propiedades escolares"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:38
+#: src/flavors/2018/jstemplates/pages/guidelines.html:38
 msgid "Renovations for local hospital or clinic"
 msgstr "Renovaciones para un hospital local o clínica"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:39
+#: src/flavors/2018/jstemplates/pages/guidelines.html:39
 msgid "Repairs to privately-owned sidewalks"
 msgstr "Reparaciones a aceras privadas"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:40
+#: src/flavors/2018/jstemplates/pages/guidelines.html:40
 msgid "Road resurfacing"
 msgstr "Repavimentación de carreteras"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:41
+#: src/flavors/2018/jstemplates/pages/guidelines.html:41
 msgid "Security cameras around schools and public housing"
 msgstr "Cámaras de seguridad alrededor de escuelas y viviendas públicas"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:43
-#: pbnyc/templates/index.html:64
+#: src/flavors/2018/jstemplates/pages/guidelines.html:42
+#: src/pbnyc/templates/index.html:63
+msgid "Seniors"
+msgstr "Personas mayores"
+
+#: src/flavors/2018/jstemplates/pages/guidelines.html:43
+#: src/pbnyc/templates/index.html:64
 msgid "Streets and Sidewalks"
 msgstr "Calles y aceras"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:44
+#: src/flavors/2018/jstemplates/pages/guidelines.html:44
 msgid "Subway station improvements such as installation of help points"
 msgstr ""
 "Mejoramiento de las estaciones del tern subterráneo como  la instalación de "
 "puntos de ayuda."
 
-#: flavors/2017/jstemplates/pages/guidelines.html:45
+#: src/flavors/2018/jstemplates/pages/guidelines.html:45
 msgid "Tech for public school"
 msgstr "Tecnología para escuelas públicas"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:46
+#: src/flavors/2018/jstemplates/pages/guidelines.html:46
 msgid "Technology centers"
 msgstr "Centros tecnológicos"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:47
+#: src/flavors/2018/jstemplates/pages/guidelines.html:47
 msgid ""
 "To add a spot, drag the map until the crosshairs are over the desired "
 "location. Ideas will be considered by the Council District within which they "
@@ -598,33 +1633,28 @@ msgstr ""
 "encuentre sobre la ubicación deseada. Las ideas serán consideradas por el "
 "distrito del Concejo Municipal en el que se encuentran."
 
-#: flavors/2017/jstemplates/pages/guidelines.html:48
+#: src/flavors/2018/jstemplates/pages/guidelines.html:48
 msgid "Transit"
 msgstr "Transporte"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:49
+#: src/flavors/2018/jstemplates/pages/guidelines.html:49
 msgid "Upgrade public plazas"
 msgstr "Mejoramiento de plazas públicas"
 
-#: flavors/2017/jstemplates/pages/guidelines.html:50
+#: src/flavors/2018/jstemplates/pages/guidelines.html:50
 msgid "Weatherization of public housing"
 msgstr "Climatización de  vivienda pública"
 
-#: flavors/2017/templates/_closed_district_message.html:1
-msgid "Please note that the input period for this district is over for 2016."
-msgstr ""
+#: src/flavors/2018/jstemplates/pages/guidelines.html:51
+#: src/pbnyc/templates/index.html:66
+msgid "Youth"
+msgstr "Jóvenes"
 
-#: flavors/2017/templates/_unopened_district_message.html:1
-msgid ""
-"Please note that the input period for this district has not yet begun for "
-"2016."
-msgstr ""
-
-#: flavors/staff/templates/index.html:68 pbnyc/templates/index.html:75
+#: src/flavors/staff/templates/index.html:68 src/pbnyc/templates/index.html:75
 msgid "Powered by"
 msgstr "Potenciado por"
 
-#: pbnyc/jstemplates/activity-list-item.html:1
+#: src/pbnyc/jstemplates/activity-list-item.html:1
 msgid ""
 "\n"
 "\n"
@@ -718,7 +1748,7 @@ msgstr ""
 "          {{/if }}\n"
 "          "
 
-#: pbnyc/jstemplates/activity-list-item.html:37
+#: src/pbnyc/jstemplates/activity-list-item.html:37
 msgid ""
 "\n"
 "        {{#if place.source}}\n"
@@ -810,7 +1840,7 @@ msgstr ""
 "          {{/if }}\n"
 "          "
 
-#: pbnyc/jstemplates/place-detail.html:1
+#: src/pbnyc/jstemplates/place-detail.html:1
 msgid ""
 "\n"
 "\n"
@@ -835,138 +1865,154 @@ msgid ""
 "        "
 msgstr ""
 
-#: pbnyc/jstemplates/place-detail.html:18
+#: src/pbnyc/jstemplates/place-detail.html:18
 msgid "Agency"
 msgstr ""
 
-#: pbnyc/jstemplates/place-detail.html:19
+#: src/pbnyc/jstemplates/place-detail.html:19
 msgid "Cost"
 msgstr ""
 
-#: pbnyc/jstemplates/place-detail.html:20
+#: src/pbnyc/jstemplates/place-detail.html:20
 msgid "Description"
 msgstr ""
 
-#: pbnyc/jstemplates/place-detail.html:21
+#: src/pbnyc/jstemplates/place-detail.html:21
+msgid "District {{ CounDist }}"
+msgstr ""
+
+#: src/pbnyc/jstemplates/place-detail.html:22
 msgid "Find out how and where in District {{ CounDist }}"
 msgstr ""
 
-#: pbnyc/jstemplates/place-detail.html:22
+#: src/pbnyc/jstemplates/place-detail.html:23
+msgid "Find out how and where to vote for this project in "
+msgstr ""
+
+#: src/pbnyc/jstemplates/place-detail.html:24
 msgid "Location"
 msgstr ""
 
-#: pbnyc/jstemplates/place-detail.html:23
-#, fuzzy
-#| msgid "My project idea is..."
+#: src/pbnyc/jstemplates/place-detail.html:25
 msgid "My project idea is"
-msgstr "Mi idea para un proyecto es..."
+msgstr "Mi idea para un proyecto es"
 
-#: pbnyc/jstemplates/place-detail.html:24
-#, fuzzy
-#| msgid "So that people could..."
+#: src/pbnyc/jstemplates/place-detail.html:26
 msgid "So that people could"
-msgstr "Para que gente pueda..."
+msgstr "Para que gente pueda"
 
-#: pbnyc/jstemplates/place-detail.html:25
+#: src/pbnyc/jstemplates/place-detail.html:27
 msgid "Status"
 msgstr ""
 
-#: pbnyc/jstemplates/place-detail.html:26
+#: src/pbnyc/jstemplates/place-detail.html:28
 msgid "View On Map"
 msgstr ""
 
-#: pbnyc/jstemplates/place-detail.html:27
+#: src/pbnyc/jstemplates/place-detail.html:29
 msgid "Vote for this project between March 25th and April 2nd."
 msgstr ""
 
-#: pbnyc/templates/index.html:56
+#: src/pbnyc/templates/index.html:56
 msgid "Schools and Education"
 msgstr "Escuelas y educación"
 
-#: pbnyc/templates/index.html:65
+#: src/pbnyc/templates/index.html:62
+msgid "Sanitation"
+msgstr ""
+
+#: src/pbnyc/templates/index.html:65
 msgid "Transit and Transportation"
 msgstr "Tránsito y transportación"
 
-#: pbnyc/templates/index.html:67
+#: src/pbnyc/templates/index.html:67
 msgid "Previously funded"
 msgstr "Previamente financiado"
 
-#: pbnyc/templates/index.html:167
+#: src/pbnyc/templates/index.html:167
 msgid "Approximate location:"
 msgstr "Ubicación aproximada:"
 
-#: pbnyc/templates/index.html:196
+#: src/pbnyc/templates/index.html:181
+msgid "Speaker"
+msgstr "Presidenta del Concejo Municipal"
+
+#: src/pbnyc/templates/index.html:181
+msgid "Council Member"
+msgstr "Concejal"
+
+#: src/pbnyc/templates/index.html:196
 msgid "(Outside of the PB districts)"
 msgstr "(Fuera de los Distritos PP participantes)"
 
-#: pbnyc/templates/new_place_email_body.txt:1
+#: src/pbnyc/templates/new_place_email_body.txt:1
 #, python-format
 msgid ""
 "Thanks for submitting a new %(place.properties.location_type)s idea to "
 "improve your community!"
 msgstr ""
 
-#: pbnyc/templates/new_place_email_body.txt:3
+#: src/pbnyc/templates/new_place_email_body.txt:3
 msgid "Here's what you suggested:"
 msgstr ""
 
-#: pbnyc/templates/new_place_email_body.txt:5
+#: src/pbnyc/templates/new_place_email_body.txt:5
 #, python-format
 msgid ""
 "You can see people's comments on your idea at http://%(request.get_host)s/"
 "place/%(place.id)s."
 msgstr ""
 
-#: pbnyc/templates/new_place_email_body.txt:7
+#: src/pbnyc/templates/new_place_email_body.txt:7
 msgid ""
 "For more information on the Participatory Budgeting process, go to http://"
 "labs.council.nyc/pb."
 msgstr ""
 
-#: pbnyc/templates/new_place_email_subject.txt:1
+#: src/pbnyc/templates/new_place_email_subject.txt:1
 #, python-format
 msgid "Thanks for submitting a new %(place.properties.location_type)s idea!"
 msgstr ""
 
-#: sa_web/jstemplates/auth-nav.html:1
+#: src/sa_web/jstemplates/auth-nav.html:1
 msgid "Log Out"
 msgstr ""
 
-#: sa_web/jstemplates/auth-nav.html:2
+#: src/sa_web/jstemplates/auth-nav.html:2
 msgid "Sign In"
 msgstr ""
 
-#: sa_web/jstemplates/auth-nav.html:3
+#: src/sa_web/jstemplates/auth-nav.html:3
 msgid ""
 "Signed in as</span> <span class=\"current-user\">{{ current_user \"name\" }}"
 msgstr ""
 
-#: sa_web/jstemplates/form-field-file.html:1
+#: src/sa_web/jstemplates/form-field-file.html:1
 msgid "Sorry, your browser doesn't support file uploads."
 msgstr ""
 
-#: sa_web/jstemplates/form-field-input.html:1
+#: src/sa_web/jstemplates/form-field-input.html:1
 msgid ""
 "Or sign in with <a class=\"auth-inline twitter-btn\" href=\"/users/login/"
 "twitter/\">Twitter</a> <a class=\"auth-inline facebook-btn\" href=\"/users/"
 "login/facebook/\">Facebook</a>"
 msgstr ""
 
-#: sa_web/jstemplates/form-field-set.html:1
+#: src/sa_web/jstemplates/form-field-set.html:1
 msgid "optional"
 msgstr ""
 
-#: sa_web/jstemplates/place-detail-promotion-bar.html:1
+#: src/sa_web/jstemplates/place-detail-promotion-bar.html:1
 #, fuzzy
 #| msgid "commented on"
 msgid "Recommend on Facebook"
 msgstr "comentó sobre"
 
-#: sa_web/jstemplates/place-detail-promotion-bar.html:2
+#: src/sa_web/jstemplates/place-detail-promotion-bar.html:2
 msgid "Tweet This"
 msgstr ""
 
-#: sa_web/jstemplates/place-detail-survey.html:1
+#: src/sa_web/jstemplates/place-detail-survey.html:1
 msgid ""
 "<strong class=\"response-submitter\">\n"
 "                    {{#if submitter}}\n"
@@ -984,44 +2030,44 @@ msgid ""
 "                  "
 msgstr ""
 
-#: sa_web/jstemplates/place-form.html:1
+#: src/sa_web/jstemplates/place-form.html:1
 msgid "Drag the map to your location."
 msgstr ""
 
-#: sa_web/jstemplates/place-form.html:2
+#: src/sa_web/jstemplates/place-form.html:2
 msgid ""
 "It looks like you didn't set your location yet. Please drag the map to your "
 "location."
 msgstr ""
 
-#: sa_web/jstemplates/place-list.html:1
+#: src/sa_web/jstemplates/place-list.html:1
 msgid "Most Recent"
 msgstr ""
 
-#: sa_web/jstemplates/place-list.html:2
+#: src/sa_web/jstemplates/place-list.html:2
 msgid "Most {{ support_label_plural }}"
 msgstr ""
 
-#: sa_web/jstemplates/place-list.html:3
+#: src/sa_web/jstemplates/place-list.html:3
 msgid "Most {{ survey_label_plural }}"
 msgstr ""
 
-#: sa_web/jstemplates/place-survey-response.html:1
+#: src/sa_web/jstemplates/place-survey-response.html:1
 msgid "Thanks for participating!"
 msgstr ""
 
-#: sa_web/jstemplates/unsupported-overlay.html:1
+#: src/sa_web/jstemplates/unsupported-overlay.html:1
 msgid "Proceed Anyway"
 msgstr ""
 
-#: sa_web/jstemplates/unsupported-overlay.html:2
+#: src/sa_web/jstemplates/unsupported-overlay.html:2
 msgid ""
 "You are using an unsupported browser. Please\n"
 "    <a href=\"http://browsehappy.com/\">upgrade your browser</a> to improve\n"
 "    your experience."
 msgstr ""
 
-#: sa_web/templates/base.html:98
+#: src/sa_web/templates/base.html:98
 #, python-format
 msgid ""
 "\n"
@@ -1029,7 +2075,7 @@ msgid ""
 "        "
 msgstr ""
 
-#: sa_web/templates/base.html:103
+#: src/sa_web/templates/base.html:103
 #, python-format
 msgid ""
 "\n"
@@ -1041,52 +2087,157 @@ msgid ""
 "        "
 msgstr ""
 
-#: sa_web/templates/base.html:117
+#: src/sa_web/templates/base.html:117
 msgid ""
 "We can't connect to the server at the moment. Hang tight while we re-"
 "establish communication."
 msgstr ""
 
-#: sa_web/templates/base.html:123
+#: src/sa_web/templates/base.html:123
 msgid "Close"
 msgstr ""
 
-#, fuzzy
-#~| msgid "Enter an address..."
-#~ msgid "Enter a valid value."
-#~ msgstr "Escriba una dirección..."
+#~ msgid "New York City Council's Participatory Budgeting"
+#~ msgstr ""
+#~ "Presupuesto Participativo del Concejo Municipal de la Ciudad de Nueva York"
+
+#~ msgid "How would YOU spend $1 Million?"
+#~ msgstr "¿Cómo gastarías $1 millón?"
 
 #, fuzzy
 #~| msgid "Enter an address..."
-#~ msgid "Enter a valid email address."
+#~ msgid "Enter an address..."
 #~ msgstr "Escriba una dirección..."
 
-#, fuzzy
-#~| msgid "Enter an address..."
-#~ msgid "Enter a valid IPv6 address."
-#~ msgstr "Escriba una dirección..."
+#~ msgid "Culture & Community Facilities"
+#~ msgstr "Instalaciones comunitarias y culturales"
+
+#~ msgid "Schools & Education"
+#~ msgstr "Escuelas y educación"
+
+#~ msgid "Parks & Recreation"
+#~ msgstr "Parques y Recreación"
+
+#~ msgid "Streets & Sidewalks"
+#~ msgstr "Calles y aceras"
+
+#~ msgid "Transit & Transportation"
+#~ msgstr "Tránsito y transporte"
+
+#~ msgid "Submit an idea"
+#~ msgstr "Someter una idea"
+
+#~ msgid "Show as a list"
+#~ msgstr "Ver como lista"
+
+#~ msgid "Show on a map"
+#~ msgstr "Ver en el mapa"
+
+#~ msgid "Describe your idea"
+#~ msgstr "Describe tu idea"
+
+#~ msgid "suggested"
+#~ msgstr "sugerido"
+
+#~ msgid ""
+#~ "Ideas must be \"capital\" projects - building, installing, or repairing "
+#~ "something for public benefit, such as renovating a public basketball "
+#~ "court or purchasing new computers for a library."
+#~ msgstr ""
+#~ "Las ideas deben ser proyectos de \"capital\":  construcción, instalación "
+#~ "o reparación de algo para el beneficio público, como la renovación de una "
+#~ "cancha de baloncesto pública o la compra de nuevas computadoras para una "
+#~ "biblioteca."
+
+#~ msgid "Someone"
+#~ msgstr "Alguien"
+
+#~ msgid "Share my idea"
+#~ msgstr "Comparte mi idea "
 
 #, fuzzy
-#~| msgid "Enter an address..."
-#~ msgid "Email address"
-#~ msgstr "Escriba una dirección..."
+#~| msgid "My project idea is..."
+#~ msgid "My project idea is..."
+#~ msgstr "Mi idea para un proyecto es..."
+
+#~ msgid "..."
+#~ msgstr "..."
 
 #, fuzzy
-#~| msgid "Enter an address..."
-#~ msgid "Enter a valid date."
-#~ msgstr "Escriba una dirección..."
+#~| msgid "So that people could..."
+#~ msgid "So that people could..."
+#~ msgstr "Para que gente pueda..."
+
+#~ msgid "Pick a category for your idea"
+#~ msgstr "Elija una categoría para tu idea"
+
+#~ msgid "Please choose..."
+#~ msgstr "Elija..."
+
+#~ msgid "Your name (required and will be shown on map)"
+#~ msgstr "Su nombre (requerido y se mostrará en el mapa)"
+
+#~ msgid "Your email (required and will NOT be shown on the map)"
+#~ msgstr "Su correo electrónico (requerido y no se mostrará en el mapa)"
+
+#~ msgid "Your phone number (optional and will NOT be shown on the map)"
+#~ msgstr "Su número de teléfono (opcional y NO se mostrará en el mapa)"
+
+#~ msgid "Your zip code (optional and will NOT be shown on the map)"
+#~ msgstr "Su código postal (opcional y NO se mostrará en el mapa)"
+
+#~ msgid "Your age (optional and will NOT be shown on the map)"
+#~ msgstr "Su edad (opcional y NO se mostrará en el mapa)"
+
+#~ msgid "Your gender (optional and will NOT be shown on the map)"
+#~ msgstr "Su género (opcional y NO se mostrará en el mapa)"
+
+#~ msgid "I'd like to volunteer"
+#~ msgstr "Me gustaría ser voluntario"
+
+#~ msgid "Volunteer"
+#~ msgstr "Ser voluntario"
+
+#~ msgid "comment"
+#~ msgstr "comentario"
+
+#~ msgid "comments"
+#~ msgstr "comentarios"
 
 #, fuzzy
-#~| msgid "Enter an address..."
-#~ msgid "Enter a valid time."
-#~ msgstr "Escriba una dirección..."
+#~| msgid "comment"
+#~ msgid "commented on"
+#~ msgstr "comentario"
 
-#, fuzzy
-#~| msgid "Enter an address..."
-#~ msgid "Enter a valid date/time."
-#~ msgstr "Escriba una dirección..."
+#~ msgid "Leave a Comment"
+#~ msgstr "Deje un comentario"
 
-#, fuzzy
-#~| msgid "Enter an address..."
-#~ msgid "Enter a valid duration."
-#~ msgstr "Escriba una dirección..."
+#~ msgid "Comment"
+#~ msgstr "Comentario"
+
+#~ msgid "Your Name"
+#~ msgstr "Tu nombre"
+
+#~ msgid "Support This!"
+#~ msgstr "¡Apoye!"
+
+#~ msgid "support"
+#~ msgstr "Apoyo"
+
+#~ msgid "supports"
+#~ msgstr "Apoya"
+
+#~ msgid "supported"
+#~ msgstr "apoyado por "
+
+#~ msgid "About"
+#~ msgstr "Sobre"
+
+#~ msgid "Districts"
+#~ msgstr "Distrito"
+
+#~ msgid "Categories"
+#~ msgstr "Categorías"
+
+#~ msgid "Show All"
+#~ msgstr "Mostrar Todo"
