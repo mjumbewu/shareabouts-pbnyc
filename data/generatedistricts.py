@@ -23,7 +23,7 @@ districts = {
     9:	('Bill Perkins', 'Manhattan', '''Central Harlem, Morningside Heights, Upper West Side, East Harlem'''),
     10:	('Ydanis Rodriguez', 'Manhattan', '''Washington Heights, Inwood, Marble Hill'''),
     11:	('Andrew Cohen', 'Bronx', '''Bedford Park, Kingsbridge, Norwood, Riverdale, Van Cortlandt Village, Wakefield, Woodlawn'''),
-    15:	('Ritchie Torries', 'Bronx', '''Belmont, Tremont, Allerton'''),
+    15:	('Ritchie Torres', 'Bronx', '''Belmont, Tremont, Allerton'''),
     16:	('Vanessa Gibson', 'Bronx', '''West Bronx, Morrisania, Highbridge and Melrose'''),
     17:	('Rafael Salamanca', 'Bronx', '''Longwood, Hunts Point, Concourse, Crotona Park, Melrose, Morrisania, Mott Haven, North Brother Island, Port Morris and Soundview'''),
     19:	('Paul Vallone', 'Queens', '''Bayside, Whitestone, Auburndale, College Point, Little Neck, Douglaston, North Flushing'''),
