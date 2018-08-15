@@ -22,11 +22,7 @@ script and update the participating districts. Run this script from within the
 
 ## Map Tiles
 
-Open a new qgis project and add layers from *district-centroids.geojson* and
-*districts.geojson*. Make sure that there are centroids for each district. If
-not, convert the districts layer to a shapefile, add the required centroids,
-and save the geojson file again.
-
-Open the *districts.tm2source* in Mapbox Studio (Classic). It should
-automatically pull from the districts and district-centroids files. Under
-**Settings** click **Upload to Mapbox**.
+Open *PBNYC-Base(...)/style.json* and find all instances of `CounDist`. Update
+and use the same version of the list of districts for each of these sections.
+Head to https://www.mapbox.com/studio/ and replace the **PBNYC Base** style
+with this *style.json* file.
