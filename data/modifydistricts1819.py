@@ -6,6 +6,7 @@ districts = {
     2:	('Carlina Rivera', 'Manhattan'),
     3:	('Corey Johnson', 'Manhattan'),
     5:	('Ben Kallos', 'Manhattan'),
+    4:	('Keith Powers', 'Manhattan'),
     6:	('Helen Rosenthal', 'Manhattan'),
     7:	('Mark Levine', 'Manhattan'),
     8:	('Diana Ayala', 'Manhattan/Bronx'),
@@ -51,4 +52,4 @@ for infeature in indata['features']:
         outdata['features'].append(outfeature)
 
 with open('districts.geojson', 'w') as jsonfile:
-    json.dump(outdata, jsonfile)
+    json.dump(outdata, jsonfile, indent=1, sort_keys=True)
