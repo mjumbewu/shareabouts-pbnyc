@@ -24,6 +24,9 @@ map:
   geolocation_onload: false
 
   geocoding_enabled: true
+  # The default geocoding engine is MapQuest. You can set an override below.
+  # Make sure to provide the appropriate keys for whatever you set.
+  # geocoding_engine: Mapbox
   geocode_field_label: _(Enter an address...)
   geocode_bounding_box: [39.830159, -75.478821, 40.167331, -74.781189]  # top, left, bottom, right
 
@@ -38,14 +41,17 @@ map:
   layers:
     # Raster Tile Layers
     # ==================
-    - url: https://api.tiles.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ
-      attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>. Geocoding Courtesy of <a href="http://www.mapquest.com/" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png">.'
+    # - url: https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
+    #   attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>. Geocoding Courtesy of <a href="http://www.mapquest.com/" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png">.'
 
     # Mapbox GL Layers
     # ================
-    # - type: mapbox
-    #   style: mapbox://styles/mapbox/streets-v8
-    #   accessToken: pk.eyJ1Ijoib3BlbnBsYW5zIiwiYSI6ImZRQzRPYnMifQ.f75KI3Q9rFXRY2Zciz6DKw
+    - type: mapbox
+      style: mapbox://styles/mapbox/streets-v8
+      accessToken: pk.eyJ1Ijoib3BlbnBsYW5zIiwiYSI6ImZRQzRPYnMifQ.f75KI3Q9rFXRY2Zciz6DKw
+      fallback:
+        url: https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
+        attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>. Geocoding Courtesy of <a href="http://www.mapquest.com/" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png">.'
 
     # GeoJSON Layers
     # ==============
@@ -207,6 +213,10 @@ place:
           value: _(Email address)
         - key: size
           value: 30
+    - prompt: _(Location Address)
+      type: location
+      name: address
+      placeholder: _(Drag the map to set the location.)
     - prompt: _(Location Name)
       type: text
       name: name

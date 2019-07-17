@@ -141,22 +141,13 @@ var Shareabouts = Shareabouts || {};
         placeTypes: this.options.placeTypes
       });
 
-      // Init the address search bar
-      this.geocodeAddressView = (new S.GeocodeAddressView({
-        el: '#geocode-address-bar',
-        router: this.options.router,
-        mapConfig: this.options.mapConfig
-      })).render();
-
       // When the user chooses a geocoded address, the address view will fire
       // a geocode event on the namespace. At that point we center the map on
       // the geocoded location.
       $(S).on('geocode', function(evt, locationData) {
-        self.mapView.zoomInOn(locationData.latLng);
-
         if (self.isAddingPlace()) {
-          self.placeFormView.setLatLng(locationData.latLng);
-          self.placeFormView.setLocation(locationData);
+          self.placeFormView.setLatLng(locationData.geocode.center);
+          self.placeFormView.setLocation(locationData.geocode.name);
         }
       });
 
@@ -168,11 +159,9 @@ var Shareabouts = Shareabouts || {};
       // reverse geocode the center of the map, if geocoding is enabled. If
       // the user is doing anything else, we just want to clear out any text
       // that's currently set in the address search bar.
-      $(S).on('mapdragend', function(evt) {
+      $(S).on('mapmoveend', function(evt) {
         if (self.isAddingPlace()) {
           self.conditionallyReverseGeocode();
-        } else if (self.geocodeAddressView) {
-          self.geocodeAddressView.setAddress('');
         }
       });
 
@@ -180,9 +169,9 @@ var Shareabouts = Shareabouts || {};
       // event. This should only happen when adding a place while geocoding
       // is enabled.
       $(S).on('reversegeocode', function(evt, locationData) {
-        var locationString = Handlebars.templates['location-string'](locationData);
-        self.geocodeAddressView.setAddress($.trim(locationString));
-        self.placeFormView.setLocation(locationData);
+        var geocodingEngine = self.options.mapConfig.geocoding_engine || 'MapQuest';
+        var address = S.Util[geocodingEngine].getName(locationData);
+        self.placeFormView.setLocation(address);
       });
 
 
@@ -431,7 +420,10 @@ var Shareabouts = Shareabouts || {};
       // Called by the router
       this.collection.add({});
     },
-    viewPlace: function(model, responseId, zoom) {
+    viewNewPlace: function(model, responseId, zoom) {
+      return this.viewPlace(model, responseId, zoom, true)
+    },
+    viewPlace: function(model, responseId, zoom, isNew) {
       var self = this,
           includeSubmissions = self.options.config.app.list_enabled !== false,
           layout = S.Util.getPageLayout(),
@@ -456,7 +448,7 @@ var Shareabouts = Shareabouts || {};
         }
 
         self.$panel.removeClass().addClass('place-detail place-detail-' + model.id);
-        self.showPanel(placeDetailView.render().$el, !!responseId);
+        self.showPanel(placeDetailView.render(isNew).$el, !!responseId);
         self.hideNewPin();
         self.destroyNewModels();
         self.hideCenterPoint();
@@ -567,13 +559,13 @@ var Shareabouts = Shareabouts || {};
       S.Util.log('APP', 'panel-state', 'open');
     },
     showNewPin: function() {
-      this.$centerpoint.show().addClass('newpin');
+      this.$centerpoint.removeClass('is-hidden').addClass('newpin');
     },
     showCenterPoint: function() {
-      this.$centerpoint.show().removeClass('newpin');
+      this.$centerpoint.removeClass('is-hidden').removeClass('newpin');
     },
     hideCenterPoint: function() {
-      this.$centerpoint.hide();
+      this.$centerpoint.addClass('is-hidden');
     },
     hidePanel: function() {
       var map = this.mapView.map;

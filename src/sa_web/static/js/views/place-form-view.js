@@ -83,7 +83,13 @@ var Shareabouts = Shareabouts || {};
       this.$('.drag-marker-instructions, .drag-marker-warning').addClass('is-visuallyhidden');
     },
     setLocation: function(location) {
-      this.location = location;
+      // We want to make sure we don't give the user the impression that their
+      // location is set when it isn't yet, so only update location-receivers
+      // if the center has been set.
+      if (this.center) {
+        this.location = location;
+        this.$('.location-receiver').html(location)
+      }
     },
     // Get the attributes from the form
     getAttrs: function() {
@@ -196,7 +202,7 @@ var Shareabouts = Shareabouts || {};
       this.model.save(attrs, {
         success: function() {
           S.Util.log('USER', 'new-place', 'successfully-add-place');
-          router.navigate('/place/' + model.id, {trigger: true});
+          router.navigate('/place/' + model.id + '/new', {trigger: true});
         },
         error: function() {
           S.Util.log('USER', 'new-place', 'fail-to-add-place');

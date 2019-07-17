@@ -22,19 +22,45 @@ var Shareabouts = Shareabouts || {};
       self.placeLayers = L.layerGroup();
 
       // Add layers defined in the config file
-      _.each(self.options.mapConfig.layers, function(config){
+      function addMapLayer(config) {
+        var layer;
+
         // type is required by Argo for fetching data, so it's a pretty good
         // Argo indicator. Argo is this by the way: https://github.com/openplans/argo/
         if (config.type && config.type === 'mapbox') {
           if (!config.accessToken) { config.accessToken = S.bootstrapped.mapboxToken; }
-          L.mapboxGL(config).addTo(self.map);
+          try {
+            layer = L.mapboxGL(config)
+            layer.addTo(self.map);
+          } catch (error) {
+            // If creation of the GL layer fails for any reason, we may have to
+            // clean up.
+            if (layer) {
+              // The _glMap may never have been successfully set on the layer,
+              // so we need to patch it.
+              layer._glMap = {remove: function () {}};
+              layer.removeFrom(self.map);
+            }
+
+            // Many users may fail because of lack of WebGL support. For that
+            // case, provide a fallback set of tiles.
+            if (config.fallback) {
+              layer = addMapLayer(config.fallback);
+            }
+            else {
+              throw error;
+            }
+          }
         } else if (config.type) {
-          L.argo(config.url, config).addTo(self.map);
+          layer = L.argo(config.url, config).addTo(self.map);
         } else {
           // Assume a tile layer
-          L.tileLayer(config.url, config).addTo(self.map);
+          layer = L.tileLayer(config.url, config).addTo(self.map);
         }
-      });
+        return layer;
+      }
+
+      _.each(self.options.mapConfig.layers, addMapLayer);
 
       // Remove default prefix
       self.map.attributionControl.setPrefix('');
@@ -42,6 +68,10 @@ var Shareabouts = Shareabouts || {};
       // Init geolocation
       if (self.options.mapConfig.geolocation_enabled) {
         self.initGeolocation();
+      }
+
+      if (self.options.mapConfig.geocoding_enabled) {
+        self.initGeocoding();
       }
 
       self.map.addLayer(self.placeLayers);
@@ -75,11 +105,13 @@ var Shareabouts = Shareabouts || {};
     },
     reverseGeocodeMapCenter: _.debounce(function() {
       var center = this.map.getCenter();
-      S.Util.MapQuest.reverseGeocode(center, {
+      var geocodingEngine = this.options.mapConfig.geocoding_engine || 'MapQuest';
+
+      S.Util[geocodingEngine].reverseGeocode(center, {
         success: function(data) {
-          var locationsData = data.results[0].locations;
+          var locationData = S.Util[geocodingEngine].getLocation(data);
           // S.Util.console.log('Reverse geocoded center: ', data);
-          $(S).trigger('reversegeocode', [locationsData[0]]);
+          $(S).trigger('reversegeocode', [locationData]);
         }
       });
     }, 1000),
@@ -147,6 +179,45 @@ var Shareabouts = Shareabouts || {};
       if (this.options.mapConfig.geolocation_onload) {
         this.geolocate();
       }
+    },
+    initGeocoding: function() {
+      var geocoder;
+      var control;
+      var options = {
+          collapsed: false,
+          position: 'topright',
+          defaultMarkGeocode: false,
+          geocoder: geocoder
+        };
+
+      switch (this.options.mapConfig.geocoding_engine) {
+        case 'Mapbox':
+          options.geocoder = L.Control.Geocoder.mapbox(S.bootstrapped.mapboxToken);
+          break;
+
+        default:
+          options.geocoder = L.Control.Geocoder.mapQuest(S.bootstrapped.mapQuestKey);
+          break;
+      }
+
+      if (this.options.mapConfig.geocode_field_label) {
+        options.placeholder = this.options.mapConfig.geocode_field_label
+      }
+
+      control = L.Control.geocoder(options)
+        .on('markgeocode', function(evt) {
+          result = evt.geocode || evt;
+          this._map.fitBounds(result.bbox);
+          $(S).trigger('geocode', [evt]);
+        })
+        .addTo(this.map);
+
+      // Move the control to the center
+      $('<div class="leaflet-top leaflet-center"/>')
+        .insertAfter($('.leaflet-top.leaflet-left'))
+        .append($(control._container))
+
+      Shareabouts.geocoderControl = control;
     },
     onClickGeolocate: function(evt) {
       evt.preventDefault();

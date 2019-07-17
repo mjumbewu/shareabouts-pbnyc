@@ -107,7 +107,7 @@ var Shareabouts = Shareabouts || {};
     getPageLayout: function() {
       // not IE8
       if (window.getComputedStyle) {
-        return window.getComputedStyle(document.body,':after').getPropertyValue('content');
+        return window.getComputedStyle(document.body,':after').getPropertyValue('content').replace(/"/g, '');
       }
 
       // IE8
@@ -408,6 +408,32 @@ var Shareabouts = Shareabouts || {};
         options.cache = true;
         options.url = 'https://open.mapquestapi.com/geocoding/v1/reverse?key=' + mapQuestKey + '&location=' + lat + ',' + lng;
         $.ajax(options);
+      },
+      getLocation: function(reverseGeocodedData) {
+        return reverseGeocodedData.results[0].locations[0];
+      },
+      getName: function(location) {
+        switch (location.geocodeQuality) {
+          case 'POINT':
+            // <street address>, <city> <state>
+            return location.street + ', ' + location.adminArea5 + ' ' + location.adminArea3;
+
+          case 'ADDRESS':
+            // <street address>, <city> <state>
+            return location.street + ', ' + location.adminArea5 + ' ' + location.adminArea3
+
+          case 'ZIP':
+            // <city>, <state> <zip>
+            return location.adminArea5 + ', ' + location.adminArea3 + ' ' + location.postalCode
+
+          case 'CITY':
+            // <city>, <state>
+            return location.adminArea5 + ', ' + location.adminArea3
+
+          case 'STREET':
+            // <street address>, <city> <state>
+            return location.street + ', ' + location.adminArea5 + ' ' + location.adminArea3
+        }
       }
     },
 
@@ -491,6 +517,12 @@ var Shareabouts = Shareabouts || {};
         options.cache = true;
         options.url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/' + lng + ',' + lat + '.json?access_token=' + mapboxToken;
         $.ajax(options);
+      },
+      getLocation: function(reverseGeocodedData) {
+        return reverseGeocodedData.features[0];
+      },
+      getName: function(location) {
+        return location.place_name;
       }
     }
   };
