@@ -25,6 +25,7 @@ map:
   geolocation_onload: false
 
   geocoding_enabled: true
+  geocoding_engine: Mapbox
   geocode_field_label: _(Enter an address...)
   options:
     center:
