@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-16 00:21-0500\n"
+"POT-Creation-Date: 2019-07-26 14:00-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,98 +17,786 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: jstemplates/auth-nav.html:1
+#: src/flavors/2019/_config.translations.py:1
+msgid "New York City Council's Participatory Budgeting"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:2
+msgid "How would YOU spend $1 Million?"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:3
+msgid "Enter an address..."
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:4
+#: src/flavors/2019/_config.translations.py:16
+#: src/flavors/2019/_config.translations.py:41
+#: src/flavors/2019/_config.translations.py:80
+msgid "Culture & Community Facilities"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:5
+#: src/flavors/2019/_config.translations.py:17
+#: src/flavors/2019/_config.translations.py:42
+#: src/flavors/2019/_config.translations.py:81
+msgid "Schools & Education"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:6
+#: src/flavors/2019/_config.translations.py:18
+#: src/flavors/2019/_config.translations.py:43
+#: src/flavors/2019/_config.translations.py:82
+#: src/flavors/2019/jstemplates/pages/guidelines.html:13
+#: src/pbnyc/templates/index.html:52
+msgid "Environment"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:7
+#: src/flavors/2019/_config.translations.py:19
+#: src/flavors/2019/_config.translations.py:44
+#: src/flavors/2019/_config.translations.py:83
+#: src/flavors/2019/jstemplates/pages/guidelines.html:24
+#: src/pbnyc/templates/index.html:53
+msgid "Housing"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:8
+#: src/flavors/2019/_config.translations.py:20
+#: src/flavors/2019/_config.translations.py:45
+#: src/flavors/2019/_config.translations.py:84
+msgid "Parks & Recreation"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:9
+#: src/flavors/2019/_config.translations.py:21
+#: src/flavors/2019/_config.translations.py:46
+#: src/flavors/2019/_config.translations.py:85
+#: src/flavors/2019/jstemplates/pages/guidelines.html:32
+#: src/pbnyc/templates/index.html:55
+msgid "Public Health"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:10
+#: src/flavors/2019/_config.translations.py:22
+#: src/flavors/2019/_config.translations.py:47
+#: src/flavors/2019/_config.translations.py:86
+#: src/flavors/2019/jstemplates/pages/guidelines.html:33
+#: src/pbnyc/templates/index.html:56
+msgid "Public Safety"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:11
+#: src/flavors/2019/_config.translations.py:23
+#: src/flavors/2019/_config.translations.py:48
+#: src/flavors/2019/_config.translations.py:88
+#: src/flavors/2019/jstemplates/pages/guidelines.html:42
+#: src/pbnyc/templates/index.html:58
+msgid "Seniors"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:12
+#: src/flavors/2019/_config.translations.py:24
+#: src/flavors/2019/_config.translations.py:49
+#: src/flavors/2019/_config.translations.py:89
+msgid "Streets & Sidewalks"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:13
+#: src/flavors/2019/_config.translations.py:87
+#: src/pbnyc/templates/index.html:57
+msgid "Sanitation"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:14
+#: src/flavors/2019/_config.translations.py:25
+#: src/flavors/2019/_config.translations.py:50
+#: src/flavors/2019/_config.translations.py:90
+msgid "Transit & Transportation"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:15
+#: src/flavors/2019/_config.translations.py:26
+#: src/flavors/2019/_config.translations.py:51
+#: src/flavors/2019/_config.translations.py:91
+#: src/flavors/2019/jstemplates/pages/guidelines.html:51
+#: src/pbnyc/templates/index.html:61
+msgid "Youth"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:27
+msgid "Submit an idea"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:28
+msgid "Show as a list"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:29
+msgid "Show on a map"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:30
+msgid "Describe your idea"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:31
+msgid "suggested"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:32
+msgid ""
+"Ideas must be \"capital\" projects - building, installing, or repairing "
+"something for public benefit, such as renovating a public basketball court "
+"or purchasing new computers for a library."
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:33
+#: src/flavors/2019/_config.translations.py:63
+#: src/flavors/2019/_config.translations.py:74
+msgid "Someone"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:34
+msgid "Share my idea"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:35
+msgid "My project idea is..."
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:36
+#: src/flavors/2019/_config.translations.py:38
+msgid "..."
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:37
+msgid "So that people could..."
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:39
+msgid "Pick a category for your idea"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:40
+msgid "Please choose..."
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:52
+msgid "Your name (required and will be shown on map)"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:53
+msgid "Your email (required and will NOT be shown on the map)"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:54
+msgid "Your phone number (optional and will NOT be shown on the map)"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:55
+msgid "Your zip code (optional and will NOT be shown on the map)"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:56
+msgid "Your age (optional and will NOT be shown on the map)"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:57
+msgid "Your gender (optional and will NOT be shown on the map)"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:58
+msgid "I'd like to volunteer"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:59
+msgid "Volunteer"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:60
+msgid "comment"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:61
+msgid "comments"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:62
+msgid "commented on"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:64
+#: src/flavors/2019/_config.translations.py:65
+msgid "Leave a Comment"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:66
+#: src/flavors/2019/_config.translations.py:67
+#: src/flavors/2019/_config.translations.py:68
+msgid "Comment"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:69
+msgid "Your Name"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:70
+msgid "Support This!"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:71
+msgid "support"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:72
+msgid "supports"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:73
+msgid "supported"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:75
+msgid "About"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:76
+#: src/flavors/2019/jstemplates/pages/guidelines.html:19
+msgid "Guidelines"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:77
+msgid "Districts"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:78
+msgid "Categories"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:79
+msgid "Show All"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/about.html:1
+msgid ""
+"After you submit your idea on this Idea Collection Map, your idea will be "
+"given to community volunteers, called Budget Delegates. Budget Delegates "
+"work in your district to turn ideas into real proposals for a ballot, with "
+"input from city agencies. These proposals will be up for a community-wide "
+"vote in the spring."
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/about.html:2
+msgid "Check out the guidelines</a> to see what ideas can be funded."
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/about.html:3
+msgid ""
+"For more information on participatory budgeting, other community PB events "
+"like Neighborhood Assemblies, and how to get more involved, visit <a href="
+"\"https://council.nyc.gov/pb/\" target=\"_blank\">council.nyc.gov/pb/</a>."
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/about.html:4
+msgid ""
+"If you have an idea about how things could work better in your community, "
+"share it on the map."
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/about.html:5
+msgid "Real Money."
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/about.html:6
+msgid "Real People."
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/about.html:7
+msgid "Real Projects."
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/about.html:8
+msgid ""
+"Share your ideas on the map for how things could be better in your "
+"community. <a href=\"/page/guidelines\" title=\"Participatory Budgeting in "
+"New York City | REAL MONEY. REAL PROJECTS. REAL POWER.\">Check out the "
+"guidelines</a> to see what ideas can be funded."
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/about.html:9
+msgid ""
+"Through Participatory Budgeting, community members - like you - directly "
+"decide how to spend at least $1,000,000 of the public budget in "
+"participating Council Districts."
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/district.html:1
+msgid "Bronx"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/district.html:2
+msgid "Brooklyn"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/district.html:3
+msgid "Choose Your Council District"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/district.html:4
+#: src/pbnyc/templates/index.html:176
+msgid "District"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/district.html:5
+msgid "Manhattan"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/district.html:6
+msgid "Queens"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/district.html:7
+msgid "Staten Island"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:1
+msgid "(Expenses)"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:2
+msgid "After school programs"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:3
+msgid ""
+"All ideas must be submitted by <strong>October 5, 2018</strong>. Ideas "
+"submitted after October 5 will not be considered for the Cycle 8 ballot."
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:4
+msgid "Anyone can post ideas."
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:5
+msgid "Basketball court, park benches, skate park"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:6
+msgid "Build a wheelchair accessible ramp, improved lighting"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:7
+msgid ""
+"Buy lighting, sound, or other equipment for a local cultural organization"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:8
+#: src/pbnyc/templates/index.html:50
+msgid "Culture and Community Facilities"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:9
+msgid "Educational programs"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:10
+msgid ""
+"Eligible ideas must be for \"capital\" projects: physical infrastructure for "
+"public benefit, such as park improvements or new technology for schools. "
+"“Expense\" projects, such as afterschool programs or expanding bus service, "
+"are not eligible."
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:11
+msgid "Eligible"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:12
+msgid "Eligible:"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:14
+msgid "Examples of Eligible Capital Ideas"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:15
+msgid "Expanding bus service"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:16
+msgid "Extending library staff hours"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:17
+msgid "Green infrastructure such as bioswales and permeable pavement"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:18
+msgid "Green roofs on schools"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:20
+msgid "Hiring home health care workers"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:21
+msgid "Hiring more police"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:22
+msgid "Hiring nurses for a clinic"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:23
+msgid "Hiring security staff"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:25
+msgid "Make bathrooms ADA compliant"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:26
+msgid "New computers for a local library"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:27
+msgid "Non-Eligible"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:28
+#: src/pbnyc/templates/index.html:54
+msgid "Parks and Recreation"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:29
+msgid "Paying bills for electricity of a public building, etc."
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:30
+msgid "Pedestrian safety improvements at intersections"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:31
+msgid "Playground upgrades"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:34
+msgid "Public exercise equipment"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:35
+msgid "Renovation of local community center"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:36
+msgid "Renovation of school property"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:37
+msgid "Renovations for local hospital or clinic"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:38
+msgid "Repairs to privately-owned sidewalks"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:39
+msgid "Road resurfacing"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:40
+#: src/pbnyc/templates/index.html:51
+msgid "Schools and Education"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:41
+msgid "Security cameras around schools and public housing"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:43
+#: src/pbnyc/templates/index.html:59
+msgid "Streets and Sidewalks"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:44
+msgid "Subway station improvements such as installation of help points"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:45
+msgid "Tech for public school"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:46
+msgid "Technology centers"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:47
+msgid ""
+"To add a spot, drag the map until the crosshairs are over the desired "
+"location. Ideas will be considered by the Council District within which they "
+"are located."
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:48
+msgid "Transit"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:49
+msgid "Upgrade public plazas"
+msgstr ""
+
+#: src/flavors/2019/jstemplates/pages/guidelines.html:50
+msgid "Weatherization of public housing"
+msgstr ""
+
+#: src/flavors/2019/templates/_closed_district_message.html:1
+msgid "Please note that the input period for this district is over for 2017."
+msgstr ""
+
+#: src/flavors/2019/templates/_unopened_district_message.html:1
+msgid ""
+"Please note that the input period for this district has not yet begun for "
+"2017."
+msgstr ""
+
+#: src/flavors/staff/templates/index.html:68 src/pbnyc/templates/index.html:70
+msgid "Powered by"
+msgstr ""
+
+#: src/pbnyc/jstemplates/activity-list-item.html:1
+msgid ""
+"A new {{>idea-type}} from <strong>{{source}}</strong> in District "
+"{{CounDist}} named {{>idea-name}}"
+msgstr ""
+
+#: src/pbnyc/jstemplates/activity-list-item.html:2
+msgid ""
+"A new {{>idea-type}} from <strong>{{source}}</strong> named {{>idea-name}}"
+msgstr ""
+
+#: src/pbnyc/jstemplates/activity-list-item.html:3
+msgid "created {{>an-idea}} at {{>idea-location}}"
+msgstr ""
+
+#: src/pbnyc/jstemplates/activity-list-item.html:4
+msgid "created {{>an-idea}} in District {{CounDist}} at {{>idea-location}}"
+msgstr ""
+
+#: src/pbnyc/jstemplates/activity-list-item.html:5
+msgid "created {{>an-idea}} in District {{CounDist}} named {{>idea-name}}"
+msgstr ""
+
+#: src/pbnyc/jstemplates/activity-list-item.html:6
+msgid "created {{>an-idea}} in District {{CounDist}}"
+msgstr ""
+
+#: src/pbnyc/jstemplates/activity-list-item.html:7
+msgid "created {{>an-idea}} named {{>idea-name}}"
+msgstr ""
+
+#: src/pbnyc/jstemplates/activity-list-item.html:8
+msgid "created {{>an-idea}}"
+msgstr ""
+
+#: src/pbnyc/jstemplates/activity-list-item.html:9
+msgid "in District {{ CounDist }}"
+msgstr ""
+
+#: src/pbnyc/jstemplates/idea-type.html:1
+msgid ""
+"\n"
+"  {{!Shows the type of idea, e.g. \"Housing idea\"}}\n"
+"  {{ place_type_label }} idea\n"
+msgstr ""
+
+#: src/pbnyc/jstemplates/place-detail.html:1
+msgid "Agency"
+msgstr ""
+
+#: src/pbnyc/jstemplates/place-detail.html:2
+msgid "Cost"
+msgstr ""
+
+#: src/pbnyc/jstemplates/place-detail.html:3
+msgid "Description"
+msgstr ""
+
+#: src/pbnyc/jstemplates/place-detail.html:4
+msgid "District {{ CounDist }}"
+msgstr ""
+
+#: src/pbnyc/jstemplates/place-detail.html:5
+msgid "Find out how and where in District {{ CounDist }}"
+msgstr ""
+
+#: src/pbnyc/jstemplates/place-detail.html:6
+msgid "Find out how and where to vote for this project in "
+msgstr ""
+
+#: src/pbnyc/jstemplates/place-detail.html:7
+msgid "Location"
+msgstr ""
+
+#: src/pbnyc/jstemplates/place-detail.html:8
+msgid "My project idea is"
+msgstr ""
+
+#: src/pbnyc/jstemplates/place-detail.html:9
+msgid "Near {{>idea-location}}"
+msgstr ""
+
+#: src/pbnyc/jstemplates/place-detail.html:10
+msgid "So that people could"
+msgstr ""
+
+#: src/pbnyc/jstemplates/place-detail.html:11
+msgid "Status"
+msgstr ""
+
+#: src/pbnyc/jstemplates/place-detail.html:12
+msgid "View On Map"
+msgstr ""
+
+#: src/pbnyc/jstemplates/place-detail.html:13
+msgid "Vote for this project between March 25th and April 2nd."
+msgstr ""
+
+#: src/pbnyc/jstemplates/place-detail.html:14
+msgid "suggested this {{>idea-type}} in District {{ CounDist }}."
+msgstr ""
+
+#: src/pbnyc/jstemplates/place-detail.html:15
+msgid "suggested this {{>idea-type}}."
+msgstr ""
+
+#: src/pbnyc/templates/index.html:60
+msgid "Transit and Transportation"
+msgstr ""
+
+#: src/pbnyc/templates/index.html:62
+msgid "Previously funded"
+msgstr ""
+
+#: src/pbnyc/templates/index.html:162
+msgid "Approximate location:"
+msgstr ""
+
+#: src/pbnyc/templates/index.html:176
+msgid "Speaker"
+msgstr ""
+
+#: src/pbnyc/templates/index.html:176
+msgid "Council Member"
+msgstr ""
+
+#: src/pbnyc/templates/index.html:191
+msgid "(Outside of the PB districts)"
+msgstr ""
+
+#: src/pbnyc/templates/new_place_email_body.txt:1
+#, python-format
+msgid ""
+"Thanks for submitting a new %(place.properties.location_type)s idea to "
+"improve your community!"
+msgstr ""
+
+#: src/pbnyc/templates/new_place_email_body.txt:3
+msgid "Here's what you suggested:"
+msgstr ""
+
+#: src/pbnyc/templates/new_place_email_body.txt:5
+#, python-format
+msgid ""
+"You can see people's comments on your idea at https://%(request.get_host)s/"
+"place/%(place.id)s."
+msgstr ""
+
+#: src/pbnyc/templates/new_place_email_body.txt:7
+msgid ""
+"For more information on the Participatory Budgeting process, go to http://"
+"labs.council.nyc/pb."
+msgstr ""
+
+#: src/pbnyc/templates/new_place_email_subject.txt:1
+#, python-format
+msgid "Thanks for submitting a new %(place.properties.location_type)s idea!"
+msgstr ""
+
+#: src/sa_web/jstemplates/auth-nav.html:1
 msgid "Log Out"
 msgstr ""
 
-#: jstemplates/auth-nav.html:2
+#: src/sa_web/jstemplates/auth-nav.html:2
 msgid "Sign In"
 msgstr ""
 
-#: jstemplates/auth-nav.html:3
+#: src/sa_web/jstemplates/auth-nav.html:3
 msgid ""
 "Signed in as</span> <span class=\"current-user\">{{ current_user \"name\" }}"
 msgstr ""
 
-#: jstemplates/form-field-file.html:1
+#: src/sa_web/jstemplates/form-field-file.html:1
 msgid "Sorry, your browser doesn't support file uploads."
 msgstr ""
 
-#: jstemplates/form-field-input.html:1
+#: src/sa_web/jstemplates/form-field-input.html:1
 msgid ""
 "Or sign in with <a class=\"auth-inline twitter-btn\" href=\"/users/login/"
 "twitter/\">Twitter</a> <a class=\"auth-inline facebook-btn\" href=\"/users/"
 "login/facebook/\">Facebook</a>"
 msgstr ""
 
-#: jstemplates/form-field-set.html:1
+#: src/sa_web/jstemplates/form-field-set.html:1
 msgid "optional"
 msgstr ""
 
-#: jstemplates/place-detail-promotion-bar.html:1
+#: src/sa_web/jstemplates/place-detail-promotion-bar.html:1
 msgid "Recommend on Facebook"
 msgstr ""
 
-#: jstemplates/place-detail-promotion-bar.html:2
+#: src/sa_web/jstemplates/place-detail-promotion-bar.html:2
 msgid "Tweet This"
 msgstr ""
 
-#: jstemplates/place-detail-survey.html:1
-msgid ""
-"<strong class=\"response-submitter\">\n"
-"                    {{#if submitter}}\n"
-"                      <img src=\"{{ submitter.avatar_url }}\" class=\"avatar"
-"\" /> {{ submitter.name }}\n"
-"                    {{^}}\n"
-"                      <!-- TODO: FIXME: don't hardcode image URL -->\n"
-"                      <img src=\"{{ STATIC_URL }}css/images/user-50.png\" "
-"class=\"avatar\" /> {{ submitter_name }}\n"
-"                    {{/if}}\n"
-"                  </strong>\n"
-"                  <span class=\"response-date\">\n"
-"                    around {{ pretty_created_datetime }}\n"
-"                  </span>\n"
-"                  "
-msgstr ""
-
-#: jstemplates/place-form.html:1
+#: src/sa_web/jstemplates/place-form.html:1
 msgid "Drag the map to your location."
 msgstr ""
 
-#: jstemplates/place-form.html:2
+#: src/sa_web/jstemplates/place-form.html:2
 msgid ""
 "It looks like you didn't set your location yet. Please drag the map to your "
 "location."
 msgstr ""
 
-#: jstemplates/place-list.html:1
+#: src/sa_web/jstemplates/place-list.html:1
 msgid "Most Recent"
 msgstr ""
 
-#: jstemplates/place-list.html:2
+#: src/sa_web/jstemplates/place-list.html:2
 msgid "Most {{ support_label_plural }}"
 msgstr ""
 
-#: jstemplates/place-list.html:3
+#: src/sa_web/jstemplates/place-list.html:3
 msgid "Most {{ survey_label_plural }}"
 msgstr ""
 
-#: jstemplates/place-survey-response.html:1
+#: src/sa_web/jstemplates/place-survey-response.html:1
 msgid "Thanks for participating!"
 msgstr ""
 
-#: jstemplates/unsupported-overlay.html:1
+#: src/sa_web/jstemplates/unsupported-overlay.html:1
 msgid "Proceed Anyway"
 msgstr ""
 
-#: jstemplates/unsupported-overlay.html:2
+#: src/sa_web/jstemplates/unsupported-overlay.html:2
 msgid ""
 "You are using an unsupported browser. Please\n"
 "    <a href=\"http://browsehappy.com/\">upgrade your browser</a> to improve\n"
 "    your experience."
 msgstr ""
 
-#: templates/base.html:98
+#: src/sa_web/templates/base.html:99
 #, python-format
 msgid ""
 "\n"
@@ -116,7 +804,7 @@ msgid ""
 "        "
 msgstr ""
 
-#: templates/base.html:103
+#: src/sa_web/templates/base.html:104
 #, python-format
 msgid ""
 "\n"
@@ -128,12 +816,12 @@ msgid ""
 "        "
 msgstr ""
 
-#: templates/base.html:117
+#: src/sa_web/templates/base.html:118
 msgid ""
 "We can't connect to the server at the moment. Hang tight while we re-"
 "establish communication."
 msgstr ""
 
-#: templates/base.html:123
+#: src/sa_web/templates/base.html:124
 msgid "Close"
 msgstr ""

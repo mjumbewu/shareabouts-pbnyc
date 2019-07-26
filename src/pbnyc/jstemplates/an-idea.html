@@ -1,0 +1,7 @@
+{{#if type_starts_with_vowel}}
+  {{! Here, place_type_label starts with a vowel, e.g. "an Environment idea" --}}
+  an {{>idea-type}}
+{{^}}
+  {{! Here, place_type_label starts with a consonant, e.g. "a Schools & Education idea" --}}
+  a {{>idea-type}}
+{{/if}}

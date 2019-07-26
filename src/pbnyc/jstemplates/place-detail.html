@@ -25,24 +25,19 @@
       <h1>{{ name }}</h1>
 
       <span class="place-submission-details">
-        {{#_}}
-
         {{#if source}}
           A {{place_type_label location_type }} idea {{#if CounDist}} in District {{ CounDist }}{{/if}} from <strong>{{ source }}</strong>
         {{^}}
-        <strong class="point-submitter">
-          {{#if submitter}}
-            <img src="{{ submitter.avatar_url }}" class="avatar" /> {{ submitter.name }}
+          {{>idea-submitter}}
+
+          {{#if CounDist}}
+            {{#_}}suggested this {{>idea-type}} in District {{ CounDist }}.{{/_}}
           {{^}}
-            <!-- TODO: FIXME: don't hardcode image URL -->
-            <img src="/static/css/images/user-50.png" class="avatar" /> {{ submitter_name }}
+            {{#_}}suggested this {{>idea-type}}.{{/_}}
           {{/if}}
-            </strong> suggested this {{place_type_label location_type }} idea {{#if CounDist}} in District {{ CounDist }}{{/if}}.
         {{/if}}
-            <p><small>Near {{>location-string location }}</small></p>
 
-        {{/_}}
-
+        <p><small>{{#_}}Near {{>idea-location}}{{/_}}</small></p>
         <time datetime="{{ created_datetime }}" class="response-date">{{ pretty_created_datetime }}</time>
       </span>
     {{/if }}
