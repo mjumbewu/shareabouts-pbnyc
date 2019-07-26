@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-26 14:00-0500\n"
+"POT-Creation-Date: 2019-07-26 14:19-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -318,14 +318,6 @@ msgstr ""
 
 #: src/flavors/2019/jstemplates/pages/about.html:8
 msgid ""
-"Share your ideas on the map for how things could be better in your "
-"community. <a href=\"/page/guidelines\" title=\"Participatory Budgeting in "
-"New York City | REAL MONEY. REAL PROJECTS. REAL POWER.\">Check out the "
-"guidelines</a> to see what ideas can be funded."
-msgstr ""
-
-#: src/flavors/2019/jstemplates/pages/about.html:9
-msgid ""
 "Through Participatory Budgeting, community members - like you - directly "
 "decide how to spend at least $1,000,000 of the public budget in "
 "participating Council Districts."
@@ -370,8 +362,8 @@ msgstr ""
 
 #: src/flavors/2019/jstemplates/pages/guidelines.html:3
 msgid ""
-"All ideas must be submitted by <strong>October 5, 2018</strong>. Ideas "
-"submitted after October 5 will not be considered for the Cycle 8 ballot."
+"All ideas must be submitted by <strong>October 11, 2019</strong>. Ideas "
+"submitted after October 11 will not be considered for the Cycle 9 ballot."
 msgstr ""
 
 #: src/flavors/2019/jstemplates/pages/guidelines.html:4
