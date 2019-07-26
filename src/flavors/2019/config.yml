@@ -16,6 +16,9 @@ languages:
   - code: es
     label: Español
 
+  - code: zh
+    label: 中文
+
   # - code: zh-hans
   #   label: 中文
 
