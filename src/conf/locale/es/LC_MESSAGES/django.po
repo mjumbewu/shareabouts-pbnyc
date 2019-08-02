@@ -25,19 +25,19 @@ msgstr "Lo sentimos, su navegador no admite la carga de archivos."
 
 #: src/sa_web/jstemplates/form-field-input.html:1
 msgid "Or sign in with <a class=\"auth-inline twitter-btn\" href=\"/users/login/twitter/\">Twitter</a> <a class=\"auth-inline facebook-btn\" href=\"/users/login/facebook/\">Facebook</a>"
-msgstr ""
+msgstr "O inicia sesión con <a class=\"auth-inline twitter-btn\" href=\"/users/login/twitter/\">Twitter</a> <a class=\"auth-inline facebook-btn\" href=\"/users/login/facebook/\">Facebook</a>"
 
 #: src/sa_web/jstemplates/form-field-set.html:1
 msgid "optional"
-msgstr ""
+msgstr "opcional"
 
 #: src/sa_web/jstemplates/place-detail-promotion-bar.html:1
 msgid "Recommend on Facebook"
-msgstr ""
+msgstr "Recomendar en Facebook"
 
 #: src/sa_web/jstemplates/place-detail-promotion-bar.html:2
 msgid "Tweet This"
-msgstr ""
+msgstr "Twittea Esto"
 
 #: jstemplates/place-detail-survey.html:1
 msgid "<strong class=\"response-submitter\">\n"
@@ -56,27 +56,29 @@ msgstr ""
 
 #: src/sa_web/jstemplates/place-form.html:1
 msgid "Drag the map to your location."
-msgstr ""
+msgstr "Arrastra el mapa a tu ubicación."
 
 #: src/sa_web/jstemplates/place-form.html:2
 msgid "It looks like you didn't set your location yet. Please drag the map to your location."
-msgstr ""
+msgstr "Parece que todavía no has configurado tu ubicación. Por favor, arrastre el mapa a su ubicación."
 
 #: src/sa_web/jstemplates/place-list.html:1
 msgid "Most Recent"
-msgstr ""
+msgstr "Más reciente"
 
+#. This will show up like "Most supports"
 #: src/sa_web/jstemplates/place-list.html:2
 msgid "Most {{ support_label_plural }}"
 msgstr ""
 
+#. This will show up like "Most comments"
 #: src/sa_web/jstemplates/place-list.html:3
 msgid "Most {{ survey_label_plural }}"
 msgstr ""
 
 #: src/sa_web/jstemplates/place-survey-response.html:1
 msgid "Thanks for participating!"
-msgstr ""
+msgstr "¡Gracias por participar!"
 
 #: src/sa_web/jstemplates/unsupported-overlay.html:1
 msgid "Proceed Anyway"
@@ -108,19 +110,19 @@ msgstr ""
 
 #: src/sa_web/templates/base.html:124
 msgid "Close"
-msgstr ""
+msgstr "Cerrar"
 
 #: src/flavors/2019/_config.translations.py:1
 msgid "New York City Council's Participatory Budgeting"
-msgstr ""
+msgstr "Presupuesto Participativo del Concejo Municipal en la Cuidad de Nueva York"
 
 #: src/flavors/2019/_config.translations.py:2
 msgid "How would YOU spend $1 Million?"
-msgstr ""
+msgstr "¿Como utilizarías $1 millón?"
 
 #: src/flavors/2019/_config.translations.py:3
 msgid "Enter an address..."
-msgstr ""
+msgstr "Ingrese una dirección"
 
 #: src/flavors/2019/_config.translations.py:4
 #: src/flavors/2019/_config.translations.py:16
@@ -134,7 +136,7 @@ msgstr ""
 #: src/flavors/2019/_config.translations.py:42
 #: src/flavors/2019/_config.translations.py:81
 msgid "Schools & Education"
-msgstr ""
+msgstr "Escuelas y Educación"
 
 #: src/flavors/2019/_config.translations.py:6
 #: src/flavors/2019/_config.translations.py:18
@@ -143,7 +145,7 @@ msgstr ""
 #: src/flavors/2019/jstemplates/pages/guidelines.html:13
 #: src/pbnyc/templates/index.html:52
 msgid "Environment"
-msgstr ""
+msgstr "Medioambiente"
 
 #: src/flavors/2019/_config.translations.py:7
 #: src/flavors/2019/_config.translations.py:19
@@ -152,14 +154,14 @@ msgstr ""
 #: src/flavors/2019/jstemplates/pages/guidelines.html:24
 #: src/pbnyc/templates/index.html:53
 msgid "Housing"
-msgstr ""
+msgstr "Viviendas"
 
 #: src/flavors/2019/_config.translations.py:8
 #: src/flavors/2019/_config.translations.py:20
 #: src/flavors/2019/_config.translations.py:45
 #: src/flavors/2019/_config.translations.py:84
 msgid "Parks & Recreation"
-msgstr ""
+msgstr "Parques y Recreación"
 
 #: src/flavors/2019/_config.translations.py:9
 #: src/flavors/2019/_config.translations.py:21
@@ -168,7 +170,7 @@ msgstr ""
 #: src/flavors/2019/jstemplates/pages/guidelines.html:32
 #: src/pbnyc/templates/index.html:55
 msgid "Public Health"
-msgstr ""
+msgstr "Salud Pública"
 
 #: src/flavors/2019/_config.translations.py:10
 #: src/flavors/2019/_config.translations.py:22
@@ -177,7 +179,7 @@ msgstr ""
 #: src/flavors/2019/jstemplates/pages/guidelines.html:33
 #: src/pbnyc/templates/index.html:56
 msgid "Public Safety"
-msgstr ""
+msgstr "Seguridad Pública"
 
 #: src/flavors/2019/_config.translations.py:11
 #: src/flavors/2019/_config.translations.py:23
@@ -186,27 +188,27 @@ msgstr ""
 #: src/flavors/2019/jstemplates/pages/guidelines.html:42
 #: src/pbnyc/templates/index.html:58
 msgid "Seniors"
-msgstr ""
+msgstr "Personas Mayores"
 
 #: src/flavors/2019/_config.translations.py:12
 #: src/flavors/2019/_config.translations.py:24
 #: src/flavors/2019/_config.translations.py:49
 #: src/flavors/2019/_config.translations.py:89
 msgid "Streets & Sidewalks"
-msgstr ""
+msgstr "Calles y Aceras"
 
 #: src/flavors/2019/_config.translations.py:13
 #: src/flavors/2019/_config.translations.py:87
 #: src/pbnyc/templates/index.html:57
 msgid "Sanitation"
-msgstr ""
+msgstr "Sanitation"
 
 #: src/flavors/2019/_config.translations.py:14
 #: src/flavors/2019/_config.translations.py:25
 #: src/flavors/2019/_config.translations.py:50
 #: src/flavors/2019/_config.translations.py:90
 msgid "Transit & Transportation"
-msgstr ""
+msgstr "Tránsito y Transportación"
 
 #: src/flavors/2019/_config.translations.py:15
 #: src/flavors/2019/_config.translations.py:26
@@ -215,23 +217,23 @@ msgstr ""
 #: src/flavors/2019/jstemplates/pages/guidelines.html:51
 #: src/pbnyc/templates/index.html:61
 msgid "Youth"
-msgstr ""
+msgstr "Jóvenes"
 
 #: src/flavors/2019/_config.translations.py:27
 msgid "Submit an idea"
-msgstr ""
+msgstr "Somete una idea"
 
 #: src/flavors/2019/_config.translations.py:28
 msgid "Show as a list"
-msgstr ""
+msgstr "Mostrar como una lista"
 
 #: src/flavors/2019/_config.translations.py:29
 msgid "Show on a map"
-msgstr ""
+msgstr "Mostrar en una mapa"
 
 #: src/flavors/2019/_config.translations.py:30
 msgid "Describe your idea"
-msgstr ""
+msgstr "Describe tu idea"
 
 #: src/flavors/2019/_config.translations.py:31
 msgid "suggested"
@@ -245,56 +247,56 @@ msgstr ""
 #: src/flavors/2019/_config.translations.py:63
 #: src/flavors/2019/_config.translations.py:74
 msgid "Someone"
-msgstr ""
+msgstr "Alguien"
 
 #: src/flavors/2019/_config.translations.py:34
 msgid "Share my idea"
-msgstr ""
+msgstr "Comparte mi idea"
 
 #: src/flavors/2019/_config.translations.py:35
 msgid "My project idea is..."
-msgstr ""
+msgstr "La idea de mi proyecto es ..."
 
 #: src/flavors/2019/_config.translations.py:36
 #: src/flavors/2019/_config.translations.py:38
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: src/flavors/2019/_config.translations.py:37
 msgid "So that people could..."
-msgstr ""
+msgstr "Para que la gente pueda ..."
 
 #: src/flavors/2019/_config.translations.py:39
 msgid "Pick a category for your idea"
-msgstr ""
+msgstr "Elige una categoría para tu idea"
 
 #: src/flavors/2019/_config.translations.py:40
 msgid "Please choose..."
-msgstr ""
+msgstr "Por favor elige ..."
 
 #: src/flavors/2019/_config.translations.py:52
 msgid "Your name (required and will be shown on map)"
-msgstr ""
+msgstr "Su nombre (requerido y se mostrará en el mapa)"
 
 #: src/flavors/2019/_config.translations.py:53
 msgid "Your email (required and will NOT be shown on the map)"
-msgstr ""
+msgstr "Su correo electrónico (requerido y NO se mostrará en el mapa)"
 
 #: src/flavors/2019/_config.translations.py:54
 msgid "Your phone number (optional and will NOT be shown on the map)"
-msgstr ""
+msgstr "Su número de teléfono (opcional y NO se mostrará en el mapa)"
 
 #: src/flavors/2019/_config.translations.py:55
 msgid "Your zip code (optional and will NOT be shown on the map)"
-msgstr ""
+msgstr "Su código postal (opcional y NO se mostrará en el mapa)"
 
 #: src/flavors/2019/_config.translations.py:56
 msgid "Your age (optional and will NOT be shown on the map)"
-msgstr ""
+msgstr "Su edad (opcional y NO se mostrará en el mapa)"
 
 #: src/flavors/2019/_config.translations.py:57
 msgid "Your gender (optional and will NOT be shown on the map)"
-msgstr ""
+msgstr "Su género (opcional y NO se mostrará en el mapa)"
 
 #: src/flavors/2019/_config.translations.py:58
 msgid "I'd like to volunteer"
@@ -319,7 +321,7 @@ msgstr ""
 #: src/flavors/2019/_config.translations.py:64
 #: src/flavors/2019/_config.translations.py:65
 msgid "Leave a Comment"
-msgstr ""
+msgstr "Deja un Comentario"
 
 #: src/flavors/2019/_config.translations.py:66
 #: src/flavors/2019/_config.translations.py:67
@@ -329,7 +331,7 @@ msgstr ""
 
 #: src/flavors/2019/_config.translations.py:69
 msgid "Your Name"
-msgstr ""
+msgstr "Su Nombre"
 
 #: src/flavors/2019/_config.translations.py:70
 msgid "Support This!"
@@ -358,11 +360,11 @@ msgstr ""
 
 #: src/flavors/2019/_config.translations.py:77
 msgid "Districts"
-msgstr ""
+msgstr "Distritos"
 
 #: src/flavors/2019/_config.translations.py:78
 msgid "Categories"
-msgstr ""
+msgstr "Categorias"
 
 #: src/flavors/2019/_config.translations.py:79
 msgid "Show All"
@@ -386,15 +388,15 @@ msgstr ""
 
 #: src/flavors/2019/jstemplates/pages/about.html:5
 msgid "Real Money."
-msgstr ""
+msgstr "Dinero Real."
 
 #: src/flavors/2019/jstemplates/pages/about.html:6
 msgid "Real People."
-msgstr ""
+msgstr "Gente Real."
 
 #: src/flavors/2019/jstemplates/pages/about.html:7
 msgid "Real Projects."
-msgstr ""
+msgstr "Proyectos Reales"
 
 #: src/flavors/2019/jstemplates/pages/about.html:8
 msgid "Share your ideas on the map for how things could be better in your community. <a href=\"/page/guidelines\" title=\"Participatory Budgeting in New York City | REAL MONEY. REAL PROJECTS. REAL POWER.\">Check out the guidelines</a> to see what ideas can be funded."
@@ -402,44 +404,44 @@ msgstr ""
 
 #: src/flavors/2019/jstemplates/pages/about.html:8
 msgid "Through Participatory Budgeting, community members - like you - directly decide how to spend at least $1,000,000 of the public budget in participating Council Districts."
-msgstr ""
+msgstr "A través de Presupuesto Participativo, miembros de la comunidad - como usted - deciden directamente cómo utilizar al menos $1,000,000 del presupuesto público en distritos participantes."
 
 #: src/flavors/2019/jstemplates/pages/district.html:1
 msgid "Bronx"
-msgstr ""
+msgstr "El Bronx"
 
 #: src/flavors/2019/jstemplates/pages/district.html:2
 msgid "Brooklyn"
-msgstr ""
+msgstr "Brooklyn"
 
 #: src/flavors/2019/jstemplates/pages/district.html:3
 msgid "Choose Your Council District"
-msgstr ""
+msgstr "Elija su distrito del consejo"
 
 #: src/flavors/2019/jstemplates/pages/district.html:4
 #: src/pbnyc/templates/index.html:176
 msgid "District"
-msgstr ""
+msgstr "Distrito"
 
 #: src/flavors/2019/jstemplates/pages/district.html:5
 msgid "Manhattan"
-msgstr ""
+msgstr "Manhattan"
 
 #: src/flavors/2019/jstemplates/pages/district.html:6
 msgid "Queens"
-msgstr ""
+msgstr "Queens"
 
 #: src/flavors/2019/jstemplates/pages/district.html:7
 msgid "Staten Island"
-msgstr ""
+msgstr "Staten Island"
 
 #: src/flavors/2019/jstemplates/pages/guidelines.html:1
 msgid "(Expenses)"
-msgstr ""
+msgstr "(Gastos)"
 
 #: src/flavors/2019/jstemplates/pages/guidelines.html:2
 msgid "After school programs"
-msgstr ""
+msgstr "Programas escolares extracurriculares"
 
 #: src/flavors/2019/jstemplates/pages/guidelines.html:3
 msgid "All ideas must be submitted by <strong>October 5, 2018</strong>. Ideas submitted after October 5 will not be considered for the Cycle 8 ballot."
@@ -476,11 +478,11 @@ msgstr ""
 
 #: src/flavors/2019/jstemplates/pages/guidelines.html:11
 msgid "Eligible"
-msgstr ""
+msgstr "Elegible"
 
 #: src/flavors/2019/jstemplates/pages/guidelines.html:12
 msgid "Eligible:"
-msgstr ""
+msgstr "Elegible:"
 
 #: src/flavors/2019/jstemplates/pages/guidelines.html:14
 msgid "Examples of Eligible Capital Ideas"
@@ -578,24 +580,24 @@ msgstr ""
 
 #: src/flavors/2019/jstemplates/pages/guidelines.html:41
 msgid "Security cameras around schools and public housing"
-msgstr ""
+msgstr "Cámaras de seguridad alrededor de escuelas y viviendas públicas"
 
 #: src/flavors/2019/jstemplates/pages/guidelines.html:43
 #: src/pbnyc/templates/index.html:59
 msgid "Streets and Sidewalks"
-msgstr ""
+msgstr "Calles y Aceras"
 
 #: src/flavors/2019/jstemplates/pages/guidelines.html:44
 msgid "Subway station improvements such as installation of help points"
-msgstr ""
+msgstr "Mejoramiento de las estaciones del tren subterráneo como la instalación de puntos de ayuda."
 
 #: src/flavors/2019/jstemplates/pages/guidelines.html:45
 msgid "Tech for public school"
-msgstr ""
+msgstr "Tecnología para escuelas públicas"
 
 #: src/flavors/2019/jstemplates/pages/guidelines.html:46
 msgid "Technology centers"
-msgstr ""
+msgstr "Centros de tecnológia"
 
 #: src/flavors/2019/jstemplates/pages/guidelines.html:47
 msgid "To add a spot, drag the map until the crosshairs are over the desired location. Ideas will be considered by the Council District within which they are located."
@@ -603,7 +605,7 @@ msgstr ""
 
 #: src/flavors/2019/jstemplates/pages/guidelines.html:48
 msgid "Transit"
-msgstr ""
+msgstr "Tránsito"
 
 #: src/flavors/2019/jstemplates/pages/guidelines.html:49
 msgid "Upgrade public plazas"
@@ -670,19 +672,19 @@ msgstr ""
 
 #: src/pbnyc/jstemplates/place-detail.html:1
 msgid "Agency"
-msgstr ""
+msgstr "Agencia"
 
 #: src/pbnyc/jstemplates/place-detail.html:2
 msgid "Cost"
-msgstr ""
+msgstr "Costo "
 
 #: src/pbnyc/jstemplates/place-detail.html:3
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: src/pbnyc/jstemplates/place-detail.html:4
 msgid "District {{ CounDist }}"
-msgstr ""
+msgstr "Distrito {{ CounDist }}"
 
 #: src/pbnyc/jstemplates/place-detail.html:5
 msgid "Find out how and where in District {{ CounDist }}"
@@ -694,7 +696,7 @@ msgstr ""
 
 #: src/pbnyc/jstemplates/place-detail.html:7
 msgid "Location"
-msgstr ""
+msgstr "Ubicación"
 
 #: src/pbnyc/jstemplates/place-detail.html:8
 msgid "My project idea is"
@@ -710,7 +712,7 @@ msgstr ""
 
 #: src/pbnyc/jstemplates/place-detail.html:11
 msgid "Status"
-msgstr ""
+msgstr "Estado"
 
 #: src/pbnyc/jstemplates/place-detail.html:12
 msgid "View On Map"
@@ -730,7 +732,7 @@ msgstr ""
 
 #: src/pbnyc/templates/index.html:60
 msgid "Transit and Transportation"
-msgstr ""
+msgstr "Tránsito y Transportación"
 
 #: src/pbnyc/templates/index.html:62
 msgid "Previously funded"
@@ -738,11 +740,11 @@ msgstr ""
 
 #: src/pbnyc/templates/index.html:162
 msgid "Approximate location:"
-msgstr ""
+msgstr "Ubicación aproximada:"
 
 #: src/pbnyc/templates/index.html:176
 msgid "Speaker"
-msgstr ""
+msgstr "Portavoz"
 
 #: src/pbnyc/templates/index.html:176
 msgid "Council Member"
@@ -758,7 +760,7 @@ msgstr ""
 
 #: src/pbnyc/templates/new_place_email_body.txt:3
 msgid "Here's what you suggested:"
-msgstr ""
+msgstr "Esto es lo que sugirió:"
 
 #: src/pbnyc/templates/new_place_email_body.txt:5
 msgid "You can see people's comments on your idea at https://%(request.get_host)s/place/%(place.id)s."
@@ -770,9 +772,9 @@ msgstr ""
 
 #: src/pbnyc/templates/new_place_email_subject.txt:1
 msgid "Thanks for submitting a new %(place.properties.location_type)s idea!"
-msgstr ""
+msgstr "¡Gracias por enviar una nueva %(place.properties.location_type) idea!"
 
 #: src/flavors/2019/jstemplates/pages/guidelines.html:3
 msgid "All ideas must be submitted by <strong>October 11, 2019</strong>. Ideas submitted after October 11 will not be considered for the Cycle 9 ballot."
-msgstr ""
+msgstr "Todas las ideas deben ser enviadas antes del <strong>October 11, 2019</strong>. Ideas enviadas después del 11 de octubre no serán consideradas para la votación del Ciclo 9."
 
