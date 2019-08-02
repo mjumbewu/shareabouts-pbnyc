@@ -1,7 +1,10 @@
 To generate translation strings, you'll want to set the appropriate flavor in a `.env` file and run something like the following:
 
 ```bash
-foreman run -e .env src/manage.py makemessages --locale en --locale es \
+foreman run -e .env src/manage.py makemessages \
+  --locale en \
+  --locale es \
+  --locale zh \
   --ignore 'env/*' \
   --ignore '2016/*' \
   --ignore '2017/*' \
@@ -10,7 +13,10 @@ foreman run -e .env src/manage.py makemessages --locale en --locale es \
   --ignore 'src/sa_web/jstemplates/activity-list-item.html' \
   --ignore 'src/sa_web/jstemplates/location-string.html'
 
-foreman run -e .env src/manage.py flavormessages --locale en --locale es \
+foreman run -e .env src/manage.py flavormessages \
+  --locale en \
+  --locale es \
+  --locale zh \
   --ignore 'env/*' \
   --ignore '2016/*' \
   --ignore '2017/*' \
