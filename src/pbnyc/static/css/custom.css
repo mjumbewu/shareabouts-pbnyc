@@ -105,7 +105,7 @@ a.add-place:hover {
 /* =The New Point Form
 -------------------------------------------------------------- */
 
-.address-label {
+.location-field-label {
   display: block;
   font-weight: normal;
   font-size: 0.75em;
@@ -118,19 +118,24 @@ a.add-place:hover {
   font-weight: bold;
 }
 
-.address-display {
+.location-display {
+  text-align: center;
+}
+
+.location-receiver {
+  display: inline;
+  font-weight: normal;
+}
+
+.district-receiver {
   display: inline;
 }
 
-.district-display {
-  display: inline;
-}
-
-.district-display::after {
+.district-receiver::after {
   content: ': ';
 }
 
-.district-display:empty::after {
+.district-receiver:empty::after {
   content: '';
 }
 

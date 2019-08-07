@@ -975,6 +975,10 @@ place:
           value: 30
         - key: maxlength
           value: 100
+    - prompt: _(Approximate location)
+      type: location
+      name: address
+      placeholder: _(Drag the map to your location.)
     - prompt: _(So that people could...)
       type: textarea
       name: description
