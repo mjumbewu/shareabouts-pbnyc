@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-26 14:30-0500\n"
+"POT-Creation-Date: 2019-08-10 14:21-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,22 +31,22 @@ msgstr ""
 
 #: src/flavors/2019/_config.translations.py:4
 #: src/flavors/2019/_config.translations.py:16
-#: src/flavors/2019/_config.translations.py:41
-#: src/flavors/2019/_config.translations.py:80
+#: src/flavors/2019/_config.translations.py:43
+#: src/flavors/2019/_config.translations.py:82
 msgid "Culture & Community Facilities"
 msgstr ""
 
 #: src/flavors/2019/_config.translations.py:5
 #: src/flavors/2019/_config.translations.py:17
-#: src/flavors/2019/_config.translations.py:42
-#: src/flavors/2019/_config.translations.py:81
+#: src/flavors/2019/_config.translations.py:44
+#: src/flavors/2019/_config.translations.py:83
 msgid "Schools & Education"
 msgstr ""
 
 #: src/flavors/2019/_config.translations.py:6
 #: src/flavors/2019/_config.translations.py:18
-#: src/flavors/2019/_config.translations.py:43
-#: src/flavors/2019/_config.translations.py:82
+#: src/flavors/2019/_config.translations.py:45
+#: src/flavors/2019/_config.translations.py:84
 #: src/flavors/2019/jstemplates/pages/guidelines.html:13
 #: src/pbnyc/templates/index.html:52
 msgid "Environment"
@@ -54,8 +54,8 @@ msgstr ""
 
 #: src/flavors/2019/_config.translations.py:7
 #: src/flavors/2019/_config.translations.py:19
-#: src/flavors/2019/_config.translations.py:44
-#: src/flavors/2019/_config.translations.py:83
+#: src/flavors/2019/_config.translations.py:46
+#: src/flavors/2019/_config.translations.py:85
 #: src/flavors/2019/jstemplates/pages/guidelines.html:24
 #: src/pbnyc/templates/index.html:53
 msgid "Housing"
@@ -63,15 +63,15 @@ msgstr ""
 
 #: src/flavors/2019/_config.translations.py:8
 #: src/flavors/2019/_config.translations.py:20
-#: src/flavors/2019/_config.translations.py:45
-#: src/flavors/2019/_config.translations.py:84
+#: src/flavors/2019/_config.translations.py:47
+#: src/flavors/2019/_config.translations.py:86
 msgid "Parks & Recreation"
 msgstr ""
 
 #: src/flavors/2019/_config.translations.py:9
 #: src/flavors/2019/_config.translations.py:21
-#: src/flavors/2019/_config.translations.py:46
-#: src/flavors/2019/_config.translations.py:85
+#: src/flavors/2019/_config.translations.py:48
+#: src/flavors/2019/_config.translations.py:87
 #: src/flavors/2019/jstemplates/pages/guidelines.html:32
 #: src/pbnyc/templates/index.html:55
 msgid "Public Health"
@@ -79,8 +79,8 @@ msgstr ""
 
 #: src/flavors/2019/_config.translations.py:10
 #: src/flavors/2019/_config.translations.py:22
-#: src/flavors/2019/_config.translations.py:47
-#: src/flavors/2019/_config.translations.py:86
+#: src/flavors/2019/_config.translations.py:49
+#: src/flavors/2019/_config.translations.py:88
 #: src/flavors/2019/jstemplates/pages/guidelines.html:33
 #: src/pbnyc/templates/index.html:56
 msgid "Public Safety"
@@ -88,8 +88,8 @@ msgstr ""
 
 #: src/flavors/2019/_config.translations.py:11
 #: src/flavors/2019/_config.translations.py:23
-#: src/flavors/2019/_config.translations.py:48
-#: src/flavors/2019/_config.translations.py:88
+#: src/flavors/2019/_config.translations.py:50
+#: src/flavors/2019/_config.translations.py:90
 #: src/flavors/2019/jstemplates/pages/guidelines.html:42
 #: src/pbnyc/templates/index.html:58
 msgid "Seniors"
@@ -97,28 +97,28 @@ msgstr ""
 
 #: src/flavors/2019/_config.translations.py:12
 #: src/flavors/2019/_config.translations.py:24
-#: src/flavors/2019/_config.translations.py:49
-#: src/flavors/2019/_config.translations.py:89
+#: src/flavors/2019/_config.translations.py:51
+#: src/flavors/2019/_config.translations.py:91
 msgid "Streets & Sidewalks"
 msgstr ""
 
 #: src/flavors/2019/_config.translations.py:13
-#: src/flavors/2019/_config.translations.py:87
+#: src/flavors/2019/_config.translations.py:89
 #: src/pbnyc/templates/index.html:57
 msgid "Sanitation"
 msgstr ""
 
 #: src/flavors/2019/_config.translations.py:14
 #: src/flavors/2019/_config.translations.py:25
-#: src/flavors/2019/_config.translations.py:50
-#: src/flavors/2019/_config.translations.py:90
+#: src/flavors/2019/_config.translations.py:52
+#: src/flavors/2019/_config.translations.py:92
 msgid "Transit & Transportation"
 msgstr ""
 
 #: src/flavors/2019/_config.translations.py:15
 #: src/flavors/2019/_config.translations.py:26
-#: src/flavors/2019/_config.translations.py:51
-#: src/flavors/2019/_config.translations.py:91
+#: src/flavors/2019/_config.translations.py:53
+#: src/flavors/2019/_config.translations.py:93
 #: src/flavors/2019/jstemplates/pages/guidelines.html:51
 #: src/pbnyc/templates/index.html:61
 msgid "Youth"
@@ -152,8 +152,8 @@ msgid ""
 msgstr ""
 
 #: src/flavors/2019/_config.translations.py:33
-#: src/flavors/2019/_config.translations.py:63
-#: src/flavors/2019/_config.translations.py:74
+#: src/flavors/2019/_config.translations.py:65
+#: src/flavors/2019/_config.translations.py:76
 msgid "Someone"
 msgstr ""
 
@@ -166,115 +166,124 @@ msgid "My project idea is..."
 msgstr ""
 
 #: src/flavors/2019/_config.translations.py:36
-#: src/flavors/2019/_config.translations.py:38
+#: src/flavors/2019/_config.translations.py:40
 msgid "..."
 msgstr ""
 
 #: src/flavors/2019/_config.translations.py:37
-msgid "So that people could..."
+msgid "Approximate location"
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:38
+#: src/sa_web/jstemplates/place-form.html:1
+msgid "Drag the map to your location."
 msgstr ""
 
 #: src/flavors/2019/_config.translations.py:39
+msgid "So that people could..."
+msgstr ""
+
+#: src/flavors/2019/_config.translations.py:41
 msgid "Pick a category for your idea"
 msgstr ""
 
-#: src/flavors/2019/_config.translations.py:40
+#: src/flavors/2019/_config.translations.py:42
 msgid "Please choose..."
 msgstr ""
 
-#: src/flavors/2019/_config.translations.py:52
+#: src/flavors/2019/_config.translations.py:54
 msgid "Your name (required and will be shown on map)"
 msgstr ""
 
-#: src/flavors/2019/_config.translations.py:53
+#: src/flavors/2019/_config.translations.py:55
 msgid "Your email (required and will NOT be shown on the map)"
 msgstr ""
 
-#: src/flavors/2019/_config.translations.py:54
+#: src/flavors/2019/_config.translations.py:56
 msgid "Your phone number (optional and will NOT be shown on the map)"
 msgstr ""
 
-#: src/flavors/2019/_config.translations.py:55
+#: src/flavors/2019/_config.translations.py:57
 msgid "Your zip code (optional and will NOT be shown on the map)"
 msgstr ""
 
-#: src/flavors/2019/_config.translations.py:56
+#: src/flavors/2019/_config.translations.py:58
 msgid "Your age (optional and will NOT be shown on the map)"
 msgstr ""
 
-#: src/flavors/2019/_config.translations.py:57
+#: src/flavors/2019/_config.translations.py:59
 msgid "Your gender (optional and will NOT be shown on the map)"
 msgstr ""
 
-#: src/flavors/2019/_config.translations.py:58
+#: src/flavors/2019/_config.translations.py:60
 msgid "I'd like to volunteer"
 msgstr ""
 
-#: src/flavors/2019/_config.translations.py:59
+#: src/flavors/2019/_config.translations.py:61
 msgid "Volunteer"
 msgstr ""
 
-#: src/flavors/2019/_config.translations.py:60
+#: src/flavors/2019/_config.translations.py:62
 msgid "comment"
 msgstr ""
 
-#: src/flavors/2019/_config.translations.py:61
+#: src/flavors/2019/_config.translations.py:63
 msgid "comments"
 msgstr ""
 
-#: src/flavors/2019/_config.translations.py:62
-msgid "commented on"
-msgstr ""
-
 #: src/flavors/2019/_config.translations.py:64
-#: src/flavors/2019/_config.translations.py:65
-msgid "Leave a Comment"
+msgid "commented on"
 msgstr ""
 
 #: src/flavors/2019/_config.translations.py:66
 #: src/flavors/2019/_config.translations.py:67
+msgid "Leave a Comment"
+msgstr ""
+
 #: src/flavors/2019/_config.translations.py:68
+#: src/flavors/2019/_config.translations.py:69
+#: src/flavors/2019/_config.translations.py:70
 msgid "Comment"
 msgstr ""
 
-#: src/flavors/2019/_config.translations.py:69
+#: src/flavors/2019/_config.translations.py:71
 msgid "Your Name"
 msgstr ""
 
-#: src/flavors/2019/_config.translations.py:70
+#: src/flavors/2019/_config.translations.py:72
 msgid "Support This!"
 msgstr ""
 
-#: src/flavors/2019/_config.translations.py:71
+#: src/flavors/2019/_config.translations.py:73
 msgid "support"
 msgstr ""
 
-#: src/flavors/2019/_config.translations.py:72
+#: src/flavors/2019/_config.translations.py:74
 msgid "supports"
 msgstr ""
 
-#: src/flavors/2019/_config.translations.py:73
+#: src/flavors/2019/_config.translations.py:75
 msgid "supported"
 msgstr ""
 
-#: src/flavors/2019/_config.translations.py:75
+#: src/flavors/2019/_config.translations.py:77
 msgid "About"
 msgstr ""
 
-#: src/flavors/2019/_config.translations.py:76
+#: src/flavors/2019/_config.translations.py:78
 #: src/flavors/2019/jstemplates/pages/guidelines.html:19
 msgid "Guidelines"
 msgstr ""
 
-#: src/flavors/2019/_config.translations.py:77
+#: src/flavors/2019/_config.translations.py:79
 msgid "Districts"
 msgstr ""
 
-#: src/flavors/2019/_config.translations.py:78
+#: src/flavors/2019/_config.translations.py:80
 msgid "Categories"
 msgstr ""
 
-#: src/flavors/2019/_config.translations.py:79
+#: src/flavors/2019/_config.translations.py:81
 msgid "Show All"
 msgstr ""
 
@@ -336,7 +345,7 @@ msgid "Choose Your Council District"
 msgstr ""
 
 #: src/flavors/2019/jstemplates/pages/district.html:4
-#: src/pbnyc/templates/index.html:176
+#: src/pbnyc/templates/index.html:118
 msgid "District"
 msgstr ""
 
@@ -597,9 +606,8 @@ msgstr ""
 
 #: src/pbnyc/jstemplates/idea-type.html:1
 msgid ""
-"\n"
-"  {{!Shows the type of idea, e.g. \"Housing idea\"}}\n"
-"  {{ place_type_label }} idea\n"
+"{{!Shows the type of idea, e.g. \"Housing idea\"}}\n"
+"  {{ place_type_label }} idea"
 msgstr ""
 
 #: src/pbnyc/jstemplates/place-detail.html:1
@@ -670,19 +678,15 @@ msgstr ""
 msgid "Previously funded"
 msgstr ""
 
-#: src/pbnyc/templates/index.html:162
-msgid "Approximate location:"
-msgstr ""
-
-#: src/pbnyc/templates/index.html:176
+#: src/pbnyc/templates/index.html:118
 msgid "Speaker"
 msgstr ""
 
-#: src/pbnyc/templates/index.html:176
+#: src/pbnyc/templates/index.html:118
 msgid "Council Member"
 msgstr ""
 
-#: src/pbnyc/templates/index.html:191
+#: src/pbnyc/templates/index.html:133
 msgid "(Outside of the PB districts)"
 msgstr ""
 
@@ -751,10 +755,6 @@ msgstr ""
 msgid "Tweet This"
 msgstr ""
 
-#: src/sa_web/jstemplates/place-form.html:1
-msgid "Drag the map to your location."
-msgstr ""
-
 #: src/sa_web/jstemplates/place-form.html:2
 msgid ""
 "It looks like you didn't set your location yet. Please drag the map to your "
@@ -790,30 +790,25 @@ msgstr ""
 
 #: src/sa_web/templates/base.html:99
 #, python-format
-msgid ""
-"\n"
-"        Oops, %(config.app.name)s needs JavaScript to work properly.\n"
-"        "
+msgid "Oops, %(config.app.name)s needs JavaScript to work properly."
 msgstr ""
 
-#: src/sa_web/templates/base.html:104
+#: src/sa_web/templates/base.html:102
 #, python-format
 msgid ""
-"\n"
-"        %(config.app.name)s is great but it needs something called "
-"JavaScript to work\n"
+"%(config.app.name)s is great but it needs something called JavaScript to "
+"work\n"
 "        properly. But fear not, it's really easy to turn on. Click\n"
 "        <a href=\"http://enable-javascript.com/\" target=\"_blank\">here</a> "
-"for simple instructions!\n"
-"        "
+"for simple instructions!"
 msgstr ""
 
-#: src/sa_web/templates/base.html:118
+#: src/sa_web/templates/base.html:114
 msgid ""
 "We can't connect to the server at the moment. Hang tight while we re-"
 "establish communication."
 msgstr ""
 
-#: src/sa_web/templates/base.html:124
+#: src/sa_web/templates/base.html:120
 msgid "Close"
 msgstr ""
