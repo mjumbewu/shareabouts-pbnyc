@@ -120,6 +120,8 @@ a.add-place:hover {
 
 .location-display {
   text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .location-receiver {
@@ -128,15 +130,7 @@ a.add-place:hover {
 }
 
 .district-receiver {
-  display: inline;
-}
-
-.district-receiver::after {
-  content: ': ';
-}
-
-.district-receiver:empty::after {
-  content: '';
+  font-weight: bold;
 }
 
 .district-item {
