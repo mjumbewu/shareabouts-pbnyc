@@ -167,8 +167,6 @@ msgid "..."
 msgstr "..."
 
 #: src/flavors/2019/_config.translations.py:37
-#, fuzzy
-#| msgid "Approximate location:"
 msgid "Approximate location"
 msgstr "Ubicación aproximada:"
 
@@ -729,10 +727,6 @@ msgid "(Outside of the PB districts)"
 msgstr "(Fuera de los distritos de PB)"
 
 #: src/pbnyc/templates/new_place_email_body.txt:1
-#, fuzzy, python-format
-#| msgid ""
-#| "Thanks for submitting a new %(place.properties.location_type)s idea to "
-#| "improve your community!"
 msgid ""
 "Thanks for submitting a new %(place.properties.location_type)s idea to "
 "improve your community!"
@@ -762,8 +756,6 @@ msgstr ""
 "visita"
 
 #: src/pbnyc/templates/new_place_email_subject.txt:1
-#, fuzzy, python-format
-#| msgid "Thanks for submitting a new %(place.properties.location_type)s idea!"
 msgid "Thanks for submitting a new %(place.properties.location_type)s idea!"
 msgstr "¡Gracias por enviar una nueva %(place.properties.location_type) idea!"
 

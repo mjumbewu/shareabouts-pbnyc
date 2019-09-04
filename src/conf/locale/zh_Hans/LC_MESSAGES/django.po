@@ -166,10 +166,8 @@ msgid "..."
 msgstr "......"
 
 #: src/flavors/2019/_config.translations.py:37
-#, fuzzy
-#| msgid "Approximate location:"
 msgid "Approximate location"
-msgstr "大概位置:"
+msgstr "大概位置"
 
 #: src/flavors/2019/_config.translations.py:38
 #: src/sa_web/jstemplates/place-form.html:1
@@ -564,17 +562,10 @@ msgid "Weatherization of public housing"
 msgstr "公共房屋防寒保暖"
 
 #: src/flavors/2019/templates/_closed_district_message.html:1
-#, fuzzy
-#| msgid ""
-#| "Please note that the input period for this district is over for 2017."
 msgid "Please note that the input period for this district is over for 2019."
 msgstr "請注意，這個地區的2017年意見收集期已結束"
 
 #: src/flavors/2019/templates/_unopened_district_message.html:1
-#, fuzzy
-#| msgid ""
-#| "Please note that the input period for this district has not yet begun for "
-#| "2017."
 msgid ""
 "Please note that the input period for this district has not yet begun for "
 "2019."
@@ -684,8 +675,6 @@ msgid "View On Map"
 msgstr "在地圖上查看"
 
 #: src/pbnyc/jstemplates/place-detail.html:13
-#, fuzzy
-#| msgid "Vote for this project between March 25th and April 2nd."
 msgid "Vote for this project between March 28th and April 5th."
 msgstr "在3月25日至4月2日期間投票支持此計劃"
 
