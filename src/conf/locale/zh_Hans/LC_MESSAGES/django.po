@@ -1,114 +1,13 @@
 msgid ""
 msgstr ""
+"Project-Id-Version: Shareabouts PB NYC 2019-20\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-03 23:24-0500\n"
+"Language: zh-CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: POEditor.com\n"
-"Project-Id-Version: Shareabouts PB NYC 2019-20\n"
-"Language: zh-CN\n"
-
-#: src/sa_web/jstemplates/auth-nav.html:1
-msgid "Log Out"
-msgstr "登出"
-
-#: src/sa_web/jstemplates/auth-nav.html:2
-msgid "Sign In"
-msgstr "登入"
-
-#: src/sa_web/jstemplates/auth-nav.html:3
-msgid "Signed in as</span> <span class=\"current-user\">{{ current_user \"name\" }}"
-msgstr "以</span> <span class=\"current-user\">{{ current_user \"name\" }}登入"
-
-#: src/sa_web/jstemplates/form-field-file.html:1
-msgid "Sorry, your browser doesn't support file uploads."
-msgstr "抱歉，您的瀏覽器不支持文件上傳"
-
-#: src/sa_web/jstemplates/form-field-input.html:1
-msgid "Or sign in with <a class=\"auth-inline twitter-btn\" href=\"/users/login/twitter/\">Twitter</a> <a class=\"auth-inline facebook-btn\" href=\"/users/login/facebook/\">Facebook</a>"
-msgstr "或透過<a class=\"auth-inline twitter-btn\" href=\"/users/login/twitter/\">推特(Twitter)、</a> <a class=\"auth-inline facebook-btn\" href=\"/users/login/facebook/\">臉書(Facebook)</a>登入"
-
-#: src/sa_web/jstemplates/form-field-set.html:1
-msgid "optional"
-msgstr "選填"
-
-#: src/sa_web/jstemplates/place-detail-promotion-bar.html:1
-msgid "Recommend on Facebook"
-msgstr "在臉書上推薦"
-
-#: src/sa_web/jstemplates/place-detail-promotion-bar.html:2
-msgid "Tweet This"
-msgstr "於推特發帖"
-
-#: jstemplates/place-detail-survey.html:1
-msgid "<strong class=\"response-submitter\">\n"
-"                    {{#if submitter}}\n"
-"                      <img src=\"{{ submitter.avatar_url }}\" class=\"avatar\" /> {{ submitter.name }}\n"
-"                    {{^}}\n"
-"                      <!-- TODO: FIXME: don't hardcode image URL -->\n"
-"                      <img src=\"{{ STATIC_URL }}css/images/user-50.png\" class=\"avatar\" /> {{ submitter_name }}\n"
-"                    {{/if}}\n"
-"                  </strong>\n"
-"                  <span class=\"response-date\">\n"
-"                    around {{ pretty_created_datetime }}\n"
-"                  </span>\n"
-"                  "
-msgstr ""
-
-#: src/sa_web/jstemplates/place-form.html:1
-msgid "Drag the map to your location."
-msgstr "把地圖拖動到您的所在位置 "
-
-#: src/sa_web/jstemplates/place-form.html:2
-msgid "It looks like you didn't set your location yet. Please drag the map to your location."
-msgstr "看來您還未設定您的所在位置。請把地圖拖動到您的所在地。"
-
-#: src/sa_web/jstemplates/place-list.html:1
-msgid "Most Recent"
-msgstr "最近"
-
-#: src/sa_web/jstemplates/place-list.html:2
-msgid "Most {{ support_label_plural }}"
-msgstr "最{{ support_label_plural }}"
-
-#: src/sa_web/jstemplates/place-list.html:3
-msgid "Most {{ survey_label_plural }}"
-msgstr "最{{ survey_label_plural }}"
-
-#: src/sa_web/jstemplates/place-survey-response.html:1
-msgid "Thanks for participating!"
-msgstr "謝謝您的參與!"
-
-#: src/sa_web/jstemplates/unsupported-overlay.html:1
-msgid "Proceed Anyway"
-msgstr "繼續"
-
-#: src/sa_web/jstemplates/unsupported-overlay.html:2
-msgid "You are using an unsupported browser. Please\n"
-"    <a href=\"http://browsehappy.com/\">upgrade your browser</a> to improve\n"
-"    your experience."
-msgstr "目前網站建置並不支援您所使用的瀏覽器，請  <a href=\"http://browsehappy.com/\">為瀏覽器</a>進行升級以改善瀏覽效果。"
-
-#: src/sa_web/templates/base.html:99
-msgid "\n"
-"        Oops, %(config.app.name)s needs JavaScript to work properly.\n"
-"        "
-msgstr "哎呀, %(config.app.name)s 需要JavaScript以正常運作。"
-
-#: src/sa_web/templates/base.html:104
-msgid "\n"
-"        %(config.app.name)s is great but it needs something called JavaScript to work\n"
-"        properly. But fear not, it's really easy to turn on. Click\n"
-"        <a href=\"http://enable-javascript.com/\" target=\"_blank\">here</a> for simple instructions!\n"
-"        "
-msgstr "  %(config.app.name)s 很好，但它需要名為JavaScript的系統以正常運作。但請不要擔心，它很容易啟動。請按 <a href=\"http://enable-javascript.com/\" target=\"_blank\">此</a> 查看簡單的操作指示!"
-
-#: src/sa_web/templates/base.html:118
-msgid "We can't connect to the server at the moment. Hang tight while we re-establish communication."
-msgstr "我們目前不能與伺服器連結，請稍候，我們將重新聯接。"
-
-#: src/sa_web/templates/base.html:124
-msgid "Close"
-msgstr "關閉"
 
 #: src/flavors/2019/_config.translations.py:1
 msgid "New York City Council's Participatory Budgeting"
@@ -124,22 +23,22 @@ msgstr "輸入地址"
 
 #: src/flavors/2019/_config.translations.py:4
 #: src/flavors/2019/_config.translations.py:16
-#: src/flavors/2019/_config.translations.py:41
-#: src/flavors/2019/_config.translations.py:80
+#: src/flavors/2019/_config.translations.py:43
+#: src/flavors/2019/_config.translations.py:82
 msgid "Culture & Community Facilities"
 msgstr "文化及社區設施"
 
 #: src/flavors/2019/_config.translations.py:5
 #: src/flavors/2019/_config.translations.py:17
-#: src/flavors/2019/_config.translations.py:42
-#: src/flavors/2019/_config.translations.py:81
+#: src/flavors/2019/_config.translations.py:44
+#: src/flavors/2019/_config.translations.py:83
 msgid "Schools & Education"
 msgstr "學校及教育"
 
 #: src/flavors/2019/_config.translations.py:6
 #: src/flavors/2019/_config.translations.py:18
-#: src/flavors/2019/_config.translations.py:43
-#: src/flavors/2019/_config.translations.py:82
+#: src/flavors/2019/_config.translations.py:45
+#: src/flavors/2019/_config.translations.py:84
 #: src/flavors/2019/jstemplates/pages/guidelines.html:13
 #: src/pbnyc/templates/index.html:52
 msgid "Environment"
@@ -147,8 +46,8 @@ msgstr "環境"
 
 #: src/flavors/2019/_config.translations.py:7
 #: src/flavors/2019/_config.translations.py:19
-#: src/flavors/2019/_config.translations.py:44
-#: src/flavors/2019/_config.translations.py:83
+#: src/flavors/2019/_config.translations.py:46
+#: src/flavors/2019/_config.translations.py:85
 #: src/flavors/2019/jstemplates/pages/guidelines.html:24
 #: src/pbnyc/templates/index.html:53
 msgid "Housing"
@@ -156,15 +55,15 @@ msgstr "房屋"
 
 #: src/flavors/2019/_config.translations.py:8
 #: src/flavors/2019/_config.translations.py:20
-#: src/flavors/2019/_config.translations.py:45
-#: src/flavors/2019/_config.translations.py:84
+#: src/flavors/2019/_config.translations.py:47
+#: src/flavors/2019/_config.translations.py:86
 msgid "Parks & Recreation"
 msgstr "公園及康樂"
 
 #: src/flavors/2019/_config.translations.py:9
 #: src/flavors/2019/_config.translations.py:21
-#: src/flavors/2019/_config.translations.py:46
-#: src/flavors/2019/_config.translations.py:85
+#: src/flavors/2019/_config.translations.py:48
+#: src/flavors/2019/_config.translations.py:87
 #: src/flavors/2019/jstemplates/pages/guidelines.html:32
 #: src/pbnyc/templates/index.html:55
 msgid "Public Health"
@@ -172,8 +71,8 @@ msgstr "公共衛生"
 
 #: src/flavors/2019/_config.translations.py:10
 #: src/flavors/2019/_config.translations.py:22
-#: src/flavors/2019/_config.translations.py:47
-#: src/flavors/2019/_config.translations.py:86
+#: src/flavors/2019/_config.translations.py:49
+#: src/flavors/2019/_config.translations.py:88
 #: src/flavors/2019/jstemplates/pages/guidelines.html:33
 #: src/pbnyc/templates/index.html:56
 msgid "Public Safety"
@@ -181,8 +80,8 @@ msgstr "公共安全"
 
 #: src/flavors/2019/_config.translations.py:11
 #: src/flavors/2019/_config.translations.py:23
-#: src/flavors/2019/_config.translations.py:48
-#: src/flavors/2019/_config.translations.py:88
+#: src/flavors/2019/_config.translations.py:50
+#: src/flavors/2019/_config.translations.py:90
 #: src/flavors/2019/jstemplates/pages/guidelines.html:42
 #: src/pbnyc/templates/index.html:58
 msgid "Seniors"
@@ -190,28 +89,28 @@ msgstr "長者"
 
 #: src/flavors/2019/_config.translations.py:12
 #: src/flavors/2019/_config.translations.py:24
-#: src/flavors/2019/_config.translations.py:49
-#: src/flavors/2019/_config.translations.py:89
+#: src/flavors/2019/_config.translations.py:51
+#: src/flavors/2019/_config.translations.py:91
 msgid "Streets & Sidewalks"
 msgstr "街道及行人道"
 
 #: src/flavors/2019/_config.translations.py:13
-#: src/flavors/2019/_config.translations.py:87
+#: src/flavors/2019/_config.translations.py:89
 #: src/pbnyc/templates/index.html:57
 msgid "Sanitation"
 msgstr "清潔"
 
 #: src/flavors/2019/_config.translations.py:14
 #: src/flavors/2019/_config.translations.py:25
-#: src/flavors/2019/_config.translations.py:50
-#: src/flavors/2019/_config.translations.py:90
+#: src/flavors/2019/_config.translations.py:52
+#: src/flavors/2019/_config.translations.py:92
 msgid "Transit & Transportation"
 msgstr "交通及運輸"
 
 #: src/flavors/2019/_config.translations.py:15
 #: src/flavors/2019/_config.translations.py:26
-#: src/flavors/2019/_config.translations.py:51
-#: src/flavors/2019/_config.translations.py:91
+#: src/flavors/2019/_config.translations.py:53
+#: src/flavors/2019/_config.translations.py:93
 #: src/flavors/2019/jstemplates/pages/guidelines.html:51
 #: src/pbnyc/templates/index.html:61
 msgid "Youth"
@@ -238,12 +137,18 @@ msgid "suggested"
 msgstr "建議"
 
 #: src/flavors/2019/_config.translations.py:32
-msgid "Ideas must be \"capital\" projects - building, installing, or repairing something for public benefit, such as renovating a public basketball court or purchasing new computers for a library."
-msgstr "所有提出的建議，必需是基於公共利益而加建、安裝或維修公共設施的「基金項目」(capital projects)，例如翻新一個公共藍球場，又或為一個公立圖書館需購買新電腦。"
+msgid ""
+"Ideas must be \"capital\" projects - building, installing, or repairing "
+"something for public benefit, such as renovating a public basketball court "
+"or purchasing new computers for a library."
+msgstr ""
+"所有提出的建議，必需是基於公共利益而加建、安裝或維修公共設施的「基金項目」"
+"(capital projects)，例如翻新一個公共藍球場，又或為一個公立圖書館需購買新電"
+"腦。"
 
 #: src/flavors/2019/_config.translations.py:33
-#: src/flavors/2019/_config.translations.py:63
-#: src/flavors/2019/_config.translations.py:74
+#: src/flavors/2019/_config.translations.py:65
+#: src/flavors/2019/_config.translations.py:76
 msgid "Someone"
 msgstr "有人"
 
@@ -256,132 +161,159 @@ msgid "My project idea is..."
 msgstr "我的想法是......"
 
 #: src/flavors/2019/_config.translations.py:36
-#: src/flavors/2019/_config.translations.py:38
+#: src/flavors/2019/_config.translations.py:40
 msgid "..."
 msgstr "......"
 
 #: src/flavors/2019/_config.translations.py:37
+#, fuzzy
+#| msgid "Approximate location:"
+msgid "Approximate location"
+msgstr "大概位置:"
+
+#: src/flavors/2019/_config.translations.py:38
+#: src/sa_web/jstemplates/place-form.html:1
+msgid "Drag the map to your location."
+msgstr "把地圖拖動到您的所在位置 "
+
+#: src/flavors/2019/_config.translations.py:39
 msgid "So that people could..."
 msgstr "所以人們可以"
 
-#: src/flavors/2019/_config.translations.py:39
+#: src/flavors/2019/_config.translations.py:41
 msgid "Pick a category for your idea"
 msgstr "請為您的建議選擇一個分類"
 
-#: src/flavors/2019/_config.translations.py:40
+#: src/flavors/2019/_config.translations.py:42
 msgid "Please choose..."
 msgstr "請選擇"
 
-#: src/flavors/2019/_config.translations.py:52
+#: src/flavors/2019/_config.translations.py:54
 msgid "Your name (required and will be shown on map)"
 msgstr "您的名字 (必須填寫，並會在地圖上顯示)"
 
-#: src/flavors/2019/_config.translations.py:53
+#: src/flavors/2019/_config.translations.py:55
 msgid "Your email (required and will NOT be shown on the map)"
 msgstr "您的電郵 (必須填寫，但不會在地圖上顯示)"
 
-#: src/flavors/2019/_config.translations.py:54
+#: src/flavors/2019/_config.translations.py:56
 msgid "Your phone number (optional and will NOT be shown on the map)"
 msgstr "您的電話 (選填，但不會在地圖上顯示)"
 
-#: src/flavors/2019/_config.translations.py:55
+#: src/flavors/2019/_config.translations.py:57
 msgid "Your zip code (optional and will NOT be shown on the map)"
 msgstr "您的郵編號碼 (選填，但不會在地圖上顯示)"
 
-#: src/flavors/2019/_config.translations.py:56
+#: src/flavors/2019/_config.translations.py:58
 msgid "Your age (optional and will NOT be shown on the map)"
 msgstr "您的年齡 (選填，但不會在地圖上顯示)"
 
-#: src/flavors/2019/_config.translations.py:57
+#: src/flavors/2019/_config.translations.py:59
 msgid "Your gender (optional and will NOT be shown on the map)"
 msgstr "您的性別 (選填，但不會在地圖上顯示)"
 
-#: src/flavors/2019/_config.translations.py:58
+#: src/flavors/2019/_config.translations.py:60
 msgid "I'd like to volunteer"
 msgstr "我希望當義工"
 
-#: src/flavors/2019/_config.translations.py:59
+#: src/flavors/2019/_config.translations.py:61
 msgid "Volunteer"
 msgstr "當義工"
 
-#: src/flavors/2019/_config.translations.py:60
+#: src/flavors/2019/_config.translations.py:62
 msgid "comment"
 msgstr "評論"
 
-#: src/flavors/2019/_config.translations.py:61
+#: src/flavors/2019/_config.translations.py:63
 msgid "comments"
 msgstr "評論"
 
-#: src/flavors/2019/_config.translations.py:62
+#: src/flavors/2019/_config.translations.py:64
 msgid "commented on"
 msgstr "已就此評論"
 
-#: src/flavors/2019/_config.translations.py:64
-#: src/flavors/2019/_config.translations.py:65
+#: src/flavors/2019/_config.translations.py:66
+#: src/flavors/2019/_config.translations.py:67
 msgid "Leave a Comment"
 msgstr "留言"
 
-#: src/flavors/2019/_config.translations.py:66
-#: src/flavors/2019/_config.translations.py:67
 #: src/flavors/2019/_config.translations.py:68
+#: src/flavors/2019/_config.translations.py:69
+#: src/flavors/2019/_config.translations.py:70
 msgid "Comment"
 msgstr "評論"
 
-#: src/flavors/2019/_config.translations.py:69
+#: src/flavors/2019/_config.translations.py:71
 msgid "Your Name"
 msgstr "您的名字"
 
-#: src/flavors/2019/_config.translations.py:70
+#: src/flavors/2019/_config.translations.py:72
 msgid "Support This!"
 msgstr "支持它!"
 
-#: src/flavors/2019/_config.translations.py:71
+#: src/flavors/2019/_config.translations.py:73
 msgid "support"
 msgstr "支持"
 
-#: src/flavors/2019/_config.translations.py:72
+#: src/flavors/2019/_config.translations.py:74
 msgid "supports"
 msgstr "支持"
 
-#: src/flavors/2019/_config.translations.py:73
+#: src/flavors/2019/_config.translations.py:75
 msgid "supported"
 msgstr "已支持"
 
-#: src/flavors/2019/_config.translations.py:75
+#: src/flavors/2019/_config.translations.py:77
 msgid "About"
 msgstr "關於"
 
-#: src/flavors/2019/_config.translations.py:76
+#: src/flavors/2019/_config.translations.py:78
 #: src/flavors/2019/jstemplates/pages/guidelines.html:19
 msgid "Guidelines"
 msgstr "指引"
 
-#: src/flavors/2019/_config.translations.py:77
+#: src/flavors/2019/_config.translations.py:79
 msgid "Districts"
 msgstr "地區"
 
-#: src/flavors/2019/_config.translations.py:78
+#: src/flavors/2019/_config.translations.py:80
 msgid "Categories"
 msgstr "分項"
 
-#: src/flavors/2019/_config.translations.py:79
+#: src/flavors/2019/_config.translations.py:81
 msgid "Show All"
 msgstr "顯示所有"
 
 #: src/flavors/2019/jstemplates/pages/about.html:1
-msgid "After you submit your idea on this Idea Collection Map, your idea will be given to community volunteers, called Budget Delegates. Budget Delegates work in your district to turn ideas into real proposals for a ballot, with input from city agencies. These proposals will be up for a community-wide vote in the spring."
-msgstr "當您在這張「建議收集地圖」提交建議後，您的提議將會轉交至「預算代表」。「預算代表」是一班與您來自同一個社區的志工，他們將會把您的想法與相關市府部門討論，最終轉化成可行的意見書。這些意見書將會放在選票上，在春季讓社區民眾進行投票。"
+msgid ""
+"After you submit your idea on this Idea Collection Map, your idea will be "
+"given to community volunteers, called Budget Delegates. Budget Delegates "
+"work in your district to turn ideas into real proposals for a ballot, with "
+"input from city agencies. These proposals will be up for a community-wide "
+"vote in the spring."
+msgstr ""
+"當您在這張「建議收集地圖」提交建議後，您的提議將會轉交至「預算代表」。「預算"
+"代表」是一班與您來自同一個社區的志工，他們將會把您的想法與相關市府部門討論，"
+"最終轉化成可行的意見書。這些意見書將會放在選票上，在春季讓社區民眾進行投票。"
 
 #: src/flavors/2019/jstemplates/pages/about.html:2
 msgid "Check out the guidelines</a> to see what ideas can be funded."
 msgstr "請查看指引</a>以了解哪些建議可以獲得撥款。"
 
 #: src/flavors/2019/jstemplates/pages/about.html:3
-msgid "For more information on participatory budgeting, other community PB events like Neighborhood Assemblies, and how to get more involved, visit <a href=\"https://council.nyc.gov/pb/\" target=\"_blank\">council.nyc.gov/pb/</a>."
-msgstr "有關「參與式預算」的詳情、其他社區的「參與式預算」相關活動 (如社區會議)，以及如何參與「參與式預算」，可流覽<a href=\"https://council.nyc.gov/pb/\" target=\"_blank\">council.nyc.gov/pb/</a>。"
+msgid ""
+"For more information on participatory budgeting, other community PB events "
+"like Neighborhood Assemblies, and how to get more involved, visit <a href="
+"\"https://council.nyc.gov/pb/\" target=\"_blank\">council.nyc.gov/pb/</a>."
+msgstr ""
+"有關「參與式預算」的詳情、其他社區的「參與式預算」相關活動 (如社區會議)，以及"
+"如何參與「參與式預算」，可流覽<a href=\"https://council.nyc.gov/pb/\" target="
+"\"_blank\">council.nyc.gov/pb/</a>。"
 
 #: src/flavors/2019/jstemplates/pages/about.html:4
-msgid "If you have an idea about how things could work better in your community, share it on the map."
+msgid ""
+"If you have an idea about how things could work better in your community, "
+"share it on the map."
 msgstr "如果您有任何改善社區的想法及建議，請分享這個「建議收集地圖」"
 
 #: src/flavors/2019/jstemplates/pages/about.html:5
@@ -397,12 +329,13 @@ msgid "Real Projects."
 msgstr "真的項目。"
 
 #: src/flavors/2019/jstemplates/pages/about.html:8
-msgid "Share your ideas on the map for how things could be better in your community. <a href=\"/page/guidelines\" title=\"Participatory Budgeting in New York City | REAL MONEY. REAL PROJECTS. REAL POWER.\">Check out the guidelines</a> to see what ideas can be funded."
-msgstr "請在地圖上分享您的建議，改善您的社區。 <a href=\"/page/guidelines\" title=\" 紐約市「參與式預算」| 真的資金。真的項目。真的權力。查看指引以了解哪些建議可以獲得撥款。"
-
-#: src/flavors/2019/jstemplates/pages/about.html:8
-msgid "Through Participatory Budgeting, community members - like you - directly decide how to spend at least $1,000,000 of the public budget in participating Council Districts."
-msgstr "透過「參與式預算」，您和其他社區民眾只要住在參與計劃的市議員選區，就可以直接決定如何使用最少100萬美元的公共經費。"
+msgid ""
+"Through Participatory Budgeting, community members - like you - directly "
+"decide how to spend at least $1,000,000 of the public budget in "
+"participating Council Districts."
+msgstr ""
+"透過「參與式預算」，您和其他社區民眾只要住在參與計劃的市議員選區，就可以直接"
+"決定如何使用最少100萬美元的公共經費。"
 
 #: src/flavors/2019/jstemplates/pages/district.html:1
 msgid "Bronx"
@@ -417,7 +350,7 @@ msgid "Choose Your Council District"
 msgstr "選擇您所屬的市議會選區"
 
 #: src/flavors/2019/jstemplates/pages/district.html:4
-#: src/pbnyc/templates/index.html:176
+#: src/pbnyc/templates/index.html:118
 msgid "District"
 msgstr "地區"
 
@@ -442,8 +375,12 @@ msgid "After school programs"
 msgstr "課後班"
 
 #: src/flavors/2019/jstemplates/pages/guidelines.html:3
-msgid "All ideas must be submitted by <strong>October 5, 2018</strong>. Ideas submitted after October 5 will not be considered for the Cycle 8 ballot."
-msgstr "所有建議都必須在<strong>2018年10月5日前提交</strong>。所有於10月5日後呈交的意見將不會納入第8週期的選票上。"
+msgid ""
+"All ideas must be submitted by <strong>October 11, 2019</strong>. Ideas "
+"submitted after October 11 will not be considered for the Cycle 9 ballot."
+msgstr ""
+"所有建議必須在<strong>2019年10月11日</strong>前提交。於10月11日後提交的建議，"
+"將不會納入第9週期的選票上。"
 
 #: src/flavors/2019/jstemplates/pages/guidelines.html:4
 msgid "Anyone can post ideas."
@@ -458,7 +395,8 @@ msgid "Build a wheelchair accessible ramp, improved lighting"
 msgstr "加建輪椅無障礙坡道，改善照明"
 
 #: src/flavors/2019/jstemplates/pages/guidelines.html:7
-msgid "Buy lighting, sound, or other equipment for a local cultural organization"
+msgid ""
+"Buy lighting, sound, or other equipment for a local cultural organization"
 msgstr "為文化機構購買燈光及音響系統，以及改善其他設備。"
 
 #: src/flavors/2019/jstemplates/pages/guidelines.html:8
@@ -471,8 +409,15 @@ msgid "Educational programs"
 msgstr "教育計劃"
 
 #: src/flavors/2019/jstemplates/pages/guidelines.html:10
-msgid "Eligible ideas must be for \"capital\" projects: physical infrastructure for public benefit, such as park improvements or new technology for schools. “Expense\" projects, such as afterschool programs or expanding bus service, are not eligible."
-msgstr "建議必須是根據公共利益而提出的公共設施「基金」項目 ( \"capital\" projects)，例如改善公園或學校科技的設施。其他「費用」項目(“Expense\" projects)如課後班、增加公交車服務等，則不適用於本次計劃。"
+msgid ""
+"Eligible ideas must be for \"capital\" projects: physical infrastructure for "
+"public benefit, such as park improvements or new technology for schools. "
+"“Expense\" projects, such as afterschool programs or expanding bus service, "
+"are not eligible."
+msgstr ""
+"建議必須是根據公共利益而提出的公共設施「基金」項目 ( \"capital\" projects)，"
+"例如改善公園或學校科技的設施。其他「費用」項目(“Expense\" projects)如課後班、"
+"增加公交車服務等，則不適用於本次計劃。"
 
 #: src/flavors/2019/jstemplates/pages/guidelines.html:11
 msgid "Eligible"
@@ -598,8 +543,13 @@ msgid "Technology centers"
 msgstr "科技中心"
 
 #: src/flavors/2019/jstemplates/pages/guidelines.html:47
-msgid "To add a spot, drag the map until the crosshairs are over the desired location. Ideas will be considered by the Council District within which they are located."
-msgstr "如要加添一個地點，請拖動地圖直到十字準線對準理想位置。這些建議會由它們所屬的市議會選區進行討論。"
+msgid ""
+"To add a spot, drag the map until the crosshairs are over the desired "
+"location. Ideas will be considered by the Council District within which they "
+"are located."
+msgstr ""
+"如要加添一個地點，請拖動地圖直到十字準線對準理想位置。這些建議會由它們所屬的"
+"市議會選區進行討論。"
 
 #: src/flavors/2019/jstemplates/pages/guidelines.html:48
 msgid "Transit"
@@ -614,11 +564,20 @@ msgid "Weatherization of public housing"
 msgstr "公共房屋防寒保暖"
 
 #: src/flavors/2019/templates/_closed_district_message.html:1
-msgid "Please note that the input period for this district is over for 2017."
+#, fuzzy
+#| msgid ""
+#| "Please note that the input period for this district is over for 2017."
+msgid "Please note that the input period for this district is over for 2019."
 msgstr "請注意，這個地區的2017年意見收集期已結束"
 
 #: src/flavors/2019/templates/_unopened_district_message.html:1
-msgid "Please note that the input period for this district has not yet begun for 2017."
+#, fuzzy
+#| msgid ""
+#| "Please note that the input period for this district has not yet begun for "
+#| "2017."
+msgid ""
+"Please note that the input period for this district has not yet begun for "
+"2019."
 msgstr "請注意，這個地區的2017年意見收集期還未開始"
 
 #: src/flavors/staff/templates/index.html:68 src/pbnyc/templates/index.html:70
@@ -626,12 +585,19 @@ msgid "Powered by"
 msgstr "由(   )提供技術支持"
 
 #: src/pbnyc/jstemplates/activity-list-item.html:1
-msgid "A new {{>idea-type}} from <strong>{{source}}</strong> in District {{CounDist}} named {{>idea-name}}"
-msgstr "一項新的 {{>idea-type}} 由 <strong>{{source}}</strong> 在選區 {{CounDist}} 名為{{>idea-name}}"
+msgid ""
+"A new {{>idea-type}} from <strong>{{source}}</strong> in District "
+"{{CounDist}} named {{>idea-name}}"
+msgstr ""
+"一項新的 {{>idea-type}} 由 <strong>{{source}}</strong> 在選區 {{CounDist}} 名"
+"為{{>idea-name}}"
 
 #: src/pbnyc/jstemplates/activity-list-item.html:2
-msgid "A new {{>idea-type}} from <strong>{{source}}</strong> named {{>idea-name}}"
-msgstr "一項新的 {{>idea-type}} 由 <strong>{{source}}</strong> 在選區 {{CounDist}} 名為 {{>idea-name}} "
+msgid ""
+"A new {{>idea-type}} from <strong>{{source}}</strong> named {{>idea-name}}"
+msgstr ""
+"一項新的 {{>idea-type}} 由 <strong>{{source}}</strong> 在選區 {{CounDist}} 名"
+"為 {{>idea-name}} "
 
 #: src/pbnyc/jstemplates/activity-list-item.html:3
 msgid "created {{>an-idea}} at {{>idea-location}}"
@@ -662,11 +628,10 @@ msgid "in District {{ CounDist }}"
 msgstr "在地區 {{ CounDist }}"
 
 #: src/pbnyc/jstemplates/idea-type.html:1
-msgid "\n"
-"  {{!Shows the type of idea, e.g. \"Housing idea\"}}\n"
-"  {{ place_type_label }} idea\n"
-""
-msgstr "\n"
+msgid ""
+"{{!Shows the type of idea, e.g. \"Housing idea\"}}\n"
+"  {{ place_type_label }} idea"
+msgstr ""
 "  {{!Shows the type of idea, e.g. \"Housing idea\"}}\n"
 "  {{ place_type_label }} 想法"
 
@@ -719,7 +684,9 @@ msgid "View On Map"
 msgstr "在地圖上查看"
 
 #: src/pbnyc/jstemplates/place-detail.html:13
-msgid "Vote for this project between March 25th and April 2nd."
+#, fuzzy
+#| msgid "Vote for this project between March 25th and April 2nd."
+msgid "Vote for this project between March 28th and April 5th."
 msgstr "在3月25日至4月2日期間投票支持此計劃"
 
 #: src/pbnyc/jstemplates/place-detail.html:14
@@ -738,43 +705,166 @@ msgstr "交通及運輸"
 msgid "Previously funded"
 msgstr "此前已獲得撥款"
 
-#: src/pbnyc/templates/index.html:162
-msgid "Approximate location:"
-msgstr "大概位置:"
-
-#: src/pbnyc/templates/index.html:176
+#: src/pbnyc/templates/index.html:118
 msgid "Speaker"
 msgstr "市議長"
 
-#: src/pbnyc/templates/index.html:176
+#: src/pbnyc/templates/index.html:118
 msgid "Council Member"
 msgstr "市議員"
 
-#: src/pbnyc/templates/index.html:191
+#: src/pbnyc/templates/index.html:133
 msgid "(Outside of the PB districts)"
 msgstr "(在參與式預算選區外)"
 
 #: src/pbnyc/templates/new_place_email_body.txt:1
-msgid "Thanks for submitting a new %(place.properties.location_type)s idea to improve your community!"
-msgstr "感謝您提交一個新的%(place.properties.location_type)s建議，去改善您的社區。"
+#, python-format
+msgid ""
+"Thanks for submitting a new %(place.properties.location_type)s idea to "
+"improve your community!"
+msgstr ""
+"感謝您提交一個新的%(place.properties.location_type)s建議，去改善您的社區。"
 
 #: src/pbnyc/templates/new_place_email_body.txt:3
 msgid "Here's what you suggested:"
 msgstr "以下是您提出的建議:"
 
 #: src/pbnyc/templates/new_place_email_body.txt:5
-msgid "You can see people's comments on your idea at https://%(request.get_host)s/place/%(place.id)s."
-msgstr "您可以在此查看其他人提出的反饋https://%(request.get_host)s/place/%(place.id)s。"
+#, python-format
+msgid ""
+"You can see people's comments on your idea at https://%(request.get_host)s/"
+"place/%(place.id)s."
+msgstr ""
+"您可以在此查看其他人提出的反饋https://%(request.get_host)s/place/"
+"%(place.id)s。"
 
 #: src/pbnyc/templates/new_place_email_body.txt:7
-msgid "For more information on the Participatory Budgeting process, go to http://labs.council.nyc/pb."
-msgstr "如需取得更多參與式預算的相關資訊，可前往網址: http://labs.council.nyc/pb。"
+msgid ""
+"For more information on the Participatory Budgeting process, go to http://"
+"labs.council.nyc/pb."
+msgstr ""
+"如需取得更多參與式預算的相關資訊，可前往網址: http://labs.council.nyc/pb。"
 
 #: src/pbnyc/templates/new_place_email_subject.txt:1
+#, python-format
 msgid "Thanks for submitting a new %(place.properties.location_type)s idea!"
 msgstr "謝謝提交新的%(place.properties.location_type)s 建議!"
 
-#: src/flavors/2019/jstemplates/pages/guidelines.html:3
-msgid "All ideas must be submitted by <strong>October 11, 2019</strong>. Ideas submitted after October 11 will not be considered for the Cycle 9 ballot."
-msgstr "所有建議必須在<strong>2019年10月11日</strong>前提交。於10月11日後提交的建議，將不會納入第9週期的選票上。"
+#: src/sa_web/jstemplates/auth-nav.html:1
+msgid "Log Out"
+msgstr "登出"
 
+#: src/sa_web/jstemplates/auth-nav.html:2
+msgid "Sign In"
+msgstr "登入"
+
+#: src/sa_web/jstemplates/auth-nav.html:3
+msgid ""
+"Signed in as</span> <span class=\"current-user\">{{ current_user \"name\" }}"
+msgstr "以</span> <span class=\"current-user\">{{ current_user \"name\" }}登入"
+
+#: src/sa_web/jstemplates/form-field-file.html:1
+msgid "Sorry, your browser doesn't support file uploads."
+msgstr "抱歉，您的瀏覽器不支持文件上傳"
+
+#: src/sa_web/jstemplates/form-field-input.html:1
+msgid ""
+"Or sign in with <a class=\"auth-inline twitter-btn\" href=\"/users/login/"
+"twitter/\">Twitter</a> <a class=\"auth-inline facebook-btn\" href=\"/users/"
+"login/facebook/\">Facebook</a>"
+msgstr ""
+"或透過<a class=\"auth-inline twitter-btn\" href=\"/users/login/twitter/\">推"
+"特(Twitter)、</a> <a class=\"auth-inline facebook-btn\" href=\"/users/login/"
+"facebook/\">臉書(Facebook)</a>登入"
+
+#: src/sa_web/jstemplates/form-field-set.html:1
+msgid "optional"
+msgstr "選填"
+
+#: src/sa_web/jstemplates/place-detail-promotion-bar.html:1
+msgid "Recommend on Facebook"
+msgstr "在臉書上推薦"
+
+#: src/sa_web/jstemplates/place-detail-promotion-bar.html:2
+msgid "Tweet This"
+msgstr "於推特發帖"
+
+#: src/sa_web/jstemplates/place-form.html:2
+msgid ""
+"It looks like you didn't set your location yet. Please drag the map to your "
+"location."
+msgstr "看來您還未設定您的所在位置。請把地圖拖動到您的所在地。"
+
+#: src/sa_web/jstemplates/place-list.html:1
+msgid "Most Recent"
+msgstr "最近"
+
+#: src/sa_web/jstemplates/place-list.html:2
+msgid "Most {{ support_label_plural }}"
+msgstr "最{{ support_label_plural }}"
+
+#: src/sa_web/jstemplates/place-list.html:3
+msgid "Most {{ survey_label_plural }}"
+msgstr "最{{ survey_label_plural }}"
+
+#: src/sa_web/jstemplates/place-survey-response.html:1
+msgid "Thanks for participating!"
+msgstr "謝謝您的參與!"
+
+#: src/sa_web/jstemplates/unsupported-overlay.html:1
+msgid "Proceed Anyway"
+msgstr "繼續"
+
+#: src/sa_web/jstemplates/unsupported-overlay.html:2
+msgid ""
+"You are using an unsupported browser. Please\n"
+"    <a href=\"http://browsehappy.com/\">upgrade your browser</a> to improve\n"
+"    your experience."
+msgstr ""
+"目前網站建置並不支援您所使用的瀏覽器，請  <a href=\"http://browsehappy.com/"
+"\">為瀏覽器</a>進行升級以改善瀏覽效果。"
+
+#: src/sa_web/templates/base.html:99
+#, python-format
+msgid "Oops, %(config.app.name)s needs JavaScript to work properly."
+msgstr "哎呀, %(config.app.name)s 需要JavaScript以正常運作。"
+
+#: src/sa_web/templates/base.html:102
+#, python-format
+msgid ""
+"%(config.app.name)s is great but it needs something called JavaScript to "
+"work\n"
+"        properly. But fear not, it's really easy to turn on. Click\n"
+"        <a href=\"http://enable-javascript.com/\" target=\"_blank\">here</a> "
+"for simple instructions!"
+msgstr ""
+"  %(config.app.name)s 很好，但它需要名為JavaScript的系統以正常運作。但請不要"
+"擔心，它很容易啟動。請按 <a href=\"http://enable-javascript.com/\" target="
+"\"_blank\">此</a> 查看簡單的操作指示!"
+
+#: src/sa_web/templates/base.html:114
+msgid ""
+"We can't connect to the server at the moment. Hang tight while we re-"
+"establish communication."
+msgstr "我們目前不能與伺服器連結，請稍候，我們將重新聯接。"
+
+#: src/sa_web/templates/base.html:120
+msgid "Close"
+msgstr "關閉"
+
+#~ msgid ""
+#~ "Share your ideas on the map for how things could be better in your "
+#~ "community. <a href=\"/page/guidelines\" title=\"Participatory Budgeting "
+#~ "in New York City | REAL MONEY. REAL PROJECTS. REAL POWER.\">Check out the "
+#~ "guidelines</a> to see what ideas can be funded."
+#~ msgstr ""
+#~ "請在地圖上分享您的建議，改善您的社區。 <a href=\"/page/guidelines\" title="
+#~ "\" 紐約市「參與式預算」| 真的資金。真的項目。真的權力。查看指引以了解哪些"
+#~ "建議可以獲得撥款。"
+
+#~ msgid ""
+#~ "All ideas must be submitted by <strong>October 5, 2018</strong>. Ideas "
+#~ "submitted after October 5 will not be considered for the Cycle 8 ballot."
+#~ msgstr ""
+#~ "所有建議都必須在<strong>2018年10月5日前提交</strong>。所有於10月5日後呈交"
+#~ "的意見將不會納入第8週期的選票上。"
