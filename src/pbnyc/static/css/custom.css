@@ -89,6 +89,10 @@ a.list-toggle-btn:hover {
   margin: auto;
 }
 
+.menu-item-filter-type ul a.btn {
+    min-width: 5rem;
+}
+
 /* =The Big Button to Add A New Point
 -------------------------------------------------------------- */
 
