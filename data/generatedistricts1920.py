@@ -39,6 +39,7 @@ districts = {
     34: ('Antonio Reynoso', 'Brooklyn/Queens', '''Williamsburg, Bushwick, Ridgewood'''),
     35: ('Laurie A. Cumbo', 'Brooklyn', '''Fort Greene, Clinton Hill, Crown Heights, Prospect Heights, Bedford Stuyvesant'''),
     36: ('Robert E. Cornegy, Jr.', 'Brooklyn', '''Bedford Stuyvesant, Northern Crown Heights'''),
+    37: ('Rafael Espinal', 'Brooklyn', '''Bushwick, Ocean Hill, Brownsville, Cypress Hills, East New York, City Line'''),
     38: ('Carlos Menchaca', 'Brooklyn', '''Red Hook, Sunset Park, Greenwood Heights and portions of Windsor Terrace, Dyker Heights, and Boro Park'''),
     39: ('Brad Lander', 'Brooklyn', '''Cobble Hill, Carroll Gardens, Columbia Waterfront, Gowanus, Park Slope, Windsor Terrace, Borough Park, Kensington'''),
     40: ('Mathieu Eugene', 'Brooklyn', '''Crown Heights, East Flatbush, Flatbush, Kensington, Midwood, Prospect Park, and Prospect Lefferts Gardens'''),
