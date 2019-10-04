@@ -607,7 +607,7 @@ msgstr ""
 #: src/pbnyc/jstemplates/idea-type.html:1
 msgid ""
 "{{!Shows the type of idea, e.g. \"Housing idea\"}}\n"
-"  {{ place_type_label }} idea"
+"  {{ place_type_label location_type}} idea"
 msgstr ""
 
 #: src/pbnyc/jstemplates/place-detail.html:1
