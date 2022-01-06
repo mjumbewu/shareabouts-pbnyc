@@ -948,7 +948,7 @@ activity:
   interval: 30000
 
 place:
-  adding_supported: true
+  adding_supported: false
   add_button_label: _(Submit an idea)
   # Labels for the buttons that toggle the map and list views
   show_list_button_label: _(Show as a list)
@@ -1068,7 +1068,7 @@ survey:
   submission_type: comments
 
   # Response config
-  adding_supported: true
+  adding_supported: false
   show_responses: true
   response_name: _(comment)
   response_plural_name: _(comments)
@@ -1092,7 +1092,7 @@ survey:
           value: true
 
 support:
-  adding_supported: true
+  adding_supported: false
   submission_type: support
   submit_btn_text: _(Support This!)
   response_name: _(support)
