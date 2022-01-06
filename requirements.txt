@@ -33,6 +33,7 @@ git+https://github.com/openplans/shareabouts-api.git@api-app#shareabouts-api
 
 Django==1.8.18
 gunicorn==19.9.0
+gevent==21.12.0
 newrelic==2.16.0.12
 
 
