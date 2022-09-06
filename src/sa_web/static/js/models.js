@@ -220,19 +220,30 @@ var Shareabouts = Shareabouts || {};
       return properties;
     },
 
+    queryString: function() {
+      var params = {};
+      if (S.currentUserIsPlaceModerator()) {
+        params['include_invisible'] = 'true';
+      }
+
+      return Object.keys(params).length > 0 ? '?' + $.param(params) : '';
+    },
+
     sync: function(method, model, options) {
       var attrs;
 
-      if (method === 'create' || method === 'update') {
+      if (method === 'create' || method === 'update' || method === 'patch') {
         attrs = {
           'type': 'Feature',
           'geometry': model.get('geometry'),
-          'properties': _.omit(model.toJSON(), 'geometry')
+          'properties': options.attrs || _.omit(model.toJSON(), 'geometry')
         };
 
         options.data = JSON.stringify(attrs);
         options.contentType = 'application/json';
       }
+
+      options.url = _.result(this, 'url') + this.queryString();
 
       return Backbone.sync(method, model, options);
     }
@@ -373,6 +384,35 @@ var Shareabouts = Shareabouts || {};
       }
     }
   });
+
+  // Users aren't technically backbone models, but there are some useful
+  // methods that we can define for them.
+  S.currentUserGroups = function () {
+    var datasetGroups = _.filter(S.bootstrapped.currentUser && S.bootstrapped.currentUser.groups, function(userGroup) {
+      return S.bootstrapped.dataset.replace(/\/$/, '') === userGroup.dataset.split('?')[0].replace(/\/$/, '');
+    });
+    return _.pluck(datasetGroups, 'name');
+  };
+
+  S.currentUserInGroup = function (group) {
+    return _.some(S.currentUserGroups(), function(userGroup) { return group === userGroup; });
+  };
+
+  S.currentUserInAnyGroup = function (groups) {
+    if (_.isArray(groups)) {
+      return _.some(groups, function(g) { return S.currentUserInGroup(g); });
+    } else {
+      return S.currentUserInGroup(groups);
+    }
+  };
+
+  S.currentUserIsPlaceModerator = function () {
+    return S.currentUserInAnyGroup(S.Config.place.moderators);
+  }
+
+  S.currentUserIsPlaceEditor = function () {
+    return S.currentUserInAnyGroup(S.Config.place.editors);
+  }
 
 }(Shareabouts, jQuery));
 
