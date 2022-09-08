@@ -4,7 +4,7 @@ To prepare the districts geo data, I start with the *alldistricts.geojson* file.
 
 ## Shareabouts Boundary Service
 
-Copy the latest *modyfidistricts* script and update the years. Open the new
+Copy the latest *modyfidistricts* script and update the cycle. Open the new
 script and update the participating districts. Run this script from within the
 *data/* folder to generate a new *districts.geojson* file. This file should be
 added to the boundary service instance.
@@ -14,7 +14,7 @@ include a newline at the end of the file.
 
 ## Districts Page
 
-Copy the latest *generatedistricts.py* script and update the years. Open the new
+Copy the latest *generatedistricts.py* script and update the cycle. Open the new
 script and update the participating districts. Run this script from within the
 *data/* folder, something like:
 
