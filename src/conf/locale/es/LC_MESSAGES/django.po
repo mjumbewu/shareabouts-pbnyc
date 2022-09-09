@@ -499,7 +499,7 @@ msgid ""
 "Thanks for submitting a new %(place.properties.location_type)s idea to "
 "improve your community!"
 msgstr ""
-"¡Gracias por enviar una nueva idea %(place.properties.location_type) para "
+"¡Gracias por enviar una nueva idea %(place.properties.location_type)s para "
 "mejorar su comunidad!"
 
 #: src/pbnyc/templates/new_place_email_body.txt:3
@@ -526,7 +526,7 @@ msgstr ""
 #: src/pbnyc/templates/new_place_email_subject.txt:1
 #, python-format
 msgid "Thanks for submitting a new %(place.properties.location_type)s idea!"
-msgstr "¡Gracias por enviar una nueva %(place.properties.location_type) idea!"
+msgstr "¡Gracias por enviar una nueva %(place.properties.location_type)s idea!"
 
 #: src/sa_web/jstemplates/auth-nav.html:1
 msgid "Log Out"
