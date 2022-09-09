@@ -350,64 +350,64 @@ place_types:
           shadowSize: [41, 41]
           iconAnchor: [38, 90]
 
-  # health:
-  #   label: _(Public Health)
-  #   rules:
-  #     - condition: '"{{location_type}}" === "health" && "{{status}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
-  #       icon:
-  #         iconUrl: /static/css/images/markers/new/dot-white.png
-  #         iconSize: [11, 11]
-  #         iconAnchor: [6, 6]
-  #     - condition: '"{{location_type}}" === "health" && "{{status}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
-  #       icon:
-  #         iconUrl: /static/css/images/markers/new/dot-white.png
-  #         iconSize: [15, 15]
-  #         iconAnchor: [8, 8]
-  #     - condition: '"{{location_type}}" === "health" && "{{status}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 16'
-  #       icon:
-  #         iconUrl: /static/css/images/markers/new/dot-white.png
-  #         iconSize: [20, 20]
-  #         iconAnchor: [10, 10]
+  health:
+    label: _(Public Health)
+    rules:
+      - condition: '"{{location_type}}" === "health" && "{{status}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [11, 11]
+          iconAnchor: [6, 6]
+      - condition: '"{{location_type}}" === "health" && "{{status}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
+      - condition: '"{{location_type}}" === "health" && "{{status}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/dot-white.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
 
-  #     - condition: '"{{location_type}}" === "health" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
-  #       icon:
-  #         iconUrl: /static/css/images/markers/new/health-small.png
-  #         iconSize: [25, 30]
-  #         iconAnchor: [13, 30]
-  #     - condition: '"{{location_type}}" === "health" && {{layer.focused}} === false && {{map.zoom}} >= 16'
-  #       icon:
-  #         iconUrl: /static/css/images/markers/new/health-small.png
-  #         iconSize: [50, 60]
-  #         iconAnchor: [25, 60]
+      - condition: '"{{location_type}}" === "health" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/health-small.png
+          iconSize: [25, 30]
+          iconAnchor: [13, 30]
+      - condition: '"{{location_type}}" === "health" && {{layer.focused}} === false && {{map.zoom}} >= 16'
+        icon:
+          iconUrl: /static/css/images/markers/new/health-small.png
+          iconSize: [50, 60]
+          iconAnchor: [25, 60]
 
-  #     - condition: '"{{location_type}}" === "health" && {{layer.focused}} == false && {{map.zoom}} <= 11'
-  #       style:
-  #         radius: 4
-  #         stroke: true
-  #         fill: true
-  #         weight: 0.5
-  #         opacity: 0.7
-  #         fillOpacity: 0.8
-  #         color: '#000'
-  #         fillColor: '#ff78be'
-  #     - condition: '"{{location_type}}" === "health" && {{layer.focused}} == false && {{map.zoom}} <= 13'
-  #       style:
-  #         radius: 6
-  #         stroke: true
-  #         fill: true
-  #         weight: 1
-  #         opacity: 1
-  #         fillOpacity: 0.9
-  #         color: '#000'
-  #         fillColor: '#ff78be'
+      - condition: '"{{location_type}}" === "health" && {{layer.focused}} == false && {{map.zoom}} <= 11'
+        style:
+          radius: 4
+          stroke: true
+          fill: true
+          weight: 0.5
+          opacity: 0.7
+          fillOpacity: 0.8
+          color: '#000'
+          fillColor: '#ff78be'
+      - condition: '"{{location_type}}" === "health" && {{layer.focused}} == false && {{map.zoom}} <= 13'
+        style:
+          radius: 6
+          stroke: true
+          fill: true
+          weight: 1
+          opacity: 1
+          fillOpacity: 0.9
+          color: '#000'
+          fillColor: '#ff78be'
 
-  #     - condition: '"{{location_type}}" === "health" && {{layer.focused}} === true'
-  #       icon:
-  #         iconUrl: /static/css/images/markers/new/health.png
-  #         shadowUrl: /static/css/images/markers/new/marker-shadow.png
-  #         iconSize: [75, 90]
-  #         shadowSize: [41, 41]
-  #         iconAnchor: [38, 90]
+      - condition: '"{{location_type}}" === "health" && {{layer.focused}} === true'
+        icon:
+          iconUrl: /static/css/images/markers/new/health.png
+          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
 
   safety:
     label: _(Public Safety)
@@ -844,22 +844,22 @@ place_types:
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
-  # health-shortlisted:
-  #   label: _(Public Health)
-  #   rules:
-  #     - condition: 'true'
-  #       icon:
-  #         iconUrl: /static/css/images/markers/cross.png
-  #         shadowUrl: /static/css/images/markers/shadow-square-pale.png
-  #         iconSize: [31, 32]
-  #         shadowSize: [31, 32]
-  #         iconAnchor: [16, 25]
-  #       focus_icon:
-  #         iconUrl: /static/css/images/markers/cross.png
-  #         shadowUrl: /static/css/images/markers/shadow-square-white.png
-  #         iconSize: [31, 32]
-  #         shadowSize: [31, 32]
-  #         iconAnchor: [16, 25]
+  health-shortlisted:
+    label: _(Public Health)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/cross.png
+          shadowUrl: /static/css/images/markers/shadow-square-pale.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/cross.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
   safety-shortlisted:
     label: _(Public Safety)
     rules:
@@ -1000,8 +1000,8 @@ place:
           value: housing
         - label: _(Parks & Recreation)
           value: parks
-        # - label: _(Public Health)
-        #   value: health
+        - label: _(Public Health)
+          value: health
         - label: _(Public Safety)
           value: safety
         - label: _(Seniors)
@@ -1139,9 +1139,9 @@ pages:
       - title: _(Parks & Recreation)
         url: /filter/parks
         external: true
-      # - title: _(Public Health)
-      #   url: /filter/health
-      #   external: true
+      - title: _(Public Health)
+        url: /filter/health
+        external: true
       - title: _(Public Safety)
         url: /filter/safety
         external: true
