@@ -99,7 +99,7 @@ Shareabouts.PlaceFormView.prototype.setLatLng = function(latLng) {
       var unopenedDistricts = []
       var closedDistricts = []
 
-      $district.html('{% trans 'District' %} ' + data['CounDist'] + ', ' + (data['CounDist'] == 8 ? '{% trans 'Speaker' %} ' : '{% trans 'Council Member' %} ') + data['CounPerson']);
+      $district.html('{% trans 'District' %} ' + data['CounDist'] + ', ' + data['CounPerson']);
 
       // Let the user know if the district they're trying to leave an idea in
       // has already closed its PB period.
