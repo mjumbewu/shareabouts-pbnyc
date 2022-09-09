@@ -1,26 +1,36 @@
 To generate translation strings, you'll want to set the appropriate flavor in a `.env` file and run something like the following:
 
 ```bash
-foreman run -e .env src/manage.py makemessages \
+pip install python-dotenv[cli]
+
+dotenv -f .env-stage run src/manage.py makemessages \
   --locale en \
   --locale es \
-  --locale zh \
+  --locale zh_Hans \
   --ignore 'env/*' \
+  --ignore 'defaultflavor/*' \
+  --ignore '2014/*' \
+  --ignore '2015/*' \
   --ignore '2016/*' \
   --ignore '2017/*' \
   --ignore '2018/*' \
+  --ignore '2019/*' \
   --ignore 'src/sa_web/jstemplates/place-detail-survey.html' \
   --ignore 'src/sa_web/jstemplates/activity-list-item.html' \
   --ignore 'src/sa_web/jstemplates/location-string.html'
 
-foreman run -e .env src/manage.py flavormessages \
+dotenv -f .env-stage run src/manage.py flavormessages \
   --locale en \
   --locale es \
-  --locale zh \
+  --locale zh_Hans \
   --ignore 'env/*' \
+  --ignore 'defaultflavor/*' \
+  --ignore '2014/*' \
+  --ignore '2015/*' \
   --ignore '2016/*' \
   --ignore '2017/*' \
   --ignore '2018/*' \
+  --ignore '2019/*' \
   --ignore 'src/sa_web/jstemplates/place-detail-survey.html' \
   --ignore 'src/sa_web/jstemplates/activity-list-item.html' \
   --ignore 'src/sa_web/jstemplates/location-string.html'
