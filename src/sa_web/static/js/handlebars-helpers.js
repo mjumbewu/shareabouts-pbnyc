@@ -37,7 +37,8 @@ var Shareabouts = Shareabouts || {};
     var groupArgs = _.initial(arguments);
     var options = _.last(arguments);
 
-    for (var groups of groupArgs) {
+    for (var i = 0; i < groupArgs.length; ++i) {
+      var groups = groupArgs[i];
       var isGroupArray = _.isArray(groups);
       if (isGroupArray && NS.currentUserInAnyGroup(groups)) { return options.fn(this); }
       else if (!isGroupArray && NS.currentUserInGroup(groups)) { return options.fn(this); }
