@@ -399,7 +399,7 @@ msgstr "creado {{>an-idea}} en {{>idea-location}}"
 
 #: src/pbnyc/jstemplates/activity-list-item.html:4
 msgid "created {{>an-idea}} in District {{CounDist}} at {{>idea-location}}"
-msgstr "creado {{>an-idea} en distrito {{CounDist}} en {{>idea-location}}"
+msgstr "creado {{>an-idea}} en distrito {{CounDist}} en {{>idea-location}}"
 
 #: src/pbnyc/jstemplates/activity-list-item.html:5
 msgid "created {{>an-idea}} in District {{CounDist}} named {{>idea-name}}"
