@@ -517,3 +517,11 @@ p.ballot-project-location-notes {
   font-size: 0.8em;
   font-style: italic;
 }
+
+.user-menu {
+  display: none;
+}
+
+.or-sign-in {
+  display: none;
+}
