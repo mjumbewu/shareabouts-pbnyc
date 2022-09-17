@@ -20,7 +20,7 @@
     "pitch": 0,
     "sources": {
         "composite": {
-            "url": "mapbox://mapbox.mapbox-streets-v7,pbnyc.cjk21nrdf01qct4s8i8ji6y50-9ho4e,pbnyc.cjk20e5k701kcnomqoo78s7tb-0h6iw,pbnyc.6ct5sx8o",
+            "url": "mapbox://mapbox.mapbox-streets-v7,pbnyc.alldistricts-clean,pbnyc.alldistricts-centroids,pbnyc.alldistricts-inverse",
             "type": "vector"
         }
     },
@@ -1953,10 +1953,10 @@
             }
         },
         {
-            "id": "nycinverse-bsdq3d",
+            "id": "nycinverse",
             "type": "fill",
             "source": "composite",
-            "source-layer": "nycinverse-bsdq3d",
+            "source-layer": "inverse",
             "layout": {
                 "visibility": "visible"
             },
@@ -2174,7 +2174,7 @@
             "id": "districts-centroid-label",
             "type": "symbol",
             "source": "composite",
-            "source-layer": "district-centroids",
+            "source-layer": "centroids",
             "filter": [
                 "in",
                 "CounDist",

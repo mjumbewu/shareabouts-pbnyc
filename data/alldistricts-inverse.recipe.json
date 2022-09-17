@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "layers": {
+    "inverse": {
+      "source": "mapbox://tileset-source/pbnyc/alldistricts-inverse",
+      "minzoom": 6,
+      "maxzoom": 13
+    }
+  }
+}

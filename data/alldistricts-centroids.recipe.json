@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "layers": {
+    "centroids": {
+      "source": "mapbox://tileset-source/pbnyc/alldistricts-centroids",
+      "minzoom": 6,
+      "maxzoom": 13
+    }
+  }
+}

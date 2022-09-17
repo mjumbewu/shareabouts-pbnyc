@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "layers": {
+    "districts": {
+      "source": "mapbox://tileset-source/pbnyc/alldistricts-clean",
+      "minzoom": 6,
+      "maxzoom": 13
+    }
+  }
+}

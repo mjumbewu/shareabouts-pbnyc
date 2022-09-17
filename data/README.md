@@ -20,9 +20,40 @@ script and update the participating districts. Run this script from within the
 
     ./generatedistricts.py > ../src/flavors/2018/jstemplates/pages/district.html
 
-## Map Tiles
+## Map Styles
 
 Open *PBNYC-Base(...)/style.json* and find all instances of `CounDist`. Update
 and use the same version of the list of districts for each of these sections.
 Head to https://www.mapbox.com/studio/ and replace the **PBNYC Base** style
 with this *style.json* file.
+
+## Map Tile Source Data
+
+The following commands can be useful in managing the map tile source data:
+
+```bash
+# ~~~~~~~~~~~~~~~~~~~~
+# Generate clean districts, as the original alldistricts.geojson file could contain invalid polygons.
+./generatealldistrictsclean.py > alldistricts-clean.geojson
+
+tilesets upload-source --replace pbnyc alldistricts-clean alldistricts-clean.geojson
+#tilesets create pbnyc.alldistricts-clean --recipe alldistricts-clean.recipe.json --name alldistricts-clean
+tilesets update-recipe pbnyc.alldistricts-clean alldistricts-clean.recipe.json
+tilesets publish pbnyc.alldistricts-clean
+
+# ~~~~~~~~~~~~~~~~~~~~
+# Generate a cutout of the city.
+./generatealldistrictsinverse.py > alldistricts-inverse.geojson
+
+tilesets upload-source --replace pbnyc alldistricts-inverse alldistricts-inverse.geojson
+#tilesets create pbnyc.alldistricts-inverse --recipe alldistricts-inverse.recipe.json --name alldistricts-inverse
+tilesets update-recipe pbnyc.alldistricts-inverse alldistricts-inverse.recipe.json
+tilesets publish pbnyc.alldistricts-inverse
+
+# ~~~~~~~~~~~~~~~~~~~~
+# Centroids may be edited manually, so just upload them to Mapbox.
+tilesets upload-source --replace pbnyc alldistricts-centroids alldistricts-centroids.geojson
+#tilesets create pbnyc.alldistricts-centroids --recipe alldistricts-centroids.recipe.json --name alldistricts-centroids
+tilesets update-recipe pbnyc.alldistricts-centroids alldistricts-centroids.recipe.json
+tilesets publish pbnyc.alldistricts-centroids
+```
