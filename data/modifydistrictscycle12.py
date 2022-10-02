@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
 import json
+from shapely.geometry import shape, mapping
+from shapely.validation import make_valid
 
 districts = {
     1: ('Council Member Christopher Marte', 'Manhattan', '''Battery Park City, Civic Center, Chinatown, Financial District, Little Italy, the Lower East Side, NoHo, SoHo, South Street Seaport, South Village, TriBeCa & Washington Square'''),
@@ -44,6 +46,7 @@ for infeature in indata['features']:
     district_id = infeature['properties']['CounDist']
     if district_id in districts:
         outfeature = infeature.copy()
+        outfeature['geometry'] = mapping(make_valid(shape(infeature['geometry'])))
         outfeature['properties']['CounPerson'] = districts[district_id][0]
         outfeature['properties']['Borough'] = districts[district_id][1]
         outdata['features'].append(outfeature)
