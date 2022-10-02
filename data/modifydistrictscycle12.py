@@ -6,6 +6,7 @@ from shapely.validation import make_valid
 
 districts = {
     1: ('Council Member Christopher Marte', 'Manhattan', '''Battery Park City, Civic Center, Chinatown, Financial District, Little Italy, the Lower East Side, NoHo, SoHo, South Street Seaport, South Village, TriBeCa & Washington Square'''),
+    2: ('Council Member Carlina Rivera', 'Manhattan', '''East Village, Gramercy Park, Kips Bay, Lower East Side, Murray Hill, Rose Hill'''),
     3: ('Council Member Erik Bottcher', 'Manhattan', '''Chelsea, Hell’s Kitchen, Greenwich Village, West SoHo, Hudson Square, Times Square, Garment District, Flatiron, Upper West Side'''),
     4: ('Council Member Keith Powers', 'Manhattan', '''Upper East Side, Carnegie Hill, Yorkville, Central Park South, Midtown East, Times Square, Koreatown, Stuyvesant Town and Peter Cooper Village, Waterside Plaza, Tudor City, Turtle Bay, Murray Hill, Sutton Place'''),
     5: ('Council Member Julie Menin', 'Manhattan', '''Upper East Side's Yorkville, Lenox Hill, Carnegie Hill, Roosevelt Island, Midtown East, Sutton Place, El Barrio in East Harlem'''),
