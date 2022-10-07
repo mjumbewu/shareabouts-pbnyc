@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Shareabouts PB NYC\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-17 13:06-0500\n"
+"POT-Creation-Date: 2022-10-07 09:02-0500\n"
 "Language: zh-CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -397,16 +397,11 @@ msgid "(Expenses)"
 msgstr "(開支)"
 
 #: src/flavors/cycle12/jstemplates/pages/guidelines.html:2
-#, fuzzy
-#| msgid ""
-#| "All ideas must be submitted by <strong>October 11, 2019</strong>. Ideas "
-#| "submitted after October 11 will not be considered for the Cycle 9 ballot."
 msgid ""
-"All ideas must be submitted by <strong>October 17, 2022</strong>. Ideas "
-"submitted after October 17th will not be considered for the Cycle 12 ballot."
+"All ideas will be collected through the end of October. Ideas submitted "
+"November or after may not be under consideration for Cycle 12. Contact your "
+"local Council Member’s office to confirm."
 msgstr ""
-"所有建議必須在<strong>2019年10月11日</strong>前提交。於10月11日後提交的建議，"
-"將不會納入第9週期的選票上。"
 
 #: src/flavors/cycle12/jstemplates/pages/guidelines.html:3
 msgid "Anyone can post ideas."
@@ -891,6 +886,18 @@ msgstr "我們目前不能與伺服器連結，請稍候，我們將重新聯接
 #: src/sa_web/templates/base.html:120
 msgid "Close"
 msgstr "關閉"
+
+#, fuzzy
+#~| msgid ""
+#~| "All ideas must be submitted by <strong>October 11, 2019</strong>. Ideas "
+#~| "submitted after October 11 will not be considered for the Cycle 9 ballot."
+#~ msgid ""
+#~ "All ideas must be submitted by <strong>October 17, 2022</strong>. Ideas "
+#~ "submitted after October 17th will not be considered for the Cycle 12 "
+#~ "ballot."
+#~ msgstr ""
+#~ "所有建議必須在<strong>2019年10月11日</strong>前提交。於10月11日後提交的建"
+#~ "議，將不會納入第9週期的選票上。"
 
 #~ msgid "Check out the guidelines</a> to see what ideas can be funded."
 #~ msgstr "請查看指引</a>以了解哪些建議可以獲得撥款。"

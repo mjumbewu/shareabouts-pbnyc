@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-17 13:06-0500\n"
+"POT-Creation-Date: 2022-10-07 09:02-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -378,8 +378,9 @@ msgstr ""
 
 #: src/flavors/cycle12/jstemplates/pages/guidelines.html:2
 msgid ""
-"All ideas must be submitted by <strong>October 17, 2022</strong>. Ideas "
-"submitted after October 17th will not be considered for the Cycle 12 ballot."
+"All ideas will be collected through the end of October. Ideas submitted "
+"November or after may not be under consideration for Cycle 12. Contact your "
+"local Council Member’s office to confirm."
 msgstr ""
 
 #: src/flavors/cycle12/jstemplates/pages/guidelines.html:3
