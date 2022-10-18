@@ -950,7 +950,7 @@ activity:
 place:
   adding_supported:
     from: 2022-09-12 00:00 -0400
-    until: 2022-10-18 00:00 -0400
+    until: 2023-09-12 00:00 -0400
 
   add_button_label: _(Submit an idea)
   # Labels for the buttons that toggle the map and list views
@@ -1073,7 +1073,7 @@ survey:
   # Response config
   adding_supported:
     from: 2022-09-12 00:00 -0400
-    until: 2022-10-18 00:00 -0400
+    until: 2023-09-12 00:00 -0400
   show_responses: true
   response_name: _(comment)
   response_plural_name: _(comments)
@@ -1099,7 +1099,7 @@ survey:
 support:
   adding_supported:
     from: 2022-09-12 00:00 -0400
-    until: 2022-10-18 00:00 -0400
+    until: 2023-09-12 00:00 -0400
   submission_type: support
   submit_btn_text: _(Support This!)
   response_name: _(support)
