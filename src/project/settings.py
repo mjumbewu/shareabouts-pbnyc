@@ -2,6 +2,7 @@
 import datetime
 import os
 import os.path
+from django.core.exceptions import ImproperlyConfigured
 
 HERE = os.path.dirname(__file__)
 
@@ -105,26 +106,32 @@ STATICFILES_FINDERS = (
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = 'pbv(g=%7$$4rzvl88e24etn57-%n0uw-@y*=7ak422_3!zrc9+'
 
-# List of callables that know how to import templates from various sources.
-TEMPLATE_LOADERS = (
-    'django.template.loaders.filesystem.Loader',
-    'django.template.loaders.app_directories.Loader',
-#     'django.template.loaders.eggs.Loader',
-)
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'OPTIONS': {
+            'loaders': (
+                'django.template.loaders.filesystem.Loader',
+                'django.template.loaders.app_directories.Loader',
+            #     'django.template.loaders.eggs.Loader',
+            ),
+            'context_processors': (
+                "django.template.context_processors.debug",
+                "django.template.context_processors.i18n",
+                "django.template.context_processors.media",
+                "django.template.context_processors.request",
+                "django.template.context_processors.static",
+                "django.template.context_processors.tz",
+                "django.contrib.messages.context_processors.messages",
+                "django.contrib.auth.context_processors.auth",
 
-TEMPLATE_CONTEXT_PROCESSORS = (
-    "django.core.context_processors.debug",
-    "django.core.context_processors.i18n",
-    "django.core.context_processors.media",
-    "django.core.context_processors.request",
-    "django.core.context_processors.static",
-    "django.core.context_processors.tz",
-    "django.contrib.auth.context_processors.auth",
+                "project.context_processors.settings_context",
+            )
+        }
+    },
+]
 
-    "project.context_processors.settings_context",
-)
-
-MIDDLEWARE_CLASSES = (
+MIDDLEWARE = (
     'sa_web.middleware.CacheRequestBody',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',
@@ -352,6 +359,12 @@ if os.path.exists(LOCAL_SETTINGS_FILE):
     with open(LOCAL_SETTINGS_FILE) as settingsfile:
         exec(settingsfile.read())
 
+try:
+    if not isinstance(EMAIL_NOTIFICATIONS_BCC, (list, tuple)):
+        raise ImproperlyConfigured('EMAIL_NOTIFICATIONS_BCC must be a list or tuple')
+except NameError:
+    pass
+
 
 ##############################################################################
 # Flavor defaults
@@ -363,7 +376,6 @@ try:
     SHAREABOUTS
     flavor = SHAREABOUTS['FLAVOR']
 except (NameError, TypeError, KeyError):
-    from django.core.exceptions import ImproperlyConfigured
     raise ImproperlyConfigured('No SHAREABOUTS configuration defined. '
         'Did you forget to copy the local settings template?')
 
